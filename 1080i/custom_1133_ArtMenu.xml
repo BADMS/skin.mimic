@@ -153,13 +153,15 @@
 					<item>
 						<description>InfoWall - Poster</description>
 						<label>31016</label>
-						<onclick>Skin.Reset(InfoWall.Banners)</onclick>
+						<onclick condition="Container.Content(movies)">Skin.Reset(InfoWall.Banners.Movies)</onclick>
+						<onclick condition="!Container.Content(movies)">Skin.Reset(InfoWall.Banners.Misc)</onclick>
 						<visible>[String.IsEqual(Container.Viewmode,$LOCALIZE[31021]) + !Skin.HasSetting(Art2Customizer)]</visible>
 					</item>
 					<item>
 						<description>InfoWall - Banner</description>
 						<label>31085</label>
-						<onclick>Skin.SetBool(InfoWall.Banners)</onclick>
+						<onclick condition="Container.Content(movies)">Skin.SetBool(InfoWall.Banners.Movies)</onclick>
+						<onclick condition="!Container.Content(movies)">Skin.SetBool(InfoWall.Banners.Misc)</onclick>
 						<visible>[String.IsEqual(Container.Viewmode,$LOCALIZE[31021]) + !Skin.HasSetting(Art2Customizer)]</visible>
 					</item>
 					<item>
