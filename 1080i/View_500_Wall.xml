@@ -119,6 +119,16 @@
 				</itemlayout>
 				<focusedlayout height="357" width="242" condition="[[Container.Content(movies) | Container.Content(tvshows) | Container.Content(sets) | Container.Content(seasons)] + !Skin.HasSetting(Enable.IconLandscape) + !Skin.HasSetting(Enable.IconBanner) + !Skin.HasSetting(Enable.IconLogo)] | [Container.Content(seasons) + Skin.HasSetting(Enable.IconLandscape)] | [Container.Content(seasons) + Skin.HasSetting(Enable.IconLogo)]">
 					<control type="group">
+						<control type="button">
+							<texturefocus>-</texturefocus>
+							<texturenofocus>-</texturenofocus>
+							<onfocus condition="!skin.string(colorbox.background.effect,None)">ClearProperty(cfa_ignore_set,home)</onfocus>
+							<onfocus condition="skin.string(colorbox.background.effect,Blur)">SetProperty(cfa_daemon_set,Blur,home)</onfocus>
+							<onfocus condition="skin.string(colorbox.background.effect,Pixelate)">SetProperty(cfa_daemon_set,Pixelate,home)</onfocus>
+							<onfocus condition="skin.string(colorbox.background.effect,Posterize)">SetProperty(cfa_daemon_set,Posterize,home)</onfocus>
+							<onfocus condition="skin.string(colorbox.background.effect,Distort)">SetProperty(cfa_daemon_set,Distort,home)</onfocus>
+							<onfocus condition="!Container.Content(songs)">RunScript(script.colorbox,info=distort,id='"$VAR[PosterVar]"',delta_x=50,delta_y=90,prefix=DistortInfo)</onfocus>
+						</control>
 						<left>62</left>
 						<include>PanelFocusedItemZoom</include>
 						<control type="image">
@@ -206,6 +216,16 @@
 				</itemlayout>
 				<focusedlayout height="238" width="413" condition="[Container.Content(movies) | Container.Content(tvshows)] + !Skin.HasSetting(Enable.IconBanner) + [Skin.HasSetting(Enable.IconLandscape) | Skin.HasSetting(Enable.IconLogo)]">
 					<control type="group">
+						<control type="button">
+							<texturefocus>-</texturefocus>
+							<texturenofocus>-</texturenofocus>
+							<onfocus condition="!skin.string(colorbox.background.effect,None)">ClearProperty(cfa_ignore_set,home)</onfocus>
+							<onfocus condition="skin.string(colorbox.background.effect,Blur)">SetProperty(cfa_daemon_set,Blur,home)</onfocus>
+							<onfocus condition="skin.string(colorbox.background.effect,Pixelate)">SetProperty(cfa_daemon_set,Pixelate,home)</onfocus>
+							<onfocus condition="skin.string(colorbox.background.effect,Posterize)">SetProperty(cfa_daemon_set,Posterize,home)</onfocus>
+							<onfocus condition="skin.string(colorbox.background.effect,Distort)">SetProperty(cfa_daemon_set,Distort,home)</onfocus>
+							<onfocus condition="!Container.Content(songs)">RunScript(script.colorbox,info=distort,id='"$VAR[PosterVar]"',delta_x=50,delta_y=90,prefix=DistortInfo)</onfocus>
+						</control>
 						<left>83</left>
 						<animation type="Focus">
 				            <effect type="zoom" time="150" start="95" end="100" center="215,116" />
@@ -322,6 +342,16 @@
 				</itemlayout>
 				<focusedlayout height="178" width="909" condition="Skin.HasSetting(Enable.IconBanner) + !Container.Content(episodes)">
 					<control type="group">
+						<control type="button">
+							<texturefocus>-</texturefocus>
+							<texturenofocus>-</texturenofocus>
+							<onfocus condition="!skin.string(colorbox.background.effect,None)">ClearProperty(cfa_ignore_set,home)</onfocus>
+							<onfocus condition="skin.string(colorbox.background.effect,Blur)">SetProperty(cfa_daemon_set,Blur,home)</onfocus>
+							<onfocus condition="skin.string(colorbox.background.effect,Pixelate)">SetProperty(cfa_daemon_set,Pixelate,home)</onfocus>
+							<onfocus condition="skin.string(colorbox.background.effect,Posterize)">SetProperty(cfa_daemon_set,Posterize,home)</onfocus>
+							<onfocus condition="skin.string(colorbox.background.effect,Distort)">SetProperty(cfa_daemon_set,Distort,home)</onfocus>
+							<onfocus condition="!Container.Content(songs)">RunScript(script.colorbox,info=distort,id='"$VAR[PosterVar]"',delta_x=50,delta_y=90,prefix=DistortInfo)</onfocus>
+						</control>
 						<include>PanelFocusedItemZoom</include>
 						<control type="group">
 							<visible>!String.IsEmpty(ListItem.Art(banner)) | String.IsEmpty(ListItem.Art(fanart))</visible>
@@ -414,6 +444,16 @@
 				</itemlayout>
 				<focusedlayout height="357" width="424" condition="Container.Content(files) | Container.Content(episodes)">
 					<control type="group">
+						<control type="button">
+							<texturefocus>-</texturefocus>
+							<texturenofocus>-</texturenofocus>
+							<onfocus condition="!skin.string(colorbox.background.effect,None)">ClearProperty(cfa_ignore_set,home)</onfocus>
+							<onfocus condition="skin.string(colorbox.background.effect,Blur)">SetProperty(cfa_daemon_set,Blur,home)</onfocus>
+							<onfocus condition="skin.string(colorbox.background.effect,Pixelate)">SetProperty(cfa_daemon_set,Pixelate,home)</onfocus>
+							<onfocus condition="skin.string(colorbox.background.effect,Posterize)">SetProperty(cfa_daemon_set,Posterize,home)</onfocus>
+							<onfocus condition="skin.string(colorbox.background.effect,Distort)">SetProperty(cfa_daemon_set,Distort,home)</onfocus>
+							<onfocus condition="!Container.Content(songs)">RunScript(script.colorbox,info=distort,id='"$VAR[PosterVar]"',delta_x=50,delta_y=90,prefix=DistortInfo)</onfocus>
+						</control>
 						<left>61</left>
 						<include>PanelFocusedItemZoom</include>
 						<control type="image">
@@ -493,6 +533,16 @@
 				</itemlayout>
 				<focusedlayout height="357" width="357" condition="Container.Content(musicvideos)">
 					<control type="group">
+						<control type="button">
+							<texturefocus>-</texturefocus>
+							<texturenofocus>-</texturenofocus>
+							<onfocus condition="!skin.string(colorbox.background.effect,None)">ClearProperty(cfa_ignore_set,home)</onfocus>
+							<onfocus condition="skin.string(colorbox.background.effect,Blur)">SetProperty(cfa_daemon_set,Blur,home)</onfocus>
+							<onfocus condition="skin.string(colorbox.background.effect,Pixelate)">SetProperty(cfa_daemon_set,Pixelate,home)</onfocus>
+							<onfocus condition="skin.string(colorbox.background.effect,Posterize)">SetProperty(cfa_daemon_set,Posterize,home)</onfocus>
+							<onfocus condition="skin.string(colorbox.background.effect,Distort)">SetProperty(cfa_daemon_set,Distort,home)</onfocus>
+							<onfocus condition="!Container.Content(songs)">RunScript(script.colorbox,info=distort,id='"$VAR[PosterVar]"',delta_x=50,delta_y=90,prefix=DistortInfo)</onfocus>
+						</control>
 						<left>17</left>
 						<include>PanelFocusedItemZoom</include>
 						<control type="image">
@@ -702,6 +752,16 @@
 				</itemlayout>
 				<focusedlayout height="280" width="280">
 					<control type="group">
+						<control type="button">
+							<texturefocus>-</texturefocus>
+							<texturenofocus>-</texturenofocus>
+							<onfocus condition="!skin.string(colorbox.background.effect,None)">ClearProperty(cfa_ignore_set,home)</onfocus>
+							<onfocus condition="skin.string(colorbox.background.effect,Blur)">SetProperty(cfa_daemon_set,Blur,home)</onfocus>
+							<onfocus condition="skin.string(colorbox.background.effect,Pixelate)">SetProperty(cfa_daemon_set,Pixelate,home)</onfocus>
+							<onfocus condition="skin.string(colorbox.background.effect,Posterize)">SetProperty(cfa_daemon_set,Posterize,home)</onfocus>
+							<onfocus condition="skin.string(colorbox.background.effect,Distort)">SetProperty(cfa_daemon_set,Distort,home)</onfocus>
+							<onfocus condition="!Container.Content(songs)">RunScript(script.colorbox,info=distort,id='"$VAR[PosterVar]"',delta_x=50,delta_y=90,prefix=DistortInfo)</onfocus>
+						</control>
 						<include>PanelFocusedItemZoom</include>
 						<control type="image">
 							<top>6</top>
@@ -846,6 +906,16 @@
 				</itemlayout>
 				<focusedlayout height="357" width="424">
 					<control type="group">
+						<control type="button">
+							<texturefocus>-</texturefocus>
+							<texturenofocus>-</texturenofocus>
+							<onfocus condition="!skin.string(colorbox.background.effect,None)">ClearProperty(cfa_ignore_set,home)</onfocus>
+							<onfocus condition="skin.string(colorbox.background.effect,Blur)">SetProperty(cfa_daemon_set,Blur,home)</onfocus>
+							<onfocus condition="skin.string(colorbox.background.effect,Pixelate)">SetProperty(cfa_daemon_set,Pixelate,home)</onfocus>
+							<onfocus condition="skin.string(colorbox.background.effect,Posterize)">SetProperty(cfa_daemon_set,Posterize,home)</onfocus>
+							<onfocus condition="skin.string(colorbox.background.effect,Distort)">SetProperty(cfa_daemon_set,Distort,home)</onfocus>
+							<onfocus condition="!Container.Content(songs)">RunScript(script.colorbox,info=distort,id='"$VAR[PosterVar]"',delta_x=50,delta_y=90,prefix=DistortInfo)</onfocus>
+						</control>
 						<include>PanelFocusedItemZoom</include>
 						<control type="image">
 							<left>6</left>
@@ -974,6 +1044,16 @@
 				</itemlayout>
 				<focusedlayout height="380" width="380">
 					<control type="group">
+						<control type="button">
+							<texturefocus>-</texturefocus>
+							<texturenofocus>-</texturenofocus>
+							<onfocus condition="!skin.string(colorbox.background.effect,None)">ClearProperty(cfa_ignore_set,home)</onfocus>
+							<onfocus condition="skin.string(colorbox.background.effect,Blur)">SetProperty(cfa_daemon_set,Blur,home)</onfocus>
+							<onfocus condition="skin.string(colorbox.background.effect,Pixelate)">SetProperty(cfa_daemon_set,Pixelate,home)</onfocus>
+							<onfocus condition="skin.string(colorbox.background.effect,Posterize)">SetProperty(cfa_daemon_set,Posterize,home)</onfocus>
+							<onfocus condition="skin.string(colorbox.background.effect,Distort)">SetProperty(cfa_daemon_set,Distort,home)</onfocus>
+							<onfocus condition="!Container.Content(songs)">RunScript(script.colorbox,info=distort,id='"$VAR[PosterVar]"',delta_x=50,delta_y=90,prefix=DistortInfo)</onfocus>
+						</control>
 						<include>PanelFocusedItemZoom</include>
 						<control type="image">
 							<top>6</top>

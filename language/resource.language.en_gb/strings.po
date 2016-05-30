@@ -1375,3 +1375,19 @@ msgstr ""
 msgctxt "#31968"
 msgid "Disable autoscroll for home widgets. Only applicable when option to always show widgets is selected."
 msgstr ""
+
+msgctxt "#31969"
+msgid "Hide TV spoilers"
+msgstr ""
+
+msgctxt "#31970"
+msgid "Hide movie spoilers"
+msgstr ""
+
+msgctxt "#31971"
+msgid "Extra fanart"
+msgstr ""
+
+msgctxt "#31972"
+msgid "Colorbox effect"
+msgstr ""

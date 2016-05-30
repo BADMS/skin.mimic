@@ -14,7 +14,7 @@
 			</control>
 			<control type="image">
 				<aspectratio align="center">scale</aspectratio>
-				<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
+				<texture background="true">$VAR[ColorboxImage]</texture>
 			</control>
 			<control type="image">
 				<texture>background.png</texture>

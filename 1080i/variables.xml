@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<variable name="ColorboxImage">
+		<value condition="Skin.String(colorbox.background.effect,Blur)">$INFO[Window(home).Property(ImageFiltercfa1)]</value>
+		<value condition="Skin.String(colorbox.background.effect,Pixelate)">$INFO[Window(home).Property(ImageFiltercfa2)]</value>
+		<value condition="Skin.String(colorbox.background.effect,Posterize)">$INFO[Window(home).Property(ImageFiltercfa3)]</value>
+		<value condition="Skin.String(colorbox.background.effect,Distort)">$INFO[Window(home).Property(ImageFiltercfa4)]</value>
+		<value condition="Skin.String(colorbox.background.effect,None)">$INFO[ListItem.Art(fanart)]</value>
+	</variable>
 	<variable name="GlobalBackgroundVar">
+		<value condition="Skin.HasSetting(ViewFanart.Extra.Fanart)">$INFO[Window(Home).Property(SkinHelper.ExtraFanArtPath)]</value>
 		<value condition="!String.IsEmpty(ListItem.Art(fanart)) + !Skin.HasSetting(Disable.Fanart)">$INFO[ListItem.Art(fanart)]</value>
 		<value condition="String.IsEqual(Container(9033).ListItem.Art(thumb),1)">$INFO[Window(Home).Property(script.grab.fanart.Movie.FanArt)]</value>
 		<value condition="String.IsEqual(Container(9033).ListItem.Art(thumb),2)">$INFO[Window(Home).Property(script.grab.fanart.TV.FanArt)]</value>
@@ -129,6 +137,12 @@
 		<value>$INFO[ListItem.Art(fanart)]</value>
 	</variable>
 	<variable name="LandscapeArtVar">
+		<value condition="!String.IsEmpty(ListItem.Art(tvshow.landscape)) + Skin.HasSetting(Hide.Spoilers.TV) + Container.Content(episodes) + [stringcompare(ListItem.Overlay,OverlayUnWatched.png) | ListItem.IsResumable]">$INFO[ListItem.Art(tvshow.landscape)]</value>
+		<value condition="String.IsEmpty(ListItem.Art(tvshow.landscape)) + Skin.HasSetting(Hide.Spoilers.TV) + Container.Content(episodes) + [stringcompare(ListItem.Overlay,OverlayUnWatched.png) | ListItem.IsResumable]">special://skin/extras/misc/empty.jpg</value>
+		<!--
+		<value condition="!String.IsEmpty(ListItem.Art(landscape)) + Skin.HasSetting(Hide.Spoilers.Movies) + Container.Content(movies) + [stringcompare(ListItem.Overlay,OverlayUnWatched.png) | ListItem.IsResumable]">$INFO[ListItem.Art(landscape)]</value>
+		<value condition="String.IsEmpty(ListItem.Art(landscape)) + Skin.HasSetting(Hide.Spoilers.Movies) + Container.Content(movies) + [stringcompare(ListItem.Overlay,OverlayUnWatched.png) | ListItem.IsResumable]">special://skin/extras/misc/empty.jpg</value>
+		-->
 		<value condition="!String.IsEmpty(ListItem.Art(landscape)) + !Container.Content(episodes)">$INFO[ListItem.Art(landscape)]</value>
 		<value condition="!String.IsEmpty(ListItem.Art(fanart)) + !Container.Content(episodes)">$INFO[ListItem.Art(fanart)]</value>
 		<value condition="!String.IsEmpty(ListItem.Thumb)">$INFO[ListItem.Thumb]</value>
@@ -136,15 +150,26 @@
 		<value>DefaultFallback.png</value>
 	</variable>
 	<variable name="FanartVar">
+		<value condition="!String.IsEmpty(ListItem.Art(tvshow.landscape)) + Skin.HasSetting(Hide.Spoilers.TV) + Container.Content(episodes) + [stringcompare(ListItem.Overlay,OverlayUnWatched.png) | ListItem.IsResumable]">$INFO[ListItem.Art(tvshow.landscape)]</value>
+		<value condition="String.IsEmpty(ListItem.Art(tvshow.landscape)) + Skin.HasSetting(Hide.Spoilers.TV) + Container.Content(episodes) + [stringcompare(ListItem.Overlay,OverlayUnWatched.png) | ListItem.IsResumable]">special://skin/extras/misc/empty.jpg</value>
+		<!--
+		<value condition="!String.IsEmpty(ListItem.Art(landscape)) + Skin.HasSetting(Hide.Spoilers.Movies) + Container.Content(movies) + [stringcompare(ListItem.Overlay,OverlayUnWatched.png) | ListItem.IsResumable]">$INFO[ListItem.Art(landscape)]</value>
+		<value condition="String.IsEmpty(ListItem.Art(landscape)) + Skin.HasSetting(Hide.Spoilers.Movies) + Container.Content(movies) + [stringcompare(ListItem.Overlay,OverlayUnWatched.png) | ListItem.IsResumable]">special://skin/extras/misc/empty.jpg</value>
+		-->
+		<value condition="!String.IsEmpty(ListItem.Thumb) + Container.Content(episodes)">$INFO[ListItem.Thumb]</value>
 		<value condition="ListItem.IsParentFolder">DefaultFallbackParent.png</value>
 		<value>$INFO[ListItem.Art(fanart)]</value>
 	</variable>
 	<variable name="LogoVar">
+		<value condition="!String.IsEmpty(ListItem.Art(tvshow.landscape)) + Skin.HasSetting(Hide.Spoilers.TV) + Container.Content(episodes) + [stringcompare(ListItem.Overlay,OverlayUnWatched.png) | ListItem.IsResumable]">$INFO[ListItem.Art(tvshow.landscape)]</value>
+		<value condition="String.IsEmpty(ListItem.Art(tvshow.landscape)) + Skin.HasSetting(Hide.Spoilers.TV) + Container.Content(episodes) + [stringcompare(ListItem.Overlay,OverlayUnWatched.png) | ListItem.IsResumable]">special://skin/extras/misc/empty.jpg</value>
 		<value condition="ListItem.IsParentFolder">DefaultFolderBack.png</value>
+		<value condition="!String.IsEmpty(ListItem.Thumb) + Container.Content(episodes)">$INFO[ListItem.Thumb]</value>
 		<value>$INFO[ListItem.Art(clearlogo)]</value>
 	</variable>
 	<variable name="ExtraFanartVar">
-		<value condition="Skin.HasSetting(Enable.Extra.Fanart) + !String.IsEmpty(ListItem.Art(extrafanart1))">$INFO[Control.GetLabel(4410)]</value>
+		<value condition="Skin.HasSetting(Enable.Extra.Fanart) + !String.IsEmpty(ListItem.Art(extrafanart1))">$INFO[Window(Home).Property(SkinHelper.ExtraFanArtPath)]</value>
+		<value condition="Skin.HasSetting(Enable.Landscape.Art) + !String.IsEmpty(ListItem.Art(tvshow.landscape))">$INFO[ListItem.Art(tvshow.landscape)]</value>
 		<value condition="Skin.HasSetting(Enable.Landscape.Art) + !String.IsEmpty(ListItem.Art(landscape))">$INFO[ListItem.Art(landscape)]</value>
 		<value>$INFO[ListItem.Art(fanart)]</value>
 	</variable>
@@ -177,7 +202,8 @@
 		<value condition="Container.Content(seasons)">$INFO[Container.ShowPlot]</value>
 		<value condition="Container.Content(sets) + !String.IsEmpty(Window(Home).Property(SkinHelper.MovieSet.Plot))">$INFO[Window(Home).Property(SkinHelper.MovieSet.Plot)]</value>
 		<value condition="!String.IsEmpty(ListItem.PlotOutline) + !Skin.HasSetting(VideoInfoPlotToggle)">$INFO[ListItem.PlotOutline]</value>
-		<value condition="System.GetBool(videolibrary.showunwatchedplots)">$INFO[ListItem.Plot]</value>
+		<value condition="[!IsEmpty(ListItem.PlotOutline) | !IsEmpty(ListItem.Plot)] + Skin.HasSetting(Hide.Spoilers.TV) + Container.Content(episodes) + [stringcompare(ListItem.Overlay,OverlayUnWatched.png) | ListItem.IsResumable]">$LOCALIZE[20370]</value>
+		<value condition="[!IsEmpty(ListItem.PlotOutline) | !IsEmpty(ListItem.Plot)] + Skin.HasSetting(Hide.Spoilers.Movies) + Container.Content(movies) + [stringcompare(ListItem.Overlay,OverlayUnWatched.png) | ListItem.IsResumable]">$LOCALIZE[20370]</value>
 		<value>$INFO[ListItem.Plot]</value>
 	</variable>
 	<variable name="OtherPlotVar">

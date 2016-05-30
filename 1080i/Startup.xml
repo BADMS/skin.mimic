@@ -2,14 +2,18 @@
 <window>
 	<defaultcontrol always="true">10</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-	<onload condition="System.HasAddon(script.colorbox)">RunScript(script.colorbox,info=firstrun)</onload>
-    <onload condition="System.HasAddon(script.colorbox)">RunScript(script.colorbox,daemon=True,pixels=10,bits=1,radius=30)</onload>
+	<onload>SetProperty(cfa_ignore_set,True,home)</onload>
+	<onload>SetProperty(SkinInitStarted,1,home)</onload>
+	<onload condition="System.HasAddon(script.colorbox)">RunScript(script.colorbox,daemon=True,pixels=10,bits=1,radius=10,delta_x=40,delta_y=90)</onload>
 	<onload condition="System.HasAddon(script.skin.info.service)">RunScript(script.skin.info.service)</onload>
 	<onload condition="!System.HasAddon(script.tv.show.next.aired)">Skin.SetBool(Disable.NextAired)</onload>
 	<onload condition="!String.IsEqual(Skin.String(HomeLayout),2) + !String.IsEqual(Skin.String(HomeLayout),3)">Skin.SetString(HomeLayout,1)</onload>
 	<controls>
 		<control type="button" id="10">
 			<description>trigger</description>
+			<onfocus condition="System.HasAddon(script.tv.show.next.aired) + Skin.HasSetting(NextAired.Update) + Library.HasContent(tvshows)">RunScript(script.tv.show.next.aired,silent=True)</onfocus>
+			<onfocus condition="IsEmpty(Skin.String(colorbox.background.effect))">Skin.SetString(colorbox.background.effect,Pixelate)</onfocus>
+			<onfocus condition="!Skin.HasSetting(low.power)">RunScript(script.colorbox,info=firstrun)</onfocus>
 			<onfocus>ReplaceWindow($INFO[System.StartupWindow])</onfocus>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>
@@ -18,6 +22,9 @@
 		<control type="button" id="10">
 			<description>trigger with startup Playlist</description>
 			<onfocus>PlayMedia($INFO[Skin.String(Startup_Playlist_Path)])</onfocus>
+			<onfocus condition="System.HasAddon(script.tv.show.next.aired) + Skin.HasSetting(NextAired.Update) + Library.HasContent(tvshows)">RunScript(script.tv.show.next.aired,silent=True)</onfocus>
+			<onfocus condition="IsEmpty(Skin.String(colorbox.background.effect))">Skin.SetString(colorbox.background.effect,Pixelate)</onfocus>
+			<onfocus condition="!Skin.HasSetting(low.power)">RunScript(script.colorbox,info=firstrun)</onfocus>
 			<onfocus>ReplaceWindow($INFO[System.StartupWindow])</onfocus>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>
