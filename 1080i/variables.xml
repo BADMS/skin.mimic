@@ -195,6 +195,8 @@
 		<value>$LOCALIZE[20360]</value>
 	</variable>
 	<variable name="VideoInfoPlotVar">
+		<value condition="Skin.HasSetting(Hide.Spoilers.TV) + Container.Content(episodes) + [stringcompare(ListItem.Overlay,OverlayUnWatched.png) | ListItem.IsResumable]">$LOCALIZE[20370]</value>
+		<value condition="Skin.HasSetting(Hide.Spoilers.Movies) + Container.Content(movies) + [stringcompare(ListItem.Overlay,OverlayUnWatched.png) | ListItem.IsResumable]">$LOCALIZE[20370]</value>
 		<value condition="Skin.HasSetting(VideoInfoPlotToggle) + !String.IsEmpty(ListItem.PlotOutline)">$INFO[ListItem.PlotOutline]</value>
 		<value>$INFO[ListItem.Plot]</value>
 	</variable>
