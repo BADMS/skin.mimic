@@ -238,7 +238,7 @@
 			<include>ButtonCommonValues</include>
 			<onclick>Skin.ToggleSetting(ViewFanart.Extra.Fanart)</onclick>
 			<selected>Skin.HasSetting(ViewFanart.Extra.Fanart)</selected>
-			<visible>![Window.IsActive(eventlog) | Window.IsActive(tvchannels) | Window.IsActive(tvrecordings) | Window.IsActive(tvtimers) | Window.IsActive(tvtimerrules) | Window.IsActive(tvsearch) | Window.IsActive(radiochannels) | Window.IsActive(radiorecordings) | Window.IsActive(radiotimers) | Window.IsActive(radiosearch)] + [Container.Content(movies) | Container.Content(tvshows)]</visible>
+			<visible>![Window.IsActive(eventlog) | Window.IsActive(tvchannels) | Window.IsActive(tvrecordings) | Window.IsActive(tvtimers) | Window.IsActive(tvtimerrules) | Window.IsActive(tvsearch) | Window.IsActive(radiochannels) | Window.IsActive(radiorecordings) | Window.IsActive(radiotimers) | Window.IsActive(radiosearch)]</visible>
 		</control>
 		<control type="button" id="1813">
 			<description>widget</description>
