@@ -196,6 +196,15 @@
 							<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes)</visible>
 						</control>
 						<control type="image">
+							<left>1074</left>
+							<top>26</top>
+							<width>68</width>
+							<height>68</height>
+							<texture colordiffuse="$VAR[ColorHighlightVar]">$VAR[OverlayBGVar]</texture>
+							<aspectratio align="center" aligny="top">keep</aspectratio>
+							<visible>!String.IsEmpty(ListItem.Overlay)</visible>
+						</control>
+						<control type="image">
 							<left>1076</left>
 							<top>28</top>
 							<width>64</width>
@@ -296,6 +305,15 @@
 							<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes)</visible>
 						</control>
 						<control type="image">
+							<left>1072</left>
+							<top>26</top>
+							<width>68</width>
+							<height>68</height>
+							<texture colordiffuse="$VAR[ColorHighlightVar]">$VAR[OverlayBGVar]</texture>
+							<aspectratio align="center" aligny="top">keep</aspectratio>
+							<visible>!String.IsEmpty(ListItem.Overlay)</visible>
+						</control>
+						<control type="image">
 							<left>1076</left>
 							<top>28</top>
 							<width>64</width>
@@ -384,6 +402,15 @@
 							<align>right</align>
 							<label>$INFO[ListItem.Rating]</label>
 							<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes)</visible>
+						</control>
+						<control type="image">
+							<left>1664</left>
+							<top>26</top>
+							<width>68</width>
+							<height>68</height>
+							<texture colordiffuse="$VAR[ColorHighlightVar]">$VAR[OverlayBGVar]</texture>
+							<aspectratio align="center" aligny="top">keep</aspectratio>
+							<visible>!String.IsEmpty(ListItem.Overlay)</visible>
 						</control>
 						<control type="image">
 							<left>1666</left>
@@ -486,6 +513,15 @@
 							<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes)</visible>
 						</control>
 						<control type="image">
+							<left>1664</left>
+							<top>26</top>
+							<width>68</width>
+							<height>68</height>
+							<texture colordiffuse="$VAR[ColorHighlightVar]">$VAR[OverlayBGVar]</texture>
+							<aspectratio align="center" aligny="top">keep</aspectratio>
+							<visible>!String.IsEmpty(ListItem.Overlay)</visible>
+						</control>
+						<control type="image">
 							<left>1666</left>
 							<top>28</top>
 							<width>64</width>
@@ -536,6 +572,15 @@
 							<align>right</align>
 							<label>$INFO[ListItem.Rating]</label>
 							<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes)</visible>
+						</control>
+						<control type="image">
+							<left>1079</left>
+							<top>-2</top>
+							<width>68</width>
+							<height>68</height>
+							<texture colordiffuse="$VAR[ColorHighlightVar]">$VAR[OverlayBGVar]</texture>
+							<aspectratio align="center" aligny="top">keep</aspectratio>
+							<visible>!String.IsEmpty(ListItem.Overlay)</visible>
 						</control>
 						<control type="image">
 							<left>1081</left>
@@ -600,6 +645,15 @@
 							<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes)</visible>
 						</control>
 						<control type="image">
+							<left>1079</left>
+							<top>-2</top>
+							<width>68</width>
+							<height>68</height>
+							<texture colordiffuse="$VAR[ColorHighlightVar]">$VAR[OverlayBGVar]</texture>
+							<aspectratio align="center" aligny="top">keep</aspectratio>
+							<visible>!String.IsEmpty(ListItem.Overlay)</visible>
+						</control>
+						<control type="image">
 							<left>1081</left>
 							<width>64</width>
 							<height>64</height>
@@ -649,6 +703,15 @@
 							<align>right</align>
 							<label>$INFO[ListItem.Rating]</label>
 							<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes)</visible>
+						</control>
+						<control type="image">
+							<left>1669</left>
+							<top>-2</top>
+							<width>68</width>
+							<height>68</height>
+							<texture colordiffuse="$VAR[ColorHighlightVar]">$VAR[OverlayBGVar]</texture>
+							<aspectratio align="center" aligny="top">keep</aspectratio>
+							<visible>!String.IsEmpty(ListItem.Overlay)</visible>
 						</control>
 						<control type="image">
 							<left>1671</left>
@@ -711,6 +774,15 @@
 							<align>right</align>
 							<label>$INFO[ListItem.Rating]</label>
 							<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes)</visible>
+						</control>
+						<control type="image">
+							<left>1669</left>
+							<top>-2</top>
+							<width>68</width>
+							<height>68</height>
+							<texture colordiffuse="$VAR[ColorHighlightVar]">$VAR[OverlayBGVar]</texture>
+							<aspectratio align="center" aligny="top">keep</aspectratio>
+							<visible>!String.IsEmpty(ListItem.Overlay)</visible>
 						</control>
 						<control type="image">
 							<left>1671</left>

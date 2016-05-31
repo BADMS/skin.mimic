@@ -161,6 +161,15 @@
 						<label>$INFO[ListItem.Rating]</label>
 					</control>
 					<control type="image">
+						<left>740</left>
+						<top>0</top>
+						<width>68</width>
+						<height>68</height>
+						<texture colordiffuse="$VAR[ColorHighlightVar]">$VAR[OverlayBGVar]</texture>
+						<aspectratio align="center" aligny="top">keep</aspectratio>
+						<visible>!String.IsEmpty(ListItem.Overlay)</visible>
+					</control>
+					<control type="image">
 						<left>742</left>
 						<top>2</top>
 						<width>64</width>
@@ -204,6 +213,15 @@
 						<label>$INFO[ListItem.Rating]</label>
 					</control>
 					<control type="image">
+						<left>740</left>
+						<top>0</top>
+						<width>68</width>
+						<height>68</height>
+						<texture colordiffuse="$VAR[ColorHighlightVar]">$VAR[OverlayBGVar]</texture>
+						<aspectratio align="center" aligny="top">keep</aspectratio>
+						<visible>!String.IsEmpty(ListItem.Overlay)</visible>
+					</control>
+					<control type="image">
 						<left>742</left>
 						<top>2</top>
 						<width>64</width>
@@ -235,6 +253,15 @@
 						<font>font15</font>
 						<align>right</align>
 						<label>$INFO[ListItem.Rating]</label>
+					</control>
+					<control type="image">
+						<left>740</left>
+						<top>0</top>
+						<width>68</width>
+						<height>68</height>
+						<texture colordiffuse="$VAR[ColorHighlightVar]">$VAR[OverlayBGVar]</texture>
+						<aspectratio align="center" aligny="top">keep</aspectratio>
+						<visible>!String.IsEmpty(ListItem.Overlay)</visible>
 					</control>
 					<control type="image">
 						<left>742</left>
@@ -280,6 +307,15 @@
 						<label>$INFO[ListItem.Rating]</label>
 					</control>
 					<control type="image">
+						<left>740</left>
+						<top>0</top>
+						<width>68</width>
+						<height>68</height>
+						<texture colordiffuse="$VAR[ColorHighlightVar]">$VAR[OverlayBGVar]</texture>
+						<aspectratio align="center" aligny="top">keep</aspectratio>
+						<visible>!String.IsEmpty(ListItem.Overlay)</visible>
+					</control>
+					<control type="image">
 						<left>742</left>
 						<top>2</top>
 						<width>64</width>
@@ -303,6 +339,15 @@
 						<font>font15</font>
 						<align>right</align>
 						<label>$INFO[ListItem.Property(TotalEpisodes),, $LOCALIZE[20453]]</label>
+					</control>
+					<control type="image">
+						<left>740</left>
+						<top>0</top>
+						<width>68</width>
+						<height>68</height>
+						<texture colordiffuse="$VAR[ColorHighlightVar]">$VAR[OverlayBGVar]</texture>
+						<aspectratio align="center" aligny="top">keep</aspectratio>
+						<visible>!String.IsEmpty(ListItem.Overlay)</visible>
 					</control>
 					<control type="image">
 						<left>742</left>
@@ -340,6 +385,15 @@
 						<label>$INFO[ListItem.Property(TotalEpisodes),, $LOCALIZE[20453]]</label>
 					</control>
 					<control type="image">
+						<left>740</left>
+						<top>0</top>
+						<width>68</width>
+						<height>68</height>
+						<texture colordiffuse="$VAR[ColorHighlightVar]">$VAR[OverlayBGVar]</texture>
+						<aspectratio align="center" aligny="top">keep</aspectratio>
+						<visible>!String.IsEmpty(ListItem.Overlay)</visible>
+					</control>
+					<control type="image">
 						<left>742</left>
 						<top>2</top>
 						<width>64</width>
@@ -363,6 +417,15 @@
 						<font>font15</font>
 						<align>right</align>
 						<label>$INFO[ListItem.Rating]</label>
+					</control>
+					<control type="image">
+						<left>740</left>
+						<top>0</top>
+						<width>68</width>
+						<height>68</height>
+						<texture colordiffuse="$VAR[ColorHighlightVar]">$VAR[OverlayBGVar]</texture>
+						<aspectratio align="center" aligny="top">keep</aspectratio>
+						<visible>!String.IsEmpty(ListItem.Overlay)</visible>
 					</control>
 					<control type="image">
 						<left>742</left>
@@ -398,6 +461,15 @@
 						<font>font15</font>
 						<align>right</align>
 						<label>$INFO[ListItem.Rating]</label>
+					</control>
+					<control type="image">
+						<left>740</left>
+						<top>0</top>
+						<width>68</width>
+						<height>68</height>
+						<texture colordiffuse="$VAR[ColorHighlightVar]">$VAR[OverlayBGVar]</texture>
+						<aspectratio align="center" aligny="top">keep</aspectratio>
+						<visible>!String.IsEmpty(ListItem.Overlay)</visible>
 					</control>
 					<control type="image">
 						<left>742</left>

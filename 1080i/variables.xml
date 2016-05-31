@@ -66,8 +66,9 @@
 		<value condition="[Container.ListItem.IsResumable + Skin.HasSetting(Overlay.Resumable)] | [String.IsEqual(ListItem.Overlay,OverlayUnwatched.png) + Skin.HasSetting(Overlay.Unwatched)] | [String.IsEqual(ListItem.Overlay,OverlayWatched.png) + Skin.HasSetting(Overlay.Watched)]">overlays/overlaybg.png</value>
 	</variable>
 	<variable name="ListItem.Overlay">
-		<value condition="ListItem.IsResumable">overlays/list/resumable.png</value>
-		<value>$INFO[ListItem.Overlay,overlays/list/]</value>
+		<value condition="ListItem.IsResumable + Skin.HasSetting(Overlay.Resumable)">overlays/list/resumable.png</value>
+		<value condition="String.IsEqual(ListItem.Overlay,OverlayUnwatched.png) + Skin.HasSetting(Overlay.Unwatched)">$INFO[ListItem.Overlay,overlays/list/]</value>
+		<value condition="String.IsEqual(ListItem.Overlay,OverlayWatched.png) + Skin.HasSetting(Overlay.Watched)">$INFO[ListItem.Overlay,overlays/list/]</value>
 	</variable>
 	<variable name="BreadcrumbsVar">
 		<value condition="Window.IsActive(script-ExtendedInfo Script-DialogInfo.xml)">$INFO[Window.Property(label)]</value>
