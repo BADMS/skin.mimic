@@ -19,6 +19,7 @@
 				<control type="group">
 					<animation effect="slide" time="0" start="0,0" end="0,195" condition="String.IsEqual(Skin.String(HomeLayout),2)">Conditional</animation>
 					<animation effect="slide" time="0" tween="" easing="" start="0" end="160" condition="Skin.HasSetting(Enable.BasicWeatherView)">Conditional</animation>
+					<animation effect="fade" time="3000" tween="" easing="" start="100" end="0" condition="!Weather.IsFetched">Conditional</animation>
 					<include content="WeatherWidgetCommons">
 						<param name="WeatherPositionLeft" value="0" />
 						<param name="WeatherPositionTop" value="550" />

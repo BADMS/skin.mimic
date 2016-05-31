@@ -101,6 +101,12 @@
 			</control>
 			<control type="group">
                 <visible>Integer.IsGreater(Container(501).NumItems,0)</visible>
+				<animation effect="slide" end="0,-67" time="300" condition="!IntegerGreaterThan(Container(501).NumItems,5) + Container.HasParent">Conditional</animation>
+				<animation effect="slide" end="0,67" time="300" condition="!IntegerGreaterThan(Container(501).NumItems,1)">Conditional</animation>
+				<animation effect="slide" end="0,67" time="300" condition="!IntegerGreaterThan(Container(501).NumItems,2)">Conditional</animation>
+				<animation effect="slide" end="0,67" time="300" condition="!IntegerGreaterThan(Container(501).NumItems,3)">Conditional</animation>
+				<animation effect="slide" end="0,67" time="300" condition="!IntegerGreaterThan(Container(501).NumItems,4)">Conditional</animation>
+				<animation effect="slide" end="0,67" time="300" condition="!IntegerGreaterThan(Container(501).NumItems,5)">Conditional</animation>
                 <control type="image">
                     <left>463</left>
                     <top>632</top>
@@ -446,6 +452,12 @@
 						<label>$INFO[ListItem.label2]</label>
 					</control>
 				</focusedlayout>
+				<animation effect="slide" end="0,-67" time="300" condition="!IntegerGreaterThan(Container(501).NumItems,5) + Container.HasParent">Conditional</animation>
+				<animation effect="slide" end="0,67" time="300" condition="!IntegerGreaterThan(Container(501).NumItems,1)">Conditional</animation>
+				<animation effect="slide" end="0,67" time="300" condition="!IntegerGreaterThan(Container(501).NumItems,2)">Conditional</animation>
+				<animation effect="slide" end="0,67" time="300" condition="!IntegerGreaterThan(Container(501).NumItems,3)">Conditional</animation>
+				<animation effect="slide" end="0,67" time="300" condition="!IntegerGreaterThan(Container(501).NumItems,4)">Conditional</animation>
+				<animation effect="slide" end="0,67" time="300" condition="!IntegerGreaterThan(Container(501).NumItems,5)">Conditional</animation>
 			</control>
 			<control type="scrollbar" id="60">
 				<visible allowhiddenfocus="true">Control.HasFocus(60) | Container.Scrolling</visible>
@@ -592,6 +604,12 @@
 			</control>
 			<control type="group">
                 <visible>Integer.IsGreater(Container(501).NumItems,0)</visible>
+				<animation effect="slide" end="0,-67" time="300" condition="!IntegerGreaterThan(Container(501).NumItems,5) + Container.HasParent">Conditional</animation>
+				<animation effect="slide" end="0,67" time="300" condition="!IntegerGreaterThan(Container(501).NumItems,1)">Conditional</animation>
+				<animation effect="slide" end="0,67" time="300" condition="!IntegerGreaterThan(Container(501).NumItems,2)">Conditional</animation>
+				<animation effect="slide" end="0,67" time="300" condition="!IntegerGreaterThan(Container(501).NumItems,3)">Conditional</animation>
+				<animation effect="slide" end="0,67" time="300" condition="!IntegerGreaterThan(Container(501).NumItems,4)">Conditional</animation>
+				<animation effect="slide" end="0,67" time="300" condition="!IntegerGreaterThan(Container(501).NumItems,5)">Conditional</animation>
                 <control type="image">
                     <left>463</left>
                     <top>632</top>
@@ -827,6 +845,12 @@
 						<label>$INFO[ListItem.label2]</label>
 					</control>
 				</focusedlayout>
+				<animation effect="slide" end="0,-67" time="300" condition="!IntegerGreaterThan(Container(501).NumItems,5) + Container.HasParent">Conditional</animation>
+				<animation effect="slide" end="0,67" time="300" condition="!IntegerGreaterThan(Container(501).NumItems,1)">Conditional</animation>
+				<animation effect="slide" end="0,67" time="300" condition="!IntegerGreaterThan(Container(501).NumItems,2)">Conditional</animation>
+				<animation effect="slide" end="0,67" time="300" condition="!IntegerGreaterThan(Container(501).NumItems,3)">Conditional</animation>
+				<animation effect="slide" end="0,67" time="300" condition="!IntegerGreaterThan(Container(501).NumItems,4)">Conditional</animation>
+				<animation effect="slide" end="0,67" time="300" condition="!IntegerGreaterThan(Container(501).NumItems,5)">Conditional</animation>
 			</control>
 			<control type="scrollbar" id="60">
 				<visible allowhiddenfocus="true">Control.HasFocus(60) | Container.Scrolling</visible>
@@ -901,6 +925,12 @@
 			</control>
 			<control type="group">
                 <visible>Integer.IsGreater(Container(501).NumItems,0)</visible>
+				<animation effect="slide" end="0,-67" time="300" condition="!IntegerGreaterThan(Container(501).NumItems,5) + Container.HasParent">Conditional</animation>
+				<animation effect="slide" end="0,67" time="300" condition="!IntegerGreaterThan(Container(501).NumItems,1)">Conditional</animation>
+				<animation effect="slide" end="0,67" time="300" condition="!IntegerGreaterThan(Container(501).NumItems,2)">Conditional</animation>
+				<animation effect="slide" end="0,67" time="300" condition="!IntegerGreaterThan(Container(501).NumItems,3)">Conditional</animation>
+				<animation effect="slide" end="0,67" time="300" condition="!IntegerGreaterThan(Container(501).NumItems,4)">Conditional</animation>
+				<animation effect="slide" end="0,67" time="300" condition="!IntegerGreaterThan(Container(501).NumItems,5)">Conditional</animation>
                 <control type="image">
                     <left>463</left>
                     <top>648</top>
@@ -974,6 +1004,12 @@
 						<label>$INFO[ListItem.label2]</label>
 					</control>
 				</focusedlayout>
+				<animation effect="slide" end="0,-67" time="300" condition="!IntegerGreaterThan(Container(501).NumItems,5) + Container.HasParent">Conditional</animation>
+				<animation effect="slide" end="0,67" time="300" condition="!IntegerGreaterThan(Container(501).NumItems,1)">Conditional</animation>
+				<animation effect="slide" end="0,67" time="300" condition="!IntegerGreaterThan(Container(501).NumItems,2)">Conditional</animation>
+				<animation effect="slide" end="0,67" time="300" condition="!IntegerGreaterThan(Container(501).NumItems,3)">Conditional</animation>
+				<animation effect="slide" end="0,67" time="300" condition="!IntegerGreaterThan(Container(501).NumItems,4)">Conditional</animation>
+				<animation effect="slide" end="0,67" time="300" condition="!IntegerGreaterThan(Container(501).NumItems,5)">Conditional</animation>
 			</control>
 			<control type="scrollbar" id="60">
 				<visible allowhiddenfocus="true">Control.HasFocus(60) | Container.Scrolling</visible>
