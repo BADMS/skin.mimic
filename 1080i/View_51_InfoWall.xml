@@ -329,6 +329,7 @@
 					<height>383</height>
 					<aspectratio>scale</aspectratio>
 					<imagepath background="true">$VAR[ExtraFanartVar]</imagepath>
+					<timeperimage>2000</timeperimage>
 					<visible>!String.IsEmpty(ListItem.Art(fanart))</visible>
 				</control>
 				<control type="label">

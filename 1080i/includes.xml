@@ -219,6 +219,13 @@
 			<selected>Skin.HasSetting(Enable.SlimList)</selected>
 			<visible>Control.IsVisible(50) + ![Window.IsActive(eventlog) | Window.IsActive(tvchannels) | Window.IsActive(tvrecordings) | Window.IsActive(tvtimers) | Window.IsActive(tvtimerrules) | Window.IsActive(tvsearch) | Window.IsActive(radiochannels) | Window.IsActive(radiorecordings) | Window.IsActive(radiotimers) | Window.IsActive(radiosearch)]</visible>
 		</control>
+		<control type="radiobutton" id="1899">
+			<label>31237</label>
+			<include>ButtonCommonValues</include>
+			<onclick>Skin.ToggleSetting(Enable.WideList)</onclick>
+			<selected>Skin.HasSetting(Enable.WideList)</selected>
+			<visible>Control.IsVisible(50) + ![Window.IsActive(eventlog) | Window.IsActive(tvchannels) | Window.IsActive(tvrecordings) | Window.IsActive(tvtimers) | Window.IsActive(tvtimerrules) | Window.IsActive(tvsearch) | Window.IsActive(radiochannels) | Window.IsActive(radiorecordings) | Window.IsActive(radiotimers) | Window.IsActive(radiosearch)]</visible>
+		</control>
 		<control type="radiobutton" id="1810">
 			<label>31969</label>
 			<include>ButtonCommonValues</include>
@@ -257,13 +264,6 @@
 			<onclick>SetProperty(Dialog.5.Label,None)</onclick>
 			<onclick>SetProperty(Dialog.5.BuiltIn,Skin.SetString(colorbox.background.effect,None))</onclick>
 			<onclick>RunScript(script.toolbox,info=selectdialog,header=Select Background Effect)</onclick>
-		</control>
-		<control type="radiobutton" id="1899">
-			<label>31237</label>
-			<include>ButtonCommonValues</include>
-			<onclick>Skin.ToggleSetting(Enable.WideList)</onclick>
-			<selected>Skin.HasSetting(Enable.WideList)</selected>
-			<visible>Control.IsVisible(50) + ![Window.IsActive(eventlog) | Window.IsActive(tvchannels) | Window.IsActive(tvrecordings) | Window.IsActive(tvtimers) | Window.IsActive(tvtimerrules) | Window.IsActive(tvsearch) | Window.IsActive(radiochannels) | Window.IsActive(radiorecordings) | Window.IsActive(radiotimers) | Window.IsActive(radiosearch)]</visible>
 		</control>
 	</include>
 	<include name="PVRMediaMenu">
