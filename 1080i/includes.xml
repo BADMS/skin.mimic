@@ -215,16 +215,30 @@
 		<control type="radiobutton" id="1809">
 			<label>31095</label>
 			<include>ButtonCommonValues</include>
-			<onclick>Skin.ToggleSetting(Enable.SlimList)</onclick>
-			<selected>Skin.HasSetting(Enable.SlimList)</selected>
-			<visible>Control.IsVisible(50) + ![Window.IsActive(eventlog) | Window.IsActive(tvchannels) | Window.IsActive(tvrecordings) | Window.IsActive(tvtimers) | Window.IsActive(tvtimerrules) | Window.IsActive(tvsearch) | Window.IsActive(radiochannels) | Window.IsActive(radiorecordings) | Window.IsActive(radiotimers) | Window.IsActive(radiosearch)]</visible>
+			<onclick>Skin.ToggleSetting(Enable.SlimList.Misc)</onclick>
+			<selected>Skin.HasSetting(Enable.SlimList.Misc)</selected>
+			<visible>Control.IsVisible(50) + ![Window.IsActive(eventlog) | Window.IsActive(tvchannels) | Window.IsActive(tvrecordings) | Window.IsActive(tvtimers) | Window.IsActive(tvtimerrules) | Window.IsActive(tvsearch) | Window.IsActive(radiochannels) | Window.IsActive(radiorecordings) | Window.IsActive(radiotimers) | Window.IsActive(radiosearch)] + ![Container.Content(movies) | Container.Content(movie)]</visible>
+		</control>
+		<control type="radiobutton" id="11109">
+			<label>31095</label>
+			<include>ButtonCommonValues</include>
+			<onclick>Skin.ToggleSetting(Enable.SlimList.Movies)</onclick>
+			<selected>Skin.HasSetting(Enable.SlimList.Movies)</selected>
+			<visible>Control.IsVisible(50) + ![Window.IsActive(eventlog) | Window.IsActive(tvchannels) | Window.IsActive(tvrecordings) | Window.IsActive(tvtimers) | Window.IsActive(tvtimerrules) | Window.IsActive(tvsearch) | Window.IsActive(radiochannels) | Window.IsActive(radiorecordings) | Window.IsActive(radiotimers) | Window.IsActive(radiosearch)] + [Container.Content(movies) | Container.Content(movie)]</visible>
 		</control>
 		<control type="radiobutton" id="1899">
 			<label>31237</label>
 			<include>ButtonCommonValues</include>
-			<onclick>Skin.ToggleSetting(Enable.WideList)</onclick>
-			<selected>Skin.HasSetting(Enable.WideList)</selected>
-			<visible>Control.IsVisible(50) + ![Window.IsActive(eventlog) | Window.IsActive(tvchannels) | Window.IsActive(tvrecordings) | Window.IsActive(tvtimers) | Window.IsActive(tvtimerrules) | Window.IsActive(tvsearch) | Window.IsActive(radiochannels) | Window.IsActive(radiorecordings) | Window.IsActive(radiotimers) | Window.IsActive(radiosearch)]</visible>
+			<onclick>Skin.ToggleSetting(Enable.WideList.Misc)</onclick>
+			<selected>Skin.HasSetting(Enable.WideList.Misc)</selected>
+			<visible>Control.IsVisible(50) + ![Window.IsActive(eventlog) | Window.IsActive(tvchannels) | Window.IsActive(tvrecordings) | Window.IsActive(tvtimers) | Window.IsActive(tvtimerrules) | Window.IsActive(tvsearch) | Window.IsActive(radiochannels) | Window.IsActive(radiorecordings) | Window.IsActive(radiotimers) | Window.IsActive(radiosearch)] + ![Container.Content(movies) | Container.Content(movie)]</visible>
+		</control>
+		<control type="radiobutton" id="11110">
+			<label>31237</label>
+			<include>ButtonCommonValues</include>
+			<onclick>Skin.ToggleSetting(Enable.WideList.Movies)</onclick>
+			<selected>Skin.HasSetting(Enable.WideList.Movies)</selected>
+			<visible>Control.IsVisible(50) + ![Window.IsActive(eventlog) | Window.IsActive(tvchannels) | Window.IsActive(tvrecordings) | Window.IsActive(tvtimers) | Window.IsActive(tvtimerrules) | Window.IsActive(tvsearch) | Window.IsActive(radiochannels) | Window.IsActive(radiorecordings) | Window.IsActive(radiotimers) | Window.IsActive(radiosearch)] + [Container.Content(movies) | Container.Content(movie)]</visible>
 		</control>
 		<control type="radiobutton" id="11111">
 			<label>31969</label>
