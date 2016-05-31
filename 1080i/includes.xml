@@ -188,7 +188,7 @@
 			<label>31117</label>
 			<include>ButtonCommonValues</include>
 			<onclick>Skin.ToggleSetting(InfoWall.LargeIcons)</onclick>
-			<visible>Window.IsActive(videolibrary) + Control.IsVisible(51) + ![[Skin.HasSetting(InfoWall.Banners.Movies) + Container.Content(movies)] | [Skin.HasSetting(InfoWall.Banners.Misc) + !Container.Content(movies)]]</visible>
+			<visible>Window.IsActive(videolibrary) + Control.IsVisible(51) + !Skin.HasSetting(InfoWall.Banners)</visible>
 			<selected>Skin.HasSetting(InfoWall.LargeIcons)</selected>
 		</control>
 		<control type="radiobutton" id="1806">
@@ -225,45 +225,6 @@
 			<onclick>Skin.ToggleSetting(Enable.WideList)</onclick>
 			<selected>Skin.HasSetting(Enable.WideList)</selected>
 			<visible>Control.IsVisible(50) + ![Window.IsActive(eventlog) | Window.IsActive(tvchannels) | Window.IsActive(tvrecordings) | Window.IsActive(tvtimers) | Window.IsActive(tvtimerrules) | Window.IsActive(tvsearch) | Window.IsActive(radiochannels) | Window.IsActive(radiorecordings) | Window.IsActive(radiotimers) | Window.IsActive(radiosearch)]</visible>
-		</control>
-		<control type="radiobutton" id="1810">
-			<label>31969</label>
-			<include>ButtonCommonValues</include>
-			<onclick>Skin.ToggleSetting(Hide.Spoilers.TV)</onclick>
-			<selected>Skin.HasSetting(Hide.Spoilers.TV)</selected>
-			<visible>![Window.IsActive(eventlog) | Window.IsActive(tvchannels) | Window.IsActive(tvrecordings) | Window.IsActive(tvtimers) | Window.IsActive(tvtimerrules) | Window.IsActive(tvsearch) | Window.IsActive(radiochannels) | Window.IsActive(radiorecordings) | Window.IsActive(radiotimers) | Window.IsActive(radiosearch)] + [Container.Content(episodes) | Container.Content(seasons) | Container.Content(tvshows)]</visible>
-		</control>
-		<control type="radiobutton" id="1811">
-			<label>31970</label>
-			<include>ButtonCommonValues</include>
-			<onclick>Skin.ToggleSetting(Hide.Spoilers.Movies)</onclick>
-			<selected>Skin.HasSetting(Hide.Spoilers.Movies)</selected>
-			<visible>![Window.IsActive(eventlog) | Window.IsActive(tvchannels) | Window.IsActive(tvrecordings) | Window.IsActive(tvtimers) | Window.IsActive(tvtimerrules) | Window.IsActive(tvsearch) | Window.IsActive(radiochannels) | Window.IsActive(radiorecordings) | Window.IsActive(radiotimers) | Window.IsActive(radiosearch)] + [Container.Content(movies) | Container.Content(movie)]</visible>
-		</control>
-		<control type="radiobutton" id="1812">
-			<label>31971</label>
-			<include>ButtonCommonValues</include>
-			<onclick>Skin.ToggleSetting(ViewFanart.Extra.Fanart)</onclick>
-			<selected>Skin.HasSetting(ViewFanart.Extra.Fanart)</selected>
-			<visible>![Window.IsActive(eventlog) | Window.IsActive(tvchannels) | Window.IsActive(tvrecordings) | Window.IsActive(tvtimers) | Window.IsActive(tvtimerrules) | Window.IsActive(tvsearch) | Window.IsActive(radiochannels) | Window.IsActive(radiorecordings) | Window.IsActive(radiotimers) | Window.IsActive(radiosearch)]</visible>
-		</control>
-		<control type="button" id="1813">
-			<description>widget</description>
-			<include>ButtonCommonValues</include>
-			<label>31972</label>
-			<label2>$INFO[Skin.String(colorbox.background.effect)]</label2>
-			<onclick>SetProperty(Dialog.NumItems,5)</onclick>
-			<onclick>SetProperty(Dialog.1.Label,Blur)</onclick>
-			<onclick>SetProperty(Dialog.1.BuiltIn,Skin.SetString(colorbox.background.effect,Blur))</onclick>
-			<onclick>SetProperty(Dialog.2.Label,Pixelate)</onclick>
-			<onclick>SetProperty(Dialog.2.BuiltIn,Skin.SetString(colorbox.background.effect,Pixelate))</onclick>
-			<onclick>SetProperty(Dialog.3.Label,Posterize)</onclick>
-			<onclick>SetProperty(Dialog.3.BuiltIn,Skin.SetString(colorbox.background.effect,Posterize))</onclick>
-			<onclick>SetProperty(Dialog.4.Label,Distort)</onclick>
-			<onclick>SetProperty(Dialog.4.BuiltIn,Skin.SetString(colorbox.background.effect,Distort))</onclick>
-			<onclick>SetProperty(Dialog.5.Label,None)</onclick>
-			<onclick>SetProperty(Dialog.5.BuiltIn,Skin.SetString(colorbox.background.effect,None))</onclick>
-			<onclick>RunScript(script.toolbox,info=selectdialog,header=Select Background Effect)</onclick>
 		</control>
 	</include>
 	<include name="PVRMediaMenu">
