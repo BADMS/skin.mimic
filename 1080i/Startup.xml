@@ -8,6 +8,10 @@
 	<onload condition="System.HasAddon(script.skin.info.service)">RunScript(script.skin.info.service)</onload>
 	<onload condition="!System.HasAddon(script.tv.show.next.aired)">Skin.SetBool(Disable.NextAired)</onload>
 	<onload condition="!String.IsEqual(Skin.String(HomeLayout),2) + !String.IsEqual(Skin.String(HomeLayout),3)">Skin.SetString(HomeLayout,1)</onload>
+	<onload>SetProperty(cfa_daemon_set,$INFO[Skin.String(background_fx)],home)</onload>
+	<onload>SetProperty(cpa_daemon_set,$INFO[Skin.String(focus_fx)],home)</onload>
+	<onload condition="String.IsEmpty(Skin.String(background_fx))">SetProperty(cfa_daemon_set,None,home)</onload>
+	<onload condition="String.IsEmpty(Skin.String(focus_fx))">SetProperty(cpa_daemon_set,None,home)</onload>
 	<controls>
 		<control type="button" id="10">
 			<description>trigger</description>

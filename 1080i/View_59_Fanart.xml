@@ -196,16 +196,6 @@
 					<include>FanartDetails</include>
 				</itemlayout>
 				<focusedlayout width="1920" height="370">
-					<control type="button">
-						<texturefocus>-</texturefocus>
-						<texturenofocus>-</texturenofocus>
-						<onfocus condition="!skin.string(colorbox.background.effect,None)">ClearProperty(cfa_ignore_set,home)</onfocus>
-						<onfocus condition="skin.string(colorbox.background.effect,Blur)">SetProperty(cfa_daemon_set,Blur,home)</onfocus>
-						<onfocus condition="skin.string(colorbox.background.effect,Pixelate)">SetProperty(cfa_daemon_set,Pixelate,home)</onfocus>
-						<onfocus condition="skin.string(colorbox.background.effect,Posterize)">SetProperty(cfa_daemon_set,Posterize,home)</onfocus>
-						<onfocus condition="skin.string(colorbox.background.effect,Distort)">SetProperty(cfa_daemon_set,Distort,home)</onfocus>
-						<onfocus condition="!Container.Content(songs)">RunScript(script.colorbox,info=distort,id='"$VAR[PosterVar]"',delta_x=50,delta_y=90,prefix=DistortInfo)</onfocus>
-					</control>
 					<include>FanartDetails</include>
 				</focusedlayout>
 			</control>

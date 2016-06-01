@@ -215,16 +215,6 @@
 						</control>
 					</itemlayout>
 					<focusedlayout height="120" width="1150" condition="![[Skin.HasSetting(Enable.SlimList.Movies) + [Container.Content(movies) | Container.Content(movie)]] | [Skin.HasSetting(Enable.SlimList.Misc) + ![Container.Content(movies) | Container.Content(movie)]]] + ![[Skin.HasSetting(Enable.WideList.Movies) + [Container.Content(movies) | Container.Content(movie)]] | [Skin.HasSetting(Enable.WideList.Misc) + ![Container.Content(movies) | Container.Content(movie)]]]">
-						<control type="button">
-							<texturefocus>-</texturefocus>
-							<texturenofocus>-</texturenofocus>
-							<onfocus condition="!skin.string(colorbox.background.effect,None)">ClearProperty(cfa_ignore_set,home)</onfocus>
-							<onfocus condition="skin.string(colorbox.background.effect,Blur)">SetProperty(cfa_daemon_set,Blur,home)</onfocus>
-							<onfocus condition="skin.string(colorbox.background.effect,Pixelate)">SetProperty(cfa_daemon_set,Pixelate,home)</onfocus>
-							<onfocus condition="skin.string(colorbox.background.effect,Posterize)">SetProperty(cfa_daemon_set,Posterize,home)</onfocus>
-							<onfocus condition="skin.string(colorbox.background.effect,Distort)">SetProperty(cfa_daemon_set,Distort,home)</onfocus>
-							<onfocus condition="!Container.Content(songs)">RunScript(script.colorbox,info=distort,id='"$VAR[PosterVar]"',delta_x=50,delta_y=90,prefix=DistortInfo)</onfocus>
-						</control>
 						<control type="image">
 							<visible>!String.IsEqual(Container.SortMethod,$LOCALIZE[13409]) + !Container.Content(addons)</visible>
 							<left>10</left>
@@ -305,7 +295,7 @@
 							<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes)</visible>
 						</control>
 						<control type="image">
-							<left>1072</left>
+							<left>1074</left>
 							<top>26</top>
 							<width>68</width>
 							<height>68</height>
@@ -423,16 +413,6 @@
 						</control>
 					</itemlayout>
 					<focusedlayout height="120" width="1740" condition="![[Skin.HasSetting(Enable.SlimList.Movies) + [Container.Content(movies) | Container.Content(movie)]] | [Skin.HasSetting(Enable.SlimList.Misc) + ![Container.Content(movies) | Container.Content(movie)]]] + [[Skin.HasSetting(Enable.WideList.Movies) + [Container.Content(movies) | Container.Content(movie)]] | [Skin.HasSetting(Enable.WideList.Misc) + ![Container.Content(movies) | Container.Content(movie)]]]">
-						<control type="button">
-							<texturefocus>-</texturefocus>
-							<texturenofocus>-</texturenofocus>
-							<onfocus condition="!skin.string(colorbox.background.effect,None)">ClearProperty(cfa_ignore_set,home)</onfocus>
-							<onfocus condition="skin.string(colorbox.background.effect,Blur)">SetProperty(cfa_daemon_set,Blur,home)</onfocus>
-							<onfocus condition="skin.string(colorbox.background.effect,Pixelate)">SetProperty(cfa_daemon_set,Pixelate,home)</onfocus>
-							<onfocus condition="skin.string(colorbox.background.effect,Posterize)">SetProperty(cfa_daemon_set,Posterize,home)</onfocus>
-							<onfocus condition="skin.string(colorbox.background.effect,Distort)">SetProperty(cfa_daemon_set,Distort,home)</onfocus>
-							<onfocus condition="!Container.Content(songs)">RunScript(script.colorbox,info=distort,id='"$VAR[PosterVar]"',delta_x=50,delta_y=90,prefix=DistortInfo)</onfocus>
-						</control>
 						<control type="image">
 							<visible>!String.IsEqual(Container.SortMethod,$LOCALIZE[13409]) + !Container.Content(addons)</visible>
 							<left>10</left>
@@ -592,16 +572,6 @@
 						</control>
 					</itemlayout>
 					<focusedlayout height="60" width="1150" condition="[[Skin.HasSetting(Enable.SlimList.Movies) + [Container.Content(movies) | Container.Content(movie)]] | [Skin.HasSetting(Enable.SlimList.Misc) + ![Container.Content(movies) | Container.Content(movie)]]] + ![[Skin.HasSetting(Enable.WideList.Movies) + [Container.Content(movies) | Container.Content(movie)]] | [Skin.HasSetting(Enable.WideList.Misc) + ![Container.Content(movies) | Container.Content(movie)]]]">
-						<control type="button">
-							<texturefocus>-</texturefocus>
-							<texturenofocus>-</texturenofocus>
-							<onfocus condition="!skin.string(colorbox.background.effect,None)">ClearProperty(cfa_ignore_set,home)</onfocus>
-							<onfocus condition="skin.string(colorbox.background.effect,Blur)">SetProperty(cfa_daemon_set,Blur,home)</onfocus>
-							<onfocus condition="skin.string(colorbox.background.effect,Pixelate)">SetProperty(cfa_daemon_set,Pixelate,home)</onfocus>
-							<onfocus condition="skin.string(colorbox.background.effect,Posterize)">SetProperty(cfa_daemon_set,Posterize,home)</onfocus>
-							<onfocus condition="skin.string(colorbox.background.effect,Distort)">SetProperty(cfa_daemon_set,Distort,home)</onfocus>
-							<onfocus condition="!Container.Content(songs)">RunScript(script.colorbox,info=distort,id='"$VAR[PosterVar]"',delta_x=50,delta_y=90,prefix=DistortInfo)</onfocus>
-						</control>
 						<control type="label">
 							<visible>ListItem.IsPlaying</visible>
 							<left>20</left>
@@ -723,16 +693,6 @@
 						</control>
 					</itemlayout>
 					<focusedlayout height="60" width="1740" condition="[[Skin.HasSetting(Enable.SlimList.Movies) + [Container.Content(movies) | Container.Content(movie)]] | [Skin.HasSetting(Enable.SlimList.Misc) + ![Container.Content(movies) | Container.Content(movie)]]] + [[Skin.HasSetting(Enable.WideList.Movies) + [Container.Content(movies) | Container.Content(movie)]] | [Skin.HasSetting(Enable.WideList.Misc) + ![Container.Content(movies) | Container.Content(movie)]]]">
-						<control type="button">
-							<texturefocus>-</texturefocus>
-							<texturenofocus>-</texturenofocus>
-							<onfocus condition="!skin.string(colorbox.background.effect,None)">ClearProperty(cfa_ignore_set,home)</onfocus>
-							<onfocus condition="skin.string(colorbox.background.effect,Blur)">SetProperty(cfa_daemon_set,Blur,home)</onfocus>
-							<onfocus condition="skin.string(colorbox.background.effect,Pixelate)">SetProperty(cfa_daemon_set,Pixelate,home)</onfocus>
-							<onfocus condition="skin.string(colorbox.background.effect,Posterize)">SetProperty(cfa_daemon_set,Posterize,home)</onfocus>
-							<onfocus condition="skin.string(colorbox.background.effect,Distort)">SetProperty(cfa_daemon_set,Distort,home)</onfocus>
-							<onfocus condition="!Container.Content(songs)">RunScript(script.colorbox,info=distort,id='"$VAR[PosterVar]"',delta_x=50,delta_y=90,prefix=DistortInfo)</onfocus>
-						</control>
 						<control type="label">
 							<visible>ListItem.IsPlaying</visible>
 							<left>20</left>

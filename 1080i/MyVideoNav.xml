@@ -4,12 +4,12 @@
 	<menucontrol>9051</menucontrol>
 	<allowoverlay>true</allowoverlay>
 	<views>50,52,507,51,53,56,57,59,500,501,502,504,505,509,520,55</views>
-	<onload>SetProperty(cfa_ignore_set,True,home)</onload>
 	<onload>SetProperty(Window.HasSettings,True,home)</onload>
 	<onload>ClearProperty(MediaMenu,Home)</onload>
 	<onunload>ClearProperty(MediaMenu,Home)</onunload>
 	<onunload>ClearProperty(Window.HasSettings,Home)</onunload>
-	<onunload>SetProperty(cfa_ignore_set,True,home)</onunload>
+	<onunload>Skin.SetString(background_fx,$INFO[Window(home).Property(cfa_daemon_set)])</onunload>
+	<onunload>Skin.SetString(focus_fx,$INFO[Window(home).Property(cpa_daemon_set)])</onunload>
 	<onload condition="System.HasAddon(script.tv.show.next.aired) + !Skin.HasSetting(Disable.NextAired)">RunScript(script.tv.show.next.aired,backend=True)</onload>
 	<onload>RunScript(script.skinshortcuts,type=buildxml&amp;mode=single&amp;quicknavmenuID=9013)</onload>
 	<controls>

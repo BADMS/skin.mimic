@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
 	<variable name="FocusImage">
-		<value condition="Skin.HasSetting(Distort.Focus)">$INFO[Window(home).Property(ImageFiltercpa)]</value>
+		<value condition="!String.IsEqual(Window(home).Property(cpa_daemon_set),None)">$INFO[Window(home).Property(ImageFiltercpa)]</value>
 		<value>listselect_fo.png</value>
 	</variable>
 	<variable name="ColorboxImage">
-		<value condition="Skin.String(colorbox.background.effect,Blur)">$INFO[Window(home).Property(ImageFiltercfa1)]</value>
-		<value condition="Skin.String(colorbox.background.effect,Pixelate)">$INFO[Window(home).Property(ImageFiltercfa2)]</value>
-		<value condition="Skin.String(colorbox.background.effect,Posterize)">$INFO[Window(home).Property(ImageFiltercfa3)]</value>
-		<value condition="Skin.String(colorbox.background.effect,Distort)">$INFO[Window(home).Property(ImageFiltercfa4)]</value>
-		<value condition="Skin.String(colorbox.background.effect,None)">$INFO[ListItem.Art(fanart)]</value>
+		<value condition="String.IsEqual(Window(home).Property(cfa_daemon_set),None)">$INFO[ListItem.Art(fanart)]</value>
+		<value>$INFO[Window(home).Property(ImageFiltercfa)]</value>
 	</variable>
 	<variable name="GlobalBackgroundVar">
 		<value condition="Skin.HasSetting(ViewFanart.Extra.Fanart)">$INFO[Window(Home).Property(SkinHelper.ExtraFanArtPath)]</value>

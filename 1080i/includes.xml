@@ -265,28 +265,37 @@
 			<description>widget</description>
 			<include>ButtonCommonValues</include>
 			<label>31972</label>
-			<label2>$INFO[Skin.String(colorbox.background.effect)]</label2>
+			<label2>$INFO[Window(home).Property(cfa_daemon_set)]</label2>
 			<onclick>SetProperty(Dialog.NumItems,5)</onclick>
 			<onclick>SetProperty(Dialog.1.Label,Blur)</onclick>
-			<onclick>SetProperty(Dialog.1.BuiltIn,Skin.SetString(colorbox.background.effect,Blur))</onclick>
+			<onclick>SetProperty(Dialog.1.BuiltIn,SetProperty(cfa_daemon_set,Blur,home))</onclick>
 			<onclick>SetProperty(Dialog.2.Label,Pixelate)</onclick>
-			<onclick>SetProperty(Dialog.2.BuiltIn,Skin.SetString(colorbox.background.effect,Pixelate))</onclick>
+			<onclick>SetProperty(Dialog.2.BuiltIn,SetProperty(cfa_daemon_set,Pixelate,home))</onclick>
 			<onclick>SetProperty(Dialog.3.Label,Posterize)</onclick>
-			<onclick>SetProperty(Dialog.3.BuiltIn,Skin.SetString(colorbox.background.effect,Posterize))</onclick>
+			<onclick>SetProperty(Dialog.3.BuiltIn,SetProperty(cfa_daemon_set,Posterize,home))</onclick>
 			<onclick>SetProperty(Dialog.4.Label,Distort)</onclick>
-			<onclick>SetProperty(Dialog.4.BuiltIn,Skin.SetString(colorbox.background.effect,Distort))</onclick>
+			<onclick>SetProperty(Dialog.4.BuiltIn,SetProperty(cfa_daemon_set,Distort,home))</onclick>
 			<onclick>SetProperty(Dialog.5.Label,None)</onclick>
-			<onclick>SetProperty(Dialog.5.BuiltIn,Skin.SetString(colorbox.background.effect,None))</onclick>
+			<onclick>SetProperty(Dialog.5.BuiltIn,SetProperty(cfa_daemon_set,None,home))</onclick>
 			<onclick>RunScript(script.toolbox,info=selectdialog,header=Select Background Effect)</onclick>
 		</control>
-		<control type="radiobutton" id="11115">
-			<label>31973</label>
+		<control type="button" id="11115">
+			<description>widget</description>
 			<include>ButtonCommonValues</include>
-			<onclick>Skin.ToggleSetting(Distort.Focus)</onclick>
-			<onclick condition="!Skin.HasSetting(Distort.Focus)">ClearProperty(cpa_ignore_set,home)</onclick>
-			<onclick condition="Skin.HasSetting(Distort.Focus)">SetProperty(cpa_ignore_set,True,home)</onclick>
-			<selected>Skin.HasSetting(Distort.Focus)</selected>
-			<visible>![Window.IsActive(eventlog) | Window.IsActive(tvchannels) | Window.IsActive(tvrecordings) | Window.IsActive(tvtimers) | Window.IsActive(tvtimerrules) | Window.IsActive(tvsearch) | Window.IsActive(radiochannels) | Window.IsActive(radiorecordings) | Window.IsActive(radiotimers) | Window.IsActive(radiosearch)]</visible>
+			<label>31973</label>
+			<label2>$INFO[Window(home).Property(cpa_daemon_set)]</label2>
+			<onclick>SetProperty(Dialog.NumItems,5)</onclick>
+			<onclick>SetProperty(Dialog.1.Label,Blur)</onclick>
+			<onclick>SetProperty(Dialog.1.BuiltIn,SetProperty(cpa_daemon_set,Blur,home))</onclick>
+			<onclick>SetProperty(Dialog.2.Label,Pixelate)</onclick>
+			<onclick>SetProperty(Dialog.2.BuiltIn,SetProperty(cpa_daemon_set,Pixelate,home))</onclick>
+			<onclick>SetProperty(Dialog.3.Label,Posterize)</onclick>
+			<onclick>SetProperty(Dialog.3.BuiltIn,SetProperty(cpa_daemon_set,Posterize,home))</onclick>
+			<onclick>SetProperty(Dialog.4.Label,Distort)</onclick>
+			<onclick>SetProperty(Dialog.4.BuiltIn,SetProperty(cpa_daemon_set,Distort,home))</onclick>
+			<onclick>SetProperty(Dialog.5.Label,None)</onclick>
+			<onclick>SetProperty(Dialog.5.BuiltIn,SetProperty(cpa_daemon_set,None,home))</onclick>
+			<onclick>RunScript(script.toolbox,info=selectdialog,header=Select Focus Effect)</onclick>
 		</control>
 	</include>
 	<include name="PVRMediaMenu">

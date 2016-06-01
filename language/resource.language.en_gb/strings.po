@@ -1391,3 +1391,7 @@ msgstr ""
 msgctxt "#31972"
 msgid "Colorbox effect"
 msgstr ""
+
+msgctxt "#31973"
+msgid "Colorbox focus"
+msgstr ""
