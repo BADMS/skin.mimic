@@ -44,7 +44,7 @@
             	<left>370</left>
                 <width>1179</width>
                 <height>674</height>
-                <texture>listselect_fo.png</texture>
+                <texture>$VAR[FocusImage]</texture>
                 <colordiffuse>$VAR[ColorHighlightVar]</colordiffuse>
             </control>
             <!--container-->

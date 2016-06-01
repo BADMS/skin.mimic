@@ -15,7 +15,7 @@
                     <width>254</width>
                     <height>369</height>
                     <include>FocusedBackgroundFade</include>
-                    <texture colordiffuse="$VAR[ColorHighlightVar]">listselect_fo.png</texture>
+                    <texture colordiffuse="$VAR[ColorHighlightVar]">$VAR[FocusImage]</texture><fadetime>2000</fadetime>
                     <animation effect="slide" end="0,357" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Row,0)">Conditional</animation>
                     <animation effect="slide" end="242,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,5)">Conditional</animation>
                     <animation effect="slide" end="242,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,4)">Conditional</animation>
@@ -31,7 +31,7 @@
                     <width>425</width>
                     <height>250</height>
                     <include>FocusedBackgroundFade</include>
-                    <texture colordiffuse="$VAR[ColorHighlightVar]">listselect_fo.png</texture>
+                    <texture colordiffuse="$VAR[ColorHighlightVar]">$VAR[FocusImage]</texture><fadetime>2000</fadetime>
                     <animation effect="slide" end="0,238" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Row,1)">Conditional</animation>
                     <animation effect="slide" end="0,238" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Row,0)">Conditional</animation>
                     <animation effect="slide" end="413,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,2)">Conditional</animation>
@@ -45,7 +45,7 @@
                     <width>921</width>
                     <height>190</height>
                     <include>FocusedBackgroundFade</include>
-                    <texture colordiffuse="$VAR[ColorHighlightVar]">listselect_fo.png</texture>
+                    <texture colordiffuse="$VAR[ColorHighlightVar]">$VAR[FocusImage]</texture><fadetime>2000</fadetime>
                     <animation effect="slide" end="0,178" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Row,2)">Conditional</animation>
                     <animation effect="slide" end="0,178" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Row,1)">Conditional</animation>
                     <animation effect="slide" end="0,178" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Row,0)">Conditional</animation>
@@ -58,7 +58,7 @@
                     <width>436</width>
                     <height>369</height>
                     <include>FocusedBackgroundFade</include>
-                    <texture colordiffuse="$VAR[ColorHighlightVar]">listselect_fo.png</texture>
+                    <texture colordiffuse="$VAR[ColorHighlightVar]">$VAR[FocusImage]</texture><fadetime>2000</fadetime>
                     <animation effect="slide" end="0,357" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Row,0)">Conditional</animation>
                     <animation effect="slide" end="424,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,2)">Conditional</animation>
                     <animation effect="slide" end="424,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,1)">Conditional</animation>
@@ -71,7 +71,7 @@
                     <width>369</width>
                     <height>369</height>
                     <include>FocusedBackgroundFade</include>
-                    <texture colordiffuse="$VAR[ColorHighlightVar]">listselect_fo.png</texture>
+                    <texture colordiffuse="$VAR[ColorHighlightVar]">$VAR[FocusImage]</texture><fadetime>2000</fadetime>
                     <animation effect="slide" end="0,357" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Row,0)">Conditional</animation>
                     <animation effect="slide" end="357,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,3)">Conditional</animation>
                     <animation effect="slide" end="357,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,2)">Conditional</animation>
@@ -691,7 +691,7 @@
                 <width>292</width>
                 <height>292</height>
                 <include>FocusedBackgroundFade</include>
-                <texture colordiffuse="$VAR[ColorHighlightVar]">listselect_fo.png</texture>
+                <texture colordiffuse="$VAR[ColorHighlightVar]">$VAR[FocusImage]</texture><fadetime>2000</fadetime>
                 <animation effect="slide" end="0,280" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Row,1)">Conditional</animation>
                 <animation effect="slide" end="0,280" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Row,0)">Conditional</animation>
                 <animation effect="slide" end="280,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,4)">Conditional</animation>
@@ -847,7 +847,7 @@
                 <width>436</width>
                 <height>369</height>
                 <include>FocusedBackgroundFade</include>
-                <texture colordiffuse="$VAR[ColorHighlightVar]">listselect_fo.png</texture>
+                <texture colordiffuse="$VAR[ColorHighlightVar]">$VAR[FocusImage]</texture><fadetime>2000</fadetime>
                 <animation effect="slide" end="0,357" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(510).Row,0)">Conditional</animation>
                 <animation effect="slide" end="424,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(510).Column,2)">Conditional</animation>
                 <animation effect="slide" end="424,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(510).Column,1)">Conditional</animation>
@@ -996,7 +996,7 @@
                 <width>392</width>
                 <height>392</height>
                 <include>FocusedBackgroundFade</include>
-                <texture colordiffuse="$VAR[ColorHighlightVar]">listselect_fo.png</texture>
+                <texture colordiffuse="$VAR[ColorHighlightVar]">$VAR[FocusImage]</texture><fadetime>2000</fadetime>
                 <animation effect="slide" end="0,380" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(520).Row,0)">Conditional</animation>
                 <animation effect="slide" end="380,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(520).Column,2)">Conditional</animation>
                 <animation effect="slide" end="380,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(520).Column,1)">Conditional</animation>

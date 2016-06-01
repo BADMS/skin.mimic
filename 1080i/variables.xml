@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<variable name="FocusImage">
+		<value condition="Skin.HasSetting(Distort.Focus)">$INFO[Window(home).Property(ImageFiltercpa)]</value>
+		<value>listselect_fo.png</value>
+	</variable>
 	<variable name="ColorboxImage">
 		<value condition="Skin.String(colorbox.background.effect,Blur)">$INFO[Window(home).Property(ImageFiltercfa1)]</value>
 		<value condition="Skin.String(colorbox.background.effect,Pixelate)">$INFO[Window(home).Property(ImageFiltercfa2)]</value>

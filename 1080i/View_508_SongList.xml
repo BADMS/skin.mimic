@@ -38,7 +38,7 @@
 							<visible>Control.HasFocus(508)</visible>
 							<width>1300</width>
 							<height>275</height>
-							<texture>listselect_fo.png</texture>
+							<texture>$VAR[FocusImage]</texture>
 							<colordiffuse>$VAR[ColorHighlightVar]</colordiffuse>
 						</control>
 						<control type="image">

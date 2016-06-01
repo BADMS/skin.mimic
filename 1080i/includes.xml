@@ -279,6 +279,15 @@
 			<onclick>SetProperty(Dialog.5.BuiltIn,Skin.SetString(colorbox.background.effect,None))</onclick>
 			<onclick>RunScript(script.toolbox,info=selectdialog,header=Select Background Effect)</onclick>
 		</control>
+		<control type="radiobutton" id="11115">
+			<label>31973</label>
+			<include>ButtonCommonValues</include>
+			<onclick>Skin.ToggleSetting(Distort.Focus)</onclick>
+			<onclick condition="!Skin.HasSetting(Distort.Focus)">ClearProperty(cpa_ignore_set,home)</onclick>
+			<onclick condition="Skin.HasSetting(Distort.Focus)">SetProperty(cpa_ignore_set,True,home)</onclick>
+			<selected>Skin.HasSetting(Distort.Focus)</selected>
+			<visible>![Window.IsActive(eventlog) | Window.IsActive(tvchannels) | Window.IsActive(tvrecordings) | Window.IsActive(tvtimers) | Window.IsActive(tvtimerrules) | Window.IsActive(tvsearch) | Window.IsActive(radiochannels) | Window.IsActive(radiorecordings) | Window.IsActive(radiotimers) | Window.IsActive(radiosearch)]</visible>
+		</control>
 	</include>
 	<include name="PVRMediaMenu">
 		<control type="group">

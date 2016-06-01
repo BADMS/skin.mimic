@@ -19,7 +19,7 @@
 	                    <visible>Control.HasFocus(50)</visible>
 	                    <animation effect="fade" time="320" delay="200">Visible</animation>
 	                    <animation effect="fade" time="50">Hidden</animation>
-	                    <texture colordiffuse="$VAR[ColorHighlightVar]">listselect_fo.png</texture>
+	                    <texture colordiffuse="$VAR[ColorHighlightVar]">$VAR[FocusImage]</texture><fadetime>2000</fadetime>
 	                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,5)">Conditional</animation>
 	                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,4)">Conditional</animation>
 	                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,3)">Conditional</animation>
@@ -38,7 +38,7 @@
 	                    <visible>Control.HasFocus(50)</visible>
 	                    <animation effect="fade" time="320" delay="200">Visible</animation>
 	                    <animation effect="fade" time="50">Hidden</animation>
-	                    <texture colordiffuse="$VAR[ColorHighlightVar]">listselect_fo.png</texture>
+	                    <texture colordiffuse="$VAR[ColorHighlightVar]">$VAR[FocusImage]</texture><fadetime>2000</fadetime>
 	                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,5)">Conditional</animation>
 	                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,4)">Conditional</animation>
 	                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,3)">Conditional</animation>
@@ -57,7 +57,7 @@
 	                    <visible>Control.HasFocus(50)</visible>
 	                    <animation effect="fade" time="320" delay="200">Visible</animation>
 	                    <animation effect="fade" time="50">Hidden</animation>
-	                    <texture colordiffuse="$VAR[ColorHighlightVar]">listselect_fo.png</texture>
+	                    <texture colordiffuse="$VAR[ColorHighlightVar]">$VAR[FocusImage]</texture><fadetime>2000</fadetime>
 	                    <animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,12)">Conditional</animation>
 	                    <animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,11)">Conditional</animation>
 	                    <animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,10)">Conditional</animation>
@@ -83,7 +83,7 @@
 	                    <visible>Control.HasFocus(50)</visible>
 	                    <animation effect="fade" time="320" delay="200">Visible</animation>
 	                    <animation effect="fade" time="50">Hidden</animation>
-	                    <texture colordiffuse="$VAR[ColorHighlightVar]">listselect_fo.png</texture>
+	                    <texture colordiffuse="$VAR[ColorHighlightVar]">$VAR[FocusImage]</texture><fadetime>2000</fadetime>
 	                    <animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,12)">Conditional</animation>
 	                    <animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,11)">Conditional</animation>
 	                    <animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,10)">Conditional</animation>
@@ -827,7 +827,7 @@
 					<control type="image">
 						<width>560</width>
 						<height>560</height>
-						<texture colordiffuse="33000000">listselect_fo.png</texture>
+						<texture colordiffuse="33000000">$VAR[FocusImage]</texture>
 					</control>
 					<control type="image">
 						<left>80</left>
