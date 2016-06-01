@@ -654,7 +654,7 @@
     	<value condition="Window.IsActive(home) + Window.IsVisible(shutdownmenu)">$LOCALIZE[13005]</value>
     	<value condition="Window.IsActive(home) + Window.IsVisible(busydialog)">$LOCALIZE[503]</value>
     	<value condition="Window.IsActive(home)">$VAR[LibraryStatsVar]</value>
-    	<value condition="!Window.IsActive(movieinformation)">$INFO[Container.NumItems,, $LOCALIZE[31025]]$INFO[ListItem.Property(TotalSeasons), [B],[/B]s]$INFO[ListItem.Property(TotalEpisodes), [B],[/B]e]$INFO[ListItem.Property(WatchedEpisodes), [B],[/B]w]$INFO[ListItem.Property(UnWatchedEpisodes), [B],[/B]u]$INFO[Window(Home).Property(SkinHelper.RottenTomatoesConsensus),[I]",[/I]"]$VAR[LabelNextAiredDetails]</value>
+    	<value condition="!Window.IsActive(movieinformation)">$INFO[Container.NumItems,, $LOCALIZE[31025]]$INFO[Window(Home).Property(SkinHelper.RottenTomatoesConsensus),[I]",[/I]"]$VAR[LabelNextAiredDetails]</value>
     </variable>
 	<variable name="LabelNextAiredDetails">
 		<value condition="!IsEmpty(Window(Home).Property(NextAired.NextDate))">[B]$INFO[Window(Home).Property(NextAired.NextTitle), ][/B]$INFO[Window(Home).Property(NextAired.AirTime), ]$INFO[Window(Home).Property(NextAired.NextDate), ]</value>
