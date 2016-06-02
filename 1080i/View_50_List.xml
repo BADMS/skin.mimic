@@ -806,6 +806,14 @@
 						<width>560</width>
 						<height>840</height>
 						<aspectratio align="center" aligny="center">scale</aspectratio>
+						<bordersize>-20</bordersize>
+						<fadetime>2000</fadetime>
+						<texture background="true" diffuse="thumbs/colorbox_poster_mask.png" colordiffuse="$VAR[LibColorHighlightVar]">$VAR[FocusImage]</texture>
+					</control>
+					<control type="image">
+						<width>560</width>
+						<height>840</height>
+						<aspectratio align="center" aligny="center">scale</aspectratio>
 						<texture background="true">$INFO[ListItem.Icon]</texture>
 						<fadetime>IconCrossfadeTime</fadetime>
 					</control>
@@ -814,6 +822,14 @@
 					<left>1276</left>
 					<visible>[Window.IsActive(pictures) | Container.Content(files) | Container.Content(actors) | Container.Content(countries) | [String.Contains(Container.FolderPath,plugin.video) + !Container.Content(episodes)] | Window.IsActive(videoplaylist) | $EXP[PluginAdvancedLauncher] | $EXP[PluginSuperFavourites]] + !String.StartsWith(ListItem.Icon,Default)</visible>
 					<animation effect="slide" start="0,0" end="0,15" time="0" tween="cubic" easing="inout" condition="$EXP[PluginAdvancedLauncher] | $EXP[PluginSuperFavourites]">Conditional</animation>
+					<control type="image">
+						<width>560</width>
+						<height>840</height>
+						<aspectratio align="center" aligny="center">scale</aspectratio>
+						<bordersize>-20</bordersize>
+						<fadetime>2000</fadetime>
+						<texture background="true" diffuse="thumbs/colorbox_poster_mask.png" colordiffuse="$VAR[LibColorHighlightVar]">$VAR[FocusImage]</texture>
+					</control>
 					<control type="image">
 						<width>560</width>
 						<height>840</height>
@@ -827,6 +843,14 @@
 					<itemgap>15</itemgap>
 					<visible>[Container.Content(addons) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(musicvideos)] + !String.StartsWith(ListItem.Icon,Default)</visible>
 					<animation effect="slide" time="0" start="0,0" end="0,15" condition="Window.IsActive(programs) | Window.IsActive(addonbrowser)">Conditional</animation>
+					<control type="image">
+						<width>560</width>
+						<height>560</height>
+						<aspectratio align="center" aligny="center">scale</aspectratio>
+						<bordersize>-20</bordersize>
+						<fadetime>2000</fadetime>
+						<texture background="true" diffuse="thumbs/colorbox_poster_mask.png" colordiffuse="$VAR[LibColorHighlightVar]">$VAR[FocusImage]</texture>
+					</control>
 					<control type="image">
 						<width>560</width>
 						<height>560</height>
@@ -879,6 +903,24 @@
 				<control type="group">
 					<left>1276</left>
 					<visible>Container.Content(episodes) + !String.StartsWith(ListItem.Icon,Default)</visible>
+					<control type="image">
+						<width>560</width>
+						<height>342</height>
+						<aspectratio align="center" aligny="center">scale</aspectratio>
+						<bordersize>-20</bordersize>
+						<fadetime>2000</fadetime>
+						<texture background="true" diffuse="thumbs/colorbox_poster_mask.png" colordiffuse="$VAR[LibColorHighlightVar]">$VAR[FocusImage]</texture>
+						<visible>!String.IsEmpty(ListItem.Plot)</visible>
+					</control>
+					<control type="image">
+						<width>560</width>
+						<height>840</height>
+						<aspectratio align="center" aligny="center">scale</aspectratio>
+						<bordersize>-20</bordersize>
+						<fadetime>2000</fadetime>
+						<texture background="true" diffuse="thumbs/colorbox_poster_mask.png" colordiffuse="$VAR[LibColorHighlightVar]">$VAR[FocusImage]</texture>
+						<visible>String.IsEmpty(ListItem.Plot)</visible>
+					</control>
 					<control type="image">
 						<width>560</width>
 						<height>342</height>
