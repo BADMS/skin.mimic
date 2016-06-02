@@ -44,9 +44,9 @@
             	<left>370</left>
                 <width>1179</width>
                 <height>674</height>
-                <texture>$VAR[FocusImage]</texture>
-                <colordiffuse>$VAR[ColorHighlightVar]</colordiffuse>
-            </control>
+				<fadetime>2000</fadetime>
+				<texture colordiffuse="$VAR[LibColorHighlightVar]">$VAR[FocusImage]</texture>
+			</control>
             <!--container-->
             <control type="wraplist" id="504">
                 <viewtype label="31054">info</viewtype>

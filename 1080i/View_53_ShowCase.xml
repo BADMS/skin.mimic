@@ -419,6 +419,7 @@
 					<width>604</width>
 					<height>340</height>
 					<aspectratio>scale</aspectratio>
+					<timeperimage>2000</timeperimage>
 					<imagepath background="true">$VAR[ExtraFanartVar]</imagepath>
 				</control>
 			</control>
@@ -588,6 +589,17 @@
 	<include name="MovieShowCaseItem0">
 		<control type="group">
 			<visible>!String.IsEmpty(Container(53).ListItemNoWrap(0).FolderPath) | Skin.HasSetting(Enable.ShowcaseWrap)</visible>
+			<control type="image">
+				<left>-4</left>
+				<top>-16</top>
+				<width>304</width>
+				<height>436</height>
+				<align>center</align>
+				<bordersize>8</bordersize>
+				<aspectratio scalediffuse="false">scale</aspectratio>
+				<fadetime>2000</fadetime>
+				<texture background="true" diffuse="thumbs/colorbox_poster_mask.png" colordiffuse="$VAR[LibColorHighlightVar]">$VAR[FocusImage]</texture>
+			</control>
 			<control type="image">
 				<texture background="true" fallback="DefaultFallback.png">$VAR[ShowcaseItem0Var]</texture>
 				<include>MovieShowcaseThumb</include>

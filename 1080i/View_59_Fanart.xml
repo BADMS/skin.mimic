@@ -57,7 +57,7 @@
 				<width>400</width>
 				<height>45</height>
 				<aspectratio>keep</aspectratio>
-				<texture colordiffuse="$VAR[ColorHighlightVar]">$VAR[StarRatingVar]</texture>
+				<texture colordiffuse="$VAR[LibColorHighlightVar]">$VAR[StarRatingVar]</texture>
 			</control>
 		</control>
 		<control type="group">
@@ -118,7 +118,7 @@
 				<width>400</width>
 				<height>45</height>
 				<aspectratio>keep</aspectratio>
-				<texture colordiffuse="$VAR[ColorHighlightVar]">$VAR[StarRatingVar]</texture>
+				<texture colordiffuse="$VAR[LibColorHighlightVar]">$VAR[StarRatingVar]</texture>
 			</control>
 		</control>
 		<control type="group">

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
   id="skin.mimix"
-  version="4.0.2"
+  version="1.0.0"
   name="mimix"
-  provider-name="braz">
+  provider-name="badaas">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 		<import addon="script.mimic.extras" version="1.0.0"/>
@@ -22,32 +22,32 @@
 		<res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="bg_BG">mimix от braz</summary>
-		<summary lang="ca_ES">mimix per braz</summary>
-		<summary lang="de_DE">mimix von braz</summary>
-		<summary lang="en_AU">mimix by braz</summary>
-		<summary lang="en_GB">mimix by braz</summary>
-		<summary lang="en_NZ">mimix by braz</summary>
-		<summary lang="en_US">mimix by braz</summary>
-		<summary lang="es_ES">mimix por braz</summary>
-		<summary lang="et_EE">mimix autorilt braz</summary>
-		<summary lang="fi_FI">brazin mimix</summary>
-		<summary lang="fr_CA">Mimique par braz</summary>
-		<summary lang="fr_FR">mimix par braz</summary>
-		<summary lang="gl_ES">mimix por braz</summary>
-		<summary lang="hu_HU">mimix braz-tól</summary>
-		<summary lang="it_IT">mimix by braz</summary>
-		<summary lang="ko_KR">braz이 만든 mimix</summary>
-		<summary lang="lt_LT">mimix, sukurta braz</summary>
-		<summary lang="ms_MY">mimix oleh byranbrazil</summary>
-		<summary lang="nl_NL">mimix door braz</summary>
-		<summary lang="pl_PL">mimix autorstwa braz</summary>
-		<summary lang="pt_BR">mimix por braz</summary>
-		<summary lang="pt_PT">mimix por braz</summary>
-		<summary lang="sr_RS@latin">mimix od braz</summary>
-		<summary lang="sv_SE">mimix av braz</summary>
-		<summary lang="tr_TR">mimix, yazan: braz</summary>
-		<summary lang="zh_CN">mimix by braz</summary>
+		<summary lang="bg_BG">mimix от badaas</summary>
+		<summary lang="ca_ES">mimix per badaas</summary>
+		<summary lang="de_DE">mimix von badaas</summary>
+		<summary lang="en_AU">mimix by badaas</summary>
+		<summary lang="en_GB">mimix by badaas</summary>
+		<summary lang="en_NZ">mimix by badaas</summary>
+		<summary lang="en_US">mimix by badaas</summary>
+		<summary lang="es_ES">mimix por badaas</summary>
+		<summary lang="et_EE">mimix autorilt badaas</summary>
+		<summary lang="fi_FI">badaasin mimix</summary>
+		<summary lang="fr_CA">Mimique par badaas</summary>
+		<summary lang="fr_FR">mimix par badaas</summary>
+		<summary lang="gl_ES">mimix por badaas</summary>
+		<summary lang="hu_HU">mimix badaas-tól</summary>
+		<summary lang="it_IT">mimix by badaas</summary>
+		<summary lang="ko_KR">badaas이 만든 mimix</summary>
+		<summary lang="lt_LT">mimix, sukurta badaas</summary>
+		<summary lang="ms_MY">mimix oleh byranbadaasil</summary>
+		<summary lang="nl_NL">mimix door badaas</summary>
+		<summary lang="pl_PL">mimix autorstwa badaas</summary>
+		<summary lang="pt_BR">mimix por badaas</summary>
+		<summary lang="pt_PT">mimix por badaas</summary>
+		<summary lang="sr_RS@latin">mimix od badaas</summary>
+		<summary lang="sv_SE">mimix av badaas</summary>
+		<summary lang="tr_TR">mimix, yazan: badaas</summary>
+		<summary lang="zh_CN">mimix by badaas</summary>
 		<description lang="bg_BG">mimix: Облик за Kodi съдържащ елементи от reFocus и Aeon Nox. Благодарности на  BigNoid и Jeroen.</description>
 		<description lang="ca_ES">mimix: Una pell amb tocs de reFocus i d'Aeon Nox. Gràcies a BigNoid i Jeroen.</description>
 		<description lang="de_DE">mimix: Eine dreiste Zusammenstellung von Features meiner Lieblings-Skins, darunter Aeon Nox, reFocus und Artic Zephyr.</description>
@@ -71,9 +71,9 @@
 		<description lang="tr_TR">mimix: Benim en sevdiğim  Aeon Nox, reFocus, ve Arctic Zephyr dış görünümlerin özelliklerinin utanmazca birleşmesi.</description>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-		<forum>http://forum.kodi.tv/forumdisplay.php?fid=218</forum>
+		<forum>http://forum.kodi.tv/</forum>
 		<website></website>
 		<email></email>
-		<source>https://github.com/braz96/skin.mimix</source>
+		<source>https://github.com/BADMS/skin.mimix</source>
 	</extension>
 </addon>

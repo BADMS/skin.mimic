@@ -10,6 +10,7 @@
 	<onload condition="!String.IsEqual(Skin.String(HomeLayout),2) + !String.IsEqual(Skin.String(HomeLayout),3)">Skin.SetString(HomeLayout,1)</onload>
 	<onload>SetProperty(cfa_daemon_set,$INFO[Skin.String(background_fx)],home)</onload>
 	<onload>SetProperty(cpa_daemon_set,$INFO[Skin.String(focus_fx)],home)</onload>
+	<onload>SetProperty(cpa_daemon_fallback,special://skin/extras/misc/empty.jpg,home)</onload>
 	<onload condition="String.IsEmpty(Skin.String(background_fx))">SetProperty(cfa_daemon_set,None,home)</onload>
 	<onload condition="String.IsEmpty(Skin.String(focus_fx))">SetProperty(cpa_daemon_set,None,home)</onload>
 	<controls>

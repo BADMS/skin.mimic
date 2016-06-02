@@ -175,7 +175,7 @@
                 <animation effect="fade" time="300" tween="cubic" condition="[Control.IsVisible($PARAM[id]) + Skin.HasSetting(Enable.PersistentWidgets)] | [Control.HasFocus($PARAM[id]) + !Skin.HasSetting(Enable.PersistentWidgets)]" start="0" end="100">Visible</animation>
                 <animation effect="fade" time="0" condition="[Control.IsVisible($PARAM[id]) + Skin.HasSetting(Enable.PersistentWidgets)] | [Control.HasFocus($PARAM[id]) + !Skin.HasSetting(Enable.PersistentWidgets)]" start="100" end="0">Hidden</animation>
                 <animation effect="slide" time="200" tween="sine" easing="inout" end="0,700" start="0">WindowClose</animation>
-                <animation effect="slide" time="0" start="0" end="15" condition="Skin.HasSetting(WidgetStyle)">Conditional</animation>
+                <animation effect="slide" time="0" start="0" end="15" condition="true">Conditional</animation>
                 <left>950</left>
                 <top>524</top>
                 <width>920</width>
@@ -187,45 +187,7 @@
                 <visible>!Container($PARAM[id]).IsUpdating</visible>
             </control>
             <control type="group">
-                <visible>!Skin.HasSetting(WidgetStyle) + Control.HasFocus($PARAM[id]) + !String.IsEqual(Container(9000).ListItem.Property(widget),weather)</visible>
-                <animation effect="fade" start="0" end="100" delay="800" time="250" reversible="false">Visible</animation>
-                <animation effect="slide" time="200" tween="sine" easing="inout" end="0,700" start="0">WindowClose</animation>
-                <control type="group">
-                    <visible>!String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[31313]) + !String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[31100])</visible>
-                    <top>895</top>
-                    <left>349</left>
-                    <control type="label">
-                        <width>1551</width>
-                        <height>50</height>
-                        <font>font16_title</font>
-                        <label>$VAR[$PARAM[widgetLine1]] $VAR[$PARAM[widgetLine2]]</label>
-                    </control>
-                </control>
-                <control type="group">
-                    <visible>String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[31313])</visible>
-                    <top>895</top>
-                    <left>527</left>
-                    <control type="label">
-                        <width>1373</width>
-                        <height>50</height>
-                        <font>font16_title</font>
-                        <label>$VAR[$PARAM[widgetLine1]] $VAR[$PARAM[widgetLine2]]</label>
-                    </control>
-                </control>
-                <control type="group">
-                    <visible>String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[31100])</visible>
-                    <top>895</top>
-                    <left>782</left>
-                    <control type="label">
-                        <width>1118</width>
-                        <height>50</height>
-                        <font>font16_title</font>
-                        <label>$VAR[$PARAM[widgetLine1]] $VAR[$PARAM[widgetLine2]]</label>
-                    </control>
-                </control>
-            </control>
-            <control type="group">
-                <visible>Skin.HasSetting(WidgetStyle) + Control.HasFocus($PARAM[id]) + !String.IsEqual(Container(9000).ListItem.Property(widget),weather)</visible>
+                <visible>Control.HasFocus($PARAM[id]) + !String.IsEqual(Container(9000).ListItem.Property(widget),weather)</visible>
                 <animation effect="fade" time="300" tween="cubic" condition="[Control.IsVisible($PARAM[id]) + Skin.HasSetting(Enable.PersistentWidgets)] | [Control.HasFocus($PARAM[id]) + !Skin.HasSetting(Enable.PersistentWidgets)]" start="0" end="100">Visible</animation>
                 <animation effect="fade" time="0" condition="[Control.IsVisible($PARAM[id]) + Skin.HasSetting(Enable.PersistentWidgets)] | [Control.HasFocus($PARAM[id]) + !Skin.HasSetting(Enable.PersistentWidgets)]" start="100" end="0">Hidden</animation>
                 <animation effect="slide" time="200" tween="sine" easing="inout" end="0,700" start="0">WindowClose</animation>

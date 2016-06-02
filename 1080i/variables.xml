@@ -390,14 +390,6 @@
 		<value condition="Control.HasFocus(500)">$LOCALIZE[31933]</value>
 		<value condition="Control.HasFocus(501)">$LOCALIZE[31162]</value>
 	</variable>
-	<variable name="HorizontalListNavVar">
-		<value condition="Skin.HasSetting(HorizontalListNav)">$LOCALIZE[31005]</value>
-		<value>$LOCALIZE[571]</value>
-	</variable>
-	<variable name="WidgetStyleVar">
-		<value condition="Skin.HasSetting(WidgetStyle)">$LOCALIZE[31059]</value>
-		<value>$LOCALIZE[571]</value>
-	</variable>
 	
 	<variable name="RatingFlagVar">
 		<value condition="String.Contains(ListItem.mpaa,US:G) | String.Contains(ListItem.mpaa,USA:G) | String.Contains(ListItem.mpaa,Rated G)">flags/mpaa/G.png</value>
@@ -498,6 +490,11 @@
 		<value condition="Player.Playing | Player.HasVideo | Player.HasAudio">$INFO[Player.Art(thumb)]</value>
 		<value condition="!String.IsEmpty(Weather.Plugin) + !Weather.IsFetched">DefaultAddonNone.png</value>
 		<value>DefaultIconClock.png</value>
+	</variable>
+	<variable name="LibColorHighlightVar">
+		<value condition="!String.IsEqual(Window(home).Property(cpa_daemon_set),None)">-</value>
+		<value condition="Skin.HasSetting(ColorCustomizer.Enabled) + !String.IsEmpty(Skin.String(highlightcolor.name))">$INFO[Skin.String(highlightcolor.name)]</value>
+		<value>highlight</value>
 	</variable>
 	<variable name="ColorHighlightVar">
 		<value condition="Skin.HasSetting(ColorCustomizer.Enabled) + !String.IsEmpty(Skin.String(highlightcolor.name))">$INFO[Skin.String(highlightcolor.name)]</value>
@@ -735,7 +732,7 @@
 		<value>blank.png</value>
 	</variable>
 	<variable name="LandscapeWidgetArt">
-		<value condition="!String.IsEqual(Container(9000).ListItem.Property(widgetType),episodes) + !String.IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
+		<value condition="!String.IsEqual(Container(9000).ListItem.Property(widgetType),episodes) + [!String.IsEmpty(ListItem.Art(fanart)) | [Skin.HasSetting(Hide.Spoilers.TV) + String.IsEqual(Container(9000).ListItem.Property(widgetType),episodes) + [stringcompare(Container(9000).ListItem.Overlay,OverlayUnWatched.png) | Container(9000).ListItem.IsResumable]]]">$INFO[ListItem.Art(fanart)]</value>
 		<value condition="!String.IsEmpty(ListItem.Art(thumb))">$INFO[ListItem.Art(thumb)]</value>
 		<value>DefaultFallback.png</value>
 	</variable>

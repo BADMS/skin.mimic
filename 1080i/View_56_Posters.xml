@@ -1301,6 +1301,16 @@
 								<width>466</width>
 								<height>676</height>
 								<aspectratio>scale</aspectratio>
+								<bordersize>8</bordersize>
+								<fadetime>2000</fadetime>
+								<texture background="true" diffuse="thumbs/colorbox_poster_mask.png" colordiffuse="$VAR[LibColorHighlightVar]">$VAR[FocusImage]</texture>
+							</control>
+							<control type="image">
+								<left>54</left>
+								<top>42</top>
+								<width>466</width>
+								<height>676</height>
+								<aspectratio>scale</aspectratio>
 								<texture background="true" fallback="DefaultFallback.png">$VAR[ShowcaseItem0Var]</texture>
 								<bordersize>20</bordersize>
 								<fadetime>0</fadetime>
