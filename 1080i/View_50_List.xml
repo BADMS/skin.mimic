@@ -806,13 +806,13 @@
 						<width>560</width>
 						<height>840</height>
 						<aspectratio align="center" aligny="center">scale</aspectratio>
-						<bordersize>-20</bordersize>
 						<fadetime>2000</fadetime>
 						<texture background="true" diffuse="thumbs/colorbox_poster_mask.png" colordiffuse="$VAR[LibColorHighlightVar]">$VAR[FocusImage]</texture>
 					</control>
 					<control type="image">
 						<width>560</width>
 						<height>840</height>
+						<bordersize>20</bordersize>
 						<aspectratio align="center" aligny="center">scale</aspectratio>
 						<texture background="true">$INFO[ListItem.Icon]</texture>
 						<fadetime>IconCrossfadeTime</fadetime>
@@ -826,13 +826,13 @@
 						<width>560</width>
 						<height>840</height>
 						<aspectratio align="center" aligny="center">scale</aspectratio>
-						<bordersize>-20</bordersize>
 						<fadetime>2000</fadetime>
 						<texture background="true" diffuse="thumbs/colorbox_poster_mask.png" colordiffuse="$VAR[LibColorHighlightVar]">$VAR[FocusImage]</texture>
 					</control>
 					<control type="image">
 						<width>560</width>
 						<height>840</height>
+						<bordersize>20</bordersize>
 						<aspectratio align="center" aligny="top">keep</aspectratio>
 						<texture background="true">$VAR[ListIcon]</texture>
 						<fadetime>IconCrossfadeTime</fadetime>
@@ -847,13 +847,13 @@
 						<width>560</width>
 						<height>560</height>
 						<aspectratio align="center" aligny="center">scale</aspectratio>
-						<bordersize>-20</bordersize>
 						<fadetime>2000</fadetime>
 						<texture background="true" diffuse="thumbs/colorbox_poster_mask.png" colordiffuse="$VAR[LibColorHighlightVar]">$VAR[FocusImage]</texture>
 					</control>
 					<control type="image">
 						<width>560</width>
 						<height>560</height>
+						<bordersize>20</bordersize>
 						<aspectratio align="center" aligny="center">scale</aspectratio>
 						<texture background="true">$INFO[ListItem.Icon]</texture>
 						<fadetime>IconCrossfadeTime</fadetime>
@@ -903,12 +903,10 @@
 				<control type="group">
 					<left>1276</left>
 					<visible>Container.Content(episodes) + !String.StartsWith(ListItem.Icon,Default)</visible>
-					<!--
 					<control type="image">
 						<width>560</width>
 						<height>342</height>
 						<aspectratio align="center" aligny="center">scale</aspectratio>
-						<bordersize>-20</bordersize>
 						<fadetime>2000</fadetime>
 						<texture background="true" diffuse="thumbs/colorbox_poster_mask.png" colordiffuse="$VAR[LibColorHighlightVar]">$VAR[FocusImage]</texture>
 						<visible>!String.IsEmpty(ListItem.Plot)</visible>
@@ -917,15 +915,14 @@
 						<width>560</width>
 						<height>840</height>
 						<aspectratio align="center" aligny="center">scale</aspectratio>
-						<bordersize>-20</bordersize>
 						<fadetime>2000</fadetime>
 						<texture background="true" diffuse="thumbs/colorbox_poster_mask.png" colordiffuse="$VAR[LibColorHighlightVar]">$VAR[FocusImage]</texture>
 						<visible>String.IsEmpty(ListItem.Plot)</visible>
 					</control>
-					-->
 					<control type="image">
 						<width>560</width>
 						<height>342</height>
+						<bordersize>20</bordersize>
 						<aspectratio align="center" aligny="center">scale</aspectratio>
 						<texture background="true">$VAR[LandscapeArtVar]</texture>
 						<fadetime>IconCrossfadeTime</fadetime>
@@ -934,6 +931,7 @@
 					<control type="image">
 						<width>560</width>
 						<height>840</height>
+						<bordersize>20</bordersize>
 						<aspectratio align="center" aligny="top">keep</aspectratio>
 						<texture background="true">$VAR[LandscapeArtVar]</texture>
 						<fadetime>IconCrossfadeTime</fadetime>
