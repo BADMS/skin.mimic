@@ -903,6 +903,7 @@
 				<control type="group">
 					<left>1276</left>
 					<visible>Container.Content(episodes) + !String.StartsWith(ListItem.Icon,Default)</visible>
+					<!--
 					<control type="image">
 						<width>560</width>
 						<height>342</height>
@@ -921,6 +922,7 @@
 						<texture background="true" diffuse="thumbs/colorbox_poster_mask.png" colordiffuse="$VAR[LibColorHighlightVar]">$VAR[FocusImage]</texture>
 						<visible>String.IsEmpty(ListItem.Plot)</visible>
 					</control>
+					-->
 					<control type="image">
 						<width>560</width>
 						<height>342</height>

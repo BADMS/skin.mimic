@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
 	<variable name="FocusImage">
-		<value condition="!String.IsEqual(Window(home).Property(cpa_daemon_set),None)">$INFO[Window(home).Property(ImageFiltercpa)]</value>
+		<value condition="!String.IsEqual(Window(home).Property(cpa_daemon_set),None) + !String.IsEmpty(Window(home).Property(ImageFiltercpa))">$INFO[Window(home).Property(ImageFiltercpa)]</value>
 		<value>listselect_fo.png</value>
 	</variable>
 	<variable name="ColorboxImage">
@@ -672,6 +672,8 @@
     <variable name="ListIcon">
     	<value condition="Window.IsActive(videos) + Container.Content(genres)">$INFO[ListItem.Label,special://skin/extras/videogenre/,.png]</value>
     	<value condition="Window.IsActive(videos) + Container.Content(countries)">$INFO[ListItem.Label,special://skin/extras/countries/,.png]</value>
+    	<value condition="!String.IsEmpty(ListItem.Art(tvshow.landscape)) + Skin.HasSetting(Hide.Spoilers.TV) + Container.Content(episodes) + [stringcompare(ListItem.Overlay,OverlayUnWatched.png) | ListItem.IsResumable]">$INFO[ListItem.Art(tvshow.landscape)]</value>
+    	<value condition="String.IsEmpty(ListItem.Art(tvshow.landscape)) + Skin.HasSetting(Hide.Spoilers.TV) + Container.Content(episodes) + [stringcompare(ListItem.Overlay,OverlayUnWatched.png) | ListItem.IsResumable]">special://skin/extras/misc/empty.jpg</value>
         <value>$INFO[ListItem.Icon]</value>
     </variable>
     <variable name="TopbarFadeLabel1">
