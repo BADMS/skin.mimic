@@ -960,6 +960,21 @@
                 <animation effect="slide" end="380,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(520).Column,1)">Conditional</animation>
                 <animation effect="slide" end="380,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(520).Column,0)">Conditional</animation>
             </control>
+			<control type="image">
+				<visible>Control.HasFocus(520)</visible>
+                <left>194</left>
+                <top>165</top>
+                <width>392</width>
+                <height>392</height>
+                <include>FocusedBackgroundFade</include>
+                <texture colordiffuse="$VAR[ColorHighlightVar]">listselect_fo.png</texture><fadetime>2000</fadetime>
+                <animation effect="slide" end="0,380" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(520).Row,0)">Conditional</animation>
+                <animation effect="slide" end="380,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(520).Column,2)">Conditional</animation>
+                <animation effect="slide" end="380,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(520).Column,1)">Conditional</animation>
+                <animation effect="slide" end="380,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(520).Column,0)">Conditional</animation>
+                <animation effect="fade" end="50" start="0" time="1000" condition="!String.IsEqual(Window(home).Property(cpa_daemon_set),None) + Skin.HasSetting(ViewAddonWall.Pulse.Focus)" pulse="true" delay="1000">Conditional</animation>
+            	<visible>!String.IsEqual(Window(home).Property(cpa_daemon_set),None) + Skin.HasSetting(ViewAddonWall.Pulse.Focus)</visible>
+            </control>
 			<control type="panel" id="520">
 				<left>200</left>
 				<top>171</top>
