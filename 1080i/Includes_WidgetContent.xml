@@ -53,6 +53,12 @@
             <control type="group">
                 <animation center="190,180" easing="inout" effect="zoom" end="136" start="100" time="300" tween="sine">Focus</animation>
                 <animation center="190,180" easing="inout" effect="zoom" end="100" start="136" time="300" tween="sine">UnFocus</animation>
+				<control type="button">
+					<texturefocus>-</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onfocus condition="!String.IsEmpty(Container($PARAM[id]).ListItem.Art(tvshow.poster))">SetProperty(cpa_daemon_fallback,$INFO[Container($PARAM[id]).ListItem.Art(tvshow.poster)],home)</onfocus>
+					<onfocus condition="String.IsEmpty(Container($PARAM[id]).ListItem.Art(tvshow.poster))">SetProperty(cpa_daemon_fallback,$INFO[Container($PARAM[id]).ListItem.Art(thumb)],home)</onfocus>
+				</control>
                 <control type="image">
                     <visible>String.IsEmpty(ListItem.Art(tvshow.poster))</visible>
                     <top>30</top>
@@ -105,6 +111,11 @@
             <control type="group">
                 <animation center="298,180" easing="inout" effect="zoom" end="136" start="100" time="300" tween="sine">Focus</animation>
                 <animation center="298,180" easing="inout" effect="zoom" end="100" start="136" time="300" tween="sine">UnFocus</animation>
+				<control type="button">
+					<texturefocus>-</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onfocus>SetProperty(cpa_daemon_fallback,$INFO[Container($PARAM[id]).ListItem.Icon],home)</onfocus>
+				</control>
                 <control type="image">
                     <top>30</top>
                     <left>148</left>
@@ -147,6 +158,12 @@
             <control type="group">
                 <animation center="396,180" easing="inout" effect="zoom" end="136" start="100" time="300" tween="sine">Focus</animation>
                 <animation center="396,180" easing="inout" effect="zoom" end="100" start="136" time="300" tween="sine">UnFocus</animation>
+				<control type="button">
+					<texturefocus>-</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onfocus condition="!String.IsEmpty(Container($PARAM[id]).ListItem.Art(tvshow.poster))">SetProperty(cpa_daemon_fallback,$INFO[Container($PARAM[id]).ListItem.Art(tvshow.poster)],home)</onfocus>
+					<onfocus condition="String.IsEmpty(Container($PARAM[id]).ListItem.Art(tvshow.poster))">SetProperty(cpa_daemon_fallback,$INFO[Container($PARAM[id]).ListItem.Art(thumb)],home)</onfocus>
+				</control>
                 <control type="image">
                     <top>30</top>
                     <left>130</left>
@@ -207,6 +224,7 @@
 	<include name="WeatherWidgetCommons">
 		<control type="panel" id="8011">
 			<animation effect="fade" start="0" end="100" time="300" delay="0" reversible="false" condition="[[ControlGroup(9003).IsVisible + Skin.HasSetting(Enable.PersistentWidgets)] | [ControlGroup(9003).HasFocus + !Skin.HasSetting(Enable.PersistentWidgets)]] + !String.IsEqual(Skin.String(HomeLayout),3)">Conditional</animation>
+			<animation effect="fade" time="1000" tween="" easing="" start="100" end="0" condition="!Weather.IsFetched">Conditional</animation>
 			<description>weather widget</description>
 			<visible>String.IsEqual(Container(9000).ListItem.Property(widget),weather)</visible>
 			<left>$PARAM[WeatherPositionLeft]</left>
@@ -719,6 +737,12 @@
         <focusedlayout height="304" width="207" condition="!StringCompare(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[31313]) + !StringCompare(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[31100])">
             <control type="group">
                 <include>PanelFocusedItemZoom</include>
+				<control type="button">
+					<texturefocus>-</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onfocus condition="!String.IsEmpty(Container($PARAM[id]).ListItem.Art(tvshow.poster))">SetProperty(cpa_daemon_fallback,$INFO[Container($PARAM[id]).ListItem.Art(tvshow.poster)],home)</onfocus>
+					<onfocus condition="String.IsEmpty(Container($PARAM[id]).ListItem.Art(tvshow.poster))">SetProperty(cpa_daemon_fallback,$INFO[Container($PARAM[id]).ListItem.Art(thumb)],home)</onfocus>
+				</control>
                 <control type="image">
                     <visible>IsEmpty(ListItem.Art(tvshow.poster))</visible>
                     <top>6</top>
@@ -774,6 +798,11 @@
             <control type="group">
                 <include>PanelFocusedItemZoom</include>
                 <left>14</left>
+				<control type="button">
+					<texturefocus>-</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<onfocus>SetProperty(cpa_daemon_fallback,$INFO[Container($PARAM[id]).ListItem.Icon],home)</onfocus>
+				</control>
                 <control type="image">
                     <top>6</top>
                     <left>6</left>
@@ -814,6 +843,12 @@
         </itemlayout>
         <focusedlayout height="203" width="310" condition="StringCompare(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[31100])">
             <include>PanelFocusedItemZoom</include>
+			<control type="button">
+				<texturefocus>-</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<onfocus condition="!String.IsEmpty(Container($PARAM[id]).ListItem.Art(tvshow.poster))">SetProperty(cpa_daemon_fallback,$INFO[Container($PARAM[id]).ListItem.Art(tvshow.poster)],home)</onfocus>
+				<onfocus condition="String.IsEmpty(Container($PARAM[id]).ListItem.Art(tvshow.poster))">SetProperty(cpa_daemon_fallback,$INFO[Container($PARAM[id]).ListItem.Art(thumb)],home)</onfocus>
+			</control>
             <control type="image">
                 <top>6</top>
                 <left>6</left>

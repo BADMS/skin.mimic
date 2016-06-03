@@ -526,8 +526,10 @@
                     </control>
                 </control>
             </control>
+			<!-- vertical weather widget top half -->
             <control type="group">
                 <visible>String.IsEqual(Container(9000).ListItem.Property(widget),weather)</visible>
+				<animation effect="fade" time="1000" tween="" easing="" start="100" end="0" condition="!Weather.IsFetched">Conditional</animation>
                 <top>-45</top>
                 <left>593</left>
                 <width>1216</width>
@@ -574,6 +576,7 @@
                     <textcolor>$VAR[ColorTextVar]</textcolor>
                 </control>
             </control>
+			<!-- vertical weather widget bottom half Includes_WidgetContent.xml-->
             <include content="WeatherWidgetCommons">
                 <param name="WeatherPositionLeft" value="593" />
                 <param name="WeatherPositionTop" value="335" />
