@@ -728,24 +728,127 @@
 						<height>45</height>
 						<font>font28_title</font>
 						<textoffsetx>15</textoffsetx>
-						<label>$VAR[BreadcrumbsVar]</label>
-						<label2>$VAR[TopbarFadeLabel1]</label2>
+						<label>$VAR[BreadcrumbsVar]$VAR[HeaderSubLabel, • ]</label>
+						<label2>$VAR[TopbarFadeLabel2,, • ]$VAR[TopbarFadeLabel1]</label2>
 						<onclick>noop</onclick>
 						<texturefocus>blank.png</texturefocus>
 					</control>
-					<control type="button">
-						<left>102</left>
+					<control type="grouplist">
+						<left>120</left>
 						<top>59</top>
-						<width>1715</width>
+						<width>1678</width>
 						<height>45</height>
-						<font>topbar</font>
-						<textoffsetx>15</textoffsetx>
-						<textcolor>$VAR[ColorHighlightVar]</textcolor>
-						<label>$VAR[HeaderSubLabel]</label>
-						<label2>$VAR[TopbarFadeLabel2]</label2>
-						<onclick>noop</onclick>
-						<texturefocus>blank.png</texturefocus>
-						<focusedcolor>$VAR[ColorHighlightVar]</focusedcolor>
+						<orientation>horizontal</orientation>
+						<itemgap>6</itemgap>
+						<control type="button">
+							<width>45</width>
+							<height>45</height>
+							<textcolor>black</textcolor>
+							<textoffsetx>0</textoffsetx>
+							<label>$INFO[Window(Home).Property(SkinHelper.MetaCritic.Rating)]</label>
+							<font>TinyBold</font>
+							<aligny>center</aligny>
+							<align>center</align>
+							<texturefocus colordiffuse="$VAR[CommunityRatingColour]">white.png</texturefocus>
+							<texturenofocus colordiffuse="$VAR[CommunityRatingColour]">white.png</texturenofocus>
+							<visible>!IsEmpty(Window(Home).Property(SkinHelper.MetaCritic.Rating))</visible>
+							<visible>!StringCompare(Window(Home).Property(SkinHelper.MetaCritic.Rating),n/a)</visible>
+						</control>
+						<control type="label">
+							<label>-</label>
+							<visible>!IsEmpty(Window(Home).Property(SkinHelper.MetaCritic.Rating)) + !StringCompare(Window(Home).Property(SkinHelper.MetaCritic.Rating),n/a) + !IsEmpty(ListItem.Rating)</visible>
+						</control>
+						<control type="label">
+							<aligny>center</aligny>
+							<align>left</align>
+							<font>IconMedium</font>
+							<textcolor>yellow</textcolor>
+							<height>45</height>
+							<width>auto</width>
+							<label>$VAR[IMDBIcon]</label>
+							<visible>!IsEmpty(ListItem.Rating)</visible>
+						</control>
+						<control type="label">
+							<aligny>center</aligny>
+							<align>left</align>
+							<font>topbar</font>
+							<textcolor>$VAR[ColorHighlightVar]</textcolor>
+							<height>45</height>
+							<width>auto</width>
+							<label>$INFO[ListItem.Rating,[UPPERCASE],[/UPPERCASE]]</label>
+							<visible>!IsEmpty(ListItem.Rating)</visible>
+						</control>
+						<control type="label">
+							<aligny>center</aligny>
+							<align>left</align>
+							<font>IconMedium</font>
+							<textcolor>$VAR[RottenTomatoesIconColour]</textcolor>
+							<height>45</height>
+							<width>auto</width>
+							<label>$VAR[RottenTomatoesIcon, ]</label>
+							<visible>!IsEmpty(Window(Home).Property(SkinHelper.RottenTomatoesMeter))</visible>
+							<visible>!StringCompare(Window(Home).Property(SkinHelper.RottenTomatoesMeter),n/a)</visible>
+						</control>
+						<control type="label">
+							<aligny>center</aligny>
+							<align>left</align>
+							<font>topbar</font>
+							<textcolor>$VAR[ColorHighlightVar]</textcolor>
+							<height>45</height>
+							<width>auto</width>
+							<label>$INFO[Window(Home).Property(SkinHelper.RottenTomatoesMeter),,%]</label>
+							<visible>!IsEmpty(Window(Home).Property(SkinHelper.RottenTomatoesMeter))</visible>
+							<visible>!StringCompare(Window(Home).Property(SkinHelper.RottenTomatoesMeter),n/a)</visible>
+						</control>
+						<control type="label">
+							<aligny>center</aligny>
+							<align>left</align>
+							<font>IconMedium</font>
+							<label>$VAR[LabelUserRating, ]</label>
+							<textcolor>$VAR[ColorHighlightVar]</textcolor>
+							<height>45</height>
+							<width>auto</width>
+							<visible>!IsEmpty(ListItem.Userrating)</visible>
+						</control>
+						<control type="label">
+							<aligny>center</aligny>
+							<align>left</align>
+							<font>topbar</font>
+							<textcolor>$VAR[ColorHighlightVar]</textcolor>
+							<height>45</height>
+							<width>auto</width>
+							<label>$INFO[ListItem.Userrating,[UPPERCASE],[/UPPERCASE]]</label>
+							<visible>!IsEmpty(ListItem.Userrating)</visible>
+						</control>
+						<control type="label">
+							<aligny>center</aligny>
+							<align>left</align>
+							<font>IconMedium</font>
+							<textcolor>yellow</textcolor>
+							<height>45</height>
+							<width>auto</width>
+							<label> </label>
+							<visible>!IsEmpty(ListItem.Top250)</visible>
+						</control>
+						<control type="label">
+							<aligny>center</aligny>
+							<align>left</align>
+							<font>topbar</font>
+							<textcolor>$VAR[ColorHighlightVar]</textcolor>
+							<height>45</height>
+							<width>auto</width>
+							<label>$INFO[ListItem.Top250,#,]</label>
+							<visible>!IsEmpty(ListItem.Top250)</visible>
+						</control>
+						<control type="label">
+							<width min="1228" max="1678">auto</width>
+							<height>45</height>
+							<font>topbar</font>
+							<scroll>true</scroll>
+							<scrollspeed>150</scrollspeed>
+							<textcolor>$VAR[ColorHighlightVar]</textcolor>
+							<label>$INFO[Window(Home).Property(SkinHelper.RottenTomatoesConsensus),[I]","[/I] ]$VAR[LabelNextAiredDetails]</label>
+						</control>
 					</control>
 				</control>
 			</control>

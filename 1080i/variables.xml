@@ -1,5 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<variable name="CommunityRatingColour">
+		<value condition="IntegerGreaterThan(Window(Home).Property(SkinHelper.MetaCritic.Rating),59)">green</value>
+		<value condition="[IntegerGreaterThan(Window(Home).Property(SkinHelper.MetaCritic.Rating),39) + !IntegerGreaterThan(Window(Home).Property(SkinHelper.MetaCritic.Rating),59)]">selectedOrange</value>
+		<value condition="IntegerGreaterThan(Window(Home).Property(SkinHelper.MetaCritic.Rating),0) + !IntegerGreaterThan(Window(Home).Property(SkinHelper.MetaCritic.Rating),39)">selectedRed</value>
+		<value>$VAR[ColorHighlightVar]</value>
+	</variable>
+	<variable name="IMDBIcon">
+		<value></value>
+	</variable>
+	<variable name="RottenTomatoesIcon">
+		<value condition="IntegerGreaterThan(Window(Home).Property(SkinHelper.RottenTomatoesMeter),59)"></value>
+		<value condition="!IntegerGreaterThan(Window(Home).Property(SkinHelper.RottenTomatoesMeter),59)"></value>
+	</variable>
+	<variable name="RottenTomatoesIconColour">
+		<value condition="IntegerGreaterThan(Window(Home).Property(SkinHelper.RottenTomatoesMeter),59)">red</value>
+		<value condition="!IntegerGreaterThan(Window(Home).Property(SkinHelper.RottenTomatoesMeter),59)">green</value>
+	</variable>
+	<variable name="LabelUserRating">
+		<value condition="IntegerGreaterThan(ListItem.Userrating,5)"></value>
+		<value></value>
+	</variable>
 	<variable name="FocusImage">
 		<value condition="!String.IsEqual(Window(home).Property(cpa_daemon_set),None) + !String.IsEmpty(Window(home).Property(ImageFiltercpa))">$INFO[Window(home).Property(ImageFiltercpa)]</value>
 		<value>listselect_fo.png</value>
@@ -652,11 +673,11 @@
     	<value condition="Window.IsActive(home) + Window.IsVisible(shutdownmenu)">$LOCALIZE[13005]</value>
     	<value condition="Window.IsActive(home) + Window.IsVisible(busydialog)">$LOCALIZE[503]</value>
     	<value condition="Window.IsActive(home)">$VAR[LibraryStatsVar]</value>
-    	<value condition="!Window.IsActive(movieinformation)">$INFO[Container.NumItems,, $LOCALIZE[31025]]$INFO[Window(Home).Property(SkinHelper.RottenTomatoesConsensus),[I]",[/I]"]$VAR[LabelNextAiredDetails]</value>
+    	<value condition="!Window.IsActive(movieinformation)">$INFO[Container.NumItems,, $LOCALIZE[31025]]</value>
     </variable>
 	<variable name="LabelNextAiredDetails">
-		<value condition="!IsEmpty(Window(Home).Property(NextAired.NextDate))">[B]$INFO[Window(Home).Property(NextAired.NextTitle), ][/B]$INFO[Window(Home).Property(NextAired.AirTime), ]$INFO[Window(Home).Property(NextAired.NextDate), ]</value>
-		<value condition="IsEmpty(Window(Home).Property(NextAired.NextDate)) + !IsEmpty(Window(Home).Property(NextAired.LatestTitle))">[B]$INFO[Window(Home).Property(NextAired.LatestTitle), ][/B]$INFO[Window(Home).Property(NextAired.LatestDate), ]$INFO[Window(Home).Property(NextAired.Status), [I],[/I]]</value>
+		<value condition="!IsEmpty(Window(Home).Property(NextAired.NextDate))">$INFO[Window(Home).Property(NextAired.NextTitle),[B],[/B]]$INFO[Window(Home).Property(NextAired.AirTime), ]$INFO[Window(Home).Property(NextAired.NextDate), ]</value>
+		<value condition="IsEmpty(Window(Home).Property(NextAired.NextDate)) + !IsEmpty(Window(Home).Property(NextAired.LatestTitle))">$INFO[Window(Home).Property(NextAired.LatestTitle),[B],[/B] ]$INFO[Window(Home).Property(NextAired.LatestDate),, ]$INFO[Window(Home).Property(NextAired.Status),[I],[/I]]</value>
 	</variable>
     <variable name="ThumbViewImage">
     	<value condition="Window.IsActive(videos) + Container.Content(genres)">$INFO[ListItem.Label,special://skin/extras/videogenre/,.png]</value>
