@@ -297,6 +297,22 @@
 			<onclick>SetProperty(Dialog.5.BuiltIn,SetProperty(cpa_daemon_set,None,home))</onclick>
 			<onclick>RunScript(script.toolbox,info=selectdialog,header=Select Focus Effect)</onclick>
 		</control>
+		<control type="radiobutton" id="11116">
+			<label>31974</label>
+			<include>ButtonCommonValues</include>
+			<onclick>Skin.ToggleSetting(ViewBigWall.Pulse.Focus)</onclick>
+			<selected>Skin.HasSetting(ViewBigWall.Pulse.Focus)</selected>
+			<visible>![Window.IsActive(eventlog) | Window.IsActive(tvchannels) | Window.IsActive(tvrecordings) | Window.IsActive(tvtimers) | Window.IsActive(tvtimerrules) | Window.IsActive(tvsearch) | Window.IsActive(radiochannels) | Window.IsActive(radiorecordings) | Window.IsActive(radiotimers) | Window.IsActive(radiosearch)]</visible>
+			<visible>Control.IsVisible(509) + !String.IsEqual(Window(home).Property(cpa_daemon_set),None)</visible>
+		</control>
+		<control type="radiobutton" id="11117">
+			<label>31974</label>
+			<include>ButtonCommonValues</include>
+			<onclick>Skin.ToggleSetting(ViewVideoWall.Pulse.Focus)</onclick>
+			<selected>Skin.HasSetting(ViewVideoWall.Pulse.Focus)</selected>
+			<visible>![Window.IsActive(eventlog) | Window.IsActive(tvchannels) | Window.IsActive(tvrecordings) | Window.IsActive(tvtimers) | Window.IsActive(tvtimerrules) | Window.IsActive(tvsearch) | Window.IsActive(radiochannels) | Window.IsActive(radiorecordings) | Window.IsActive(radiotimers) | Window.IsActive(radiosearch)]</visible>
+			<visible>Control.IsVisible(500) + !String.IsEqual(Window(home).Property(cpa_daemon_set),None)</visible>
+		</control>
 	</include>
 	<include name="PVRMediaMenu">
 		<control type="group">
@@ -749,8 +765,8 @@
 							<font>TinyBold</font>
 							<aligny>center</aligny>
 							<align>center</align>
-							<texturefocus colordiffuse="$VAR[CommunityRatingColour]">white.png</texturefocus>
-							<texturenofocus colordiffuse="$VAR[CommunityRatingColour]">white.png</texturenofocus>
+							<texturefocus colordiffuse="$VAR[CommunityRatingColour]">metacritic_box.png</texturefocus>
+							<texturenofocus colordiffuse="$VAR[CommunityRatingColour]">metacritic_box.png</texturenofocus>
 							<visible>!IsEmpty(Window(Home).Property(SkinHelper.MetaCritic.Rating))</visible>
 							<visible>!StringCompare(Window(Home).Property(SkinHelper.MetaCritic.Rating),n/a)</visible>
 						</control>

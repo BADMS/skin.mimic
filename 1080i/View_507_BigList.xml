@@ -16,7 +16,7 @@
                         <visible>Control.HasFocus(507)</visible>
                         <animation effect="fade" time="320" delay="200">Visible</animation>
                         <animation effect="fade" time="50">Hidden</animation>
-                        <texture colordiffuse="$VAR[ColorHighlightVar]">$VAR[FocusImage]</texture><fadetime>2000</fadetime>
+	                    <texture colordiffuse="$VAR[ColorHighlightVar]">$VAR[FocusImage]</texture><fadetime>2000</fadetime>
                         <animation effect="slide" end="0,221" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(507).Row,2)">Conditional</animation>
                         <animation effect="slide" end="0,221" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(507).Row,1)">Conditional</animation>
                         <animation effect="slide" end="0,221" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(507).Row,0)">Conditional</animation>
@@ -39,7 +39,58 @@
                     <orientation>vertical</orientation>
                     <scrolltime tween="quadratic" easing="out">300</scrolltime>
                     <itemlayout width="1808" height="221" condition="Container.Content(episodes) | ![Skin.HasSetting(Enable.BigListThumb) | Skin.HasSetting(Enable.BigListPoster) | Container.Content(albums)]">
-                        <include>view_BigList-LandscapeCommons</include>
+						<control type="group">
+							<left>18</left>
+							<top>13</top>
+							<animation type="Focus">
+								<effect type="zoom" time="150" start="95" end="100" center="191,115" />
+								<effect type="zoom" time="150" start="105" end="100" delay="150" center="191,115" />
+							</animation>
+							<control type="image">
+								<visible>![Skin.HasSetting(Enable.BigListLogo) | Skin.HasSetting(Enable.BigListFanart)]</visible>
+								<width>346</width>
+								<height>195</height>
+								<texture background="true">$VAR[LandscapeArtVar]</texture>
+								<aspectratio>scale</aspectratio>
+							</control>
+							<control type="image">
+								<visible>Skin.HasSetting(Enable.BigListFanart)</visible>
+								<width>346</width>
+								<height>195</height>
+								<texture background="true" fallback="DefaultFallback.png">$VAR[FanartVar]</texture>
+								<aspectratio>scale</aspectratio>
+							</control>
+							<control type="image">
+								<visible>Skin.HasSetting(Enable.BigListLogo)</visible>
+								<left>15</left>
+								<width>316</width>
+								<height>195</height>
+								<texture background="true" fallback="DefaultFolder.png">$VAR[LogoVar]</texture>
+								<aspectratio>keep</aspectratio>
+							</control>
+							<control type="image">
+								<top>90</top>
+								<width>346</width>
+								<height>98</height>
+								<aspectratio align="center" aligny="bottom">keep</aspectratio>
+								<texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
+								<visible>![Container.Content(episodes) | Container.Content(artists) | Container.Content(musicvideos) | Skin.HasSetting(Enable.BigListLogo) | Skin.HasSetting(Enable.BigListFanart)] + String.IsEmpty(ListItem.Art(landscape))</visible>
+							</control>
+							<control type="image">
+								<animation center="auto" condition="Control.HasFocus(507)" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">Focus</animation>
+								<animation center="auto" condition="Control.HasFocus(507)" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">UnFocus</animation>
+								<width>346</width>
+								<height>195</height>
+								<texture>thumbs/diffuse.png</texture>
+							</control>
+							<control type="group">
+								<visible>!Skin.HasSetting(Enable.BigListLogo)</visible>
+								<include content="OverlayIcons">
+									<param name="OverlayLeft" value="288" />
+									<param name="OverlayTop" value="0" />
+								</include>
+							</control>
+						</control>
                         <control type="group">
                             <left>382</left>
                             <top>12</top>
@@ -91,7 +142,52 @@
                         </control>
                     </itemlayout>
                     <focusedlayout width="1808" height="221" condition="Container.Content(episodes) | ![Skin.HasSetting(Enable.BigListThumb) | Skin.HasSetting(Enable.BigListPoster) | Container.Content(albums)]">
-                        <include>view_BigList-LandscapeCommons</include>
+						<control type="group">
+							<left>18</left>
+							<top>13</top>
+							<animation type="Focus">
+								<effect type="zoom" time="150" start="95" end="100" center="191,115" />
+								<effect type="zoom" time="150" start="105" end="100" delay="150" center="191,115" />
+							</animation>
+							<control type="image">
+								<visible>![Skin.HasSetting(Enable.BigListLogo) | Skin.HasSetting(Enable.BigListFanart)]</visible>
+								<width>346</width>
+								<height>195</height>
+								<texture background="true">$VAR[LandscapeArtVar]</texture>
+								<aspectratio>scale</aspectratio>
+							</control>
+							<control type="image">
+								<visible>Skin.HasSetting(Enable.BigListFanart)</visible>
+								<width>346</width>
+								<height>195</height>
+								<texture background="true" fallback="DefaultFallback.png">$VAR[FanartVar]</texture>
+								<aspectratio>scale</aspectratio>
+							</control>
+							<control type="image">
+								<visible>Skin.HasSetting(Enable.BigListLogo)</visible>
+								<left>15</left>
+								<width>316</width>
+								<height>195</height>
+								<texture background="true" fallback="DefaultFolder.png">$VAR[LogoVar]</texture>
+								<aspectratio>keep</aspectratio>
+							</control>
+							<control type="image">
+								<top>90</top>
+								<width>346</width>
+								<height>98</height>
+								<aspectratio align="center" aligny="bottom">keep</aspectratio>
+								<texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
+								<visible>![Container.Content(episodes) | Container.Content(artists) | Container.Content(musicvideos) | Skin.HasSetting(Enable.BigListLogo) | Skin.HasSetting(Enable.BigListFanart)] + String.IsEmpty(ListItem.Art(landscape))</visible>
+							</control>
+							<control type="group">
+								<visible>!Skin.HasSetting(Enable.BigListLogo)</visible>
+								<include content="OverlayIcons">
+									<param name="OverlayLeft" value="288" />
+									<param name="OverlayTop" value="0" />
+								</include>
+							</control>
+						</control>
+                        <control type="group">
                             <left>382</left>
                             <top>12</top>
                             <control type="group">
@@ -146,7 +242,31 @@
                         </control>
                     </focusedlayout>
                     <itemlayout width="1808" height="221" condition="Skin.HasSetting(Enable.BigListPoster) + !Window.IsActive(musiclibrary) + !Container.Content(episodes)">
-                        <include>view_BigList-PosterCommons</include>
+						<control type="group">
+							<left>18</left>
+							<top>13</top>
+							<animation type="Focus">
+								<effect type="zoom" time="150" start="95" end="100" center="83,115" />
+								<effect type="zoom" time="150" start="105" end="100" delay="150" center="83,115" />
+							</animation>
+							<control type="image">
+								<width>130</width>
+								<height>195</height>
+								<texture background="true">$VAR[PosterVar]</texture>
+								<aspectratio>scale</aspectratio>
+							</control>
+							<control type="image">
+								<animation center="auto" condition="Control.HasFocus(507)" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">Focus</animation>
+								<animation center="auto" condition="Control.HasFocus(507)" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">UnFocus</animation>
+								<width>130</width>
+								<height>195</height>
+								<texture>thumbs/diffuse.png</texture>
+							</control>
+							<include content="OverlayIcons">
+								<param name="OverlayLeft" value="72" />
+								<param name="OverlayTop" value="0" />
+							</include>
+						</control>
                         <control type="group">
                             <left>166</left>
                             <top>12</top>
@@ -198,7 +318,24 @@
                         </control>
                     </itemlayout>
                     <focusedlayout width="1808" height="221" condition="Skin.HasSetting(Enable.BigListPoster) + !Window.IsActive(musiclibrary) + !Container.Content(episodes)">
-                        <include>view_BigList-PosterCommons</include>
+						<control type="group">
+							<left>18</left>
+							<top>13</top>
+							<animation type="Focus">
+								<effect type="zoom" time="150" start="95" end="100" center="83,115" />
+								<effect type="zoom" time="150" start="105" end="100" delay="150" center="83,115" />
+							</animation>
+							<control type="image">
+								<width>130</width>
+								<height>195</height>
+								<texture background="true">$VAR[PosterVar]</texture>
+								<aspectratio>scale</aspectratio>
+							</control>
+							<include content="OverlayIcons">
+								<param name="OverlayLeft" value="72" />
+								<param name="OverlayTop" value="0" />
+							</include>
+						</control>
                         <control type="group">
                             <left>166</left>
                             <top>12</top>
@@ -254,7 +391,27 @@
                         </control>
                     </focusedlayout>
                     <itemlayout width="1808" height="221" condition="[Container.Content(artists) + Skin.HasSetting(Enable.BigListThumb)] | Container.Content(albums)">
-                        <include>view_BigList-ThumbCommons</include>
+						<control type="group">
+							<left>18</left>
+							<top>13</top>
+							<animation type="Focus">
+								<effect type="zoom" time="150" start="95" end="100" center="115,115" />
+								<effect type="zoom" time="150" start="105" end="100" delay="150" center="115,115" />
+							</animation>
+							<control type="image">
+								<width>195</width>
+								<height>195</height>
+								<texture background="true" fallback="DefaultFallback.png">$VAR[ThumbVar]</texture>
+								<aspectratio>scale</aspectratio>
+							</control>
+							<control type="image">
+								<animation center="auto" condition="Control.HasFocus(507)" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">Focus</animation>
+								<animation center="auto" condition="Control.HasFocus(507)" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">UnFocus</animation>
+								<width>195</width>
+								<height>195</height>
+								<texture>thumbs/diffuse.png</texture>
+							</control>
+						</control>
                         <control type="group">
                             <left>231</left>
                             <top>12</top>
@@ -297,7 +454,20 @@
                         </control>
                     </itemlayout>
                     <focusedlayout width="1808" height="221" condition="[Container.Content(artists) + Skin.HasSetting(Enable.BigListThumb)] | Container.Content(albums)">
-                        <include>view_BigList-ThumbCommons</include>
+						<control type="group">
+							<left>18</left>
+							<top>13</top>
+							<animation type="Focus">
+								<effect type="zoom" time="150" start="95" end="100" center="115,115" />
+								<effect type="zoom" time="150" start="105" end="100" delay="150" center="115,115" />
+							</animation>
+							<control type="image">
+								<width>195</width>
+								<height>195</height>
+								<texture background="true" fallback="DefaultFallback.png">$VAR[ThumbVar]</texture>
+								<aspectratio>scale</aspectratio>
+							</control>
+						</control>
                         <control type="group">
                             <left>231</left>
                             <top>12</top>
@@ -349,110 +519,6 @@
             <visible>Control.IsVisible(507)</visible>
             <top>-15</top>
             <include>Scrollbar_Vertical</include>
-        </control>
-    </include>
-    <include name="view_BigList-LandscapeCommons">
-        <control type="group">
-            <left>18</left>
-            <top>13</top>
-            <animation type="Focus">
-                <effect type="zoom" time="150" start="95" end="100" center="191,115" />
-                <effect type="zoom" time="150" start="105" end="100" delay="150" center="191,115" />
-            </animation>
-            <control type="image">
-                <visible>![Skin.HasSetting(Enable.BigListLogo) | Skin.HasSetting(Enable.BigListFanart)]</visible>
-                <width>346</width>
-                <height>195</height>
-                <texture background="true">$VAR[LandscapeArtVar]</texture>
-                <aspectratio>scale</aspectratio>
-            </control>
-            <control type="image">
-                <visible>Skin.HasSetting(Enable.BigListFanart)</visible>
-                <width>346</width>
-                <height>195</height>
-                <texture background="true" fallback="DefaultFallback.png">$VAR[FanartVar]</texture>
-                <aspectratio>scale</aspectratio>
-            </control>
-            <control type="image">
-                <visible>Skin.HasSetting(Enable.BigListLogo)</visible>
-                <left>15</left>
-                <width>316</width>
-                <height>195</height>
-                <texture background="true" fallback="DefaultFolder.png">$VAR[LogoVar]</texture>
-                <aspectratio>keep</aspectratio>
-            </control>
-            <control type="image">
-                <top>90</top>
-                <width>346</width>
-                <height>98</height>
-                <aspectratio align="center" aligny="bottom">keep</aspectratio>
-                <texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
-                <visible>![Container.Content(episodes) | Container.Content(artists) | Container.Content(musicvideos) | Skin.HasSetting(Enable.BigListLogo) | Skin.HasSetting(Enable.BigListFanart)] + String.IsEmpty(ListItem.Art(landscape))</visible>
-            </control>
-            <control type="image">
-                <animation center="auto" condition="Control.HasFocus(507)" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">Focus</animation>
-                <animation center="auto" condition="Control.HasFocus(507)" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">UnFocus</animation>
-                <width>346</width>
-                <height>195</height>
-                <texture>thumbs/diffuse.png</texture>
-            </control>
-            <control type="group">
-                <visible>!Skin.HasSetting(Enable.BigListLogo)</visible>
-                <include content="OverlayIcons">
-                    <param name="OverlayLeft" value="288" />
-                    <param name="OverlayTop" value="0" />
-                </include>
-            </control>
-        </control>
-    </include>
-    <include name="view_BigList-PosterCommons">
-        <control type="group">
-            <left>18</left>
-            <top>13</top>
-            <animation type="Focus">
-                <effect type="zoom" time="150" start="95" end="100" center="83,115" />
-                <effect type="zoom" time="150" start="105" end="100" delay="150" center="83,115" />
-            </animation>
-            <control type="image">
-                <width>130</width>
-                <height>195</height>
-                <texture background="true">$VAR[PosterVar]</texture>
-                <aspectratio>scale</aspectratio>
-            </control>
-            <control type="image">
-                <animation center="auto" condition="Control.HasFocus(507)" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">Focus</animation>
-                <animation center="auto" condition="Control.HasFocus(507)" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">UnFocus</animation>
-                <width>130</width>
-                <height>195</height>
-                <texture>thumbs/diffuse.png</texture>
-            </control>
-            <include content="OverlayIcons">
-                <param name="OverlayLeft" value="72" />
-                <param name="OverlayTop" value="0" />
-            </include>
-        </control>
-    </include>
-    <include name="view_BigList-ThumbCommons">
-        <control type="group">
-            <left>18</left>
-            <top>13</top>
-            <animation type="Focus">
-                <effect type="zoom" time="150" start="95" end="100" center="115,115" />
-                <effect type="zoom" time="150" start="105" end="100" delay="150" center="115,115" />
-            </animation>
-            <control type="image">
-                <width>195</width>
-                <height>195</height>
-                <texture background="true" fallback="DefaultFallback.png">$VAR[ThumbVar]</texture>
-                <aspectratio>scale</aspectratio>
-            </control>
-            <control type="image">
-                <animation center="auto" condition="Control.HasFocus(507)" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">Focus</animation>
-                <animation center="auto" condition="Control.HasFocus(507)" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">UnFocus</animation>
-                <width>195</width>
-                <height>195</height>
-                <texture>thumbs/diffuse.png</texture>
-            </control>
         </control>
     </include>
 </includes>

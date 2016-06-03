@@ -1395,3 +1395,7 @@ msgstr ""
 msgctxt "#31973"
 msgid "Colorbox focus"
 msgstr ""
+
+msgctxt "#31974"
+msgid "Pulse focus"
+msgstr ""

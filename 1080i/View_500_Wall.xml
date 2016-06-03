@@ -25,6 +25,24 @@
                     <animation effect="slide" end="242,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,0)">Conditional</animation>
                 </control>
                 <control type="image">
+                	<visible>[Container.Content(sets) | [[Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)] + !Skin.HasSetting(Enable.IconLandscape) + !Skin.HasSetting(Enable.IconBanner) + !Skin.HasSetting(Enable.IconLogo)] | [Container.Content(seasons) + Skin.HasSetting(Enable.IconLandscape)] | [Container.Content(seasons) + Skin.HasSetting(Enable.IconLogo)]] + Control.HasFocus(500) </visible>
+                    <left>107</left>
+                    <top>175</top>
+                    <width>254</width>
+                    <height>369</height>
+                    <include>FocusedBackgroundFade</include>
+					<texture colordiffuse="$VAR[ColorHighlightVar]">listselect_fo.png</texture><fadetime>2000</fadetime>
+					<animation effect="fade" end="50" start="0" time="1000" condition="!String.IsEqual(Window(home).Property(cpa_daemon_set),None) + Skin.HasSetting(ViewVideoWall.Pulse.Focus)" pulse="true" delay="1000">Conditional</animation>
+					<visible>!String.IsEqual(Window(home).Property(cpa_daemon_set),None) + Skin.HasSetting(ViewVideoWall.Pulse.Focus)</visible>
+                    <animation effect="slide" end="0,357" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Row,0)">Conditional</animation>
+                    <animation effect="slide" end="242,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,5)">Conditional</animation>
+                    <animation effect="slide" end="242,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,4)">Conditional</animation>
+                    <animation effect="slide" end="242,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,3)">Conditional</animation>
+                    <animation effect="slide" end="242,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,2)">Conditional</animation>
+                    <animation effect="slide" end="242,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,1)">Conditional</animation>
+                    <animation effect="slide" end="242,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,0)">Conditional</animation>
+                </control>
+                <control type="image">
                 	<visible>[Container.Content(movies) | Container.Content(tvshows)] + [Skin.HasSetting(Enable.IconLandscape) | Skin.HasSetting(Enable.IconLogo)] + Control.HasFocus(500)</visible>
                     <left>128</left>
                     <top>175</top>
@@ -32,6 +50,22 @@
                     <height>250</height>
                     <include>FocusedBackgroundFade</include>
                     <texture colordiffuse="$VAR[LibColorHighlightVar]">$VAR[FocusImage]</texture><fadetime>2000</fadetime>
+                    <animation effect="slide" end="0,238" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Row,1)">Conditional</animation>
+                    <animation effect="slide" end="0,238" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Row,0)">Conditional</animation>
+                    <animation effect="slide" end="413,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,2)">Conditional</animation>
+                    <animation effect="slide" end="413,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,1)">Conditional</animation>
+                    <animation effect="slide" end="413,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,0)">Conditional</animation>
+                </control>
+                <control type="image">
+                	<visible>[Container.Content(movies) | Container.Content(tvshows)] + [Skin.HasSetting(Enable.IconLandscape) | Skin.HasSetting(Enable.IconLogo)] + Control.HasFocus(500)</visible>
+                    <left>128</left>
+                    <top>175</top>
+                    <width>425</width>
+                    <height>250</height>
+                    <include>FocusedBackgroundFade</include>
+					<texture colordiffuse="$VAR[ColorHighlightVar]">listselect_fo.png</texture><fadetime>2000</fadetime>
+					<animation effect="fade" end="50" start="0" time="1000" condition="!String.IsEqual(Window(home).Property(cpa_daemon_set),None) + Skin.HasSetting(ViewVideoWall.Pulse.Focus)" pulse="true" delay="1000">Conditional</animation>
+					<visible>!String.IsEqual(Window(home).Property(cpa_daemon_set),None) + Skin.HasSetting(ViewVideoWall.Pulse.Focus)</visible>
                     <animation effect="slide" end="0,238" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Row,1)">Conditional</animation>
                     <animation effect="slide" end="0,238" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Row,0)">Conditional</animation>
                     <animation effect="slide" end="413,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,2)">Conditional</animation>
@@ -52,6 +86,21 @@
                     <animation effect="slide" end="909,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,0)">Conditional</animation>
                 </control>
                 <control type="image">
+                	<visible>[Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)] + Skin.HasSetting(Enable.IconBanner) + Control.HasFocus(500)</visible>
+                    <left>45</left>
+                    <top>175</top>
+                    <width>921</width>
+                    <height>190</height>
+                    <include>FocusedBackgroundFade</include>
+					<texture colordiffuse="$VAR[ColorHighlightVar]">listselect_fo.png</texture><fadetime>2000</fadetime>
+					<animation effect="fade" end="50" start="0" time="1000" condition="!String.IsEqual(Window(home).Property(cpa_daemon_set),None) + Skin.HasSetting(ViewVideoWall.Pulse.Focus)" pulse="true" delay="1000">Conditional</animation>
+					<visible>!String.IsEqual(Window(home).Property(cpa_daemon_set),None) + Skin.HasSetting(ViewVideoWall.Pulse.Focus)</visible>
+                    <animation effect="slide" end="0,178" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Row,2)">Conditional</animation>
+                    <animation effect="slide" end="0,178" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Row,1)">Conditional</animation>
+                    <animation effect="slide" end="0,178" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Row,0)">Conditional</animation>
+                    <animation effect="slide" end="909,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,0)">Conditional</animation>
+                </control>
+                <control type="image">
                 	<visible>[Container.Content(files) | Container.Content(episodes)] + Control.HasFocus(500)</visible>
                     <left>106</left>
                     <top>175</top>
@@ -65,6 +114,21 @@
                     <animation effect="slide" end="424,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,0)">Conditional</animation>
                 </control>
                 <control type="image">
+                	<visible>[Container.Content(files) | Container.Content(episodes)] + Control.HasFocus(500)</visible>
+                    <left>106</left>
+                    <top>175</top>
+                    <width>436</width>
+                    <height>369</height>
+                    <include>FocusedBackgroundFade</include>
+					<texture colordiffuse="$VAR[ColorHighlightVar]">listselect_fo.png</texture><fadetime>2000</fadetime>
+					<animation effect="fade" end="50" start="0" time="1000" condition="!String.IsEqual(Window(home).Property(cpa_daemon_set),None) + Skin.HasSetting(ViewVideoWall.Pulse.Focus)" pulse="true" delay="1000">Conditional</animation>
+					<visible>!String.IsEqual(Window(home).Property(cpa_daemon_set),None) + Skin.HasSetting(ViewVideoWall.Pulse.Focus)</visible>
+                    <animation effect="slide" end="0,357" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Row,0)">Conditional</animation>
+                    <animation effect="slide" end="424,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,2)">Conditional</animation>
+                    <animation effect="slide" end="424,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,1)">Conditional</animation>
+                    <animation effect="slide" end="424,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,0)">Conditional</animation>
+                </control>
+                <control type="image">
                 	<visible>Container.Content(musicvideos) + Control.HasFocus(500)</visible>
                     <left>62</left>
                     <top>175</top>
@@ -72,6 +136,22 @@
                     <height>369</height>
                     <include>FocusedBackgroundFade</include>
                     <texture colordiffuse="$VAR[LibColorHighlightVar]">$VAR[FocusImage]</texture><fadetime>2000</fadetime>
+                    <animation effect="slide" end="0,357" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Row,0)">Conditional</animation>
+                    <animation effect="slide" end="357,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,3)">Conditional</animation>
+                    <animation effect="slide" end="357,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,2)">Conditional</animation>
+                    <animation effect="slide" end="357,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,1)">Conditional</animation>
+                    <animation effect="slide" end="357,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,0)">Conditional</animation>
+                </control>
+                <control type="image">
+                	<visible>Container.Content(musicvideos) + Control.HasFocus(500)</visible>
+                    <left>62</left>
+                    <top>175</top>
+                    <width>369</width>
+                    <height>369</height>
+                    <include>FocusedBackgroundFade</include>
+					<texture colordiffuse="$VAR[ColorHighlightVar]">listselect_fo.png</texture><fadetime>2000</fadetime>
+					<animation effect="fade" end="50" start="0" time="1000" condition="!String.IsEqual(Window(home).Property(cpa_daemon_set),None) + Skin.HasSetting(ViewVideoWall.Pulse.Focus)" pulse="true" delay="1000">Conditional</animation>
+					<visible>!String.IsEqual(Window(home).Property(cpa_daemon_set),None) + Skin.HasSetting(ViewVideoWall.Pulse.Focus)</visible>
                     <animation effect="slide" end="0,357" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Row,0)">Conditional</animation>
                     <animation effect="slide" end="357,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,3)">Conditional</animation>
                     <animation effect="slide" end="357,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,2)">Conditional</animation>
@@ -128,15 +208,6 @@
 							<height>345</height>
 							<aspectratio>scale</aspectratio>
 							<texture fallback="DefaultFallback.png" background="true">$VAR[PosterVar]</texture>
-						</control>
-						<control type="image">
-							<animation center="auto" condition="Control.HasFocus(500)" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">Focus</animation>
-							<animation center="auto" condition="Control.HasFocus(500)" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">UnFocus</animation>
-							<top>6</top>
-							<left>6</left>
-							<width>230</width>
-							<height>345</height>
-							<texture>thumbs/diffuse.png</texture>
 						</control>
 						<include content="OverlayIcons">
 	                        <param name="OverlayLeft" value="178" />
@@ -255,15 +326,6 @@
 								</control>
 							</control>
 				        </control>
-						<control type="image">
-							<animation center="auto" condition="Control.HasFocus(500)" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">Focus</animation>
-							<animation center="auto" condition="Control.HasFocus(500)" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">UnFocus</animation>
-							<top>6</top>
-							<left>6</left>
-							<width>401</width>
-							<height>226</height>
-							<texture>thumbs/diffuse.png</texture>
-						</control>
 						<include content="OverlayIcons" condition="Skin.HasSetting(Enable.IconLandscape)">
 	                        <param name="OverlayLeft" value="349" />
 	                        <param name="OverlayTop" value="4" />
@@ -363,15 +425,6 @@
 								<aspectratio align="left">keep</aspectratio>
 								<texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
 							</control>
-						</control>
-						<control type="image">
-							<animation center="auto" condition="Control.HasFocus(500)" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">Focus</animation>
-							<animation center="auto" condition="Control.HasFocus(500)" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">UnFocus</animation>
-							<top>6</top>
-							<left>6</left>
-							<width>897</width>
-							<height>166</height>
-							<texture>thumbs/diffuse.png</texture>
 						</control>
 						<include content="OverlayIcons">
 	                        <param name="OverlayLeft" value="845" />
@@ -502,15 +555,6 @@
 							<height>345</height>
 							<aspectratio>scale</aspectratio>
 							<texture fallback="DefaultMusicVideos.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
-						</control>
-						<control type="image">
-							<animation center="auto" condition="Control.HasFocus(500)" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">Focus</animation>
-							<animation center="auto" condition="Control.HasFocus(500)" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">UnFocus</animation>
-							<left>6</left>
-							<top>6</top>
-							<width>345</width>
-							<height>345</height>
-							<texture>thumbs/diffuse.png</texture>
 						</control>
 						<control type="image">
 							<left>6</left>
@@ -711,15 +755,6 @@
 							<aspectratio>scale</aspectratio>
 							<texture fallback="DefaultFallback.png" background="true">$VAR[ThumbVar]</texture>
 						</control>
-						<control type="image">
-							<animation center="auto" condition="Control.HasFocus(500)" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">Focus</animation>
-							<animation center="auto" condition="Control.HasFocus(500)" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">UnFocus</animation>
-							<top>6</top>
-							<left>6</left>
-							<width>268</width>
-							<height>268</height>
-							<texture>thumbs/diffuse.png</texture>
-						</control>
 						<control type="group">
 							<visible>Container.Content(artists)</visible>
 							<control type="image">
@@ -858,13 +893,6 @@
 						<control type="group">
 							<animation center="auto" condition="Control.HasFocus(510)" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">Focus</animation>
 							<animation center="auto" condition="Control.HasFocus(510)" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">UnFocus</animation>
-							<control type="image">
-								<left>6</left>
-								<top>6</top>
-								<width>412</width>
-								<height>345</height>
-								<texture>thumbs/diffuse.png</texture>
-							</control>
 							<control type="group">
 								<visible>!Skin.HasSetting(PictureInfo.Disabled)</visible>
 								<control type="image">

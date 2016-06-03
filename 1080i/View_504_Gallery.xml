@@ -142,13 +142,6 @@
                             <texture background="true">$INFO[ListItem.PicturePath]</texture>
 							<aspectratio align="center" aligny="center">scale</aspectratio>
                         </control>
-                        <control type="image">
-                            <animation center="auto" condition="Control.HasFocus(504)" easing="inout" effect="fade" end="0" start="100" time="300" tween="sine">Focus</animation>
-                            <animation center="auto" condition="Control.HasFocus(504)" easing="inout" effect="fade" end="100" start="0" time="300" tween="sine">UnFocus</animation>
-                            <width>1155</width>
-                            <height>650</height>
-                            <texture>thumbs/diffuse.png</texture>
-                        </control>
                         <include content="OverlayIcons" condition="![Window.IsActive(pictures) | Container.Content(artists)]">
                             <param name="OverlayLeft" value="1095" />
                             <param name="OverlayTop" value="0" />
