@@ -9,4 +9,9 @@
 	<color name="dialog">FF57A4CB</color>
 	<color name="white11">11FFFFFF</color>
 	<color name="blue">FF6db9e5</color>
+	<color name="selectedRed">FFE10101</color>
+	<color name="selectedOrange">ffD6A51E</color>
+	<color name="red">FFFF0000</color>
+	<color name="green">FF00FF00</color>
+	<color name="yellow">fff5de50</color>
 </colors>
