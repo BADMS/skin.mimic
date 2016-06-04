@@ -15,6 +15,7 @@
                     <height>725</height>
                     <visible>Control.HasFocus(505)</visible>
                     <include>FocusedBackgroundFade</include>
+                    <aspectratio align="center" aligny="center">scale</aspectratio>
                     <texture colordiffuse="$VAR[ColorHighlightVar]">$VAR[FocusImage]</texture><fadetime>2000</fadetime>
                     <animation effect="slide" end="600,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(505).Column,1)">Conditional</animation>
                     <animation effect="slide" end="600,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(505).Column,0)">Conditional</animation>

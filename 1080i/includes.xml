@@ -779,7 +779,8 @@
 							<visible>!StringCompare(Window(Home).Property(SkinHelper.MetaCritic.Rating),n/a)</visible>
 						</control>
 						<control type="label">
-							<label>-</label>
+							<width>6</width>
+							<label> </label>
 							<visible>!IsEmpty(Window(Home).Property(SkinHelper.MetaCritic.Rating)) + !StringCompare(Window(Home).Property(SkinHelper.MetaCritic.Rating),n/a) + !IsEmpty(ListItem.Rating)</visible>
 						</control>
 						<control type="label">
