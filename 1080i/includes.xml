@@ -704,176 +704,174 @@
 				<colordiffuse>33000000</colordiffuse>
 			</control>
 			<control type="group">
-				<control type="group">
-					<control type="image">
-						<top>19</top>
-						<left>19</left>
-	                    <width>80</width>
-	                    <height>80</height>
-	                    <texture colordiffuse="33ffffff">background.png</texture>
-	                </control>
-	                <control type="image">
-	                    <top>19</top>
-	                    <left>19</left>
-	                    <width>80</width>
-	                    <height>80</height>
-	                    <texture colordiffuse="$VAR[ColorTextVar]">$VAR[HeaderIcon]</texture>
-	                    <visible>![Container.Scrolling + [String.IsEqual(Container.SortMethod,$LOCALIZE[369]) | String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | [Container.Content(artists) + String.IsEqual(Container.SortMethod,$LOCALIZE[557])]]]</visible>
-	                    <visible>!Window.IsVisible(DialogBusy.xml) + [!Control.IsVisible(12345) | [!Skin.HasSetting(Enable.PersistentWidgets) + !ControlGroup(9003).HasFocus]]</visible>
-	                    <animation effect="fade" start="0" end="100" time="150">VisibleChange</animation>
-	                </control>
-	                <control type="label">
-	                    <top>17</top>
-	                    <left>17</left>
-	                    <width>80</width>
-	                    <height>80</height>
-	                    <font>font35_title</font>
-	                    <align>center</align>
-	                    <label>$INFO[ListItem.SortLetter,[UPPERCASE],[/UPPERCASE]]</label>
-	                    <visible>Container.Scrolling + [String.IsEqual(Container.SortMethod,$LOCALIZE[369]) | String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | [Container.Content(artists) + String.IsEqual(Container.SortMethod,$LOCALIZE[557])]]</visible>
-	                    <visible>!Window.IsVisible(DialogBusy.xml) + !Control.IsVisible(12345)</visible>
-	                    <animation effect="fade" start="0" end="100" time="150">VisibleChange</animation>
-	                </control>
-	                <control type="image">
-	                    <visible>Window.IsVisible(DialogBusy.xml)</visible>
-	                    <description>Busy animation</description>
-	                    <top>29</top>
-	                    <left>29</left>
-	                    <width>60</width>
-	                    <height>60</height>
-	                    <texture colordiffuse="$VAR[ColorTextVar]" fallback="special://skin/extras/spinners/Sun.png">$INFO[Skin.String(busyloader)]</texture>
-	                    <aspectratio>keep</aspectratio>
-	                    <animation effect="rotate" start="360" end="0" center="auto" time="3000" loop="true" condition="true">conditional</animation>
-	                </control>
+				<control type="image">
+					<top>19</top>
+					<left>19</left>
+					<width>80</width>
+					<height>80</height>
+					<texture colordiffuse="33ffffff">background.png</texture>
+				</control>
+				<control type="image">
+					<top>19</top>
+					<left>19</left>
+					<width>80</width>
+					<height>80</height>
+					<texture colordiffuse="$VAR[ColorTextVar]">$VAR[HeaderIcon]</texture>
+					<visible>![Container.Scrolling + [String.IsEqual(Container.SortMethod,$LOCALIZE[369]) | String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | [Container.Content(artists) + String.IsEqual(Container.SortMethod,$LOCALIZE[557])]]]</visible>
+					<visible>!Window.IsVisible(DialogBusy.xml) + [!Control.IsVisible(12345) | [!Skin.HasSetting(Enable.PersistentWidgets) + !ControlGroup(9003).HasFocus]]</visible>
+					<animation effect="fade" start="0" end="100" time="150">VisibleChange</animation>
+				</control>
+				<control type="label">
+					<top>17</top>
+					<left>17</left>
+					<width>80</width>
+					<height>80</height>
+					<font>font35_title</font>
+					<align>center</align>
+					<label>$INFO[ListItem.SortLetter,[UPPERCASE],[/UPPERCASE]]</label>
+					<visible>Container.Scrolling + [String.IsEqual(Container.SortMethod,$LOCALIZE[369]) | String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | [Container.Content(artists) + String.IsEqual(Container.SortMethod,$LOCALIZE[557])]]</visible>
+					<visible>!Window.IsVisible(DialogBusy.xml) + !Control.IsVisible(12345)</visible>
+					<animation effect="fade" start="0" end="100" time="150">VisibleChange</animation>
+				</control>
+				<control type="image">
+					<visible>Window.IsVisible(DialogBusy.xml)</visible>
+					<description>Busy animation</description>
+					<top>29</top>
+					<left>29</left>
+					<width>60</width>
+					<height>60</height>
+					<texture colordiffuse="$VAR[ColorTextVar]" fallback="special://skin/extras/spinners/Sun.png">$INFO[Skin.String(busyloader)]</texture>
+					<aspectratio>keep</aspectratio>
+					<animation effect="rotate" start="360" end="0" center="auto" time="3000" loop="true" condition="true">conditional</animation>
+				</control>
+				<control type="button">
+					<left>102</left>
+					<top>17</top>
+					<width>1715</width>
+					<height>45</height>
+					<font>font28_title</font>
+					<textoffsetx>15</textoffsetx>
+					<label>$VAR[BreadcrumbsVar]$VAR[HeaderSubLabel, • ]</label>
+					<label2>$VAR[TopbarFadeLabel2,, • ]$VAR[TopbarFadeLabel1]</label2>
+					<onclick>noop</onclick>
+					<texturefocus>blank.png</texturefocus>
+				</control>
+				<control type="grouplist">
+					<left>120</left>
+					<top>59</top>
+					<width>1678</width>
+					<height>45</height>
+					<orientation>horizontal</orientation>
+					<itemgap>6</itemgap>
 					<control type="button">
-						<left>102</left>
-						<top>17</top>
-						<width>1715</width>
+						<width>45</width>
 						<height>45</height>
-						<font>font28_title</font>
-						<textoffsetx>15</textoffsetx>
-						<label>$VAR[BreadcrumbsVar]$VAR[HeaderSubLabel, • ]</label>
-						<label2>$VAR[TopbarFadeLabel2,, • ]$VAR[TopbarFadeLabel1]</label2>
-						<onclick>noop</onclick>
-						<texturefocus>blank.png</texturefocus>
+						<textcolor>black</textcolor>
+						<textoffsetx>0</textoffsetx>
+						<label>$INFO[Window(Home).Property(SkinHelper.MetaCritic.Rating)]</label>
+						<font>TinyBold</font>
+						<aligny>center</aligny>
+						<align>center</align>
+						<texturefocus colordiffuse="$VAR[CommunityRatingColour]">metacritic_box.png</texturefocus>
+						<texturenofocus colordiffuse="$VAR[CommunityRatingColour]">metacritic_box.png</texturenofocus>
+						<visible>!IsEmpty(Window(Home).Property(SkinHelper.MetaCritic.Rating))</visible>
+						<visible>!StringCompare(Window(Home).Property(SkinHelper.MetaCritic.Rating),n/a)</visible>
 					</control>
-					<control type="grouplist">
-						<left>120</left>
-						<top>59</top>
-						<width>1678</width>
+					<control type="label">
+						<width>6</width>
+						<label> </label>
+						<visible>!IsEmpty(Window(Home).Property(SkinHelper.MetaCritic.Rating)) + !StringCompare(Window(Home).Property(SkinHelper.MetaCritic.Rating),n/a) + !IsEmpty(ListItem.Rating)</visible>
+					</control>
+					<control type="label">
+						<aligny>center</aligny>
+						<align>left</align>
+						<font>IconMedium</font>
+						<textcolor>yellow</textcolor>
 						<height>45</height>
-						<orientation>horizontal</orientation>
-						<itemgap>6</itemgap>
-						<control type="button">
-							<width>45</width>
-							<height>45</height>
-							<textcolor>black</textcolor>
-							<textoffsetx>0</textoffsetx>
-							<label>$INFO[Window(Home).Property(SkinHelper.MetaCritic.Rating)]</label>
-							<font>TinyBold</font>
-							<aligny>center</aligny>
-							<align>center</align>
-							<texturefocus colordiffuse="$VAR[CommunityRatingColour]">metacritic_box.png</texturefocus>
-							<texturenofocus colordiffuse="$VAR[CommunityRatingColour]">metacritic_box.png</texturenofocus>
-							<visible>!IsEmpty(Window(Home).Property(SkinHelper.MetaCritic.Rating))</visible>
-							<visible>!StringCompare(Window(Home).Property(SkinHelper.MetaCritic.Rating),n/a)</visible>
-						</control>
-						<control type="label">
-							<width>6</width>
-							<label> </label>
-							<visible>!IsEmpty(Window(Home).Property(SkinHelper.MetaCritic.Rating)) + !StringCompare(Window(Home).Property(SkinHelper.MetaCritic.Rating),n/a) + !IsEmpty(ListItem.Rating)</visible>
-						</control>
-						<control type="label">
-							<aligny>center</aligny>
-							<align>left</align>
-							<font>IconMedium</font>
-							<textcolor>yellow</textcolor>
-							<height>45</height>
-							<width>auto</width>
-							<label>$VAR[IMDBIcon]</label>
-							<visible>!IsEmpty(ListItem.Rating)</visible>
-						</control>
-						<control type="label">
-							<aligny>center</aligny>
-							<align>left</align>
-							<font>topbar</font>
-							<textcolor>$VAR[ColorHighlightVar]</textcolor>
-							<height>45</height>
-							<width>auto</width>
-							<label>$INFO[ListItem.Rating,[UPPERCASE],[/UPPERCASE]]</label>
-							<visible>!IsEmpty(ListItem.Rating)</visible>
-						</control>
-						<control type="label">
-							<aligny>center</aligny>
-							<align>left</align>
-							<font>IconMedium</font>
-							<textcolor>$VAR[RottenTomatoesIconColour]</textcolor>
-							<height>45</height>
-							<width>auto</width>
-							<label>$VAR[RottenTomatoesIcon, ]</label>
-							<visible>!IsEmpty(Window(Home).Property(SkinHelper.RottenTomatoesMeter))</visible>
-							<visible>!StringCompare(Window(Home).Property(SkinHelper.RottenTomatoesMeter),n/a)</visible>
-						</control>
-						<control type="label">
-							<aligny>center</aligny>
-							<align>left</align>
-							<font>topbar</font>
-							<textcolor>$VAR[ColorHighlightVar]</textcolor>
-							<height>45</height>
-							<width>auto</width>
-							<label>$INFO[Window(Home).Property(SkinHelper.RottenTomatoesMeter),,%]</label>
-							<visible>!IsEmpty(Window(Home).Property(SkinHelper.RottenTomatoesMeter))</visible>
-							<visible>!StringCompare(Window(Home).Property(SkinHelper.RottenTomatoesMeter),n/a)</visible>
-						</control>
-						<control type="label">
-							<aligny>center</aligny>
-							<align>left</align>
-							<font>IconMedium</font>
-							<label>$VAR[LabelUserRating, ]</label>
-							<textcolor>$VAR[ColorHighlightVar]</textcolor>
-							<height>45</height>
-							<width>auto</width>
-							<visible>!IsEmpty(ListItem.Userrating)</visible>
-						</control>
-						<control type="label">
-							<aligny>center</aligny>
-							<align>left</align>
-							<font>topbar</font>
-							<textcolor>$VAR[ColorHighlightVar]</textcolor>
-							<height>45</height>
-							<width>auto</width>
-							<label>$INFO[ListItem.Userrating,[UPPERCASE],[/UPPERCASE]]</label>
-							<visible>!IsEmpty(ListItem.Userrating)</visible>
-						</control>
-						<control type="label">
-							<aligny>center</aligny>
-							<align>left</align>
-							<font>IconMedium</font>
-							<textcolor>yellow</textcolor>
-							<height>45</height>
-							<width>auto</width>
-							<label> </label>
-							<visible>!IsEmpty(ListItem.Top250)</visible>
-						</control>
-						<control type="label">
-							<aligny>center</aligny>
-							<align>left</align>
-							<font>topbar</font>
-							<textcolor>$VAR[ColorHighlightVar]</textcolor>
-							<height>45</height>
-							<width>auto</width>
-							<label>$INFO[ListItem.Top250,#,]</label>
-							<visible>!IsEmpty(ListItem.Top250)</visible>
-						</control>
-						<control type="label">
-							<width min="1228" max="1678">auto</width>
-							<height>45</height>
-							<font>topbar</font>
-							<scroll>true</scroll>
-							<scrollspeed>150</scrollspeed>
-							<textcolor>$VAR[ColorHighlightVar]</textcolor>
-							<label>$INFO[Window(Home).Property(SkinHelper.RottenTomatoesConsensus),[I]","[/I] ]$VAR[LabelNextAiredDetails]</label>
-						</control>
+						<width>auto</width>
+						<label>$VAR[IMDBIcon]</label>
+						<visible>!IsEmpty(ListItem.Rating)</visible>
+					</control>
+					<control type="label">
+						<aligny>center</aligny>
+						<align>left</align>
+						<font>topbar</font>
+						<textcolor>$VAR[ColorHighlightVar]</textcolor>
+						<height>45</height>
+						<width>auto</width>
+						<label>$INFO[ListItem.Rating,[UPPERCASE],[/UPPERCASE]]</label>
+						<visible>!IsEmpty(ListItem.Rating)</visible>
+					</control>
+					<control type="label">
+						<aligny>center</aligny>
+						<align>left</align>
+						<font>IconMedium</font>
+						<textcolor>$VAR[RottenTomatoesIconColour]</textcolor>
+						<height>45</height>
+						<width>auto</width>
+						<label>$VAR[RottenTomatoesIcon, ]</label>
+						<visible>!IsEmpty(Window(Home).Property(SkinHelper.RottenTomatoesMeter))</visible>
+						<visible>!StringCompare(Window(Home).Property(SkinHelper.RottenTomatoesMeter),n/a)</visible>
+					</control>
+					<control type="label">
+						<aligny>center</aligny>
+						<align>left</align>
+						<font>topbar</font>
+						<textcolor>$VAR[ColorHighlightVar]</textcolor>
+						<height>45</height>
+						<width>auto</width>
+						<label>$INFO[Window(Home).Property(SkinHelper.RottenTomatoesMeter),,%]</label>
+						<visible>!IsEmpty(Window(Home).Property(SkinHelper.RottenTomatoesMeter))</visible>
+						<visible>!StringCompare(Window(Home).Property(SkinHelper.RottenTomatoesMeter),n/a)</visible>
+					</control>
+					<control type="label">
+						<aligny>center</aligny>
+						<align>left</align>
+						<font>IconMedium</font>
+						<label>$VAR[LabelUserRating, ]</label>
+						<textcolor>$VAR[ColorHighlightVar]</textcolor>
+						<height>45</height>
+						<width>auto</width>
+						<visible>!IsEmpty(ListItem.Userrating)</visible>
+					</control>
+					<control type="label">
+						<aligny>center</aligny>
+						<align>left</align>
+						<font>topbar</font>
+						<textcolor>$VAR[ColorHighlightVar]</textcolor>
+						<height>45</height>
+						<width>auto</width>
+						<label>$INFO[ListItem.Userrating,[UPPERCASE],[/UPPERCASE]]</label>
+						<visible>!IsEmpty(ListItem.Userrating)</visible>
+					</control>
+					<control type="label">
+						<aligny>center</aligny>
+						<align>left</align>
+						<font>IconMedium</font>
+						<textcolor>yellow</textcolor>
+						<height>45</height>
+						<width>auto</width>
+						<label> </label>
+						<visible>!IsEmpty(ListItem.Top250)</visible>
+					</control>
+					<control type="label">
+						<aligny>center</aligny>
+						<align>left</align>
+						<font>topbar</font>
+						<textcolor>$VAR[ColorHighlightVar]</textcolor>
+						<height>45</height>
+						<width>auto</width>
+						<label>$INFO[ListItem.Top250,#,]</label>
+						<visible>!IsEmpty(ListItem.Top250)</visible>
+					</control>
+					<control type="label">
+						<width min="1228" max="1678">auto</width>
+						<height>45</height>
+						<font>topbar</font>
+						<scroll>true</scroll>
+						<scrollspeed>150</scrollspeed>
+						<textcolor>$VAR[ColorHighlightVar]</textcolor>
+						<label>$VAR[HeaderSubTagline]</label>
 					</control>
 				</control>
 			</control>
