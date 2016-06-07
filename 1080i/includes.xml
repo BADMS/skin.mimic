@@ -266,7 +266,7 @@
 			<include>ButtonCommonValues</include>
 			<label>31972</label>
 			<label2>$INFO[Window(home).Property(cfa_daemon_set)]</label2>
-			<onclick>SetProperty(Dialog.NumItems,5)</onclick>
+			<onclick>SetProperty(Dialog.NumItems,6)</onclick>
 			<onclick>SetProperty(Dialog.1.Label,Blur)</onclick>
 			<onclick>SetProperty(Dialog.1.BuiltIn,SetProperty(cfa_daemon_set,Blur,home))</onclick>
 			<onclick>SetProperty(Dialog.2.Label,Pixelate)</onclick>
@@ -276,7 +276,9 @@
 			<onclick>SetProperty(Dialog.4.Label,Distort)</onclick>
 			<onclick>SetProperty(Dialog.4.BuiltIn,SetProperty(cfa_daemon_set,Distort,home))</onclick>
 			<onclick>SetProperty(Dialog.5.Label,None)</onclick>
-			<onclick>SetProperty(Dialog.5.BuiltIn,SetProperty(cfa_daemon_set,None,home))</onclick>
+			<onclick>SetProperty(Dialog.5.BuiltIn,SetProperty(cfa_daemon_set,Two tone,home))</onclick>
+			<onclick>SetProperty(Dialog.6.Label,None)</onclick>
+			<onclick>SetProperty(Dialog.6.BuiltIn,SetProperty(cfa_daemon_set,None,home))</onclick>
 			<onclick>RunScript(script.toolbox,info=selectdialog,header=Select Background Effect)</onclick>
 		</control>
 		<control type="button" id="11115">
@@ -284,7 +286,7 @@
 			<include>ButtonCommonValues</include>
 			<label>31973</label>
 			<label2>$INFO[Window(home).Property(cpa_daemon_set)]</label2>
-			<onclick>SetProperty(Dialog.NumItems,5)</onclick>
+			<onclick>SetProperty(Dialog.NumItems,6)</onclick>
 			<onclick>SetProperty(Dialog.1.Label,Blur)</onclick>
 			<onclick>SetProperty(Dialog.1.BuiltIn,SetProperty(cpa_daemon_set,Blur,home))</onclick>
 			<onclick>SetProperty(Dialog.2.Label,Pixelate)</onclick>
@@ -293,8 +295,10 @@
 			<onclick>SetProperty(Dialog.3.BuiltIn,SetProperty(cpa_daemon_set,Posterize,home))</onclick>
 			<onclick>SetProperty(Dialog.4.Label,Distort)</onclick>
 			<onclick>SetProperty(Dialog.4.BuiltIn,SetProperty(cpa_daemon_set,Distort,home))</onclick>
-			<onclick>SetProperty(Dialog.5.Label,None)</onclick>
-			<onclick>SetProperty(Dialog.5.BuiltIn,SetProperty(cpa_daemon_set,None,home))</onclick>
+			<onclick>SetProperty(Dialog.5.Label,Two tone)</onclick>
+			<onclick>SetProperty(Dialog.5.BuiltIn,SetProperty(cpa_daemon_set,Two tone,home))</onclick>
+			<onclick>SetProperty(Dialog.6.Label,None)</onclick>
+			<onclick>SetProperty(Dialog.6.BuiltIn,SetProperty(cpa_daemon_set,None,home))</onclick>
 			<onclick>RunScript(script.toolbox,info=selectdialog,header=Select Focus Effect)</onclick>
 		</control>
 		<control type="radiobutton" id="11116">
