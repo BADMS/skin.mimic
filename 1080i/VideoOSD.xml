@@ -21,16 +21,19 @@
 			<visible>!VideoPlayer.Content(LiveTV)</visible>
 		</control>
 		<control type="group">
-			<animation effect="slide" end="0,-238" time="240" tween="quadratic" condition="Window.IsVisible(SliderDialog) | Window.IsVisible(PVROSDGuide) | Window.IsVisible(PVROSDTeletext) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)">Conditional</animation>
-			<animation effect="slide" start="0,-238" end="0,0" time="240" tween="quadratic">WindowOpen</animation>
-			<animation effect="slide" end="0,-238" start="0,0" time="240" tween="quadratic">WindowClose</animation>
-			<top>0</top>
-			<control type="image">
-				<width>FullScreenWidth</width>
-				<height>110</height>
-				<texture>background.png</texture>
-				<colordiffuse>$VAR[ColorBackgroundVar]</colordiffuse>
-			</control>
+			<animation type="Conditional" condition="Window.IsVisible(SliderDialog) | Window.IsVisible(PVROSDGuide) | Window.IsVisible(PVROSDTeletext) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)" reversible="false">
+				<effect type="rotate" center="960,540" end="238" start="0" time="240" tween="quadratic" />
+				<effect type="fade" end="0" start="100" time="240" tween="quadratic" />
+			</animation>
+			<animation type="WindowOpen" reversible="false">
+				<effect type="rotate" center="960,540" end="0" start="238" time="240" tween="quadratic" />
+				<effect type="fade" start="0" end="100" time="240" tween="quadratic" />
+			</animation>
+			<animation type="WindowClose" reversible="false">
+				<effect type="rotate" center="960,540" end="238" start="0" time="240" tween="quadratic" />
+				<effect type="fade" end="0" start="100" time="240" tween="quadratic" />
+			</animation>
+			<top>488</top>
 			<control type="grouplist" id="202">
 				<top>20</top>
 				<height>144</height>

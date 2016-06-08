@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
+	<zorder>0</zorder>
 	<defaultcontrol>1</defaultcontrol>
 	<visible>[Window.IsActive(videoosd) | Player.Paused | Player.Seeking | Player.DisplayAfterSeek | Player.Forwarding | Player.Rewinding] + VideoPlayer.IsFullscreen + ![Window.IsVisible(fullscreeninfo) | Window.IsVisible(musicosd) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(PVROSDGuide) | Window.IsVisible(PVROSDTeletext) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(subtitlesearch) | Window.IsVisible(videobookmarks) | Window.IsActive(script.pseudotv.TVOverlay.xml) | Window.IsActive(script.pseudotv.live.TVOverlay.xml)]</visible>
 	<controls>
 		<control type="group">
-			<animation effect="slide" start="0,400" end="0,0" time="200">WindowOpen</animation>
-			<animation effect="slide" start="0,400" end="0,0" time="200">VisibleChange</animation>
+			<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
+			<animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
 			<visible>!VideoPlayer.Content(livetv)</visible>
 			<include>FullscreenDimensions</include>
-			<top>540</top>
 			<control type="image">
+			<top>492</top>
 				<width>FullScreenWidth</width>
-				<height>95</height>
+				<height>96</height>
 				<texture>background.png</texture>
 				<colordiffuse>$VAR[ColorBackgroundVar]</colordiffuse>
 			</control>
@@ -29,15 +30,8 @@
 			</control>
 			<control type="slider" id="401">
 				<left>300</left>
-				<top>234</top>
-				<width>1587</width>
-				<height>37</height>
-				<controloffsetx>75</controloffsetx>
-				<controloffsety>0</controloffsety>
+				<top>-234</top>
 				<orientation>horizontal</orientation>
-				<texturesliderbar>blank.png</texturesliderbar>
-				<textureslidernib>osd/SeekbarNib.png</textureslidernib>
-				<textureslidernibfocus>osd/SeekbarNib.png</textureslidernibfocus>
 			</control>
 			<control type="image">
 				<top>390</top>
@@ -61,15 +55,15 @@
 				<texture>progress/images/$INFO[Control.GetLabel(400),outer,%.png]</texture>
 			</control>
 			<control type="label">
-				<top>28</top>
+				<top>520</top>
 				<left>45</left>
 				<width>900</width>
 				<height>35</height>
 				<font>font13_title</font>
-				<label>$INFO[Player.Time]$INFO[Player.Duration, / ]     outer-$INFO[Control.GetLabel(400)]     inner-$INFO[Control.GetLabel(399)]     middle-$INFO[Control.GetLabel(401)]</label>
+				<label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
 			</control>
 			<control type="label">
-				<top>28</top>
+				<top>520</top>
 				<left>975</left>
 				<width>900</width>
 				<height>35</height>
@@ -142,19 +136,16 @@
 				<label>[COLOR $VAR[ColorHighlightVar]]$LOCALIZE[19031]: [/COLOR]$INFO[VideoPlayer.NextTitle] $INFO[VideoPlayer.NextStartTime,(, - ]$INFO[VideoPlayer.NextEndTime,,)]</label>
 				<scroll>true</scroll>
 			</control>
-			<control type="progress">
-				<left>300</left>
-				<top>233</top>
-				<width>1587</width>
-				<height>37</height>
+			<control type="progress" id="399">
+				<left>30</left>
+				<top>3333</top>
 				<info>Player.ProgressCache</info>
-				<colordiffuse>$VAR[ColorBackgroundVar]</colordiffuse>
 			</control>
-			<control type="progress">
+			<control type="progress" id="400">
 				<left>300</left>
-				<top>233</top>
-				<width>1587</width>
-				<height>37</height>
+				<top>-233</top>
+				<width>1</width>
+				<height>1</height>
 				<info>Player.Progress</info>
 			</control>
 			<control type="slider" id="401">
@@ -169,16 +160,37 @@
 				<textureslidernib>osd/SeekbarNib.png</textureslidernib>
 				<textureslidernibfocus>osd/SeekbarNib.png</textureslidernibfocus>
 			</control>
+			<control type="image">
+				<top>390</top>
+				<left>810</left>
+				<height>300</height>
+				<width>300</width>
+				<texture>progress/images/$INFO[Control.GetLabel(399),inner,%.png]</texture>
+			</control>
+			<control type="image">
+				<top>390</top>
+				<left>810</left>
+				<height>300</height>
+				<width>300</width>
+				<texture>progress/images/$INFO[Control.GetLabel(401),middle,.png]</texture>
+			</control>
+			<control type="image">
+				<top>390</top>
+				<left>810</left>
+				<height>300</height>
+				<width>300</width>
+				<texture>progress/images/$INFO[Control.GetLabel(400),outer,%.png]</texture>
+			</control>
 			<control type="label">
-				<top>232</top>
-				<left>315</left>
+				<top>520</top>
+				<left>45</left>
 				<width>900</width>
 				<height>35</height>
 				<font>font13_title</font>
 				<label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
 			</control>
 			<control type="label">
-				<top>232</top>
+				<top>520</top>
 				<left>975</left>
 				<width>900</width>
 				<height>35</height>
