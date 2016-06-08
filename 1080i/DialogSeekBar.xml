@@ -6,40 +6,59 @@
 		<control type="group">
 			<animation effect="slide" start="0,400" end="0,0" time="200">WindowOpen</animation>
 			<animation effect="slide" start="0,400" end="0,0" time="200">VisibleChange</animation>
-			<top>985</top>
 			<visible>!VideoPlayer.Content(livetv)</visible>
+			<include>FullscreenDimensions</include>
+			<top>540</top>
 			<control type="image">
 				<width>FullScreenWidth</width>
 				<height>95</height>
 				<texture>background.png</texture>
 				<colordiffuse>$VAR[ColorBackgroundVar]</colordiffuse>
 			</control>
-			<control type="progress">
+			<control type="progress" id="399">
 				<left>30</left>
-				<top>29</top>
-				<width>1860</width>
-				<height>37</height>
+				<top>3333</top>
 				<info>Player.ProgressCache</info>
-				<colordiffuse>$VAR[ColorBackgroundVar]</colordiffuse>
 			</control>
-			<control type="progress">
-				<left>30</left>
-				<top>29</top>
-				<width>1860</width>
-				<height>37</height>
+			<control type="progress" id="400">
+				<left>300</left>
+				<top>-233</top>
+				<width>1</width>
+				<height>1</height>
 				<info>Player.Progress</info>
 			</control>
 			<control type="slider" id="401">
-				<left>30</left>
-				<top>30</top>
-				<width>1860</width>
+				<left>300</left>
+				<top>234</top>
+				<width>1587</width>
 				<height>37</height>
-				<orientation>horizontal</orientation>
 				<controloffsetx>75</controloffsetx>
 				<controloffsety>0</controloffsety>
+				<orientation>horizontal</orientation>
 				<texturesliderbar>blank.png</texturesliderbar>
 				<textureslidernib>osd/SeekbarNib.png</textureslidernib>
 				<textureslidernibfocus>osd/SeekbarNib.png</textureslidernibfocus>
+			</control>
+			<control type="image">
+				<top>390</top>
+				<left>810</left>
+				<height>300</height>
+				<width>300</width>
+				<texture>progress/images/$INFO[Control.GetLabel(399),inner,%.png]</texture>
+			</control>
+			<control type="image">
+				<top>390</top>
+				<left>810</left>
+				<height>300</height>
+				<width>300</width>
+				<texture>progress/images/$INFO[Control.GetLabel(401),middle,.png]</texture>
+			</control>
+			<control type="image">
+				<top>390</top>
+				<left>810</left>
+				<height>300</height>
+				<width>300</width>
+				<texture>progress/images/$INFO[Control.GetLabel(400),outer,%.png]</texture>
 			</control>
 			<control type="label">
 				<top>28</top>
@@ -47,7 +66,7 @@
 				<width>900</width>
 				<height>35</height>
 				<font>font13_title</font>
-				<label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
+				<label>$INFO[Player.Time]$INFO[Player.Duration, / ]     outer-$INFO[Control.GetLabel(400)]     inner-$INFO[Control.GetLabel(399)]     middle-$INFO[Control.GetLabel(401)]</label>
 			</control>
 			<control type="label">
 				<top>28</top>
@@ -138,7 +157,6 @@
 				<height>37</height>
 				<info>Player.Progress</info>
 			</control>
-			<!--
 			<control type="slider" id="401">
 				<left>300</left>
 				<top>234</top>
@@ -146,11 +164,11 @@
 				<height>37</height>
 				<controloffsetx>75</controloffsetx>
 				<controloffsety>0</controloffsety>
+				<orientation>horizontal</orientation>
 				<texturesliderbar>blank.png</texturesliderbar>
 				<textureslidernib>osd/SeekbarNib.png</textureslidernib>
 				<textureslidernibfocus>osd/SeekbarNib.png</textureslidernibfocus>
 			</control>
-			-->
 			<control type="label">
 				<top>232</top>
 				<left>315</left>
