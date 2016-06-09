@@ -838,18 +838,22 @@
 						<fadetime>IconCrossfadeTime</fadetime>
 					</control>
 				</control>
-				<control type="grouplist">
+				<control type="image">
+					<visible>[Container.Content(addons) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(musicvideos)] + !String.StartsWith(ListItem.Icon,Default)</visible>
+					<top>15</top>
 					<left>1276</left>
-					<itemgap>15</itemgap>
+					<width>560</width>
+					<height>560</height>
+					<aspectratio align="center" aligny="center">scale</aspectratio>
+					<fadetime>2000</fadetime>
+					<texture background="true" diffuse="thumbs/colorbox_poster_mask.png" colordiffuse="$VAR[LibColorHighlightVar]">$VAR[FocusImage]</texture>
+				</control>
+				<control type="grouplist">
+					<top>20</top>
+					<left>1296</left>
+					<itemgap>20</itemgap>
 					<visible>[Container.Content(addons) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(musicvideos)] + !String.StartsWith(ListItem.Icon,Default)</visible>
 					<animation effect="slide" time="0" start="0,0" end="0,15" condition="Window.IsActive(programs) | Window.IsActive(addonbrowser)">Conditional</animation>
-					<control type="image">
-						<width>560</width>
-						<height>560</height>
-						<aspectratio align="center" aligny="center">scale</aspectratio>
-						<fadetime>2000</fadetime>
-						<texture background="true" diffuse="thumbs/colorbox_poster_mask.png" colordiffuse="$VAR[LibColorHighlightVar]">$VAR[FocusImage]</texture>
-					</control>
 					<control type="image">
 						<width>560</width>
 						<height>560</height>
@@ -860,14 +864,14 @@
 					</control>
 					<control type="label">
 						<visible>Container.Content(songs)</visible>
-						<width>560</width>
+						<width>520</width>
 						<height>30</height>
 						<font>font14</font>
 						<label>$INFO[ListItem.Album]</label>
 					</control>
 					<control type="label">
 						<visible>Container.Content(songs)</visible>
-						<width>560</width>
+						<width>520</width>
 						<height>30</height>
 						<font>font14</font>
 						<label>$INFO[ListItem.Year]</label>
@@ -875,7 +879,7 @@
 					<control type="textbox">
 						<visible>Container.Content(musicvideos)</visible>
 						<description>Description</description>
-						<width>560</width>
+						<width>520</width>
 						<height>220</height>
 						<font>font14_textbox4</font>
 						<label>$INFO[ListItem.Plot]</label>
@@ -884,7 +888,7 @@
 					<control type="textbox">
 						<visible>Container.Content(artists) | Container.Content(albums)</visible>
 						<label>$VAR[MusicPlotVar]</label>
-						<width>560</width>
+						<width>520</width>
 						<height>275</height>
 						<font>font14_textbox5</font>
 						<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
@@ -893,7 +897,7 @@
 					<control type="textbox">
 						<visible>!String.IsEmpty(ListItem.AddonDescription)</visible>
 						<description>Description</description>
-						<width>560</width>
+						<width>520</width>
 						<height>275</height>
 						<font>font14_textbox5</font>
 						<label>$INFO[ListItem.AddonDescription]</label>
