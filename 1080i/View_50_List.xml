@@ -210,7 +210,7 @@
 							<width>64</width>
 							<height>64</height>
 							<aspectratio>keep</aspectratio>
-							<texture colordiffuse="$VAR[ColorTextVar]">$VAR[ListItem.Overlay]</texture>
+							<texture colordiffuse="$VAR[ColorTextVar]">$VAR[OverlayVar]</texture>
 							<visible>!String.IsEmpty(ListItem.Overlay)</visible>
 						</control>
 					</itemlayout>
@@ -309,7 +309,7 @@
 							<width>64</width>
 							<height>64</height>
 							<aspectratio>keep</aspectratio>
-							<texture colordiffuse="$VAR[ColorTextVar]">$VAR[ListItem.Overlay]</texture>
+							<texture colordiffuse="$VAR[ColorTextVar]">$VAR[OverlayVar]</texture>
 							<visible>!String.IsEmpty(ListItem.Overlay)</visible>
 						</control>
 					</focusedlayout>
@@ -408,7 +408,7 @@
 							<width>64</width>
 							<height>64</height>
 							<aspectratio>keep</aspectratio>
-							<texture colordiffuse="$VAR[ColorTextVar]">$VAR[ListItem.Overlay]</texture>
+							<texture colordiffuse="$VAR[ColorTextVar]">$VAR[OverlayVar]</texture>
 							<visible>!String.IsEmpty(ListItem.Overlay)</visible>
 						</control>
 					</itemlayout>
@@ -507,7 +507,7 @@
 							<width>64</width>
 							<height>64</height>
 							<aspectratio>keep</aspectratio>
-							<texture colordiffuse="$VAR[ColorTextVar]">$VAR[ListItem.Overlay]</texture>
+							<texture colordiffuse="$VAR[ColorTextVar]">$VAR[OverlayVar]</texture>
 							<visible>!String.IsEmpty(ListItem.Overlay)</visible>
 						</control>
 					</focusedlayout>
@@ -567,7 +567,7 @@
 							<width>64</width>
 							<height>64</height>
 							<aspectratio>keep</aspectratio>
-							<texture colordiffuse="$VAR[ColorTextVar]">$VAR[ListItem.Overlay]</texture>
+							<texture colordiffuse="$VAR[ColorTextVar]">$VAR[OverlayVar]</texture>
 							<visible>!String.IsEmpty(ListItem.Overlay)</visible>
 						</control>
 					</itemlayout>
@@ -628,7 +628,7 @@
 							<width>64</width>
 							<height>64</height>
 							<aspectratio>keep</aspectratio>
-							<texture colordiffuse="$VAR[ColorTextVar]">$VAR[ListItem.Overlay]</texture>
+							<texture colordiffuse="$VAR[ColorTextVar]">$VAR[OverlayVar]</texture>
 							<visible>!String.IsEmpty(ListItem.Overlay)</visible>
 						</control>
 					</focusedlayout>
@@ -688,7 +688,7 @@
 							<width>64</width>
 							<height>64</height>
 							<aspectratio>keep</aspectratio>
-							<texture colordiffuse="$VAR[ColorTextVar]">$VAR[ListItem.Overlay]</texture>
+							<texture colordiffuse="$VAR[ColorTextVar]">$VAR[OverlayVar]</texture>
 							<visible>!String.IsEmpty(ListItem.Overlay)</visible>
 						</control>
 					</itemlayout>
@@ -749,7 +749,7 @@
 							<width>64</width>
 							<height>64</height>
 							<aspectratio>keep</aspectratio>
-							<texture colordiffuse="$VAR[ColorTextVar]">$VAR[ListItem.Overlay]</texture>
+							<texture colordiffuse="$VAR[ColorTextVar]">$VAR[OverlayVar]</texture>
 							<visible>!String.IsEmpty(ListItem.Overlay)</visible>
 						</control>
 					</focusedlayout>

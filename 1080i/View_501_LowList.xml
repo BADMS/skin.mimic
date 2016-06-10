@@ -175,7 +175,7 @@
 						<width>64</width>
 						<height>64</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$VAR[ListItem.Overlay]</texture>
+						<texture>$VAR[OverlayVar]</texture>
 					</control>
 				</itemlayout>
 				<focusedlayout height="67" width="806" condition="Container.Content(movies)">
@@ -217,7 +217,7 @@
 						<width>64</width>
 						<height>64</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$VAR[ListItem.Overlay]</texture>
+						<texture>$VAR[OverlayVar]</texture>
 					</control>
 				</focusedlayout>
 				<itemlayout height="67" width="806" condition="Container.Content(tvshows)">
@@ -259,7 +259,7 @@
 						<width>64</width>
 						<height>64</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$VAR[ListItem.Overlay]</texture>
+						<texture>$VAR[OverlayVar]</texture>
 					</control>
 				</itemlayout>
 				<focusedlayout height="67" width="806" condition="Container.Content(tvshows)">
@@ -301,7 +301,7 @@
 						<width>64</width>
 						<height>64</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$VAR[ListItem.Overlay]</texture>
+						<texture>$VAR[OverlayVar]</texture>
 					</control>
 				</focusedlayout>
 				<itemlayout height="67" width="806" condition="Container.Content(seasons)">
@@ -335,7 +335,7 @@
 						<width>64</width>
 						<height>64</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$VAR[ListItem.Overlay]</texture>
+						<texture>$VAR[OverlayVar]</texture>
 					</control>
 				</itemlayout>
 				<focusedlayout height="67" width="806" condition="Container.Content(seasons)">
@@ -369,7 +369,7 @@
 						<width>64</width>
 						<height>64</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$VAR[ListItem.Overlay]</texture>
+						<texture>$VAR[OverlayVar]</texture>
 					</control>
 				</focusedlayout>
 				<itemlayout height="67" width="806" condition="Container.Content(episodes)">
@@ -403,7 +403,7 @@
 						<width>64</width>
 						<height>64</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$VAR[ListItem.Overlay]</texture>
+						<texture>$VAR[OverlayVar]</texture>
 					</control>
 				</itemlayout>
 				<focusedlayout height="67" width="806" condition="Container.Content(episodes)">
@@ -437,7 +437,7 @@
 						<width>64</width>
 						<height>64</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$VAR[ListItem.Overlay]</texture>
+						<texture>$VAR[OverlayVar]</texture>
 					</control>
 				</focusedlayout>
 				<itemlayout height="67" width="806" condition="Container.Content(addons)">

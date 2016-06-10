@@ -72,7 +72,7 @@
 						<width>64</width>
 						<height>64</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$VAR[ListItem.Overlay]</texture>
+						<texture>$VAR[OverlayVar]</texture>
 						<colordiffuse>$VAR[ColorTextVar]</colordiffuse>
 					</control>
 				</itemlayout>
@@ -128,7 +128,7 @@
 						<width>64</width>
 						<height>64</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$VAR[ListItem.Overlay]</texture>
+						<texture>$VAR[OverlayVar]</texture>
 						<colordiffuse>$VAR[ColorTextVar]</colordiffuse>
 					</control>
 				</focusedlayout>
