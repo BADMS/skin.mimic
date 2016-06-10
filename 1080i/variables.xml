@@ -80,9 +80,9 @@
 		<value>$LOCALIZE[231]</value>
 	</variable>
 	<variable name="OverlayVar">
-		<value condition="Container.ListItem.IsResumable + Skin.HasSetting(Overlay.Resumable)">overlays/OverlayResumable.png</value>
-		<value condition="String.IsEqual(ListItem.Overlay,OverlayUnwatched.png) + Skin.HasSetting(Overlay.Unwatched)">overlays/OverlayUnwatched.png</value>
-		<value condition="String.IsEqual(ListItem.Overlay,OverlayWatched.png) + Skin.HasSetting(Overlay.Watched)">overlays/OverlayWatched.png</value>
+		<value condition="Container.ListItem.IsResumable + Skin.HasSetting(Overlay.Resumable)">overlays/images/$INFO[ListItem.PercentPlayed,overlay,.png]</value>
+		<value condition="String.IsEqual(ListItem.Overlay,OverlayUnwatched.png) + Skin.HasSetting(Overlay.Unwatched)">overlays/images/overlay.png</value>
+		<value condition="String.IsEqual(ListItem.Overlay,OverlayWatched.png) + Skin.HasSetting(Overlay.Watched)">overlays/images/overlay100.png]</value>
 	</variable>
 	<variable name="OverlayBGVar">
 		<value condition="[Container.ListItem.IsResumable + Skin.HasSetting(Overlay.Resumable)] | [String.IsEqual(ListItem.Overlay,OverlayUnwatched.png) + Skin.HasSetting(Overlay.Unwatched)] | [String.IsEqual(ListItem.Overlay,OverlayWatched.png) + Skin.HasSetting(Overlay.Watched)]">overlays/overlaybg.png</value>
@@ -224,6 +224,11 @@
 		<value condition="Skin.HasSetting(Hide.Spoilers.Movies) + Container.Content(movies) + [stringcompare(ListItem.Overlay,OverlayUnWatched.png) | ListItem.IsResumable]">$LOCALIZE[20370]</value>
 		<value condition="Skin.HasSetting(VideoInfoPlotToggle) + !String.IsEmpty(ListItem.PlotOutline)">$INFO[ListItem.PlotOutline]</value>
 		<value>$INFO[ListItem.Plot]</value>
+	</variable>
+	<variable name="PlayerPlotVar">
+		<value condition="[Skin.HasSetting(Hide.Spoilers.TV) + !IsEmpty(VideoPlayer.Episode)]">$LOCALIZE[20370]</value>
+		<value condition="[Skin.HasSetting(Hide.Spoilers.Movies) + IsEmpty(VideoPlayer.Episode)]">$LOCALIZE[20370]</value>
+		<value>[COLOR $VAR[ColorHighlightVar]]$INFO[VideoPlayer.Tagline,, ][/COLOR]$INFO[VideoPlayer.Plot]</value>
 	</variable>
 	<variable name="VideoPlotVar">
 		<value condition="Container.Content(seasons)">$INFO[Container.ShowPlot]</value>

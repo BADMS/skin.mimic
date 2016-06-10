@@ -140,7 +140,7 @@
 					<font>font14_textbox3</font>
 					<aligny>top</aligny>
 					<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
-					<label>[COLOR $VAR[ColorHighlightVar]]$INFO[VideoPlayer.Tagline,, ][/COLOR]$INFO[VideoPlayer.Plot]</label>
+					<label>$VAR[PlayerPlotVar]</label>
 				</control>
 			</control>
 			<control type="progress">

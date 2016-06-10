@@ -2,6 +2,9 @@
 <window>
 	<defaultcontrol always="true">8</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
+	<onload condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ExtraFanArtPath))">Skin.SetString(SkinHelper_ExtraFanArtPath,$INFO[Window(Home).Property(SkinHelper.ExtraFanArtPath)])</onload>
+	<onunload>AlarmClock(exfa1,SetProperty(SkinHelper.ExtraFanArtPath,$INFO[Skin.String(SkinHelper_ExtraFanArtPath)],home),00:01,silent)</onunload>
+	<onunload>AlarmClock(exfa2,Skin.Reset(SkinHelper_ExtraFanArtPath),00:01,true)</onunload>
 	<onload>SendClick(9000,5)</onload>
 	<controls>
 		<include condition="System.HasAddon(script.extendedinfo)">HiddenActorList</include>
