@@ -226,8 +226,8 @@
 		<value>$INFO[ListItem.Plot]</value>
 	</variable>
 	<variable name="PlayerPlotVar">
-		<value condition="[Skin.HasSetting(Hide.Spoilers.TV) + !IsEmpty(VideoPlayer.Episode)]">$LOCALIZE[20370]</value>
-		<value condition="[Skin.HasSetting(Hide.Spoilers.Movies) + IsEmpty(VideoPlayer.Episode)]">$LOCALIZE[20370]</value>
+		<value condition="[Skin.HasSetting(Hide.Spoilers.TV) + !IsEmpty(VideoPlayer.Episode) + IsEmpty(VideoPlayer.EpisodeName)]">$LOCALIZE[20370]</value>
+		<value condition="[Skin.HasSetting(Hide.Spoilers.Movies) + IsEmpty(VideoPlayer.Episode) + IsEmpty(VideoPlayer.EpisodeName)]">$LOCALIZE[20370]</value>
 		<value>[COLOR $VAR[ColorHighlightVar]]$INFO[VideoPlayer.Tagline,, ][/COLOR]$INFO[VideoPlayer.Plot]</value>
 	</variable>
 	<variable name="VideoPlotVar">
