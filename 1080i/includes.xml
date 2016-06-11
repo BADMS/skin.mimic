@@ -881,12 +881,14 @@
 			</control>
 			<control type="image">
 				<description>avatar</description>
+				<animation effect="fade" time="500">Visible</animation>
 				<left>1821</left>
 				<top>19</top>
 				<width>80</width>
 				<height>80</height>
 				<aspectratio align="center" aligny="center">keep</aspectratio>
 				<texture>$VAR[HomeNowPlayingThumbVar]</texture>
+				<visible>!Window.IsVisible(volumebar) | Player.Muted</visible>
 			</control>
 		</control>
 	</include>
@@ -1401,7 +1403,7 @@
 				<height>80</height>
 				<include>MediaFlagVars</include>
 				<texture>$INFO[ListItem.VideoAspect,flags/aspectratio/,.png]</texture>
-				<visible>!String.IsEmpty(ListItem.VideoAspect) + ![$EXP[isTvshow] | $EXP[isSeason] | Control.IsVisible(500) | Control.IsVisible(57) | Control.IsVisible(56) | Control.IsVisible(501) | Control.IsVisible(55)]</visible>
+				<visible>!String.IsEmpty(ListItem.VideoAspect) + [![$EXP[isTvshow] | $EXP[isSeason] | Control.IsVisible(500) | Control.IsVisible(50) | Control.IsVisible(57) | Control.IsVisible(501) | Control.IsVisible(55)] | Window.IsActive(movieinformation)]</visible>
 			</control>
 			<control type="image">
 				<height>80</height>
