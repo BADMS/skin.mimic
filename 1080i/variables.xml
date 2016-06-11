@@ -658,8 +658,8 @@
     	<value condition="Window.IsActive(movieinformation) + String.IsEqual(ListItem.DBTYPE,episode) + !String.IsEmpty(ListItem.TvShowTitle)">$INFO[ListItem.TvShowTitle]</value>
 		-->
     	<value condition="Window.IsActive(movieinformation) + String.IsEqual(ListItem.DBTYPE,musicvideo) + !String.IsEmpty(ListItem.Artist)">$INFO[ListItem.Artist]</value>
-    	<value condition="Window.IsActive(DialogMusicInfo.xml)">$VAR[MusicInfoSubheading]</value>
-		<value condition="Window.IsActive(songinformation)">$VAR[MusicInfoSubheading]</value>
+    	<value condition="Window.IsActive(DialogMusicInfo.xml) + !SubString(Window(10025).Property(PlayingBackgroundMedia),True)">$VAR[MusicInfoSubheading]</value>
+		<value condition="Window.IsActive(songinformation) + !SubString(Window(10025).Property(PlayingBackgroundMedia),True)">$VAR[MusicInfoSubheading]</value>
     	<value condition="Window.IsVisible(home) + Window.IsActive(DialogContextMenu.xml)">$LOCALIZE[31246]</value>
     	<value condition="Window.IsActive(script-The Big Picture-main.xml)">$INFO[Container(100).ListItem.Label]</value>
     	<value condition="[Window.IsActive(script-NextAired-TVGuide.xml) | Window.IsActive(script-NextAired-TVGuide2.xml)] + Container(9000).HasFocus(1)">$INFO[Container(200).NumItems,, $LOCALIZE[31025]]</value>
