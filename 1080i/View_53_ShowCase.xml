@@ -886,57 +886,57 @@
 		<value>$INFO[ListItem(9).Thumb]</value>
 	</variable>
 	<variable name="IconOverlay-1Var">
-		<value condition="ListItem(-1).IsResumable + Skin.HasSetting(Overlay.Resumable)">overlays/images/$INFO[ListItem(xx).PercentPlayed,overlay,.png]</value>
+		<value condition="ListItem(-1).IsResumable + Skin.HasSetting(Overlay.Resumable)">overlays/images/$INFO[ListItem(-1).PercentPlayed,overlay,.png]</value>
 		<value condition="String.IsEqual(ListItem(-1).Overlay,OverlayWatched.png) + Skin.HasSetting(Overlay.Watched)">-</value>
 		<value condition="String.IsEqual(ListItem(-1).Overlay,OverlayUnwatched.png) + Skin.HasSetting(Overlay.Unwatched)">overlays/images/overlay.png</value>
 	</variable>
 	<variable name="IconOverlay0Var">
-		<value condition="ListItem.IsResumable + Skin.HasSetting(Overlay.Resumable)">overlays/images/$INFO[ListItem(xx).PercentPlayed,overlay,.png]</value>
+		<value condition="ListItem.IsResumable + Skin.HasSetting(Overlay.Resumable)">overlays/images/$INFO[ListItem.PercentPlayed,overlay,.png]</value>
 		<value condition="String.IsEqual(ListItem.Overlay,OverlayWatched.png) + Skin.HasSetting(Overlay.Watched)">-</value>
 		<value condition="String.IsEqual(ListItem.Overlay,OverlayUnwatched.png) + Skin.HasSetting(Overlay.Unwatched)">overlays/images/overlay.png</value>
 	</variable>
 	<variable name="IconOverlay1Var">
-		<value condition="ListItem(1).IsResumable + Skin.HasSetting(Overlay.Resumable)">overlays/images/$INFO[ListItem(xx).PercentPlayed,overlay,.png]</value>
+		<value condition="ListItem(1).IsResumable + Skin.HasSetting(Overlay.Resumable)">overlays/images/$INFO[ListItem(1).PercentPlayed,overlay,.png]</value>
 		<value condition="String.IsEqual(ListItem(1).Overlay,OverlayWatched.png) + Skin.HasSetting(Overlay.Watched)">-</value>
 		<value condition="String.IsEqual(ListItem(1).Overlay,OverlayUnwatched.png) + Skin.HasSetting(Overlay.Unwatched)">overlays/images/overlay.png</value>
 	</variable>
 	<variable name="IconOverlay2Var">
-		<value condition="ListItem(2).IsResumable + Skin.HasSetting(Overlay.Resumable)">overlays/images/$INFO[ListItem(xx).PercentPlayed,overlay,.png]</value>
+		<value condition="ListItem(2).IsResumable + Skin.HasSetting(Overlay.Resumable)">overlays/images/$INFO[ListItem(2).PercentPlayed,overlay,.png]</value>
 		<value condition="String.IsEqual(ListItem(2).Overlay,OverlayWatched.png) + Skin.HasSetting(Overlay.Watched)">-</value>
 		<value condition="String.IsEqual(ListItem(2).Overlay,OverlayUnwatched.png) + Skin.HasSetting(Overlay.Unwatched)">overlays/images/overlay.png</value>
 	</variable>
 	<variable name="IconOverlay3Var">
-		<value condition="ListItem(3).IsResumable + Skin.HasSetting(Overlay.Resumable)">overlays/images/$INFO[ListItem(xx).PercentPlayed,overlay,.png]</value>
+		<value condition="ListItem(3).IsResumable + Skin.HasSetting(Overlay.Resumable)">overlays/images/$INFO[ListItem(3).PercentPlayed,overlay,.png]</value>
 		<value condition="String.IsEqual(ListItem(3).Overlay,OverlayWatched.png) + Skin.HasSetting(Overlay.Watched)">-</value>
 		<value condition="String.IsEqual(ListItem(3).Overlay,OverlayUnwatched.png) + Skin.HasSetting(Overlay.Unwatched)">overlays/images/overlay.png</value>
 	</variable>
 	<variable name="IconOverlay4Var">
-		<value condition="ListItem(4).IsResumable + Skin.HasSetting(Overlay.Resumable)">overlays/images/$INFO[ListItem(xx).PercentPlayed,overlay,.png]</value>
+		<value condition="ListItem(4).IsResumable + Skin.HasSetting(Overlay.Resumable)">overlays/images/$INFO[ListItem(4).PercentPlayed,overlay,.png]</value>
 		<value condition="String.IsEqual(ListItem(4).Overlay,OverlayWatched.png) + Skin.HasSetting(Overlay.Watched)">-</value>
 		<value condition="String.IsEqual(ListItem(4).Overlay,OverlayUnwatched.png) + Skin.HasSetting(Overlay.Unwatched)">overlays/images/overlay.png</value>
 	</variable>
 	<variable name="IconOverlay5Var">
-		<value condition="ListItem(5).IsResumable + Skin.HasSetting(Overlay.Resumable)">overlays/images/$INFO[ListItem(xx).PercentPlayed,overlay,.png]</value>
+		<value condition="ListItem(5).IsResumable + Skin.HasSetting(Overlay.Resumable)">overlays/images/$INFO[ListItem(5).PercentPlayed,overlay,.png]</value>
 		<value condition="String.IsEqual(ListItem(5).Overlay,OverlayWatched.png) + Skin.HasSetting(Overlay.Watched)">-</value>
 		<value condition="String.IsEqual(ListItem(5).Overlay,OverlayUnwatched.png) + Skin.HasSetting(Overlay.Unwatched)">overlays/images/overlay.png</value>
 	</variable>
 	<variable name="IconOverlay6Var">
-		<value condition="ListItem(6).IsResumable + Skin.HasSetting(Overlay.Resumable)">overlays/images/$INFO[ListItem(xx).PercentPlayed,overlay,.png]</value>
+		<value condition="ListItem(6).IsResumable + Skin.HasSetting(Overlay.Resumable)">overlays/images/$INFO[ListItem(6).PercentPlayed,overlay,.png]</value>
 		<value condition="String.IsEqual(ListItem(6).Overlay,OverlayWatched.png) + Skin.HasSetting(Overlay.Watched)">-</value>
 		<value condition="String.IsEqual(ListItem(6).Overlay,OverlayUnwatched.png) + Skin.HasSetting(Overlay.Unwatched)">overlays/images/overlay.png</value>
 	</variable>
 	<variable name="IconOverlay7Var">
-		<value condition="ListItem(7).IsResumable + Skin.HasSetting(Overlay.Resumable)">overlays/images/$INFO[ListItem(xx).PercentPlayed,overlay,.png]</value>
+		<value condition="ListItem(7).IsResumable + Skin.HasSetting(Overlay.Resumable)">overlays/images/$INFO[ListItem(7).PercentPlayed,overlay,.png]</value>
 		<value condition="String.IsEqual(ListItem(7).Overlay,OverlayWatched.png) + Skin.HasSetting(Overlay.Watched)">-</value>
 		<value condition="String.IsEqual(ListItem(7).Overlay,OverlayUnwatched.png) + Skin.HasSetting(Overlay.Unwatched)">overlays/images/overlay.png</value>
 	</variable>
 	<variable name="IconOverlay8Var">
-		<value condition="ListItem(8).IsResumable + Skin.HasSetting(Overlay.Resumable)">overlays/images/$INFO[ListItem(xx).PercentPlayed,overlay,.png]</value>
+		<value condition="ListItem(8).IsResumable + Skin.HasSetting(Overlay.Resumable)">overlays/images/$INFO[ListItem(8).PercentPlayed,overlay,.png]</value>
 		<value condition="String.IsEqual(ListItem(8).Overlay,OverlayWatched.png) + Skin.HasSetting(Overlay.Watched)">-</value>
 		<value condition="String.IsEqual(ListItem(8).Overlay,OverlayUnwatched.png) + Skin.HasSetting(Overlay.Unwatched)">overlays/images/overlay.png</value>
 	</variable>
 	<variable name="IconOverlay9Var">
-		<value condition="ListItem(9).IsResumable + Skin.HasSetting(Overlay.Resumable)">overlays/images/$INFO[ListItem(xx).PercentPlayed,overlay,.png]</value>
+		<value condition="ListItem(9).IsResumable + Skin.HasSetting(Overlay.Resumable)">overlays/images/$INFO[ListItem(9).PercentPlayed,overlay,.png]</value>
 		<value condition="String.IsEqual(ListItem(9).Overlay,OverlayWatched.png) + Skin.HasSetting(Overlay.Watched)">-</value>
 		<value condition="String.IsEqual(ListItem(9).Overlay,OverlayUnwatched.png) + Skin.HasSetting(Overlay.Unwatched)">overlays/images/overlay.png</value>
 	</variable>
