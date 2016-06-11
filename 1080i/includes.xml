@@ -302,6 +302,22 @@
 			<onclick>RunScript(script.toolbox,info=selectdialog,header=Select Focus Effect)</onclick>
 		</control>
 		<control type="radiobutton" id="11116">
+			<label>31976</label>
+			<include>ButtonCommonValues</include>
+			<onclick>Skin.ToggleSetting(Colorbox.header)</onclick>
+			<selected>Skin.HasSetting(Colorbox.header)</selected>
+			<visible>![Window.IsActive(eventlog) | Window.IsActive(tvchannels) | Window.IsActive(tvrecordings) | Window.IsActive(tvtimers) | Window.IsActive(tvtimerrules) | Window.IsActive(tvsearch) | Window.IsActive(radiochannels) | Window.IsActive(radiorecordings) | Window.IsActive(radiotimers) | Window.IsActive(radiosearch)]</visible>
+			<visible>!String.IsEqual(Window(home).Property(cpa_daemon_set),None)</visible>
+		</control>
+		<control type="radiobutton" id="11117">
+			<label>31977</label>
+			<include>ButtonCommonValues</include>
+			<onclick>Skin.ToggleSetting(Colorbox.background)</onclick>
+			<selected>Skin.HasSetting(Colorbox.background)</selected>
+			<visible>![Window.IsActive(eventlog) | Window.IsActive(tvchannels) | Window.IsActive(tvrecordings) | Window.IsActive(tvtimers) | Window.IsActive(tvtimerrules) | Window.IsActive(tvsearch) | Window.IsActive(radiochannels) | Window.IsActive(radiorecordings) | Window.IsActive(radiotimers) | Window.IsActive(radiosearch)]</visible>
+			<visible>!String.IsEqual(Window(home).Property(cpa_daemon_set),None)</visible>
+		</control>
+		<control type="radiobutton" id="11118">
 			<label>31974</label>
 			<include>ButtonCommonValues</include>
 			<onclick>Skin.ToggleSetting(ViewBigWall.Pulse.Focus)</onclick>
@@ -309,7 +325,7 @@
 			<visible>![Window.IsActive(eventlog) | Window.IsActive(tvchannels) | Window.IsActive(tvrecordings) | Window.IsActive(tvtimers) | Window.IsActive(tvtimerrules) | Window.IsActive(tvsearch) | Window.IsActive(radiochannels) | Window.IsActive(radiorecordings) | Window.IsActive(radiotimers) | Window.IsActive(radiosearch)]</visible>
 			<visible>Control.IsVisible(509) + !String.IsEqual(Window(home).Property(cpa_daemon_set),None)</visible>
 		</control>
-		<control type="radiobutton" id="11117">
+		<control type="radiobutton" id="11119">
 			<label>31974</label>
 			<include>ButtonCommonValues</include>
 			<onclick>Skin.ToggleSetting(ViewVideoWall.Pulse.Focus)</onclick>
@@ -317,7 +333,7 @@
 			<visible>![Window.IsActive(eventlog) | Window.IsActive(tvchannels) | Window.IsActive(tvrecordings) | Window.IsActive(tvtimers) | Window.IsActive(tvtimerrules) | Window.IsActive(tvsearch) | Window.IsActive(radiochannels) | Window.IsActive(radiorecordings) | Window.IsActive(radiotimers) | Window.IsActive(radiosearch)]</visible>
 			<visible>Control.IsVisible(500) + !String.IsEqual(Window(home).Property(cpa_daemon_set),None)</visible>
 		</control>
-		<control type="radiobutton" id="11118">
+		<control type="radiobutton" id="11120">
 			<label>31974</label>
 			<include>ButtonCommonValues</include>
 			<onclick>Skin.ToggleSetting(ViewAddonWall.Pulse.Focus)</onclick>
@@ -705,7 +721,7 @@
 				<width>FullScreenWidth</width>
 				<height>120</height>
 				<texture>listselect_fo.png</texture>
-				<colordiffuse>33000000</colordiffuse>
+				<colordiffuse>$VAR[ColorHeaderVar]</colordiffuse>
 			</control>
 			<control type="group">
 				<control type="image">

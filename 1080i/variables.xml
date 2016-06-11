@@ -528,7 +528,13 @@
 		<value condition="Skin.HasSetting(ColorCustomizer.Enabled) + !String.IsEmpty(Skin.String(highlightcolor.name))">$INFO[Skin.String(highlightcolor.name)]</value>
 		<value>highlight</value>
 	</variable>
+	<variable name="ColorHeaderVar">
+		<value condition="!String.IsEqual(Window(home).Property(cfa_daemon_set),None) + Skin.HasSetting(Colorbox.header)">$INFO[Window(home).Property(ImageColorcpa)]</value>
+		<value condition="Skin.HasSetting(ColorCustomizer.Enabled) + !String.IsEmpty(Skin.String(backgroundcolor.name))">$INFO[Skin.String(backgroundcolor.name)]</value>
+		<value>background</value>
+	</variable>
 	<variable name="ColorBackgroundVar">
+		<value condition="!String.IsEqual(Window(home).Property(cfa_daemon_set),None) + Skin.HasSetting(Colorbox.background)">$INFO[Window(home).Property(ImageColorcpa)]</value>
 		<value condition="Skin.HasSetting(ColorCustomizer.Enabled) + !String.IsEmpty(Skin.String(backgroundcolor.name))">$INFO[Skin.String(backgroundcolor.name)]</value>
 		<value>background</value>
 	</variable>

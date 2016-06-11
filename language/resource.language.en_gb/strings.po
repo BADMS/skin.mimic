@@ -1399,3 +1399,15 @@ msgstr ""
 msgctxt "#31974"
 msgid "Pulse focus"
 msgstr ""
+
+msgctxt "#31975"
+msgid "Edit library nodes"
+msgstr ""
+
+msgctxt "#31976"
+msgid "Colorbox header"
+msgstr ""
+
+msgctxt "#31977"
+msgid "Colorbox background"
+msgstr ""
