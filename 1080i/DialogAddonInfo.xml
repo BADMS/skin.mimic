@@ -7,7 +7,6 @@
 				<include>FullscreenDimensions</include>
 				<texture>background.png</texture>
 				<colordiffuse>$VAR[ColorBackgroundVar]</colordiffuse>
-				<visible>Window.IsActive(videos)</visible>
 			</control>
 		<control type="group">
 			<animation type="WindowOpen" reversible="false">

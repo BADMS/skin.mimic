@@ -115,7 +115,7 @@
                     <visible>Control.HasFocus(501)</visible>
                     <animation effect="fade" time="320" delay="200">Visible</animation>
                     <animation effect="fade" time="50">Hidden</animation>
-                    <texture colordiffuse="$VAR[LibColorHighlightVar]">$VAR[FocusImage]</texture><fadetime>2000</fadetime>
+                    <texture colordiffuse="$VAR[ListColorHighlightVar]">$VAR[FocusImage]</texture><fadetime>2000</fadetime>
                     <animation effect="slide" end="0,67" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(501).Row,4)">Conditional</animation>
                     <animation effect="slide" end="0,67" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(501).Row,3)">Conditional</animation>
                     <animation effect="slide" end="0,67" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(501).Row,2)">Conditional</animation>

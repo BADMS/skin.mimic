@@ -19,7 +19,7 @@
 	                    <visible>Control.HasFocus(50)</visible>
 	                    <animation effect="fade" time="320" delay="200">Visible</animation>
 	                    <animation effect="fade" time="50">Hidden</animation>
-	                    <texture colordiffuse="$VAR[LibColorHighlightVar]">$VAR[FocusImage]</texture><fadetime>2000</fadetime>
+	                    <texture colordiffuse="$VAR[ListColorHighlightVar]">listselect_fo.png</texture><fadetime>2000</fadetime>
 	                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,5)">Conditional</animation>
 	                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,4)">Conditional</animation>
 	                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,3)">Conditional</animation>
@@ -38,7 +38,7 @@
 	                    <visible>Control.HasFocus(50)</visible>
 	                    <animation effect="fade" time="320" delay="200">Visible</animation>
 	                    <animation effect="fade" time="50">Hidden</animation>
-	                    <texture colordiffuse="$VAR[LibColorHighlightVar]">$VAR[FocusImage]</texture><fadetime>2000</fadetime>
+	                    <texture colordiffuse="$VAR[ListColorHighlightVar]">listselect_fo.png</texture><fadetime>2000</fadetime>
 	                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,5)">Conditional</animation>
 	                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,4)">Conditional</animation>
 	                    <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,3)">Conditional</animation>
@@ -57,7 +57,7 @@
 	                    <visible>Control.HasFocus(50)</visible>
 	                    <animation effect="fade" time="320" delay="200">Visible</animation>
 	                    <animation effect="fade" time="50">Hidden</animation>
-	                    <texture colordiffuse="$VAR[LibColorHighlightVar]">$VAR[FocusImage]</texture><fadetime>2000</fadetime>
+	                    <texture colordiffuse="$VAR[ListColorHighlightVar]">listselect_fo.png</texture><fadetime>2000</fadetime>
 	                    <animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,12)">Conditional</animation>
 	                    <animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,11)">Conditional</animation>
 	                    <animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,10)">Conditional</animation>
@@ -83,7 +83,7 @@
 	                    <visible>Control.HasFocus(50)</visible>
 	                    <animation effect="fade" time="320" delay="200">Visible</animation>
 	                    <animation effect="fade" time="50">Hidden</animation>
-	                    <texture colordiffuse="$VAR[LibColorHighlightVar]">$VAR[FocusImage]</texture><fadetime>2000</fadetime>
+	                    <texture colordiffuse="$VAR[ListColorHighlightVar]">listselect_fo.png</texture><fadetime>2000</fadetime>
 	                    <animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,12)">Conditional</animation>
 	                    <animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,11)">Conditional</animation>
 	                    <animation effect="slide" end="0,60" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(50).Row,10)">Conditional</animation>
@@ -787,7 +787,7 @@
 					<control type="image">
 						<width>560</width>
 						<height>560</height>
-						<texture colordiffuse="33000000">$VAR[FocusImage]</texture>
+						<texture background="true" diffuse="thumbs/colorbox_poster_mask.png" colordiffuse="$VAR[LibColorHighlightVar]">$VAR[FocusImage]</texture>
 					</control>
 					<control type="image">
 						<left>80</left>
@@ -825,7 +825,7 @@
 					<control type="image">
 						<width>560</width>
 						<height>840</height>
-						<aspectratio align="top" aligny="top">keep</aspectratio>
+						<aspectratio align="center" aligny="top">keep</aspectratio>
 						<fadetime>2000</fadetime>
 						<texture background="true" diffuse="thumbs/colorbox_poster_mask.png" colordiffuse="$VAR[LibColorHighlightVar]">$VAR[FocusImage]</texture>
 					</control>
@@ -840,7 +840,6 @@
 				</control>
 				<control type="image">
 					<visible>[Container.Content(addons) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(musicvideos)] + !String.StartsWith(ListItem.Icon,Default)</visible>
-					<top>15</top>
 					<left>1276</left>
 					<width>560</width>
 					<height>560</height>
