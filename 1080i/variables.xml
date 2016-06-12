@@ -22,7 +22,7 @@
 		<value></value>
 	</variable>
 	<variable name="FocusImage">
-		<value condition="!String.IsEqual(Window(home).Property(cpa_daemon_set),None) + !String.IsEmpty(Window(home).Property(ImageFiltercpa))">$INFO[Window(home).Property(ImageFiltercpa)]</value>
+		<value condition="!String.IsEqual(Window(home).Property(cpa_daemon_set),None) + !String.IsEmpty(Window(home).Property(ImageFiltercpa)) + [[!Control.IsVisible(50) + !Control.IsVisible(501)] | Window.IsActive(movieinformation)]">$INFO[Window(home).Property(ImageFiltercpa)]</value>
 		<value>listselect_fo.png</value>
 	</variable>
 	<variable name="ColorboxImage">
@@ -520,7 +520,8 @@
 		<value>DefaultIconClock.png</value>
 	</variable>
 	<variable name="LibColorHighlightVar">
-		<value condition="!String.IsEqual(Window(home).Property(cpa_daemon_set),None)">-</value>
+		<value condition="!String.IsEqual(Window(home).Property(cpa_daemon_set),None) + !String.IsEmpty(Window(home).Property(ImageFiltercpa)) + [Control.IsVisible(50) | Control.IsVisible(501)]">$INFO[Window(home).Property(ImageColorcpa)]</value>
+		<value condition="!String.IsEqual(Window(home).Property(cpa_daemon_set),None) + !String.IsEmpty(Window(home).Property(ImageFiltercpa))">-</value>
 		<value condition="Skin.HasSetting(ColorCustomizer.Enabled) + !String.IsEmpty(Skin.String(highlightcolor.name))">$INFO[Skin.String(highlightcolor.name)]</value>
 		<value>highlight</value>
 	</variable>

@@ -2,6 +2,13 @@
 <window>
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<controls>
+			<control type="image">
+				<top>120</top>
+				<include>FullscreenDimensions</include>
+				<texture>background.png</texture>
+				<colordiffuse>$VAR[ColorBackgroundVar]</colordiffuse>
+				<visible>Window.IsActive(videos)</visible>
+			</control>
 		<control type="group">
 			<animation type="WindowOpen" reversible="false">
 	            <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in" />
