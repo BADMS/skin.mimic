@@ -18,7 +18,6 @@
 				<animation effect="slide" time="300" start="0" end="0,-453" tween="cubic" reversible="false" condition="ControlGroup(9003).HasFocus + !Skin.HasSetting(Enable.PersistentWidgets)">Conditional</animation>
 				<animation effect="slide" time="150" delay="200" start="0,-453" end="0" tween="cubic" reversible="false" condition="![ControlGroup(9003).HasFocus + !Skin.HasSetting(Enable.PersistentWidgets)]">Conditional</animation>
 				<animation effect="slide" time="300" delay="0" start="0" end="0,-453" tween="cubic" reversible="true" condition="!String.IsEmpty(Container(9000).ListItem.Property(widgetName)) + Skin.HasSetting(Enable.PersistentWidgets)">Conditional</animation>
-				<animation effect="slide" time="300" delay="0" start="0" end="0,453" tween="cubic" reversible="true" condition="!Weather.IsFetched">Conditional</animation>
 				<width>FullScreenWidth</width>
 				<height>700</height>
 				<texture background="true">background.png</texture>
@@ -174,7 +173,6 @@
 						<animation effect="slide" time="300" start="0" end="1446" tween="sine" easing="inout" reversible="false" condition="[ControlGroup(9003).HasFocus + !Skin.HasSetting(Enable.PersistentWidgets)] | Skin.HasSetting(Enable.HomeFanartOverlay)">Conditional</animation>
 						<animation effect="slide" time="150" delay="200" start="1446" end="0" tween="sine" easing="inout" reversible="false" condition="![[ControlGroup(9003).HasFocus | Control.HasFocus(9010)] + !Skin.HasSetting(Enable.PersistentWidgets) + ControlGroup(9003).IsVisible] + !Skin.HasSetting(Enable.HomeFanartOverlay)">Conditional</animation>
 						<animation effect="slide" time="0" delay="0" start="0" end="1446" tween="sine" reversible="true" condition="!String.IsEmpty(Container(9000).ListItem.Property(widgetName)) + Skin.HasSetting(Enable.PersistentWidgets) + !Skin.HasSetting(Enable.HomeFanartOverlay)">Conditional</animation>
-						<animation effect="slide" time="300" delay="0" start="0" end="-1446,0" tween="cubic" reversible="true" condition="!Weather.IsFetched">Conditional</animation>
 						<top>0</top>
 						<width>1920</width>
 						<height>1080</height>
