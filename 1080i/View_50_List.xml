@@ -839,8 +839,8 @@
 					</control>
 				</control>
 				<control type="image">
+					<animation effect="slide" time="0" start="0,0" end="0,15" condition="Window.IsActive(programs) | Window.IsActive(addonbrowser)">Conditional</animation>
 					<visible>[Container.Content(addons) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(musicvideos)] + !String.StartsWith(ListItem.Icon,Default)</visible>
-					<top>15</top>
 					<left>1276</left>
 					<width>560</width>
 					<height>560</height>
