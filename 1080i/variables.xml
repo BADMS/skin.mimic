@@ -530,6 +530,7 @@
 		<value>highlight</value>
 	</variable>
 	<variable name="ColorHighlightVar">
+		<value condition="!String.IsEqual(Window(home).Property(cfa_daemon_set),None)">$INFO[Window(home).Property(ImageColorcpa)]</value>
 		<value condition="Skin.HasSetting(ColorCustomizer.Enabled) + !String.IsEmpty(Skin.String(highlightcolor.name))">$INFO[Skin.String(highlightcolor.name)]</value>
 		<value>highlight</value>
 	</variable>
@@ -547,11 +548,18 @@
 		<value condition="Skin.HasSetting(ColorCustomizer.Enabled) + !String.IsEmpty(Skin.String(dialogcolor.name))">$INFO[Skin.String(dialogcolor.name)]</value>
 		<value>dialog</value>
 	</variable>
+	<variable name="ColorTopbarVar">
+		<value condition="!String.IsEqual(Window(home).Property(cfa_daemon_set),None)">$INFO[Window(home).Property(ImageCColorcpa)]</value>
+		<value condition="Skin.HasSetting(ColorCustomizer.Enabled) + !String.IsEmpty(Skin.String(highlightcolor.name))">$INFO[Skin.String(highlightcolor.name)]</value>
+		<value>highlight</value>
+	</variable>
 	<variable name="ColorTextVar">
+		<value condition="!String.IsEqual(Window(home).Property(cfa_daemon_set),None)">$INFO[Window(home).Property(ImageCColorcpa)]</value>
 		<value condition="Skin.HasSetting(ColorCustomizer.Enabled) + !String.IsEmpty(Skin.String(textcolor.name))">$INFO[Skin.String(textcolor.name)]</value>
 		<value>maintext</value>
 	</variable>
 	<variable name="ColorMenuVar">
+		<value condition="!String.IsEqual(Window(home).Property(cfa_daemon_set),None)">$INFO[Window(home).Property(ImageCColorcpa)]</value>
 		<value condition="Skin.HasSetting(ColorCustomizer.Enabled) + !String.IsEmpty(Skin.String(menucolor.name))">$INFO[Skin.String(menucolor.name)]</value>
 		<value>maintext</value>
 	</variable>

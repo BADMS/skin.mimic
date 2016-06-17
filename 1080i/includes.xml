@@ -817,7 +817,7 @@
 						<aligny>center</aligny>
 						<align>left</align>
 						<font>topbar</font>
-						<textcolor>$VAR[ColorHighlightVar]</textcolor>
+						<textcolor>$VAR[ColorTopbarVar]</textcolor>
 						<height>45</height>
 						<width>auto</width>
 						<label>$INFO[ListItem.Rating,[UPPERCASE],[/UPPERCASE] ]</label>
@@ -838,7 +838,7 @@
 						<aligny>center</aligny>
 						<align>left</align>
 						<font>topbar</font>
-						<textcolor>$VAR[ColorHighlightVar]</textcolor>
+						<textcolor>$VAR[ColorTopbarVar]</textcolor>
 						<height>45</height>
 						<width>auto</width>
 						<label>$INFO[Window(Home).Property(SkinHelper.RottenTomatoesMeter),,%]</label>
@@ -850,7 +850,7 @@
 						<align>left</align>
 						<font>IconMedium</font>
 						<label>$VAR[LabelUserRating, ]</label>
-						<textcolor>$VAR[ColorHighlightVar]</textcolor>
+						<textcolor>$VAR[ColorTopbarVar]</textcolor>
 						<height>45</height>
 						<width>auto</width>
 						<visible>!IsEmpty(ListItem.Userrating)</visible>
@@ -859,7 +859,7 @@
 						<aligny>center</aligny>
 						<align>left</align>
 						<font>topbar</font>
-						<textcolor>$VAR[ColorHighlightVar]</textcolor>
+						<textcolor>$VAR[ColorTopbarVar]</textcolor>
 						<height>45</height>
 						<width>auto</width>
 						<label>$INFO[ListItem.Userrating,[UPPERCASE],[/UPPERCASE]]</label>
@@ -879,7 +879,7 @@
 						<aligny>center</aligny>
 						<align>left</align>
 						<font>topbar</font>
-						<textcolor>$VAR[ColorHighlightVar]</textcolor>
+						<textcolor>$VAR[ColorTopbarVar]</textcolor>
 						<height>45</height>
 						<width>auto</width>
 						<label>$INFO[ListItem.Top250,#,]</label>
@@ -891,7 +891,7 @@
 						<font>topbar</font>
 						<scroll>true</scroll>
 						<scrollspeed>150</scrollspeed>
-						<textcolor>$VAR[ColorHighlightVar]</textcolor>
+						<textcolor>$VAR[ColorTopbarVar]</textcolor>
 						<label>$VAR[HeaderSubTagline]</label>
 					</control>
 				</control>
