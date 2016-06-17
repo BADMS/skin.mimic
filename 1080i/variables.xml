@@ -30,7 +30,7 @@
 		<value>$INFO[Window(home).Property(ImageFiltercfa)]</value>
 	</variable>
 	<variable name="GlobalBackgroundVar">
-		<value condition="Skin.HasSetting(ViewFanart.Extra.Fanart)">$INFO[Window(Home).Property(SkinHelper.ExtraFanArtPath)]</value>
+		<value condition="Skin.HasSetting(ViewFanart.Extra.Fanart) + !String.IsEmpty(Window(Home).Property(SkinHelper.ExtraFanArtPath))">$INFO[Window(Home).Property(SkinHelper.ExtraFanArtPath)]</value>
 		<value condition="!String.IsEmpty(ListItem.Art(fanart)) + !Skin.HasSetting(Disable.Fanart)">$INFO[ListItem.Art(fanart)]</value>
 		<value condition="String.IsEqual(Container(9033).ListItem.Art(thumb),1)">$INFO[Window(Home).Property(script.grab.fanart.Movie.FanArt)]</value>
 		<value condition="String.IsEqual(Container(9033).ListItem.Art(thumb),2)">$INFO[Window(Home).Property(script.grab.fanart.TV.FanArt)]</value>
