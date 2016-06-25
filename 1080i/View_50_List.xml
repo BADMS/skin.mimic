@@ -825,7 +825,7 @@
 					<control type="image">
 						<width>560</width>
 						<height>840</height>
-						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<aspectratio align="center" aligny="top">keep</aspectratio>
 						<fadetime>2000</fadetime>
 						<texture background="true" diffuse="thumbs/colorbox_poster_mask.png" colordiffuse="$VAR[LibColorHighlightVar]">$VAR[FocusImage]</texture>
 					</control>
@@ -833,7 +833,7 @@
 						<width>560</width>
 						<height>840</height>
 						<bordersize>20</bordersize>
-						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<aspectratio align="center" aligny="top">keep</aspectratio>
 						<texture background="true">$VAR[ListIcon]</texture>
 						<fadetime>IconCrossfadeTime</fadetime>
 					</control>
