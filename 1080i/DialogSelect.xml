@@ -178,7 +178,8 @@
 				<top>592</top>
 				<height>60</height>
 				<width>942</width>
-				<ondown>60</ondown>
+				<ondown condition="Control.IsVisible(3)">3</ondown>
+				<ondown condition="Control.IsVisible(6)">6</ondown>
 				<onup condition="Control.IsVisible(3)">3</onup>
 				<onup condition="Control.IsVisible(6)">6</onup>
 				<align>center</align>

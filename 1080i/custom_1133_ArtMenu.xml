@@ -122,46 +122,44 @@
 						<label>31016</label>
 						<onclick>Skin.Reset(Enable.ShiftVidFanart)</onclick>
 						<onclick>Skin.Reset(Enable.ShiftLandscape)</onclick>
-						<visible>String.IsEqual(Container.Viewmode,$LOCALIZE[31079]) + Window.IsActive(videolibrary)</visible>
+						<visible>String.IsEqual(Container.Viewmode,$LOCALIZE[31079]) + Window.IsActive(videos)</visible>
 					</item>
 					<item>
 						<description>Shift - Fanart</description>
 						<label>20445</label>
 						<onclick>Skin.Reset(Enable.ShiftLandscape)</onclick>
 						<onclick>Skin.SetBool(Enable.ShiftVidFanart)</onclick>
-						<visible>String.IsEqual(Container.Viewmode,$LOCALIZE[31079]) + Window.IsActive(videolibrary)</visible>
+						<visible>String.IsEqual(Container.Viewmode,$LOCALIZE[31079]) + Window.IsActive(videos)</visible>
 					</item>
 					<item>
 						<description>Shift - Landscape</description>
 						<label>31100</label>
 						<onclick>Skin.Reset(Enable.ShiftVidFanart)</onclick>
 						<onclick>Skin.SetBool(Enable.ShiftLandscape)</onclick>
-						<visible>String.IsEqual(Container.Viewmode,$LOCALIZE[31079]) + Window.IsActive(videolibrary)</visible>
+						<visible>String.IsEqual(Container.Viewmode,$LOCALIZE[31079]) + Window.IsActive(videos)</visible>
 					</item>
 					<item>
 						<description>Shift - Thumbnail</description>
 						<label>21371</label>
 						<onclick>Skin.Reset(Enable.ShiftFanart)</onclick>
-						<visible>String.IsEqual(Container.Viewmode,$LOCALIZE[31079]) + Window.IsActive(musiclibrary)</visible>
+						<visible>String.IsEqual(Container.Viewmode,$LOCALIZE[31079]) + Window.IsActive(music)</visible>
 					</item>
 					<item>
 						<description>Shift - Fanart</description>
 						<label>20445</label>
 						<onclick>Skin.SetBool(Enable.ShiftFanart)</onclick>
-						<visible>String.IsEqual(Container.Viewmode,$LOCALIZE[31079]) + Window.IsActive(musiclibrary)</visible>
+						<visible>String.IsEqual(Container.Viewmode,$LOCALIZE[31079]) + Window.IsActive(music)</visible>
 					</item>
 					<item>
 						<description>InfoWall - Poster</description>
 						<label>31016</label>
-						<onclick condition="Container.Content(movies)">Skin.Reset(InfoWall.Banners.Movies)</onclick>
-						<onclick condition="!Container.Content(movies)">Skin.Reset(InfoWall.Banners.Misc)</onclick>
+						<onclick>Skin.Reset(InfoWall.Banners)</onclick>
 						<visible>[String.IsEqual(Container.Viewmode,$LOCALIZE[31021]) + !Skin.HasSetting(Art2Customizer)]</visible>
 					</item>
 					<item>
 						<description>InfoWall - Banner</description>
 						<label>31085</label>
-						<onclick condition="Container.Content(movies)">Skin.SetBool(InfoWall.Banners.Movies)</onclick>
-						<onclick condition="!Container.Content(movies)">Skin.SetBool(InfoWall.Banners.Misc)</onclick>
+						<onclick>Skin.SetBool(InfoWall.Banners)</onclick>
 						<visible>[String.IsEqual(Container.Viewmode,$LOCALIZE[31021]) + !Skin.HasSetting(Art2Customizer)]</visible>
 					</item>
 					<item>

@@ -241,7 +241,7 @@
                             </control>
                         </control>
                     </focusedlayout>
-                    <itemlayout width="1808" height="221" condition="Skin.HasSetting(Enable.BigListPoster) + !Window.IsActive(musiclibrary) + !Container.Content(episodes)">
+                    <itemlayout width="1808" height="221" condition="Skin.HasSetting(Enable.BigListPoster) + !Window.IsActive(music) + !Container.Content(episodes)">
 						<control type="group">
 							<left>18</left>
 							<top>13</top>
@@ -317,7 +317,7 @@
                             </control>
                         </control>
                     </itemlayout>
-                    <focusedlayout width="1808" height="221" condition="Skin.HasSetting(Enable.BigListPoster) + !Window.IsActive(musiclibrary) + !Container.Content(episodes)">
+                    <focusedlayout width="1808" height="221" condition="Skin.HasSetting(Enable.BigListPoster) + !Window.IsActive(music) + !Container.Content(episodes)">
 						<control type="group">
 							<left>18</left>
 							<top>13</top>
