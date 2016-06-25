@@ -738,9 +738,35 @@
 					<width>80</width>
 					<height>80</height>
 					<texture colordiffuse="$VAR[ColorTextVar]">$VAR[HeaderIcon]</texture>
+					<visible>![Window.IsActive(movieinformation) + [[Skin.HasSetting(Overlay.Resumable) + ListItem.IsResumable] | [String.IsEqual(ListItem.Overlay,OverlayUnwatched.png) + Skin.HasSetting(Overlay.Unwatched)] | [String.IsEqual(ListItem.Overlay,OverlayWatched.png) + Skin.HasSetting(Overlay.Watched)]]]</visible>
 					<visible>![Container.Scrolling + [String.IsEqual(Container.SortMethod,$LOCALIZE[369]) | String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | [Container.Content(artists) + String.IsEqual(Container.SortMethod,$LOCALIZE[557])]]]</visible>
 					<visible>!Window.IsVisible(DialogBusy.xml) + [!Control.IsVisible(12345) | [!Skin.HasSetting(Enable.PersistentWidgets) + !ControlGroup(9003).HasFocus]]</visible>
 					<animation effect="fade" start="0" end="100" time="150">VisibleChange</animation>
+				</control>
+				<control type="group">
+					<visible>Window.IsActive(movieinformation) + [Skin.HasSetting(Overlay.Resumable) | [String.IsEqual(ListItem.Overlay,OverlayUnwatched.png) + Skin.HasSetting(Overlay.Unwatched)] | [String.IsEqual(ListItem.Overlay,OverlayWatched.png) + Skin.HasSetting(Overlay.Watched)]]</visible>
+						<top>16</top>
+						<left>16</left>
+					<control type="image">
+						<width>86</width>
+						<height>86</height>
+						<texture colordiffuse="$VAR[ColorHighlightVar]">$VAR[OverlayBGVar]</texture>
+						<aspectratio align="center" aligny="top">keep</aspectratio>
+					</control>
+					<control type="image">
+						<width>86</width>
+						<height>86</height>
+						<texture colordiffuse="ffffffff">overlays/images/$INFO[ListItem.PercentPlayed,overlay,.png]</texture>
+						<aspectratio align="center" aligny="top">keep</aspectratio>
+						<visible>ListItem.IsResumable</visible>
+					</control>
+					<control type="image">
+						<width>86</width>
+						<height>86</height>
+						<texture colordiffuse="ffffffff">overlays/images/overlay.png</texture>
+						<aspectratio align="center" aligny="top">keep</aspectratio>
+						<visible>String.IsEqual(ListItem.Overlay,OverlayUnWatched.png)</visible>
+					</control>
 				</control>
 				<control type="label">
 					<top>17</top>
