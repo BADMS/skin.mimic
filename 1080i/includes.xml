@@ -765,7 +765,7 @@
 						<height>86</height>
 						<texture colordiffuse="ffffffff">overlays/images/overlay.png</texture>
 						<aspectratio align="center" aligny="top">keep</aspectratio>
-						<visible>String.IsEqual(ListItem.Overlay,OverlayUnWatched.png)</visible>
+						<visible>!ListItem.IsResumable + String.IsEqual(ListItem.Overlay,OverlayUnWatched.png)</visible>
 					</control>
 				</control>
 				<control type="label">
