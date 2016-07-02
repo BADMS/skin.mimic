@@ -844,7 +844,7 @@
 					<left>1276</left>
 					<width>560</width>
 					<height>560</height>
-					<aspectratio align="center" aligny="center">keep</aspectratio>
+					<aspectratio align="center" aligny="center">scale</aspectratio>
 					<fadetime>2000</fadetime>
 					<texture background="true" diffuse="thumbs/colorbox_poster_mask.png" colordiffuse="$VAR[LibColorHighlightVar]">$VAR[FocusImage]</texture>
 				</control>
