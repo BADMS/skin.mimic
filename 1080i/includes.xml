@@ -798,7 +798,7 @@
 					<height>45</height>
 					<font>font28_title</font>
 					<textoffsetx>15</textoffsetx>
-					<label>$VAR[BreadcrumbsVar]$VAR[HeaderSubLabel, • ]</label>
+					<label>$VAR[BreadcrumbsVar,, • ]$VAR[HeaderSubLabel]</label>
 					<label2>$VAR[TopbarFadeLabel2,, • ]$VAR[TopbarFadeLabel1]</label2>
 					<onclick>noop</onclick>
 					<texturefocus>blank.png</texturefocus>
