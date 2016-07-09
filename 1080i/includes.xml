@@ -867,29 +867,9 @@
 						<textcolor>$VAR[ColorTopbarVar]</textcolor>
 						<height>45</height>
 						<width>auto</width>
-						<label>$INFO[Window(Home).Property(SkinHelper.RottenTomatoesMeter),,%]</label>
+						<label>$INFO[Window(Home).Property(SkinHelper.RottenTomatoesMeter),,% ]</label>
 						<visible>!IsEmpty(Window(Home).Property(SkinHelper.RottenTomatoesMeter))</visible>
 						<visible>!StringCompare(Window(Home).Property(SkinHelper.RottenTomatoesMeter),n/a)</visible>
-					</control>
-					<control type="label">
-						<aligny>center</aligny>
-						<align>left</align>
-						<font>IconMedium</font>
-						<label>$VAR[LabelUserRating, ]</label>
-						<textcolor>$VAR[ColorTopbarVar]</textcolor>
-						<height>45</height>
-						<width>auto</width>
-						<visible>!IsEmpty(ListItem.Userrating)</visible>
-					</control>
-					<control type="label">
-						<aligny>center</aligny>
-						<align>left</align>
-						<font>topbar</font>
-						<textcolor>$VAR[ColorTopbarVar]</textcolor>
-						<height>45</height>
-						<width>auto</width>
-						<label>$INFO[ListItem.Userrating,[UPPERCASE],[/UPPERCASE]]</label>
-						<visible>!IsEmpty(ListItem.Userrating)</visible>
 					</control>
 					<control type="label">
 						<aligny>center</aligny>
@@ -898,7 +878,7 @@
 						<textcolor>yellow</textcolor>
 						<height>45</height>
 						<width>auto</width>
-						<label> </label>
+						<label></label>
 						<visible>!IsEmpty(ListItem.Top250)</visible>
 					</control>
 					<control type="label">
@@ -908,8 +888,28 @@
 						<textcolor>$VAR[ColorTopbarVar]</textcolor>
 						<height>45</height>
 						<width>auto</width>
-						<label>$INFO[ListItem.Top250,#,]</label>
+						<label>$INFO[ListItem.Top250,#, ]</label>
 						<visible>!IsEmpty(ListItem.Top250)</visible>
+					</control>
+					<control type="label">
+						<aligny>center</aligny>
+						<align>left</align>
+						<font>IconMedium</font>
+						<label>$VAR[LabelUserRating]</label>
+						<textcolor>$VAR[ColorUserRating]</textcolor>
+						<height>45</height>
+						<width>auto</width>
+						<visible>!IsEmpty(ListItem.Userrating)</visible>
+					</control>
+					<control type="label">
+						<aligny>center</aligny>
+						<align>left</align>
+						<font>topbar</font>
+						<textcolor>$VAR[ColorUserRating]</textcolor>
+						<height>45</height>
+						<width>auto</width>
+						<label>$INFO[ListItem.Userrating,[UPPERCASE],[/UPPERCASE] ]</label>
+						<visible>!IsEmpty(ListItem.Userrating)</visible>
 					</control>
 					<control type="label">
 						<width min="1228" max="1678">auto</width>

@@ -518,6 +518,14 @@
 					<width>402</width>
 					<height>402</height>
 					<aspectratio aligny="center" align="center">scale</aspectratio>
+					<fadetime>2000</fadetime>
+					<texture background="true" diffuse="thumbs/colorbox_poster_mask.png" colordiffuse="$VAR[LibColorHighlightVar]">$VAR[FocusImage]</texture>
+				</control>
+				<control type="image">
+					<width>402</width>
+					<height>402</height>
+					<aspectratio aligny="center" align="center">scale</aspectratio>
+					<bordersize>20</bordersize>
 					<texture background="true">$VAR[ThumbVar]</texture>
 					<fadetime>IconCrossfadeTime</fadetime>
 				</control>
