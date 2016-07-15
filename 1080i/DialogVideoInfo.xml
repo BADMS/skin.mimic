@@ -217,7 +217,18 @@
 							<onclick>noop</onclick>
 							<visible>!String.IsEmpty(ListItem.Filename)</visible>
 						</item>
-					</content>
+						<item>
+							<label>$INFO[Window(Home).Property(SkinHelper.TMDB.Budget.mln)] million</label>
+							<label2>Budget:</label2>
+							<onclick>noop</onclick>
+							<visible>!String.IsEmpty(Window(Home).Property(SkinHelper.TMDB.Budget.mln))</visible>
+						</item>
+						<item>
+							<label>$INFO[Window(Home).Property(SkinHelper.TMDB.Revenue.mln)] million</label>
+							<label2>Revenue:</label2>
+							<onclick>noop</onclick>
+							<visible>!String.IsEmpty(Window(Home).Property(SkinHelper.TMDB.Revenue.mln))</visible>
+						</item>					</content>
 				</control>
 				<control type="scrollbar" id="61">
 					<visible allowhiddenfocus="true">Control.HasFocus(61)</visible>
@@ -831,6 +842,14 @@
 			<control type="image">
 				<include>FullscreenDimensions</include>
 				<texture>$INFO[ListItem.Art(fanart)]</texture>
+			</control>
+			<control type="image">
+				<left>1400</left>
+				<top>820</top>
+				<width>400</width>
+				<height>200</height>
+				<aspectratio>keep</aspectratio>
+				<texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
 			</control>
 		</control>
 	</controls>

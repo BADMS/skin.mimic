@@ -36,6 +36,9 @@
 	<variable name="GlobalBackgroundVar">
 		<value condition="Skin.HasSetting(ViewFanart.Extra.Fanart) + !String.IsEmpty(Window(Home).Property(SkinHelper.ExtraFanArtPath))">$INFO[Window(Home).Property(SkinHelper.ExtraFanArtPath)]</value>
 		<value condition="!String.IsEmpty(ListItem.Art(fanart)) + !Skin.HasSetting(Disable.Fanart)">$INFO[ListItem.Art(fanart)]</value>
+		<value condition="!String.IsEmpty(Container.Art(set.fanart))">$INFO[Container.Art(set.fanart)]</value>
+		<value condition="!String.IsEmpty(Container.Art(artist.fanart))">$INFO[Container.Art(artist.fanart)]</value>
+		<value condition="!String.IsEmpty(Container.Art(tvshow.fanart))">$INFO[Container.Art(tvshow.fanart)]</value>
 		<value condition="String.IsEqual(Container(9033).ListItem.Art(thumb),1)">$INFO[Window(Home).Property(script.grab.fanart.Movie.FanArt)]</value>
 		<value condition="String.IsEqual(Container(9033).ListItem.Art(thumb),2)">$INFO[Window(Home).Property(script.grab.fanart.TV.FanArt)]</value>
 		<value condition="String.IsEqual(Container(9033).ListItem.Art(thumb),3)">$INFO[Window(Home).Property(script.grab.fanart.Video.FanArt)]</value>
@@ -382,7 +385,6 @@
 		<value condition="Control.HasFocus(202)">$LOCALIZE[31239]</value>
 		<value condition="Control.HasFocus(203)">$LOCALIZE[31944]</value>
 		<value condition="Control.HasFocus(204)">$LOCALIZE[31131]</value>
-		<value condition="Control.HasFocus(205)">$LOCALIZE[31936]</value>
 		<value condition="Control.HasFocus(207)">$LOCALIZE[31252]</value>
 		<value condition="Control.HasFocus(208)">$LOCALIZE[31253]</value>
 		<value condition="Control.HasFocus(303) | Control.HasFocus(304)">$LOCALIZE[31121]</value>
@@ -525,46 +527,46 @@
 	</variable>
 	<variable name="LibColorHighlightVar">
 		<value condition="!String.IsEqual(Window(home).Property(cpa_daemon_set),None)">-</value>
-		<value condition="Skin.HasSetting(ColorCustomizer.Enabled) + !String.IsEmpty(Skin.String(highlightcolor.name))">$INFO[Skin.String(highlightcolor.name)]</value>
+		<value condition="!String.IsEmpty(Skin.String(highlightcolor.name))">$INFO[Skin.String(highlightcolor.name)]</value>
 		<value>highlight</value>
 	</variable>
 	<variable name="ListColorHighlightVar">
 		<value condition="!String.IsEqual(Window(home).Property(cpa_daemon_set),None) + !String.IsEmpty(Window(home).Property(ImageFiltercpa))">$INFO[Window(home).Property(ImageColorcpa)]</value>
-		<value condition="Skin.HasSetting(ColorCustomizer.Enabled) + !String.IsEmpty(Skin.String(highlightcolor.name))">$INFO[Skin.String(highlightcolor.name)]</value>
+		<value condition="!String.IsEmpty(Skin.String(highlightcolor.name))">$INFO[Skin.String(highlightcolor.name)]</value>
 		<value>highlight</value>
 	</variable>
 	<variable name="ColorHighlightVar">
 		<value condition="!String.IsEqual(Window(home).Property(cpa_daemon_set),None) + !String.IsEmpty(Window(home).Property(ImageColorcpa)) + Skin.HasSetting(Colorbox.header)">$INFO[Window(home).Property(ImageColorcpa)]</value>
-		<value condition="Skin.HasSetting(ColorCustomizer.Enabled) + !String.IsEmpty(Skin.String(highlightcolor.name))">$INFO[Skin.String(highlightcolor.name)]</value>
+		<value condition="!String.IsEmpty(Skin.String(highlightcolor.name))">$INFO[Skin.String(highlightcolor.name)]</value>
 		<value>highlight</value>
 	</variable>
 	<variable name="ColorHeaderVar">
 		<value condition="!String.IsEqual(Window(home).Property(cpa_daemon_set),None) + Skin.HasSetting(Colorbox.header) + !String.IsEmpty(Window(home).Property(ImageColorcpa))">$INFO[Window(home).Property(ImageColorcpa)]</value>
-		<value condition="Skin.HasSetting(ColorCustomizer.Enabled) + !String.IsEmpty(Skin.String(backgroundcolor.name))">$INFO[Skin.String(backgroundcolor.name)]</value>
+		<value condition="!String.IsEmpty(Skin.String(backgroundcolor.name))">$INFO[Skin.String(backgroundcolor.name)]</value>
 		<value>background</value>
 	</variable>
 	<variable name="ColorBackgroundVar">
 		<value condition="!String.IsEqual(Window(home).Property(cpa_daemon_set),None) + Skin.HasSetting(Colorbox.background) + !String.IsEmpty(Window(home).Property(ImageColorcpa))">$INFO[Window(home).Property(ImageColorcpa)]</value>
-		<value condition="Skin.HasSetting(ColorCustomizer.Enabled) + !String.IsEmpty(Skin.String(backgroundcolor.name))">$INFO[Skin.String(backgroundcolor.name)]</value>
+		<value condition="!String.IsEmpty(Skin.String(backgroundcolor.name))">$INFO[Skin.String(backgroundcolor.name)]</value>
 		<value>background</value>
 	</variable>
 	<variable name="ColorDialogVar">
-		<value condition="Skin.HasSetting(ColorCustomizer.Enabled) + !String.IsEmpty(Skin.String(dialogcolor.name))">$INFO[Skin.String(dialogcolor.name)]</value>
+		<value condition="!String.IsEmpty(Skin.String(dialogcolor.name))">$INFO[Skin.String(dialogcolor.name)]</value>
 		<value>dialog</value>
 	</variable>
 	<variable name="ColorTopbarVar">
 		<value condition="!String.IsEqual(Window(home).Property(cpa_daemon_set),None) + !String.IsEmpty(Window(home).Property(ImageCColorcpa))">$INFO[Window(home).Property(ImageCColorcpa)]</value>
-		<value condition="Skin.HasSetting(ColorCustomizer.Enabled) + !String.IsEmpty(Skin.String(highlightcolor.name))">$INFO[Skin.String(highlightcolor.name)]</value>
+		<value condition="!String.IsEmpty(Skin.String(highlightcolor.name))">$INFO[Skin.String(highlightcolor.name)]</value>
 		<value>highlight</value>
 	</variable>
 	<variable name="ColorTextVar">
 		<value condition="!String.IsEqual(Window(home).Property(cpa_daemon_set),None) + !String.IsEmpty(Window(home).Property(ImageCColorcpa)) + Skin.HasSetting(Colorbox.header)">$INFO[Window(home).Property(ImageCColorcpa)]</value>
-		<value condition="Skin.HasSetting(ColorCustomizer.Enabled) + !String.IsEmpty(Skin.String(textcolor.name))">$INFO[Skin.String(textcolor.name)]</value>
+		<value condition="!String.IsEmpty(Skin.String(textcolor.name))">$INFO[Skin.String(textcolor.name)]</value>
 		<value>maintext</value>
 	</variable>
 	<variable name="ColorMenuVar">
 		<value condition="!String.IsEqual(Window(home).Property(cpa_daemon_set),None) + !String.IsEmpty(Window(home).Property(ImageCColorcpa))">$INFO[Window(home).Property(ImageCColorcpa)]</value>
-		<value condition="Skin.HasSetting(ColorCustomizer.Enabled) + !String.IsEmpty(Skin.String(menucolor.name))">$INFO[Skin.String(menucolor.name)]</value>
+		<value condition="!String.IsEmpty(Skin.String(menucolor.name))">$INFO[Skin.String(menucolor.name)]</value>
 		<value>maintext</value>
 	</variable>
 	<variable name="ColorRecordingVar">
@@ -758,6 +760,9 @@
     <variable name="AddonDisclaimer">
     	<value condition="!String.IsEmpty(ListItem.AddonDisclaimer)">[COLOR $VAR[ColorHighlightVar]]$LOCALIZE[24052]: [/COLOR][CR]$INFO[ListItem.AddonDisclaimer]</value>
     </variable>
+    <variable name="AddonNews">
+    	<value condition="!String.IsEmpty(ListItem.AddonNews)">[COLOR $VAR[ColorHighlightVar]]$LOCALIZE[24054]: [/COLOR][CR]$INFO[ListItem.AddonNews][CR]</value>
+    </variable>
     <variable name="LibraryStatsVar">
 		<value condition="String.IsEqual(Container(9000).ListItem.Property(InfoLine),$LOCALIZE[31097])">$LOCALIZE[20342]: $INFO[Window(Home).Property(Movies.Count)] • $LOCALIZE[16102]: $INFO[Window(Home).Property(Movies.Watched)] • $LOCALIZE[16101]: $INFO[Window(Home).Property(Movies.UnWatched)]</value>
 		<value condition="String.IsEqual(Container(9000).ListItem.Property(InfoLine),$LOCALIZE[31098])">$LOCALIZE[20343]: $INFO[Window(Home).Property(TVShows.Count)] • $LOCALIZE[20360]: $INFO[Window(Home).Property(Episodes.Count)] • $LOCALIZE[16101]: $INFO[Window(Home).Property(Episodes.UnWatched)]</value>
@@ -803,6 +808,13 @@
 		<!--<value condition="!String.IsEmpty(ListItem.Art(thumb))">$INFO[ListItem.Art(thumb)]</value>-->
 		<value>$INFO[ListItem.Icon]</value>
 	</variable>
+	<variable name="WidgetArt">
+		<value condition="StringCompare(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[20445]) + !String.IsEqual(Container(9000).ListItem.Property(widgetType),episodes) + !String.IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[20445]) + !String.IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
+ 		<value condition="StringCompare(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[20021]) + String.IsEqual(Container(9000).ListItem.Property(widgetType),episodes) + !String.IsEmpty(ListItem.Art(tvshow.poster))">$INFO[ListItem.Art(tvshow.poster)]</value>
+ 		<value condition="StringCompare(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[20021]) + String.IsEqual(Container(9000).ListItem.Property(widgetType),episodes) + !String.IsEmpty(ListItem.Art(tvshow.poster))">$INFO[ListItem.Art(tvshow.poster)]</value>
+ 		<value>$INFO[ListItem.Icon]</value>
+ 	</variable>
 	<variable name="MusicInfoDescription">
 		<value condition="String.IsEqual(ListItem.DBTYPE,artist) + !String.IsEmpty(ListItem.Property(Artist_Description))">$INFO[ListItem.Property(Artist_Description)]</value>
 		<value condition="[String.IsEqual(ListItem.DBTYPE,album) | String.IsEqual(ListItem.DBTYPE,song)] + !String.IsEmpty(ListItem.Property(Album_Description))">$INFO[ListItem.Property(Album_Description)]</value>
