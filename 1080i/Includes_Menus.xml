@@ -636,8 +636,8 @@
 				<control type="label" id="1">
 					<width>auto</width>
 					<height>45</height>
-					<label>$INFO[Weather.Temperature,, ]</label>
 					<font>font28_title</font>
+					<label>[B]$INFO[System.Date(ddd)], $INFO[System.Date(mmm d)], $INFO[System.Date(yyyy)][/B]</label>
 					<visible>Weather.IsFetched + !String.IsEmpty(Weather.Plugin) + !String.Contains(Weather.Temperature,$LOCALIZE[503])</visible>
 				</control>
 				<control type="label" id="2">
@@ -651,7 +651,7 @@
 				<top>55</top>
 				<width>384</width>
 				<height>45</height>
-				<label>[B]$INFO[System.Date(ddd)], $INFO[System.Date(mmm d)], $INFO[System.Date(yyyy)][/B]</label>
+				<label>$INFO[Weather.Temperature,[LIGHT],[/LIGHT] ]</label>
 				<font>topbar</font>
 				<align>$PARAM[MenuClockAlign]</align>
 				<textoffsetx>15</textoffsetx>
