@@ -72,6 +72,9 @@
 			<left>-440</left>
 			<include>SideBladeLeft</include>
 			<control type="grouplist" id="9050">
+				<include content="MenuPlayerControls">
+					<param name="PlayerControlsOnDown" value="1802" />
+				</include>
 				<include>MediaMenuTop</include>
 				<control type="button" id="201">
 					<description>View options</description>
@@ -162,9 +165,6 @@
 				</control>
 				<include>QuicknavButton</include>
 				<include>PlaylistButtons</include>
-				<include content="MenuPlayerControls">
-					<param name="PlayerControlsOnDown" value="1802" />
-				</include>
 			</control>
 			<include condition="!Skin.HasSetting(Disable.Quicknav)">QuicknavMenu</include>
 		</control>

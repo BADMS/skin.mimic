@@ -28,6 +28,9 @@
 			<left>-440</left>
 			<include>SideBladeLeft</include>
 			<control type="grouplist" id="9050">
+				<include content="MenuPlayerControls">
+					<param name="PlayerControlsOnDown" value="1802" />
+				</include>
 				<include>MediaMenuTop</include>
 				<control type="edit" id="19">
 					<visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>
@@ -56,9 +59,6 @@
 				</control>
 				<include>QuicknavButton</include>
 				<include>PlaylistButtons</include>
-				<include content="MenuPlayerControls">
-					<param name="PlayerControlsOnDown" value="1802" />
-				</include>
 			</control>
 			<include condition="!Skin.HasSetting(Disable.Quicknav)">QuicknavMenu</include>
 		</control>

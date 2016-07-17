@@ -375,6 +375,9 @@
 				<width>400</width>
 				<height>1080</height>
 				<itemgap>0</itemgap>
+				<include content="MenuPlayerControls">
+					<param name="PlayerControlsOnDown" value="18" />
+				</include>
 				<control type="label" id="20001">
 					<width>400</width>
 					<height>52</height>
@@ -425,9 +428,6 @@
 					<onclick>ActivateWindow(videoplaylist)</onclick>
 					<visible>!String.IsEqual(Playlist.Length(video),0)</visible>
 				</control>
-				<include content="MenuPlayerControls">
-					<param name="PlayerControlsOnDown" value="18" />
-				</include>
 			</control>
 		</control>
 	</controls>

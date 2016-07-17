@@ -25,6 +25,10 @@
 		<value condition="IntegerGreaterThan(ListItem.Userrating,5)"></value>
 		<value></value>
 	</variable>
+	<variable name="LabelMenuTop">
+		<value condition="Player.HasMedia">-</value>
+		<value>$LOCALIZE[31006]</value>
+	</variable>
 	<variable name="FocusImage">
 		<value condition="!String.IsEqual(Window(home).Property(cpa_daemon_set),None) + !String.IsEmpty(Window(home).Property(ImageFiltercpa))">$INFO[Window(home).Property(ImageFiltercpa)]</value>
 		<value>listselect_fo.png</value>

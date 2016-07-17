@@ -26,6 +26,9 @@
 			<left>-440</left>
 			<include>SideBladeLeft</include>
 			<control type="grouplist" id="9050">
+				<include content="MenuPlayerControls">
+					<param name="PlayerControlsOnDown" value="1802" />
+				</include>
 				<include>MediaMenuTop</include>
 				<control type="label" id="201">
 					<width>375</width>
@@ -56,7 +59,7 @@
 					<description>Clear button</description>
 					<label>192</label>
 					<onclick condition="Window.IsActive(musicplaylist)">ReplaceWindow(music)</onclick>
- +					<onclick condition="Window.IsActive(videoplaylist)">ReplaceWindow(Videos)</onclick>
+ 					<onclick condition="Window.IsActive(videoplaylist)">ReplaceWindow(Videos)</onclick>
 					<textwidth>352</textwidth>
 					<include>ButtonCommonValues</include>
 				</control>
@@ -72,9 +75,6 @@
                 </control>
 				<include>QuicknavButton</include>
 				<include>PlaylistButtons</include>
-				<include content="MenuPlayerControls">
-					<param name="PlayerControlsOnDown" value="1802" />
-				</include>
 			</control>
 			<include condition="!Skin.HasSetting(Disable.Quicknav)">QuicknavMenu</include>
 		</control>

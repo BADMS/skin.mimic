@@ -128,7 +128,7 @@
 			<height>60</height>
 			<textoffsetx>15</textoffsetx>
 			<font>font13_title</font>
-			<label>31006</label>
+			<label>$VAR[LabelMenuTop]</label>
 			<textcolor>$VAR[ColorHighlightVar]</textcolor>
 		</control>
 		<control type="button" id="1802">
@@ -672,6 +672,7 @@
 					<width>57</width>
 					<font>IconPlayer</font>
 					<onclick>PlayerControl(Stop)</onclick>
+					<onclick>SetFocus($PARAM[PlayerControlsOnDown],0)</onclick>
 					<textoffsetx>0</textoffsetx>
 					<align>center</align>
 				</control>
