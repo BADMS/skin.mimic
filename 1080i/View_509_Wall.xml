@@ -153,7 +153,7 @@
 				<height>1040</height>
 				<onleft>SetProperty(MediaMenu,True,home)</onleft>
 				<onleft>SetFocus(9050)</onleft>
-				<onright>60</onright>
+				<onright condition="Control.IsVisible(60)">60</onright>
 				<onup>509</onup>
 				<ondown>509</ondown>
 				<orientation>vertical</orientation>

@@ -166,7 +166,7 @@
 				<height>714</height>
 				<onleft>SetProperty(MediaMenu,True,home)</onleft>
 				<onleft>SetFocus(9050)</onleft>
-				<onright>60</onright>
+				<onright condition="Control.IsVisible(60)">60</onright>
 				<onup>500</onup>
 				<ondown>500</ondown>
 				<pagecontrol>60</pagecontrol>
@@ -701,7 +701,7 @@
 				<height>840</height>
 				<onleft>SetProperty(MediaMenu,True,home)</onleft>
 				<onleft>SetFocus(9050)</onleft>
-				<onright>60</onright>
+				<onright condition="Control.IsVisible(60)">60</onright>
 				<onup>500</onup>
 				<ondown>500</ondown>
 				<pagecontrol>60</pagecontrol>
@@ -835,7 +835,7 @@
 				<height>714</height>
 				<onleft>SetProperty(MediaMenu,True,home)</onleft>
 				<onleft>SetFocus(9050)</onleft>
-				<onright>60</onright>
+				<onright condition="Control.IsVisible(60)">60</onright>
 				<onup>510</onup>
 				<ondown>510</ondown>
 				<pagecontrol>60</pagecontrol>
@@ -982,7 +982,7 @@
 				<height>760</height>
 				<onleft>SetProperty(MediaMenu,True,home)</onleft>
 				<onleft>SetFocus(9050)</onleft>
-				<onright>60</onright>
+				<onright condition="Control.IsVisible(60)">60</onright>
 				<onup>520</onup>
 				<ondown>520</ondown>
 				<pagecontrol>60</pagecontrol>

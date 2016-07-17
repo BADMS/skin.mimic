@@ -1024,8 +1024,7 @@
 	</include>
 	<include name="Scrollbar_Vertical">
 		<control type="scrollbar" id="60">
-			<visible allowhiddenfocus="true">Control.HasFocus(60) | Container.Scrolling</visible>
-			<animation effect="fade" time="300" tween="sine" easing="inout" start="0" end="100">Visible</animation>
+			<animation effect="fade" time="300" tween="sine" easing="inout" start="100" end="0" condition="!Control.HasFocus(60) + !Container.Scrolling">Conditional</animation>
 			<left>1910</left>
 			<top>120</top>
 			<width>10</width>

@@ -26,7 +26,7 @@
 					<focusposition>3</focusposition>
 					<onleft>SetProperty(MediaMenu,True,home)</onleft>
 					<onleft>SetFocus(9050)</onleft>
-					<onright>60</onright>
+									<onright condition="Control.IsVisible(60)">60</onright>
 					<onup>502</onup>
 					<ondown>502</ondown>
 					<pagecontrol>60</pagecontrol>

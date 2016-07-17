@@ -130,7 +130,7 @@
 				<height>402</height>
 				<onleft>SetProperty(MediaMenu,True,home)</onleft>
 				<onleft>SetFocus(9050)</onleft>
-				<onright>60</onright>
+				<onright condition="Control.IsVisible(60)">60</onright>
 				<onup>501</onup>
 				<ondown>501</ondown>
 				<pagecontrol>60</pagecontrol>
@@ -663,7 +663,7 @@
 				<height>402</height>
 				<onleft>SetProperty(MediaMenu,True,home)</onleft>
 				<onleft>SetFocus(9050)</onleft>
-				<onright>60</onright>
+								<onright condition="Control.IsVisible(60)">60</onright>
 				<onup>501</onup>
 				<ondown>501</ondown>
 				<pagecontrol>60</pagecontrol>
@@ -954,7 +954,7 @@
 				<height>402</height>
 				<onleft>SetProperty(MediaMenu,True,home)</onleft>
 				<onleft>SetFocus(9050)</onleft>
-				<onright>60</onright>
+								<onright condition="Control.IsVisible(60)">60</onright>
 				<onup>501</onup>
 				<ondown>501</ondown>
 				<pagecontrol>60</pagecontrol>
