@@ -26,7 +26,7 @@
 					<focusposition>3</focusposition>
 					<onleft>SetProperty(MediaMenu,True,home)</onleft>
 					<onleft>SetFocus(9050)</onleft>
-									<onright condition="Control.IsVisible(6000)">6000</onright>
+									<onright condition="Control.IsVisible(60)">60</onright>
 					<onup>502</onup>
 					<ondown>502</ondown>
 					<pagecontrol>60</pagecontrol>
@@ -124,33 +124,6 @@
 						</control>
 					</focusedlayout>
 				</control>
-			</control>
-			<control type="panel" id="6000">
-				<width>40</width>
-				<right>0</right>
-				<height>100%</height>
-												<onright condition="Control.IsVisible(60)">60</onright>
-				<orientation>vertical</orientation>
-				<itemlayout height="41" width="40">
-					<control type="label">
-						<label>$INFO[ListItem.Label]</label>
-						<textcolor>white</textcolor>
-						<animation effect="fade" start="100" end="20" time="0" condition="!IsEmpty(ListItem.Property(NotAvailable))">Conditional</animation>
-					</control>
-					<control type="label">
-						<label>$INFO[ListItem.Label]</label>
-						<textcolor>blue</textcolor>
-						<visible>StringCompare(ListItem.Label,Container.ListItem.SortLetter)</visible>
-					</control>
-				</itemlayout>
-				<focusedlayout height="41" width="40">
-					<control type="label">
-						<label>$INFO[ListItem.Label]</label>
-						<textcolor>green</textcolor>
-						<animation effect="fade" start="100" end="20" time="0" condition="!IsEmpty(ListItem.Property(NotAvailable))">Conditional</animation>
-					</control>
-				</focusedlayout>
-				<content>plugin://script.skin.helper.service/?action=alphabet&amp;reload=$INFO[Container.NumItems]</content>
 			</control>
 		</control>
 		<control type="group">
