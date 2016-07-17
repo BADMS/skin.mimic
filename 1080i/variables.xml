@@ -139,7 +139,7 @@
 	</variable>
 	<variable name="ListSubLabelVar">
 		<value condition="Container.Content(addons)">$INFO[ListItem.AddonSummary]</value>
-		<value condition="Container.Content(movies)">$INFO[ListItem.Year,, • ]$INFO[ListItem.Genre]</value>
+		<value condition="Container.Content(movies)">$INFO[ListItem.Year,[B],[/B]]$INFO[ListItem.Genre, ]</value>
 		<value condition="Container.Content(sets)">$INFO[ListItem.Rating]</value>
 		<value condition="Container.Content(seasons)">$INFO[ListItem.Property(TotalEpisodes),, $LOCALIZE[20453]]</value>
 		<value condition="Container.Content(episodes)">$INFO[ListItem.Premiered]</value>
@@ -326,7 +326,7 @@
 		<value condition="Container.Content(addons)">$INFO[ListItem.AddonSummary]</value>
 		<value condition="Container.Content(musicvideos)">$INFO[ListItem.Artist]</value>
 		<value condition="String.IsEmpty(ListItem.Genre)">$INFO[Window(Home).Property(Set.Movies.Genre)]</value>
-		<value condition="!String.IsEmpty(ListItem.Year)">$INFO[ListItem.Year]$INFO[ListItem.Genre, • ]</value>
+		<value condition="!String.IsEmpty(ListItem.Year)">$INFO[ListItem.Year,[B],[/B]]$INFO[ListItem.Genre, ]</value>
 		<value>$INFO[ListItem.Genre]</value>
 	</variable>
 	<variable name="FloorLabel2Var">
@@ -513,7 +513,7 @@
 	</variable>
 	<variable name="VideoSubLabelVar">
 		<value condition="Container.Content(tvshows) | Container.Content(seasons)">$LOCALIZE[20360]: $INFO[ListItem.Property(TotalEpisodes)]$INFO[ListItem.Property(UnWatchedEpisodes), (,[LOWERCASE] $LOCALIZE[16101][/LOWERCASE])]</value>
-		<value>$INFO[ListItem.Year,, • ]$INFO[ListItem.RatingAndVotes,, • ]$INFO[ListItem.Duration,, $LOCALIZE[12391]]</value>
+		<value>$INFO[ListItem.Year,[B],[/B]]$INFO[ListItem.RatingAndVotes, ]$INFO[ListItem.Duration,[I], $LOCALIZE[12391][/I]]</value>
 	</variable>
 	<variable name="HomeNowPlayingThumbVar">
 		<value condition="[![[Player.Playing | Player.HasAudio | Player.HasVideo] + IsEmpty(Window(10025).Property(PlayingBackgroundMedia))] | Window.IsActive(tvchannels)] + !String.IsEmpty(Window(weather).Property(Current.FanartCode))">$VAR[WeatherIconVar]$INFO[Window(weather).Property(Current.FanartCode),,.png]</value>
@@ -743,7 +743,7 @@
         <value>$INFO[ListItem.Icon]</value>
     </variable>
     <variable name="TopbarFadeLabel1">
-    	<value condition="[![[Player.Playing | Player.HasAudio | Player.HasVideo] + IsEmpty(Window(10025).Property(PlayingBackgroundMedia))] | Window.IsActive(tvchannels)] + !String.IsEmpty(Weather.Plugin)">$INFO[Weather.Temperature,, • ]$INFO[System.Time]</value>
+    	<value condition="[![[Player.Playing | Player.HasAudio | Player.HasVideo] + IsEmpty(Window(10025).Property(PlayingBackgroundMedia))] | Window.IsActive(tvchannels)] + !String.IsEmpty(Weather.Plugin)">$INFO[Weather.Temperature]$INFO[System.Time, ]</value>
     	<value condition="![[Player.Playing | Player.HasAudio | Player.HasVideo | !String.IsEmpty(Weather.Plugin)] + IsEmpty(Window(10025).Property(PlayingBackgroundMedia))] | Window.IsActive(tvchannels)">$INFO[System.Time]</value>
     	<value condition="VideoPlayer.Content(episodes)">$INFO[VideoPlayer.Season]$INFO[VideoPlayer.Episode,X,. ]$INFO[Player.Title]</value>
     	<value>$INFO[Player.Title]</value>

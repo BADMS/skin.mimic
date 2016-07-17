@@ -166,7 +166,7 @@
 	<include name="View_59_Fanart">
 		<control type="multiimage">
 			<visible>Control.IsVisible(59) + !Window.IsActive(addoninformation)</visible>
-			<include>FullscreenDimensions</include>
+			<top>-15</top>
 			<aspectratio>stretch</aspectratio>
 			<imagepath background="true">$INFO[Window(Home).Property(SkinHelper.ExtraFanArtPath)]</imagepath>
 			<timeperimage>2000</timeperimage>

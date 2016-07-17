@@ -799,7 +799,7 @@
 					<font>font28_title</font>
 					<textoffsetx>15</textoffsetx>
 					<label>$VAR[BreadcrumbsVar,[B],[/B] ]$VAR[HeaderSubLabel]</label>
-					<label2>$VAR[TopbarFadeLabel2,, • ]$VAR[TopbarFadeLabel1]</label2>
+					<label2>$VAR[TopbarFadeLabel2,[B],[/B]]$VAR[TopbarFadeLabel1, ]</label2>
 					<onclick>noop</onclick>
 					<texturefocus>blank.png</texturefocus>
 				</control>
