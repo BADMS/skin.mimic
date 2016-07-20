@@ -517,7 +517,7 @@
 	</variable>
 	<variable name="VideoSubLabelVar">
 		<value condition="Container.Content(tvshows) | Container.Content(seasons)">$LOCALIZE[20360]: $INFO[ListItem.Property(TotalEpisodes)]$INFO[ListItem.Property(UnWatchedEpisodes), (,[LOWERCASE] $LOCALIZE[16101][/LOWERCASE])]</value>
-		<value>$INFO[ListItem.Year,[B],[/B] ]$INFO[ListItem.RatingAndVotes,, ]$INFO[ListItem.Duration,[I],$LOCALIZE[12391][/I]]</value>
+		<value>$INFO[ListItem.Year,[B],[/B] ]$INFO[ListItem.RatingAndVotes,, ]$INFO[ListItem.Duration,[LIGHT][LOWERCASE], $LOCALIZE[12391][/LOWERCASE][/LIGHT]]</value>
 	</variable>
 	<variable name="HomeNowPlayingThumbVar">
 		<value condition="[![[Player.Playing | Player.HasAudio | Player.HasVideo] + IsEmpty(Window(10025).Property(PlayingBackgroundMedia))] | Window.IsActive(tvchannels)] + !String.IsEmpty(Window(weather).Property(Current.FanartCode))">$VAR[WeatherIconVar]$INFO[Window(weather).Property(Current.FanartCode),,.png]</value>

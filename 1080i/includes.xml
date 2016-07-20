@@ -341,6 +341,15 @@
 			<visible>![Window.IsActive(eventlog) | Window.IsActive(tvchannels) | Window.IsActive(tvrecordings) | Window.IsActive(tvtimers) | Window.IsActive(tvtimerrules) | Window.IsActive(tvsearch) | Window.IsActive(radiochannels) | Window.IsActive(radiorecordings) | Window.IsActive(radiotimers) | Window.IsActive(radiosearch)]</visible>
 			<visible>Control.IsVisible(520) + !String.IsEqual(Window(home).Property(cpa_daemon_set),None)</visible>
 		</control>
+		<control type="radiobutton" id="11121">
+			<label>31978</label>
+			<include>ButtonCommonValues</include>
+			<onclick condition="!Skin.HasSetting(Text.Shadow.Enable)">Skin.SetString(Text.Shadow.Colour, ff000000)</onclick>
+			<onclick condition="Skin.HasSetting(Text.Shadow.Enable)">Skin.SetString(Text.Shadow.Colour, -)</onclick>
+			<onclick>Skin.ToggleSetting(Text.Shadow.Enable)</onclick>
+			<selected>Skin.HasSetting(Text.Shadow.Enable)</selected>
+			<visible>![Window.IsActive(eventlog) | Window.IsActive(tvchannels) | Window.IsActive(tvrecordings) | Window.IsActive(tvtimers) | Window.IsActive(tvtimerrules) | Window.IsActive(tvsearch) | Window.IsActive(radiochannels) | Window.IsActive(radiorecordings) | Window.IsActive(radiotimers) | Window.IsActive(radiosearch)]</visible>
+		</control>
 	</include>
 	<include name="PVRMediaMenu">
 		<control type="group">

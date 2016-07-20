@@ -24,6 +24,7 @@
 		<textcolor>$VAR[ColorTextVar]</textcolor>
 		<selectedcolor>$VAR[ColorTextVar]</selectedcolor>
 		<disabledcolor>disabled</disabledcolor>
+		<shadowcolor>$INFO[Skin.String(Text.Shadow.Colour)]</shadowcolor>
 		<scrollspeed>30</scrollspeed>
 	</default>
 	<default type="fadelabel">
@@ -33,6 +34,7 @@
 		<textcolor>$VAR[ColorTextVar]</textcolor>
 		<disabledcolor>disabled</disabledcolor>
 		<scrollspeed>40</scrollspeed>
+		<shadowcolor>$INFO[Skin.String(Text.Shadow.Colour)]</shadowcolor>
 	</default>
 	<default type="button">
 		<left>0</left>
@@ -48,6 +50,7 @@
 		<aligny>center</aligny>
 		<pulseonselect>false</pulseonselect>
 		<colordiffuse>$VAR[ColorHighlightVar]</colordiffuse>
+		<shadowcolor>$INFO[Skin.String(Text.Shadow.Colour)]</shadowcolor>
 	</default>
 	<default type="togglebutton">
 		<left>0</left>
@@ -65,6 +68,7 @@
 		<font>font14</font>
 		<pulseonselect>false</pulseonselect>
 		<colordiffuse>$VAR[ColorHighlightVar]</colordiffuse>
+		<shadowcolor>$INFO[Skin.String(Text.Shadow.Colour)]</shadowcolor>
 	</default>
 	<default type="textbox">
 		<left>0</left>
@@ -75,6 +79,7 @@
 		<textcolor>$VAR[ColorTextVar]</textcolor>
 		<selectedcolor>$VAR[ColorTextVar]</selectedcolor>
 		<font>font15_textbox</font>
+		<shadowcolor>$INFO[Skin.String(Text.Shadow.Colour)]</shadowcolor>
 	</default>
 	<default type="progress">
 		<left>0</left>
@@ -151,6 +156,7 @@
 		<aligny>center</aligny>
 		<pulseonselect>false</pulseonselect>
 		<colordiffuse>$VAR[ColorHighlightVar]</colordiffuse>
+		<shadowcolor>$INFO[Skin.String(Text.Shadow.Colour)]</shadowcolor>
 	</default>
 	<default type="slider">
 		<left>0</left>
@@ -203,6 +209,7 @@
 		<textoffsetx>15</textoffsetx>
 		<aligny>center</aligny>
 		<pulseonselect>false</pulseonselect>
+		<shadowcolor>$INFO[Skin.String(Text.Shadow.Colour)]</shadowcolor>
 	</default>
 	<default type="group">
 		<left>0</left>
