@@ -3,8 +3,8 @@
 	<defaultcontrol always="true">10</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<onload>SetProperty(SkinInitStarted,1,home)</onload>
-	<onload condition="Skin.HasSetting(Text.Shadow.Enable)">Skin.SetString(Text.Shadow.Colour, ff000000)</onload>
-	<onload condition="!Skin.HasSetting(Text.Shadow.Enable)">Skin.SetString(Text.Shadow.Colour, -)</onload>
+	<onload condition="Skin.HasSetting(Text.Shadow.Enable)">Skin.SetString(Text.Shadow.Colour,ff000000)</onload>
+	<onload condition="!Skin.HasSetting(Text.Shadow.Enable)">Skin.SetString(Text.Shadow.Colour,-)</onload>
 	<onload condition="System.HasAddon(script.colorbox)">RunScript(script.colorbox,daemon=True,pixels=10,bits=1,radius=10,delta_x=40,delta_y=90)</onload>
 	<onload condition="System.HasAddon(script.skin.info.service)">RunScript(script.skin.info.service)</onload>
 	<onload condition="!System.HasAddon(script.tv.show.next.aired)">Skin.SetBool(Disable.NextAired)</onload>
@@ -14,6 +14,7 @@
 	<onload>SetProperty(cpa_daemon_fallback,special://skin/extras/misc/empty.jpg,home)</onload>
 	<onload condition="String.IsEmpty(Skin.String(background_fx))">SetProperty(cfa_daemon_set,None,home)</onload>
 	<onload condition="String.IsEmpty(Skin.String(focus_fx))">SetProperty(cpa_daemon_set,None,home)</onload>
+	<onload>Skin.SetString(SkinHelper.RandomFanartDelay,3)</onload>
 	<controls>
 		<control type="button" id="10">
 			<description>trigger</description>
