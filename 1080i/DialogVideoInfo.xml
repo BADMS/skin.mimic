@@ -726,7 +726,7 @@
 						<description>Cast</description>
 						<include>ButtonInfoDialogsCommonValues</include>
 						<label>206</label>
-						<visible>$EXP[isMovie] | $EXP[isTvshow] | $EXP[isSeason] | $EXP[isEpisode]</visible>
+						<visible>[$EXP[isMovie] | $EXP[isTvshow] | $EXP[isSeason] | $EXP[isEpisode]] + [Integer.IsGreater(Container(90019).NumItems,0) | Integer.IsGreater(Container(50).NumItems,0)]</visible>
 					</control>
 					<control type="button" id="206">
 						<description>Sets list</description>
