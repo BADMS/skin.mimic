@@ -860,6 +860,11 @@
 						<visible>!IsEmpty(ListItem.Rating)</visible>
 					</control>
 					<control type="label">
+						<width>6</width>
+						<label> </label>
+						<visible>!IsEmpty(Window(Home).Property(SkinHelper.MetaCritic.Rating)) + !StringCompare(Window(Home).Property(SkinHelper.MetaCritic.Rating),n/a) + IsEmpty(ListItem.Rating)</visible>
+					</control>
+					<control type="label">
 						<aligny>center</aligny>
 						<align>left</align>
 						<font>IconMedium</font>

@@ -228,7 +228,8 @@
 							<label2>Revenue:</label2>
 							<onclick>noop</onclick>
 							<visible>!String.IsEmpty(Window(Home).Property(SkinHelper.TMDB.Revenue.mln))</visible>
-						</item>					</content>
+						</item>
+					</content>
 				</control>
 				<control type="scrollbar" id="61">
 					<visible allowhiddenfocus="true">Control.HasFocus(61)</visible>
