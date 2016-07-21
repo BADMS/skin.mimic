@@ -18,7 +18,8 @@
 		<value condition="!IntegerGreaterThan(Window(Home).Property(SkinHelper.RottenTomatoesMeter),59)">green</value>
 	</variable>
 	<variable name="ColorUserRating">
-		<value condition="IntegerGreaterThan(ListItem.Userrating,5)">green</value>
+		<value condition="IntegerGreaterThan(ListItem.Userrating,6)">green</value>
+		<value condition="IntegerGreaterThan(ListItem.Userrating,3)">yellow</value>
 		<value>red</value>
 	</variable>
 	<variable name="LabelUserRating">
