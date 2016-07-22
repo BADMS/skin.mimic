@@ -65,11 +65,11 @@
 	<!-- Backgrounds -->
 	<backgroundBrowse>True</backgroundBrowse>
 
-	<background label="31062" condition="System.HasAddon(script.grab.fanart)">movieFanart</background>
-	<background label="31063" condition="System.HasAddon(script.grab.fanart)">tvFanart</background>
-	<background label="31064" condition="System.HasAddon(script.grab.fanart)">videoFanart</background>
-	<background label="31065" condition="System.HasAddon(script.grab.fanart)">musicFanart</background>
-	<background label="31066" condition="System.HasAddon(script.grab.fanart)">allFanart</background>
+	<background label="31062">movieFanart</background>
+	<background label="31063">tvFanart</background>
+	<background label="31064">videoFanart</background>
+	<background label="31065">musicFanart</background>
+	<background label="31066">allFanart</background>
 	<background label="31084" condition="!IsEmpty(Skin.String(weatherfanart.path))">weatherBackground</background>
 	<background label="::PLAYLIST::" condition="IsEmpty(Window(Home).Property(No.Cases))">s:playlist|i:playlist</background>
 
