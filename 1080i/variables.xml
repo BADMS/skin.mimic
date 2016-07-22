@@ -59,11 +59,11 @@
 		<value condition="!String.IsEmpty(Skin.String(CustomHomeSlideshow))">$INFO[Skin.String(CustomHomeSlideshow)]</value>
 
 		<!-- Fanart backgrounds -->
-		<value condition="String.IsEqual(Container(9000).ListItem.Property(background),movieFanart)">$INFO[Window(Home).Property(script.grab.fanart.Movie.FanArt)]</value>
-		<value condition="String.IsEqual(Container(9000).ListItem.Property(background),tvFanart)">$INFO[Window(Home).Property(script.grab.fanart.TV.FanArt)]</value>
-		<value condition="String.IsEqual(Container(9000).ListItem.Property(background),videoFanart)">$INFO[Window(Home).Property(script.grab.fanart.Video.FanArt)]</value>
-		<value condition="String.IsEqual(Container(9000).ListItem.Property(background),musicFanart)">$INFO[Window(Home).Property(script.grab.fanart.Music.FanArt)]</value>
-		<value condition="String.IsEqual(Container(9000).ListItem.Property(background),allFanart)">$INFO[Window(Home).Property(script.grab.fanart.Global.FanArt)]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Property(background),movieFanart)">$INFO[Window(Home).Property(SkinHelper.AllMoviesBackground)]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Property(background),tvFanart)">$INFO[Window(Home).Property(SkinHelper.AllTvShowsBackground)]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Property(background),videoFanart)">$INFO[Window(Home).Property(SkinHelper.AllVideosBackground)]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Property(background),musicFanart)">$INFO[Window(Home).Property(SkinHelper.AllMusicBackground)]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Property(background),allFanart)">$INFO[Window(Home).Property(SkinHelper.GlobalFanartBackground)]</value>
 
 		<!-- Weather background -->
 		<value condition="String.IsEqual(Container(9000).ListItem.Property(background),weatherBackground)">$INFO[Skin.String(weatherfanart.path)]$INFO[Window(Weather).Property(Current.FanartCode)]$VAR[WeatherFanartExtension]</value>
