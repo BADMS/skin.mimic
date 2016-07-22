@@ -179,13 +179,6 @@
                     <onclick condition="System.HasAddon(script.globalsearch)">Addon.OpenSettings(script.globalsearch)</onclick>
                     <onclick condition="!System.HasAddon(script.globalsearch)">InstallAddon(script.globalsearch)</onclick>
 	            </item>
-	            <item id="6">
-					<icon>$INFO[System.AddonIcon(script.grab.fanart)]</icon>
-					<label>31174</label>
-                    <label2>$INFO[System.AddonVersion(script.grab.fanart)]</label2>
-                    <onclick condition="System.HasAddon(script.grab.fanart)">Addon.OpenSettings(script.grab.fanart)</onclick>
-                    <onclick condition="!System.HasAddon(script.grab.fanart)">InstallAddon(script.grab.fanart)</onclick>
-	            </item>
 	            <item id="7">
 					<icon>$INFO[System.AddonIcon(script.image.resource.select)]</icon>
 					<label>31175</label>
