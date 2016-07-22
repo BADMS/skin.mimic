@@ -62,14 +62,15 @@
     <icon image="DefaultAddonVideo.png">special://skin/extras/icons/addon.png</icon>
     <icon image="DefaultAddonMusic.png">special://skin/extras/icons/addon.png</icon>
 
-	<!-- Backgrounds -->
+	<!-- Backgrounds
 	<backgroundBrowse>True</backgroundBrowse>
 
 	<background label="31062">movieFanart</background>
 	<background label="31063">tvFanart</background>
 	<background label="31064">videoFanart</background>
 	<background label="31065">musicFanart</background>
-	<background label="31066">allFanart</background>
+	<background label="31066">allFanart</background> -->
+	<background label="smartshortcuts">||BROWSE||plugin://script.skin.helper.service/?action=backgrounds</background>
 	<background label="31084" condition="!IsEmpty(Skin.String(weatherfanart.path))">weatherBackground</background>
 	<background label="::PLAYLIST::" condition="IsEmpty(Window(Home).Property(No.Cases))">s:playlist|i:playlist</background>
 
