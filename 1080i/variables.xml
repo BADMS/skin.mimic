@@ -91,6 +91,9 @@
 		<value condition="String.IsEqual(Skin.String(musicvis.background),albumwall)">$LOCALIZE[31068]</value>
 		<value>$LOCALIZE[231]</value>
 	</variable>
+	<variable name="OverlayVarPercent">
+		<value>progress/images/$INFO[Window(home).Property(Show_Percentage),,percent.png]</value>
+	</variable>
 	<variable name="OverlayVar">
 		<value condition="Container.ListItem.IsResumable + Skin.HasSetting(Overlay.Resumable)">overlays/images/$INFO[ListItem.PercentPlayed,overlay,.png]</value>
 		<value condition="String.IsEqual(ListItem.Overlay,OverlayUnwatched.png) + Skin.HasSetting(Overlay.Unwatched)">overlays/images/overlay.png</value>

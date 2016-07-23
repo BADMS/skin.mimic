@@ -65,6 +65,11 @@
 				<focusedlayout height="387" width="262">
 					<control type="group">
 						<include>PanelFocusedItemZoom</include>
+						<control type="button">
+							<texturefocus>-</texturefocus>
+							<texturenofocus>-</texturenofocus>
+							<onfocus condition="Container.Content(tvshows)">RunScript(script.colorbox,info=percentage)</onfocus>
+						</control>
 						<control type="image">
 							<left>6</left>
 							<top>6</top>
