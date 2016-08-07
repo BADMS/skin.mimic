@@ -30,10 +30,10 @@
                 <value>$INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.Label]</value>
             </variable>
             <variable name="widgetLine2$SKINSHORTCUTS[id]">
-                <value condition="!String.IsEmpty(Container(8011$SKINSHORTCUTS[id]).ListItem.Episode)">• $INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.TvShowTitle]$INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.Premiered, • ]</value>
-                <value condition="!String.IsEmpty(Container(8011$SKINSHORTCUTS[id]).ListItem.Artist)">• $INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.Artist]$INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.Year, • ]</value>
-                <value condition="!String.IsEmpty(Container(8011$SKINSHORTCUTS[id]).ListItem.Year)">• $INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.Year]</value>
-                <value condition="!String.IsEmpty(Container(8011$SKINSHORTCUTS[id]).ListItem.Label2)">• $INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.Label2]</value>
+                <value condition="!String.IsEmpty(Container(8011$SKINSHORTCUTS[id]).ListItem.Episode)">$INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.TvShowTitle,, ]$INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.Premiered,[LIGHT],[/LIGHT]]</value>
+                <value condition="!String.IsEmpty(Container(8011$SKINSHORTCUTS[id]).ListItem.Artist)">$INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.Artist,, ]$INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.Year,[LIGHT],[/LIGHT]]</value>
+                <value condition="!String.IsEmpty(Container(8011$SKINSHORTCUTS[id]).ListItem.Year)">$INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.Year]</value>
+                <value condition="!String.IsEmpty(Container(8011$SKINSHORTCUTS[id]).ListItem.Label2)">$INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.Label2]</value>
             </variable>
         </variables>
     </other>
@@ -68,10 +68,10 @@
                 <value>$INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.Label]</value>
             </variable>
             <variable name="widgetLine2$SKINSHORTCUTS[id]">
-                <value condition="!String.IsEmpty(Container(8011$SKINSHORTCUTS[id]).ListItem.Episode)">• $INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.TvShowTitle]$INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.Premiered, • ]</value>
-                <value condition="!String.IsEmpty(Container(8011$SKINSHORTCUTS[id]).ListItem.Artist)">• $INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.Artist]$INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.Year, • ]</value>
-                <value condition="!String.IsEmpty(Container(8011$SKINSHORTCUTS[id]).ListItem.Year)">• $INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.Year]</value>
-                <value condition="!String.IsEmpty(Container(8011$SKINSHORTCUTS[id]).ListItem.Label2)">• $INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.Label2]</value>
+                <value condition="!String.IsEmpty(Container(8011$SKINSHORTCUTS[id]).ListItem.Episode)">$INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.TvShowTitle,, ]$INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.Premiered,[LIGHT],[/LIGHT]]</value>
+                <value condition="!String.IsEmpty(Container(8011$SKINSHORTCUTS[id]).ListItem.Artist)">$INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.Artist,, ]$INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.Year,[LIGHT],[/LIGHT]]</value>
+                <value condition="!String.IsEmpty(Container(8011$SKINSHORTCUTS[id]).ListItem.Year)">$INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.Year]</value>
+                <value condition="!String.IsEmpty(Container(8011$SKINSHORTCUTS[id]).ListItem.Label2)">$INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.Label2]</value>
             </variable>
         </variables>
     </other>
@@ -356,7 +356,7 @@
                             <height>50</height>
                             <font>font16_title</font>
                             <textcolor>$VAR[ColorTextVar]</textcolor>
-                            <label>$VAR[widgetLine1$SKINSHORTCUTS[id]] $VAR[widgetLine2$SKINSHORTCUTS[id]]</label>
+                            <label>$VAR[widgetLine1$SKINSHORTCUTS[id],[B],[/B] ]$VAR[widgetLine2$SKINSHORTCUTS[id]]</label>
                         </control>
                     </control>
                 </control>
@@ -369,10 +369,10 @@
                 <value>$INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.Label]</value>
             </variable>
             <variable name="widgetLine2$SKINSHORTCUTS[id]">
-                <value condition="!String.IsEmpty(Container(8011$SKINSHORTCUTS[id]).ListItem.Episode)">• $INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.TvShowTitle]$INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.Premiered, • ]</value>
-                <value condition="!String.IsEmpty(Container(8011$SKINSHORTCUTS[id]).ListItem.Artist)">• $INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.Artist]$INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.Year, • ]</value>
-                <value condition="!String.IsEmpty(Container(8011$SKINSHORTCUTS[id]).ListItem.Year)">• $INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.Year]</value>
-                <value condition="!String.IsEmpty(Container(8011$SKINSHORTCUTS[id]).ListItem.Label2)">• $INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.Label2]</value>
+                <value condition="!String.IsEmpty(Container(8011$SKINSHORTCUTS[id]).ListItem.Episode)">$INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.TvShowTitle,, ]$INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.Premiered,[LIGHT],[/LIGHT]]</value>
+                <value condition="!String.IsEmpty(Container(8011$SKINSHORTCUTS[id]).ListItem.Artist)">$INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.Artist,, ]$INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.Year,[LIGHT],[/LIGHT]]</value>
+                <value condition="!String.IsEmpty(Container(8011$SKINSHORTCUTS[id]).ListItem.Year)">$INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.Year]</value>
+                <value condition="!String.IsEmpty(Container(8011$SKINSHORTCUTS[id]).ListItem.Label2)">$INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.Label2]</value>
             </variable>
         </variables>
     </other>
@@ -597,14 +597,14 @@
                 <value>$INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.Label]</value>
             </variable>
             <variable name="widgetLine2$SKINSHORTCUTS[id]">
-                <value condition="!String.IsEmpty(Container(8011$SKINSHORTCUTS[id]).ListItem.Episode)">• $INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.TvShowTitle]$INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.Premiered, • ]</value>
-                <value condition="!String.IsEmpty(Container(8011$SKINSHORTCUTS[id]).ListItem.Artist)">• $INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.Artist]$INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.Year, • ]</value>
-                <value condition="!String.IsEmpty(Container(8011$SKINSHORTCUTS[id]).ListItem.Year)">• $INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.Year]</value>
-                <value condition="!String.IsEmpty(Container(8011$SKINSHORTCUTS[id]).ListItem.Label2)">• $INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.Label2]</value>
+                <value condition="!String.IsEmpty(Container(8011$SKINSHORTCUTS[id]).ListItem.Episode)">$INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.TvShowTitle,, ]$INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.Premiered,[LIGHT],[/LIGHT]]</value>
+                <value condition="!String.IsEmpty(Container(8011$SKINSHORTCUTS[id]).ListItem.Artist)">$INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.Artist,, ]$INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.Year,[LIGHT],[/LIGHT]]</value>
+                <value condition="!String.IsEmpty(Container(8011$SKINSHORTCUTS[id]).ListItem.Year)">$INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.Year]</value>
+                <value condition="!String.IsEmpty(Container(8011$SKINSHORTCUTS[id]).ListItem.Label2)">$INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.Label2]</value>
             </variable>
             <variable name="widgetLine3$SKINSHORTCUTS[id]">
-                <value condition="!String.IsEmpty(Container(8011$SKINSHORTCUTS[id]).ListItem.Episode)">$INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.TvShowTitle]$INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.Premiered, • ]</value>
-                <value condition="!String.IsEmpty(Container(8011$SKINSHORTCUTS[id]).ListItem.Artist)">$INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.Artist]$INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.Year, • ]</value>
+                <value condition="!String.IsEmpty(Container(8011$SKINSHORTCUTS[id]).ListItem.Episode)">$INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.TvShowTitle,, ]$INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.Premiered,[LIGHT],[/LIGHT]]</value>
+                <value condition="!String.IsEmpty(Container(8011$SKINSHORTCUTS[id]).ListItem.Artist)">$INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.Artist,, ]$INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.Year,[LIGHT],[/LIGHT]]</value>
                 <value condition="!String.IsEmpty(Container(8011$SKINSHORTCUTS[id]).ListItem.Year)">$INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.Year]</value>
                 <value>$INFO[Container(8011$SKINSHORTCUTS[id]).ListItem.Label2]</value>
             </variable>

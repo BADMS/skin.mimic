@@ -124,7 +124,7 @@
 					<width>1600</width>
 					<height>65</height>
 					<font>font28_title</font>
-					<label>[COLOR $VAR[ColorHighlightVar]]$INFO[VideoPlayer.Year]$INFO[VideoPlayer.Genre,  •  ][/COLOR]</label>
+					<label>[COLOR $VAR[ColorHighlightVar]]$INFO[VideoPlayer.Year,[B],[/B]]$INFO[VideoPlayer.Genre,     ][/COLOR]</label>
 					<visible>VideoPlayer.Content(movies) | VideoPlayer.Content(musicvideos)</visible>
 				</control>
 				<control type="label">

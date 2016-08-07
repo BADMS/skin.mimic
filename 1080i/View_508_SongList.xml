@@ -78,7 +78,7 @@
 							<width>990</width>
 							<height>110</height>
 							<font>font16</font>
-							<label fallback="• • • •">$INFO[ListItem.Duration]</label>
+							<label fallback="■ ■ ■ ■">$INFO[ListItem.Duration]</label>
 						</control>
 						<control type="image">
 							<left>175</left>

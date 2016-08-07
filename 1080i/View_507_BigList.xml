@@ -433,7 +433,7 @@
                                 <top>51</top>
                                 <width>1531</width>
                                 <height>60</height>
-                                <label>$INFO[ListItem.Year]$INFO[ListItem.Genre, • ]</label>
+                                <label>$INFO[ListItem.Year,[B],[/B] ]$INFO[ListItem.Genre]</label>
                             </control>
                             <control type="textbox">
                                 <top>100</top>
@@ -490,7 +490,7 @@
                                     <top>51</top>
                                     <width>1531</width>
                                     <height>60</height>
-                                    <label>$INFO[ListItem.Year]$INFO[ListItem.Genre, • ]</label>
+                                    <label>$INFO[ListItem.Year,[B],[/B] ]$INFO[ListItem.Genre]</label>
                                 </control>
                                 <control type="textbox">
                                     <top>100</top>

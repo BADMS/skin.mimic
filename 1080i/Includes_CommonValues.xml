@@ -150,7 +150,7 @@
 				<top>445</top>
 				<width>405</width>
 				<height>105</height>
-				<label>$INFO[ListItem.Property(LatestDate),, • ]$INFO[ListItem.Property(LatestTitle)]</label>
+				<label>$INFO[ListItem.Property(LatestDate),[B],[/B] ]$INFO[ListItem.Property(LatestTitle)]</label>
 				<font>font15</font>
 				<autoscroll>false</autoscroll>
 			</control>
@@ -230,7 +230,7 @@
 				<top>445</top>
 				<width>405</width>
 				<height>105</height>
-				<label>$INFO[ListItem.Property(LatestDate),, • ]$INFO[ListItem.Property(LatestTitle)]</label>
+				<label>$INFO[ListItem.Property(LatestDate),[B],[/B] ]$INFO[ListItem.Property(LatestTitle)]</label>
 				<font>font15</font>
 				<autoscroll>false</autoscroll>
 			</control>

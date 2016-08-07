@@ -371,7 +371,7 @@
 		<value>$INFO[Player.Art(thumb)]</value>
 	</variable>
 	<variable name="PlayerTitleLabelVar">
-		<value condition="Player.ChapterCount">$INFO[Player.Title]$INFO[player.chapter, • $LOCALIZE[21396] ]$INFO[player.chaptercount, / ,]</value>
+		<value condition="Player.ChapterCount">$INFO[Player.Title,[B],[/B] ]$INFO[player.chapter,$LOCALIZE[21396] ]$INFO[player.chaptercount,[LIGHT]/ ,[/LIGHT]]</value>
 		<value>$INFO[Player.Title]</value>
 	</variable>
 	<variable name="SkinSettingsDescriptionVar">
@@ -719,7 +719,7 @@
     	<value condition="Window.IsActive(pvrsettings)">$LOCALIZE[19020]</value>
     	<value condition="Window.IsActive(skinsettings)">$LOCALIZE[166]</value>
     	<value condition="Window.IsActive(playersettings)">$LOCALIZE[16003]</value>
-    	<value condition="Window.IsActive(librarysettings)">$LOCALIZE[14022]</value>
+    	<value condition="Window.IsActive(MediaSettings)">$LOCALIZE[14022]</value>
     	<value condition="Window.IsActive(interfacesettings)">$LOCALIZE[14206]</value>
     	<value condition="Window.IsActive(settings)">$INFO[System.FriendlyName]</value>
     	<value condition="Window.IsActive(home) + Window.IsVisible(virtualkeyboard)">$LOCALIZE[137]</value>
@@ -759,10 +759,10 @@
     <variable name="TopbarFadeLabel2">
     	<value condition="![[Player.Playing | Player.HasAudio | Player.HasVideo] + IsEmpty(Window(10025).Property(PlayingBackgroundMedia))] | Window.IsActive(tvchannels)">$INFO[System.Date]</value>
     	<value condition="VideoPlayer.Content(livetv)">$INFO[VideoPlayer.ChannelNumber,,: ]$INFO[VideoPlayer.ChannelName]</value>
-    	<value condition="VideoPlayer.Content(episodes)">$INFO[VideoPlayer.Premiered,, • ]$INFO[VideoPlayer.TvShowTitle]</value>
-    	<value condition="VideoPlayer.Content(movies)">$INFO[VideoPlayer.Year]$INFO[VideoPlayer.Genre, • ]</value>
+    	<value condition="VideoPlayer.Content(episodes)">$INFO[VideoPlayer.Premiered,[B],[/B] ]$INFO[VideoPlayer.TvShowTitle]</value>
+    	<value condition="VideoPlayer.Content(movies)">$INFO[VideoPlayer.Year,[B].[/B] ]$INFO[VideoPlayer.Genre]</value>
     	<value condition="VideoPlayer.Content(musicvideos)">$INFO[VideoPlayer.Artist]</value>
-    	<value condition="Player.HasAudio + IsEmpty(Window(10025).Property(PlayingBackgroundMedia)) + !String.IsEmpty(MusicPlayer.Artist)">$INFO[MusicPlayer.Artist]$INFO[MusicPlayer.Album, • ]</value>
+    	<value condition="Player.HasAudio + IsEmpty(Window(10025).Property(PlayingBackgroundMedia)) + !String.IsEmpty(MusicPlayer.Artist)">$INFO[MusicPlayer.Artist,[B],[/B]]$INFO[MusicPlayer.Album]</value>
     	<value condition="!String.IsEmpty(Player.Title) + IsEmpty(Window(10025).Property(PlayingBackgroundMedia))">$INFO[Player.Time] / $INFO[Player.Duration]</value>
     </variable>
     <variable name="AddonDisclaimer">
@@ -772,19 +772,19 @@
     	<value condition="!String.IsEmpty(ListItem.AddonNews)">[COLOR $VAR[ColorHighlightVar]]$LOCALIZE[24054]: [/COLOR][CR]$INFO[ListItem.AddonNews][CR]</value>
     </variable>
     <variable name="LibraryStatsVar">
-		<value condition="String.IsEqual(Container(9000).ListItem.Property(InfoLine),$LOCALIZE[31097])">$LOCALIZE[20342]: $INFO[Window(Home).Property(Movies.Count)] • $LOCALIZE[16102]: $INFO[Window(Home).Property(Movies.Watched)] • $LOCALIZE[16101]: $INFO[Window(Home).Property(Movies.UnWatched)]</value>
-		<value condition="String.IsEqual(Container(9000).ListItem.Property(InfoLine),$LOCALIZE[31098])">$LOCALIZE[20343]: $INFO[Window(Home).Property(TVShows.Count)] • $LOCALIZE[20360]: $INFO[Window(Home).Property(Episodes.Count)] • $LOCALIZE[16101]: $INFO[Window(Home).Property(Episodes.UnWatched)]</value>
-		<value condition="String.IsEqual(Container(9000).ListItem.Property(InfoLine),$LOCALIZE[31099])">$LOCALIZE[133]: $INFO[Window(Home).Property(Music.ArtistsCount)] • $LOCALIZE[132]: $INFO[Window(Home).Property(Music.AlbumsCount)] • $LOCALIZE[134]: $INFO[Window(Home).Property(Music.SongsCount)]</value>
-		<value condition="String.IsEqual(Container(9000).ListItem.Property(InfoLine),$LOCALIZE[31058]) + PVR.IsRecording">$LOCALIZE[19158]: $INFO[PVR.NowRecordingDateTime] • $INFO[PVR.NowRecordingTitle] ($INFO[PVR.NowRecordingChannel])</value>
-		<value condition="String.IsEqual(Container(9000).ListItem.Property(InfoLine),$LOCALIZE[31058]) + PVR.HasNonRecordingTimer">$LOCALIZE[19157]: $INFO[PVR.NextRecordingDateTime] • $LOCALIZE[19029]: $INFO[PVR.NextRecordingTitle] ($INFO[PVR.NextRecordingChannel])</value>
-		<value condition="String.IsEqual(Container(9000).ListItem.Property(InfoLine),$LOCALIZE[31058])">$LOCALIZE[19019]: $INFO[Pvr.BackendChannels] • $LOCALIZE[19163]: $INFO[Pvr.BackendRecordings]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Property(InfoLine),$LOCALIZE[31097])">$LOCALIZE[20342]: $INFO[Window(Home).Property(Movies.Count)] ■ $LOCALIZE[16102]: $INFO[Window(Home).Property(Movies.Watched)] ■ $LOCALIZE[16101]: $INFO[Window(Home).Property(Movies.UnWatched)]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Property(InfoLine),$LOCALIZE[31098])">$LOCALIZE[20343]: $INFO[Window(Home).Property(TVShows.Count)] ■ $LOCALIZE[20360]: $INFO[Window(Home).Property(Episodes.Count)] ■ $LOCALIZE[16101]: $INFO[Window(Home).Property(Episodes.UnWatched)]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Property(InfoLine),$LOCALIZE[31099])">$LOCALIZE[133]: $INFO[Window(Home).Property(Music.ArtistsCount)] ■ $LOCALIZE[132]: $INFO[Window(Home).Property(Music.AlbumsCount)] ■ $LOCALIZE[134]: $INFO[Window(Home).Property(Music.SongsCount)]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Property(InfoLine),$LOCALIZE[31058]) + PVR.IsRecording">$LOCALIZE[19158]: $INFO[PVR.NowRecordingDateTime] ■ $INFO[PVR.NowRecordingTitle] ($INFO[PVR.NowRecordingChannel])</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Property(InfoLine),$LOCALIZE[31058]) + PVR.HasNonRecordingTimer">$LOCALIZE[19157]: $INFO[PVR.NextRecordingDateTime] ■ $LOCALIZE[19029]: $INFO[PVR.NextRecordingTitle] ($INFO[PVR.NextRecordingChannel])</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Property(InfoLine),$LOCALIZE[31058])">$LOCALIZE[19019]: $INFO[Pvr.BackendChannels] ■ $LOCALIZE[19163]: $INFO[Pvr.BackendRecordings]</value>
 		<value condition="String.IsEqual(Container(9000).ListItem.Property(InfoLine),$LOCALIZE[20088])">$INFO[Weather.Location]: $INFO[Weather.Conditions]</value>
-		<value condition="String.IsEqual(Container(9000).ListItem.Property(InfoLine),$LOCALIZE[31061])">$LOCALIZE[20161] $LOCALIZE[24001]: $INFO[Window(Home).Property(SkinHelper.TotalAddons)] • $LOCALIZE[1036]: $INFO[Window(Home).Property(SkinHelper.TotalFavourites)]</value>
-		<value condition="String.IsEqual(Container(9000).ListItem.Property(InfoLine),$LOCALIZE[31082])">$LOCALIZE[20389]: $INFO[Window(Home).Property(MusicVideos.Count)] • $LOCALIZE[16102]: $INFO[Window(Home).Property(MusicVideos.Watched)] • $LOCALIZE[16101]: $INFO[Window(Home).Property(MusicVideos.UnWatched)]</value>
-		<value condition="String.IsEqual(Container(9000).ListItem.Property(InfoLine),$LOCALIZE[130])">$LOCALIZE[31309] $INFO[System.memory(used.percent)] • $LOCALIZE[13271] $INFO[System.CPUUsage]</value>
-		<value condition="String.IsEqual(Container(9000).ListItem.Property(InfoLine),$LOCALIZE[31130])">$LOCALIZE[20342]: $INFO[Window(Home).Property(PlaylistCount)] • $LOCALIZE[16102]: $INFO[Window(Home).Property(PlaylistWatched)] • $LOCALIZE[16101]: $INFO[Window(Home).Property(PlaylistUnWatched)] • $LOCALIZE[575]: $INFO[Window(Home).Property(PlaylistInProgress)]</value>
-		<value condition="String.IsEqual(Container(9000).ListItem.Property(InfoLine),$LOCALIZE[31131])">$LOCALIZE[20343]: $INFO[Window(Home).Property(PlaylistTVShowCount)] • $LOCALIZE[20360]: $INFO[Window(Home).Property(PlaylistEpisodes)] • $LOCALIZE[16101]: $INFO[Window(Home).Property(PlaylistEpisodesUnWatched)]</value>
-		<value condition="String.IsEqual(Container(9000).ListItem.Property(InfoLine),$LOCALIZE[31132])">$LOCALIZE[20389]: $INFO[Window(Home).Property(PlaylistCount)] • $LOCALIZE[16102]: $INFO[Window(Home).Property(PlaylistWatched)] • $LOCALIZE[16101]: $INFO[Window(Home).Property(PlaylistUnWatched)] • $LOCALIZE[575]: $INFO[Window(Home).Property(PlaylistInProgress)]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Property(InfoLine),$LOCALIZE[31061])">$LOCALIZE[20161] $LOCALIZE[24001]: $INFO[Window(Home).Property(SkinHelper.TotalAddons)] ■ $LOCALIZE[1036]: $INFO[Window(Home).Property(SkinHelper.TotalFavourites)]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Property(InfoLine),$LOCALIZE[31082])">$LOCALIZE[20389]: $INFO[Window(Home).Property(MusicVideos.Count)] ■ $LOCALIZE[16102]: $INFO[Window(Home).Property(MusicVideos.Watched)] ■ $LOCALIZE[16101]: $INFO[Window(Home).Property(MusicVideos.UnWatched)]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Property(InfoLine),$LOCALIZE[130])">$LOCALIZE[31309] $INFO[System.memory(used.percent)] ■ $LOCALIZE[13271] $INFO[System.CPUUsage]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Property(InfoLine),$LOCALIZE[31130])">$LOCALIZE[20342]: $INFO[Window(Home).Property(PlaylistCount)] ■ $LOCALIZE[16102]: $INFO[Window(Home).Property(PlaylistWatched)] ■ $LOCALIZE[16101]: $INFO[Window(Home).Property(PlaylistUnWatched)] ■ $LOCALIZE[575]: $INFO[Window(Home).Property(PlaylistInProgress)]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Property(InfoLine),$LOCALIZE[31131])">$LOCALIZE[20343]: $INFO[Window(Home).Property(PlaylistTVShowCount)] ■ $LOCALIZE[20360]: $INFO[Window(Home).Property(PlaylistEpisodes)] ■ $LOCALIZE[16101]: $INFO[Window(Home).Property(PlaylistEpisodesUnWatched)]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Property(InfoLine),$LOCALIZE[31132])">$LOCALIZE[20389]: $INFO[Window(Home).Property(PlaylistCount)] ■ $LOCALIZE[16102]: $INFO[Window(Home).Property(PlaylistWatched)] ■ $LOCALIZE[16101]: $INFO[Window(Home).Property(PlaylistUnWatched)] ■ $LOCALIZE[575]: $INFO[Window(Home).Property(PlaylistInProgress)]</value>
 		<value>$INFO[Container(9000).ListItem.Label]</value>
 	</variable>
 	<variable name="WidgetNameLabelVar">
@@ -843,7 +843,7 @@
 	<variable name="MusicInfoSubheading">
 		<value condition="String.IsEqual(ListItem.DBTYPE,artist)">$INFO[ListItem.Genre]</value>
 		<value condition="String.IsEqual(ListItem.DBTYPE,album)">$INFO[ListItem.Artist]</value>
-		<value condition="String.IsEqual(ListItem.DBTYPE,song)">$INFO[ListItem.Artist]$INFO[ListItem.Album, • ]</value>
+		<value condition="String.IsEqual(ListItem.DBTYPE,song)">$INFO[ListItem.Artist]$INFO[ListItem.Album, ■ ]</value>
 		<value>$INFO[ListItem.Artist]</value>
 	</variable>
 	<variable name="MusicInfoYoutubePath">

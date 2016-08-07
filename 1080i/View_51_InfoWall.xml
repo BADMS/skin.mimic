@@ -458,7 +458,7 @@
 					<visible>Container.Content(albums)</visible>
 				</control>
 				<control type="label">
-					<label>$INFO[ListItem.Year]$INFO[ListItem.Genre, • ]</label>
+					<label>$INFO[ListItem.Year,[B],[/B] ]$INFO[ListItem.Genre]</label>
 					<width>680</width>
 					<height>34</height>
 					<font>font14</font>

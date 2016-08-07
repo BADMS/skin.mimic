@@ -220,14 +220,14 @@
 					<width>1300</width>
 					<height>50</height>
 					<font>font14_textbox</font>
-					<label>$INFO[MusicPlayer.Album]$INFO[MusicPlayer.Year, • ,]</label>
+					<label>$INFO[MusicPlayer.Album,[B],[/B] ]$INFO[MusicPlayer.Year]</label>
 				</control>
 				<control type="label">
 					<width>1300</width>
 					<height>48</height>
 					<font>font14_textbox</font>
 					<scroll>true</scroll>
-					<label>[COLOR $VAR[ColorHighlightVar]]$LOCALIZE[19031]:[/COLOR] $INFO[MusicPlayer.offset(1).Artist,, • ]$INFO[MusicPlayer.offset(1).TrackNumber,,. ]$INFO[MusicPlayer.offset(1).Title]</label>
+					<label>[COLOR $VAR[ColorHighlightVar]][B]$LOCALIZE[19031]:[/B][/COLOR] $INFO[MusicPlayer.offset(1).Artist,[B],[/B] ]$INFO[MusicPlayer.offset(1).TrackNumber,,. ]$INFO[MusicPlayer.offset(1).Title]</label>
 				</control>
 			</control>
 			<control type="group">
