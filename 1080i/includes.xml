@@ -317,29 +317,13 @@
 			<visible>![Window.IsActive(eventlog) | Window.IsActive(tvchannels) | Window.IsActive(tvrecordings) | Window.IsActive(tvtimers) | Window.IsActive(tvtimerrules) | Window.IsActive(tvsearch) | Window.IsActive(radiochannels) | Window.IsActive(radiorecordings) | Window.IsActive(radiotimers) | Window.IsActive(radiosearch)]</visible>
 			<visible>!String.IsEqual(Window(home).Property(cpa_daemon_set),None)</visible>
 		</control>
-		<control type="radiobutton" id="11118">
-			<label>31974</label>
-			<include>ButtonCommonValues</include>
-			<onclick>Skin.ToggleSetting(ViewBigWall.Pulse.Focus)</onclick>
-			<selected>Skin.HasSetting(ViewBigWall.Pulse.Focus)</selected>
-			<visible>![Window.IsActive(eventlog) | Window.IsActive(tvchannels) | Window.IsActive(tvrecordings) | Window.IsActive(tvtimers) | Window.IsActive(tvtimerrules) | Window.IsActive(tvsearch) | Window.IsActive(radiochannels) | Window.IsActive(radiorecordings) | Window.IsActive(radiotimers) | Window.IsActive(radiosearch)]</visible>
-			<visible>Control.IsVisible(509) + !String.IsEqual(Window(home).Property(cpa_daemon_set),None)</visible>
-		</control>
 		<control type="radiobutton" id="11119">
 			<label>31974</label>
 			<include>ButtonCommonValues</include>
-			<onclick>Skin.ToggleSetting(ViewVideoWall.Pulse.Focus)</onclick>
-			<selected>Skin.HasSetting(ViewVideoWall.Pulse.Focus)</selected>
+			<onclick>Skin.ToggleSetting(View.Pulse.Focus)</onclick>
+			<selected>Skin.HasSetting(View.Pulse.Focus)</selected>
 			<visible>![Window.IsActive(eventlog) | Window.IsActive(tvchannels) | Window.IsActive(tvrecordings) | Window.IsActive(tvtimers) | Window.IsActive(tvtimerrules) | Window.IsActive(tvsearch) | Window.IsActive(radiochannels) | Window.IsActive(radiorecordings) | Window.IsActive(radiotimers) | Window.IsActive(radiosearch)]</visible>
 			<visible>Control.IsVisible(500) + !String.IsEqual(Window(home).Property(cpa_daemon_set),None)</visible>
-		</control>
-		<control type="radiobutton" id="11120">
-			<label>31974</label>
-			<include>ButtonCommonValues</include>
-			<onclick>Skin.ToggleSetting(ViewAddonWall.Pulse.Focus)</onclick>
-			<selected>Skin.HasSetting(ViewAddonWall.Pulse.Focus)</selected>
-			<visible>![Window.IsActive(eventlog) | Window.IsActive(tvchannels) | Window.IsActive(tvrecordings) | Window.IsActive(tvtimers) | Window.IsActive(tvtimerrules) | Window.IsActive(tvsearch) | Window.IsActive(radiochannels) | Window.IsActive(radiorecordings) | Window.IsActive(radiotimers) | Window.IsActive(radiosearch)]</visible>
-			<visible>Control.IsVisible(520) + !String.IsEqual(Window(home).Property(cpa_daemon_set),None)</visible>
 		</control>
 		<control type="radiobutton" id="11121">
 			<label>31978</label>
@@ -543,7 +527,7 @@
 					<include>ButtonCommonValues</include>
 					<label>14022</label>
 					<onclick>ClearProperty(MediaMenu,Home)</onclick>
-					<onclick>ReplaceWindow(LibrarySettings)</onclick>
+					<onclick>ReplaceWindow(MediaSettings)</onclick>
 					<onclick>Control.SetFocus(3)</onclick>
 				</control>
 				<control type="button" id="2206">
@@ -780,8 +764,8 @@
 				</control>
 				<control type="group">
 					<visible>[Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(episode)] + !String.IsEmpty(Window(home).Property(Show_Percentage))</visible>
-						<top>13</top>
-						<left>13</left>
+					<top>13</top>
+					<left>13</left>
 					<control type="image">
 						<width>92</width>
 						<height>92</height>
@@ -804,10 +788,10 @@
 				<control type="image">
 					<visible>Window.IsVisible(DialogBusy.xml)</visible>
 					<description>Busy animation</description>
-					<top>29</top>
-					<left>29</left>
-					<width>60</width>
-					<height>60</height>
+					<top>32</top>
+					<left>32</left>
+					<width>54</width>
+					<height>54</height>
 					<texture colordiffuse="$VAR[ColorTextVar]" fallback="special://skin/extras/spinners/Sun.png">$INFO[Skin.String(busyloader)]</texture>
 					<aspectratio>keep</aspectratio>
 					<animation effect="rotate" start="360" end="0" center="auto" time="3000" loop="true" condition="true">conditional</animation>
