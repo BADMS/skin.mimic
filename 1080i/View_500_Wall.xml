@@ -32,8 +32,8 @@
                     <height>369</height>
                     <include>FocusedBackgroundFade</include>
 					<texture colordiffuse="$VAR[ColorHighlightVar]">listselect_fo.png</texture><fadetime>2000</fadetime>
-					<animation effect="fade" end="50" start="0" time="1000" condition="!String.IsEqual(Window(home).Property(cpa_daemon_set),None) + Skin.HasSetting(ViewVideoWall.Pulse.Focus)" pulse="true" delay="1000">Conditional</animation>
-					<visible>!String.IsEqual(Window(home).Property(cpa_daemon_set),None) + Skin.HasSetting(ViewVideoWall.Pulse.Focus)</visible>
+					<animation effect="fade" end="50" start="0" time="1000" condition="!String.IsEqual(Window(home).Property(cpa_daemon_set),None) + Skin.HasSetting(View.Pulse.Focus)" pulse="true" delay="1000">Conditional</animation>
+					<visible>!String.IsEqual(Window(home).Property(cpa_daemon_set),None) + Skin.HasSetting(View.Pulse.Focus)</visible>
                     <animation effect="slide" end="0,357" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Row,0)">Conditional</animation>
                     <animation effect="slide" end="242,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,5)">Conditional</animation>
                     <animation effect="slide" end="242,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,4)">Conditional</animation>
@@ -64,8 +64,8 @@
                     <height>250</height>
                     <include>FocusedBackgroundFade</include>
 					<texture colordiffuse="$VAR[ColorHighlightVar]">listselect_fo.png</texture><fadetime>2000</fadetime>
-					<animation effect="fade" end="50" start="0" time="1000" condition="!String.IsEqual(Window(home).Property(cpa_daemon_set),None) + Skin.HasSetting(ViewVideoWall.Pulse.Focus)" pulse="true" delay="1000">Conditional</animation>
-					<visible>!String.IsEqual(Window(home).Property(cpa_daemon_set),None) + Skin.HasSetting(ViewVideoWall.Pulse.Focus)</visible>
+					<animation effect="fade" end="50" start="0" time="1000" condition="!String.IsEqual(Window(home).Property(cpa_daemon_set),None) + Skin.HasSetting(View.Pulse.Focus)" pulse="true" delay="1000">Conditional</animation>
+					<visible>!String.IsEqual(Window(home).Property(cpa_daemon_set),None) + Skin.HasSetting(View.Pulse.Focus)</visible>
                     <animation effect="slide" end="0,238" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Row,1)">Conditional</animation>
                     <animation effect="slide" end="0,238" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Row,0)">Conditional</animation>
                     <animation effect="slide" end="413,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,2)">Conditional</animation>
@@ -93,8 +93,8 @@
                     <height>190</height>
                     <include>FocusedBackgroundFade</include>
 					<texture colordiffuse="$VAR[ColorHighlightVar]">listselect_fo.png</texture><fadetime>2000</fadetime>
-					<animation effect="fade" end="50" start="0" time="1000" condition="!String.IsEqual(Window(home).Property(cpa_daemon_set),None) + Skin.HasSetting(ViewVideoWall.Pulse.Focus)" pulse="true" delay="1000">Conditional</animation>
-					<visible>!String.IsEqual(Window(home).Property(cpa_daemon_set),None) + Skin.HasSetting(ViewVideoWall.Pulse.Focus)</visible>
+					<animation effect="fade" end="50" start="0" time="1000" condition="!String.IsEqual(Window(home).Property(cpa_daemon_set),None) + Skin.HasSetting(View.Pulse.Focus)" pulse="true" delay="1000">Conditional</animation>
+					<visible>!String.IsEqual(Window(home).Property(cpa_daemon_set),None) + Skin.HasSetting(View.Pulse.Focus)</visible>
                     <animation effect="slide" end="0,178" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Row,2)">Conditional</animation>
                     <animation effect="slide" end="0,178" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Row,1)">Conditional</animation>
                     <animation effect="slide" end="0,178" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Row,0)">Conditional</animation>
@@ -121,8 +121,8 @@
                     <height>369</height>
                     <include>FocusedBackgroundFade</include>
 					<texture colordiffuse="$VAR[ColorHighlightVar]">listselect_fo.png</texture><fadetime>2000</fadetime>
-					<animation effect="fade" end="50" start="0" time="1000" condition="!String.IsEqual(Window(home).Property(cpa_daemon_set),None) + Skin.HasSetting(ViewVideoWall.Pulse.Focus)" pulse="true" delay="1000">Conditional</animation>
-					<visible>!String.IsEqual(Window(home).Property(cpa_daemon_set),None) + Skin.HasSetting(ViewVideoWall.Pulse.Focus)</visible>
+					<animation effect="fade" end="50" start="0" time="1000" condition="!String.IsEqual(Window(home).Property(cpa_daemon_set),None) + Skin.HasSetting(View.Pulse.Focus)" pulse="true" delay="1000">Conditional</animation>
+					<visible>!String.IsEqual(Window(home).Property(cpa_daemon_set),None) + Skin.HasSetting(View.Pulse.Focus)</visible>
                     <animation effect="slide" end="0,357" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Row,0)">Conditional</animation>
                     <animation effect="slide" end="424,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,2)">Conditional</animation>
                     <animation effect="slide" end="424,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,1)">Conditional</animation>
@@ -150,8 +150,8 @@
                     <height>369</height>
                     <include>FocusedBackgroundFade</include>
 					<texture colordiffuse="$VAR[ColorHighlightVar]">listselect_fo.png</texture><fadetime>2000</fadetime>
-					<animation effect="fade" end="50" start="0" time="1000" condition="!String.IsEqual(Window(home).Property(cpa_daemon_set),None) + Skin.HasSetting(ViewVideoWall.Pulse.Focus)" pulse="true" delay="1000">Conditional</animation>
-					<visible>!String.IsEqual(Window(home).Property(cpa_daemon_set),None) + Skin.HasSetting(ViewVideoWall.Pulse.Focus)</visible>
+					<animation effect="fade" end="50" start="0" time="1000" condition="!String.IsEqual(Window(home).Property(cpa_daemon_set),None) + Skin.HasSetting(View.Pulse.Focus)" pulse="true" delay="1000">Conditional</animation>
+					<visible>!String.IsEqual(Window(home).Property(cpa_daemon_set),None) + Skin.HasSetting(View.Pulse.Focus)</visible>
                     <animation effect="slide" end="0,357" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Row,0)">Conditional</animation>
                     <animation effect="slide" end="357,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,3)">Conditional</animation>
                     <animation effect="slide" end="357,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(500).Column,2)">Conditional</animation>
@@ -972,8 +972,8 @@
                 <animation effect="slide" end="380,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(520).Column,2)">Conditional</animation>
                 <animation effect="slide" end="380,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(520).Column,1)">Conditional</animation>
                 <animation effect="slide" end="380,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(520).Column,0)">Conditional</animation>
-                <animation effect="fade" end="50" start="0" time="1000" condition="!String.IsEqual(Window(home).Property(cpa_daemon_set),None) + Skin.HasSetting(ViewAddonWall.Pulse.Focus)" pulse="true" delay="1000">Conditional</animation>
-            	<visible>!String.IsEqual(Window(home).Property(cpa_daemon_set),None) + Skin.HasSetting(ViewAddonWall.Pulse.Focus)</visible>
+                <animation effect="fade" end="50" start="0" time="1000" condition="!String.IsEqual(Window(home).Property(cpa_daemon_set),None) + Skin.HasSetting(View.Pulse.Focus)" pulse="true" delay="1000">Conditional</animation>
+            	<visible>!String.IsEqual(Window(home).Property(cpa_daemon_set),None) + Skin.HasSetting(View.Pulse.Focus)</visible>
             </control>
 			<control type="panel" id="520">
 				<left>200</left>
