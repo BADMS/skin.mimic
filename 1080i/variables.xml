@@ -334,7 +334,7 @@
 		<value condition="Container.Content(addons)">$INFO[ListItem.AddonSummary]</value>
 		<value condition="Container.Content(musicvideos)">$INFO[ListItem.Artist]</value>
 		<value condition="String.IsEmpty(ListItem.Genre)">$INFO[Window(Home).Property(Set.Movies.Genre)]</value>
-		<value condition="!String.IsEmpty(ListItem.Year)">$INFO[ListItem.Year,[B],[/B]]$INFO[ListItem.Genre, ]</value>
+		<value condition="!String.IsEmpty(ListItem.Year)">$INFO[ListItem.Year,[B],[/B] ]$INFO[ListItem.Genre]</value>
 		<value>$INFO[ListItem.Genre]</value>
 	</variable>
 	<variable name="FloorLabel2Var">
@@ -371,7 +371,7 @@
 		<value>$INFO[Player.Art(thumb)]</value>
 	</variable>
 	<variable name="PlayerTitleLabelVar">
-		<value condition="Player.ChapterCount">$INFO[Player.Title,[B],[/B] ]$INFO[player.chapter,$LOCALIZE[21396] ]$INFO[player.chaptercount,[LIGHT]/ ,[/LIGHT]]</value>
+		<value condition="Player.ChapterCount">$INFO[Player.Title,[B],[/B] ]$INFO[player.chapter,$LOCALIZE[21396] , ]$INFO[player.chaptercount,[LIGHT]/ ,[/LIGHT]]</value>
 		<value>$INFO[Player.Title]</value>
 	</variable>
 	<variable name="SkinSettingsDescriptionVar">
@@ -753,16 +753,16 @@
     <variable name="TopbarFadeLabel1">
     	<value condition="[![[Player.Playing | Player.HasAudio | Player.HasVideo] + IsEmpty(Window(10025).Property(PlayingBackgroundMedia))] | Window.IsActive(tvchannels)] + !String.IsEmpty(Weather.Plugin)">$INFO[System.Time]$INFO[Weather.Temperature,[LIGHT] ,[/LIGHT]]</value>
     	<value condition="![[Player.Playing | Player.HasAudio | Player.HasVideo | !String.IsEmpty(Weather.Plugin)] + IsEmpty(Window(10025).Property(PlayingBackgroundMedia))] | Window.IsActive(tvchannels)">$INFO[System.Time]</value>
-    	<value condition="VideoPlayer.Content(episodes)">$INFO[VideoPlayer.Season]$INFO[VideoPlayer.Episode,X,. ]$INFO[Player.Title]</value>
-    	<value>$INFO[Player.Title]</value>
+    	<value condition="VideoPlayer.Content(episodes)">$INFO[VideoPlayer.Season]$INFO[VideoPlayer.Episode,X,. ]$INFO[Player.Title,[LIGHT],[/LIGHT]]</value>
+    	<value>$INFO[Player.Title,[LIGHT],[/LIGHT]]</value>
     </variable>
     <variable name="TopbarFadeLabel2">
     	<value condition="![[Player.Playing | Player.HasAudio | Player.HasVideo] + IsEmpty(Window(10025).Property(PlayingBackgroundMedia))] | Window.IsActive(tvchannels)">$INFO[System.Date]</value>
     	<value condition="VideoPlayer.Content(livetv)">$INFO[VideoPlayer.ChannelNumber,,: ]$INFO[VideoPlayer.ChannelName]</value>
-    	<value condition="VideoPlayer.Content(episodes)">$INFO[VideoPlayer.Premiered,[B],[/B] ]$INFO[VideoPlayer.TvShowTitle]</value>
-    	<value condition="VideoPlayer.Content(movies)">$INFO[VideoPlayer.Year,[B].[/B] ]$INFO[VideoPlayer.Genre]</value>
+    	<value condition="VideoPlayer.Content(episodes)">$INFO[VideoPlayer.Premiered,, ]$INFO[VideoPlayer.TvShowTitle]</value>
+    	<value condition="VideoPlayer.Content(movies)">$INFO[VideoPlayer.Year,, ]$INFO[VideoPlayer.Genre]</value>
     	<value condition="VideoPlayer.Content(musicvideos)">$INFO[VideoPlayer.Artist]</value>
-    	<value condition="Player.HasAudio + IsEmpty(Window(10025).Property(PlayingBackgroundMedia)) + !String.IsEmpty(MusicPlayer.Artist)">$INFO[MusicPlayer.Artist,[B],[/B]]$INFO[MusicPlayer.Album]</value>
+    	<value condition="Player.HasAudio + IsEmpty(Window(10025).Property(PlayingBackgroundMedia)) + !String.IsEmpty(MusicPlayer.Artist)">$INFO[MusicPlayer.Artist,, ]$INFO[MusicPlayer.Album]</value>
     	<value condition="!String.IsEmpty(Player.Title) + IsEmpty(Window(10025).Property(PlayingBackgroundMedia))">$INFO[Player.Time] / $INFO[Player.Duration]</value>
     </variable>
     <variable name="AddonDisclaimer">

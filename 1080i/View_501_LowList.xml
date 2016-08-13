@@ -158,7 +158,7 @@
 						<width>90</width>
 						<height>67</height>
 						<font>font15</font>
-						<label fallback="■ ■ ■">$INFO[ListItem.Year]</label>
+						<label fallback="■■■">$INFO[ListItem.Year]</label>
 						<visible>!String.IsEmpty(ListItem.Title)</visible>
 					</control>
 					<control type="label">
@@ -200,7 +200,7 @@
 						<width>90</width>
 						<height>67</height>
 						<font>font15</font>
-						<label fallback="■ ■ ■">$INFO[ListItem.Year]</label>
+						<label fallback="■■■">$INFO[ListItem.Year]</label>
 						<visible>!String.IsEmpty(ListItem.Title)</visible>
 					</control>
 					<control type="label">
@@ -242,7 +242,7 @@
 						<width>90</width>
 						<height>67</height>
 						<font>font15</font>
-						<label fallback="■ ■ ■">$INFO[ListItem.Year]</label>
+						<label fallback="■■■">$INFO[ListItem.Year]</label>
 						<visible>!String.IsEmpty(ListItem.Title)</visible>
 					</control>
 					<control type="label">
@@ -284,7 +284,7 @@
 						<width>90</width>
 						<height>67</height>
 						<font>font15</font>
-						<label fallback="■ ■ ■">$INFO[ListItem.Year]</label>
+						<label fallback="■■■">$INFO[ListItem.Year]</label>
 						<visible>!String.IsEmpty(ListItem.Title)</visible>
 					</control>
 					<control type="label">
@@ -691,7 +691,7 @@
 						<width>90</width>
 						<height>67</height>
 						<font>font15</font>
-						<label fallback="■ ■ ■">$INFO[ListItem.Year]</label>
+						<label fallback="■■■">$INFO[ListItem.Year]</label>
 						<visible>!String.IsEmpty(ListItem.Album)</visible>
 					</control>
 					<control type="label">
@@ -727,7 +727,7 @@
 						<width>90</width>
 						<height>67</height>
 						<font>font15</font>
-						<label fallback="■ ■ ■">$INFO[ListItem.Year]</label>
+						<label fallback="■■■">$INFO[ListItem.Year]</label>
 						<visible>!String.IsEmpty(ListItem.Album)</visible>
 					</control>
 					<control type="label">
