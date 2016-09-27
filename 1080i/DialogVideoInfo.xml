@@ -752,7 +752,7 @@
 						<include>ButtonInfoDialogsCommonValues</include>
 						<label>22082</label>
 						<onclick>RunScript(script.mimic.extras)</onclick>
-						<enable>!String.IsEmpty(ListItem.Art(fanart)) + !Skin.HasSetting(KioskMode.Enabled)</enable>
+						<enable>!Skin.HasSetting(KioskMode.Enabled)</enable>
 					</control>
 				</control>
 			</control>
