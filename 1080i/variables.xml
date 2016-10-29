@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<variable name="OSDStatus">
+		<value condition="Player.Paused"></value>
+		<value></value>
+	</variable>
 	<variable name="CommunityRatingColour">
 		<value condition="IntegerGreaterThan(Window(Home).Property(SkinHelper.MetaCritic.Rating),59)">green</value>
 		<value condition="[IntegerGreaterThan(Window(Home).Property(SkinHelper.MetaCritic.Rating),39) + !IntegerGreaterThan(Window(Home).Property(SkinHelper.MetaCritic.Rating),59)]">selectedOrange</value>

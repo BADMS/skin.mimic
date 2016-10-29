@@ -26,19 +26,20 @@
 				<effect type="fade" end="0" start="100" time="240" tween="quadratic" />
 			</animation>
 			<animation type="WindowOpen" reversible="false">
-				<effect type="rotate" center="960,540" end="0" start="238" time="240" tween="quadratic" />
+				<effect type="slide" end="0" start="-1238" time="240" tween="quadratic" />
 				<effect type="fade" start="0" end="100" time="240" tween="quadratic" />
 			</animation>
 			<animation type="WindowClose" reversible="false">
-				<effect type="rotate" center="960,540" end="238" start="0" time="240" tween="quadratic" />
+				<effect type="rotate" end="-1238" start="0" time="240" tween="quadratic" />
 				<effect type="fade" end="0" start="100" time="240" tween="quadratic" />
 			</animation>
 			<top>488</top>
 			<control type="grouplist" id="202">
 				<top>20</top>
+				<left>110</left>
 				<height>144</height>
 				<width>FullScreenWidth</width>
-				<align>center</align>
+				<align>left</align>
 				<itemgap>0</itemgap>
 				<scrolltime tween="sine">200</scrolltime>
 				<orientation>horizontal</orientation>
@@ -190,9 +191,10 @@
 			</control>
 			<control type="grouplist" id="202">
 				<top>20</top>
+				<left>110</left>
 				<height>144</height>
 				<width>FullScreenWidth</width>
-				<align>center</align>
+				<align>left</align>
 				<itemgap>0</itemgap>
 				<scrolltime tween="sine">200</scrolltime>
 				<orientation>horizontal</orientation>
