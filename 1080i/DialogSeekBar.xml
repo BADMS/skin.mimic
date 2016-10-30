@@ -6,11 +6,9 @@
 	<controls>
 		<control type="group">
 			<animation type="WindowOpen" reversible="false">
-				<effect type="slide" end="0" start="-1238" time="240" tween="quadratic" />
 				<effect type="fade" start="0" end="100" time="240" tween="quadratic" />
 			</animation>
 			<animation type="WindowClose" reversible="false">
-				<effect type="rotate" end="-1238" start="0" time="240" tween="quadratic" />
 				<effect type="fade" end="0" start="100" time="240" tween="quadratic" />
 			</animation>
 			<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
@@ -71,7 +69,7 @@
 				<scrolltime tween="sine">200</scrolltime>
 				<orientation>horizontal</orientation>
 				<animation type="Conditional" condition="Window.IsVisible(VideoOSD.xml)" reversible="false">
-					<effect type="fade" start="100" end="0" center="auto" delay="0" tween="back" time="240" />
+					<effect type="fade" start="100" end="0" delay="0" time="240" />
 				</animation>
 				<control type="button">
 					<texturefocus colordiffuse="$VAR[ColorHighlightVar]">osd/button_bg.png</texturefocus>
