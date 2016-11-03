@@ -1389,11 +1389,11 @@ msgid "Extra fanart"
 msgstr ""
 
 msgctxt "#31972"
-msgid "Colorbox effect"
+msgid "Info effect"
 msgstr ""
 
 msgctxt "#31973"
-msgid "Colorbox focus"
+msgid "Focus effect"
 msgstr ""
 
 msgctxt "#31974"
@@ -1405,11 +1405,11 @@ msgid "Edit library nodes"
 msgstr ""
 
 msgctxt "#31976"
-msgid "Colorbox header"
+msgid "Color header"
 msgstr ""
 
 msgctxt "#31977"
-msgid "Colorbox background"
+msgid "Color background"
 msgstr ""
 
 msgctxt "#31978"
