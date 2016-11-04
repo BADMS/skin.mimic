@@ -323,7 +323,7 @@
 			<onclick>Skin.ToggleSetting(View.Pulse.Focus)</onclick>
 			<selected>Skin.HasSetting(View.Pulse.Focus)</selected>
 			<visible>![Window.IsActive(eventlog) | Window.IsActive(tvchannels) | Window.IsActive(tvrecordings) | Window.IsActive(tvtimers) | Window.IsActive(tvtimerrules) | Window.IsActive(tvsearch) | Window.IsActive(radiochannels) | Window.IsActive(radiorecordings) | Window.IsActive(radiotimers) | Window.IsActive(radiosearch)]</visible>
-			<visible>Control.IsVisible(500) + !String.IsEqual(Window(home).Property(cpa_daemon_set),None)</visible>
+			<visible>!String.IsEqual(Window(home).Property(cpa_daemon_set),None)</visible>
 		</control>
 		<control type="radiobutton" id="11121">
 			<label>31978</label>

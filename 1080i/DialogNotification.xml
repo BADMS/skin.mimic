@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<coordinates>
-		<left>1090</left>
-		<top>32</top>
+	<left>-12</left>
+	<top>-12</top>
 	</coordinates>
 	<include>dialogeffect</include>
 	<controls>
@@ -10,7 +10,7 @@
 			<animation effect="slide" time="300" tween="cubic" easing="out" start="0,0" end="0,120" condition="String.IsEqual(Skin.String(HomeLayout),2) + Window.IsActive(Home)">Conditional</animation>
 			<control type="image">
 				<description>background image</description>
-				<width>800</width>
+				<width>1944</width>
 				<height>140</height>
 				<texture border="12">dialog_context.png</texture>
 				<colordiffuse>$VAR[ColorDialogVar]</colordiffuse>
@@ -25,8 +25,8 @@
 			<control type="fadelabel" id="401">
 				<description>Line 1 Label</description>
 				<left>130</left>
-				<top>27</top>
-				<width>640</width>
+				<top>30</top>
+				<right>18</right>
 				<height>45</height>
 				<font>font28_title</font>
 				<scrollout>false</scrollout>
@@ -35,8 +35,8 @@
 			<control type="fadelabel" id="402">
 				<description>Line 2 Label</description>
 				<left>130</left>
-				<top>69</top>
-				<width>640</width>
+				<top>72</top>
+				<right>18</right>
 				<height>45</height>
 				<font>topbar</font>
 				<textcolor>$VAR[ColorHighlightVar]</textcolor>

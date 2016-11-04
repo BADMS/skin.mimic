@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<coordinates>
-		<system>1</system>
-		<left>1090</left>
-		<top>32</top>
+	<system>1</system>
+	<left>-12</left>
+	<top>-12</top>
 	</coordinates>
 	<include>dialogeffect</include>
 	<controls>
@@ -12,7 +12,7 @@
 			<animation effect="slide" time="300" tween="cubic" easing="out" start="0,0" end="0,120" condition="String.IsEqual(Skin.String(HomeLayout),2)">Conditional</animation>
 			<control type="image">
 				<description>background image</description>
-				<width>800</width>
+				<width>1944</width>
 				<height>140</height>
 				<texture border="12">dialog_context.png</texture>
 				<colordiffuse>$VAR[ColorDialogVar]</colordiffuse>
@@ -21,7 +21,7 @@
 				<description>progress control</description>
 				<left>30</left>
 				<top>30</top>
-				<width>740</width>
+				<right>6</right>
 				<height>80</height>
 			</control>
 			<control type="image">
