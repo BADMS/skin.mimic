@@ -38,46 +38,5 @@
 		<include condition="!String.IsEqual(Skin.String(HomeLayout),2) + !String.IsEqual(Skin.String(HomeLayout),3)">HomeDefault</include>
 		<include condition="String.IsEqual(Skin.String(HomeLayout),2)">HomeTopMenu</include>
 		<include condition="String.IsEqual(Skin.String(HomeLayout),3)">HomeVerticalMenu</include>
-		<control type="group">
-	<left>-12</left>
-	<top>-12</top>
-			<visible>!Window.IsActive(fullscreenvideo) + !Window.IsActive(visualisation)</visible>
-			<animation effect="slide" time="300" tween="cubic" easing="out" start="0,0" end="0,120" condition="String.IsEqual(Skin.String(HomeLayout),2) + Window.IsActive(Home)">Conditional</animation>
-			<control type="image">
-				<description>background image</description>
-				<width>1944</width>
-				<height>140</height>
-				<texture border="12">dialog_context.png</texture>
-				<colordiffuse>$VAR[ColorDialogVar]</colordiffuse>
-			</control>
-			<control type="progress" id="32">
-				<description>progress control</description>
-				<left>30</left>
-				<top>30</top>
-				<right>18</right>
-				<height>80</height>
-			</control>
-			<control type="label" id="31">
-				<description>Header Label</description>
-				<left>40</left>
-				<top>27</top>
-				<right>58</right>
-				<height>45</height>
-				<font>font13_title</font>
-			</control>
-			<control type="label">
-				<description>Title Label</description>
-				<left>40</left>
-				<top>64</top>
-				<right>58</right>
-				<height>45</height>
-				<font>font12</font>
-				<label>$INFO[Control.GetLabel(30)]$INFO[Control.GetLabel(32),: ,%]</label>
-			</control>
-			<control type="label" id="30">
-				<description>Header Label</description>
-				<include>HiddenObject</include>
-			</control>
-		</control>
 	</controls>
 </window>
