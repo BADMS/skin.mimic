@@ -291,6 +291,7 @@
 					<height>42</height>
 					<font>font13_title</font>
 					<aligny>top</aligny>
+					<textcolor>$VAR[ColorHighlightVar]</textcolor>
 					<visible>!String.IsEmpty(ListItem.Genre)</visible>
 				</control>
 				<control type="label">
@@ -473,6 +474,7 @@
 					<height>42</height>
 					<font>font13_title</font>
 					<aligny>top</aligny>
+					<textcolor>$VAR[ColorHighlightVar]</textcolor>
 					<visible>Container.Content(artists)</visible>
 				</control>
 				<control type="label">
