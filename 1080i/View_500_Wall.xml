@@ -528,7 +528,7 @@
 					<width>1740</width>
 					<height>30</height>
 					<font>font13_title</font>
-					
+					<textcolor>$VAR[ColorHighlightVar]</textcolor>
 					<label>$VAR[FloorSubLabelVar]</label>
 					<textoffsetx>30</textoffsetx>
 				</control>
@@ -555,7 +555,7 @@
 					<width>1280</width>
 					<height>30</height>
 					<font>font13_title</font>
-					
+					<textcolor>$VAR[ColorHighlightVar]</textcolor>
 					<label>$VAR[FloorSubLabelVar]</label>
 					<textoffsetx>30</textoffsetx>
 				</control>
@@ -724,7 +724,7 @@
 					<width>1300</width>
 					<height>30</height>
 					<font>font13_title</font>
-					
+					<textcolor>$VAR[ColorHighlightVar]</textcolor>
 					<label>$VAR[FloorLabel2Var]</label>
 					<textoffsetx>30</textoffsetx>
 				</control>
@@ -982,7 +982,7 @@
 						<width>1520</width>
 						<height>30</height>
 						<font>font13_title</font>
-						
+						<textcolor>$VAR[ColorHighlightVar]</textcolor>
 						<label>$INFO[ListItem.AddonSummary]</label>
 						<textoffsetx>30</textoffsetx>
 					</control>

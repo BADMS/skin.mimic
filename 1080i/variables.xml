@@ -548,7 +548,7 @@
 		<value>highlight</value>
 	</variable>
 	<variable name="ColorHighlightVar">
-		<value condition="!String.IsEqual(Window(home).Property(cpa_daemon_set),None) + !String.IsEmpty(Window(home).Property(ImageColorcpa)) + Skin.HasSetting(Colorbox.header)">$INFO[Window(home).Property(ImageColorcpa)]</value>
+		<value condition="!String.IsEqual(Window(home).Property(cpa_daemon_set),None) + !String.IsEmpty(Window(home).Property(ImageColorcpa)) + Skin.HasSetting(Colorbox.header)">$VAR[ColorTextVar]</value>
 		<value condition="!String.IsEmpty(Skin.String(highlightcolor.name))">$INFO[Skin.String(highlightcolor.name)]</value>
 		<value>highlight</value>
 	</variable>
