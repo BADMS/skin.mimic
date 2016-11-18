@@ -396,7 +396,7 @@
 					<width>1693</width>
 					<height>30</height>
 					<font>font13_title</font>
-					<textcolor>$VAR[ColorHighlightVar]</textcolor>
+					
 					<label>$VAR[FloorSubLabelVar]</label>
 					<textoffsetx>30</textoffsetx>
 				</control>
@@ -416,7 +416,7 @@
 					<width>1250</width>
 					<height>30</height>
 					<font>font13_title</font>
-					<textcolor>$VAR[ColorHighlightVar]</textcolor>
+					
 					<label>$VAR[FloorSubLabelVar]</label>
 					<textoffsetx>30</textoffsetx>
 				</control>
@@ -484,7 +484,7 @@
 					<width>1693</width>
 					<height>30</height>
 					<font>font13_title</font>
-					<textcolor>$VAR[ColorHighlightVar]</textcolor>
+					
 					<label>$VAR[FloorLabel2Var]</label>
 					<textoffsetx>30</textoffsetx>
 				</control>

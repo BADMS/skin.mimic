@@ -284,7 +284,7 @@
 					<height>30</height>
 					<align>center</align>
 					<font>font13_title</font>
-					<textcolor>$VAR[ColorHighlightVar]</textcolor>
+					
 					<label>$VAR[FloorLabel2Var]</label>
 					<textoffsetx>30</textoffsetx>
 				</control>

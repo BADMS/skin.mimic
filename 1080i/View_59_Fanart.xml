@@ -38,7 +38,7 @@
 				<width>1633</width>
 				<height>65</height>
 				<font>font28_title</font>
-				<textcolor>$VAR[ColorHighlightVar]</textcolor>
+				
 				<label>$VAR[FloorSubLabelVar]</label>
 			</control>
 			<control type="textbox">
@@ -99,7 +99,7 @@
 				<width>1315</width>
 				<height>65</height>
 				<font>font28_title</font>
-				<textcolor>$VAR[ColorHighlightVar]</textcolor>
+				
 				<label>$VAR[FloorSubLabelVar]</label>
 			</control>
 			<control type="textbox">
@@ -147,7 +147,7 @@
 				<width>1250</width>
 				<height>65</height>
 				<font>font28_title</font>
-				<textcolor>$VAR[ColorHighlightVar]</textcolor>
+				
 				<label>$INFO[ListItem.Property(Artist_Genre)]</label>
 			</control>
 			<control type="textbox">
