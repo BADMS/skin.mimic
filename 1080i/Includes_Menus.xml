@@ -523,7 +523,7 @@
 				<width>$PARAM[SubmenuItemWidth]</width>
 				<height>$PARAM[SubmenuItemHeight]</height>
 				<texture>listselect_fo.png</texture>
-				<colordiffuse>$VAR[ColorHighlightVar]</colordiffuse>
+				<colordiffuse>$VAR[ListColorHighlightVar]</colordiffuse>
 				<visible>ControlGroup(9001).HasFocus() + String.IsEqual(Skin.String(HomeLayout),2)</visible>
 			</control>
 			<control type="group">

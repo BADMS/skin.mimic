@@ -54,7 +54,7 @@
 						<width>786</width>
 						<height>60</height>
 						<texture>listselect_fo.png</texture>
-						<colordiffuse>$VAR[ColorHighlightVar]</colordiffuse>
+						<colordiffuse>$VAR[ListColorHighlightVar]</colordiffuse>
 						<visible>Control.HasFocus(10)</visible>
 						<include>VisibleFadeEffect</include>
 					</control>

@@ -85,7 +85,7 @@
                 <height>70</height>
                 <aspectratio>keep</aspectratio>
                 <texture>logo.png</texture>
-                <colordiffuse>$VAR[ColorHighlightVar]</colordiffuse>
+                <colordiffuse>$VAR[ListColorHighlightVar]</colordiffuse>
             </control>
 			<control type="group">
 				<left>552</left>

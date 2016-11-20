@@ -49,7 +49,7 @@
 		<textoffsetx>15</textoffsetx>
 		<aligny>center</aligny>
 		<pulseonselect>false</pulseonselect>
-		<colordiffuse>$VAR[ColorHighlightVar]</colordiffuse>
+		<colordiffuse>$VAR[ListColorHighlightVar]</colordiffuse>
 		<shadowcolor>$INFO[Skin.String(Text.Shadow.Colour)]</shadowcolor>
 	</default>
 	<default type="togglebutton">
@@ -67,7 +67,7 @@
 		<aligny>center</aligny>
 		<font>font14</font>
 		<pulseonselect>false</pulseonselect>
-		<colordiffuse>$VAR[ColorHighlightVar]</colordiffuse>
+		<colordiffuse>$VAR[ListColorHighlightVar]</colordiffuse>
 		<shadowcolor>$INFO[Skin.String(Text.Shadow.Colour)]</shadowcolor>
 	</default>
 	<default type="textbox">
@@ -137,7 +137,7 @@
 		<aligny>center</aligny>
 		<reverse>yes</reverse>
 		<pulseonselect>false</pulseonselect>
-		<colordiffuse>$VAR[ColorHighlightVar]</colordiffuse>
+		<colordiffuse>$VAR[ListColorHighlightVar]</colordiffuse>
 	</default>
 	<default type="radiobutton">
 		<left>0</left>
@@ -155,7 +155,7 @@
 		<textoffsetx>15</textoffsetx>
 		<aligny>center</aligny>
 		<pulseonselect>false</pulseonselect>
-		<colordiffuse>$VAR[ColorHighlightVar]</colordiffuse>
+		<colordiffuse>$VAR[ListColorHighlightVar]</colordiffuse>
 		<shadowcolor>$INFO[Skin.String(Text.Shadow.Colour)]</shadowcolor>
 	</default>
 	<default type="slider">

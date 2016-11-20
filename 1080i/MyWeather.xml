@@ -44,7 +44,7 @@
 						<height>95</height>
 						<texture>listselect_fo.png</texture>
 						<include>VisibleFadeEffect</include>
-						<colordiffuse>$VAR[ColorHighlightVar]</colordiffuse>
+						<colordiffuse>$VAR[ListColorHighlightVar]</colordiffuse>
 					</control>
 					<control type="label">
 						<width>356</width>

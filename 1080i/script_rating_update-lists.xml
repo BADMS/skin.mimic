@@ -75,7 +75,7 @@
                     <height>40</height>
                     <visible>Control.HasFocus(10)</visible>
                     <texture>listselect_fo.png</texture>
-					<colordiffuse>$VAR[ColorHighlightVar]</colordiffuse>
+					<colordiffuse>$VAR[ListColorHighlightVar]</colordiffuse>
                 </control>
                 <control type="label">
                     <left>4</left>

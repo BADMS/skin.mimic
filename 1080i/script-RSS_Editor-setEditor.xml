@@ -48,7 +48,7 @@
                     <width>880</width>
                     <height>62</height>
                     <texture>listselect_fo.png</texture>
-					<colordiffuse>$VAR[ColorHighlightVar]</colordiffuse>
+					<colordiffuse>$VAR[ListColorHighlightVar]</colordiffuse>
                     <visible>Control.HasFocus(10)</visible>
                 </control>
                 <control type="label">

@@ -78,7 +78,7 @@
 						<width>356</width>
 						<height>90</height>
 						<texture>listselect_fo.png</texture> 
-						<colordiffuse>$VAR[ColorHighlightVar]</colordiffuse>
+						<colordiffuse>$VAR[ListColorHighlightVar]</colordiffuse>
 						<bordersize>0,3,0,3</bordersize>
 					</control>
 					<control type="label">
@@ -141,7 +141,7 @@
 						<height>90</height>
 						<texture>listselect_fo.png</texture>
 						<bordersize>3</bordersize>
-						<colordiffuse>$VAR[ColorHighlightVar]</colordiffuse>
+						<colordiffuse>$VAR[ListColorHighlightVar]</colordiffuse>
 					</control>
 					<control type="group">
 						<visible>[ListItem.HasTimer | ListItem.IsRecording]</visible>
@@ -320,7 +320,7 @@
 							<width>356</width>
 							<height>90</height>
 							<texture>listselect_fo.png</texture>
-							<colordiffuse>$VAR[ColorHighlightVar]</colordiffuse>
+							<colordiffuse>$VAR[ListColorHighlightVar]</colordiffuse>
 							<visible>Control.HasFocus(11)</visible>
 							<include>VisibleFadeEffect</include>
 							<bordersize>0,3,0,3</bordersize>
@@ -338,7 +338,7 @@
 							<height>90</height>
 							<bordersize>3</bordersize>
 							<texture>listselect_fo.png</texture>
-							<colordiffuse>$VAR[ColorHighlightVar]</colordiffuse>
+							<colordiffuse>$VAR[ListColorHighlightVar]</colordiffuse>
 							<visible>Control.HasFocus(11)</visible>
 							<include>VisibleFadeEffect</include>
 						</control>
@@ -568,7 +568,7 @@
 								<width>356</width>
 								<height>90</height>
 								<texture>listselect_fo.png</texture>
-								<colordiffuse>$VAR[ColorHighlightVar]</colordiffuse>
+								<colordiffuse>$VAR[ListColorHighlightVar]</colordiffuse>
 								<include>VisibleFadeEffect</include>
 								<bordersize>0,3,0,3</bordersize>
 							</control>
@@ -586,7 +586,7 @@
 							<height>90</height>
 							<bordersize>3</bordersize>
 							<texture>listselect_fo.png</texture>
-							<colordiffuse>$VAR[ColorHighlightVar]</colordiffuse>
+							<colordiffuse>$VAR[ListColorHighlightVar]</colordiffuse>
 							<visible>Control.HasFocus(12)</visible>
 							<include>VisibleFadeEffect</include>
 						</control>
