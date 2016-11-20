@@ -86,7 +86,7 @@
 		<top>0</top>
 		<texturebg>osd/texturebg.png</texturebg>
 		<lefttexture>-</lefttexture>
-		<colordiffuse>$VAR[ColorHighlightVar]</colordiffuse>
+		<colordiffuse>$VAR[ListColorHighlightVar]</colordiffuse>
 		<midtexture>osd/midtexture.png</midtexture>
 		<righttexture>-</righttexture>
 		<overlaytexture>-</overlaytexture>

@@ -48,6 +48,7 @@
 		<align>center</align>
 		<font>font15</font>
 		<textoffsetx>10</textoffsetx>
+		<texturefocus colordiffuse="$VAR[ListColorHighlightVar]">white.png</texturefocus>
 		<texturenofocus colordiffuse="white11">white.png</texturenofocus>
 		<alttexturenofocus colordiffuse="white11">white.png</alttexturenofocus>
 	</include>
@@ -56,7 +57,7 @@
 		<textoffsety>32</textoffsety>
 		<align>center</align>
 		<font>font15</font>
-		<selectedcolor>$VAR[ColorHighlightVar]</selectedcolor>
+		<selectedcolor>$VAR[ListColorHighlightVar]</selectedcolor>
 		<texturenofocus colordiffuse="white11">white.png</texturenofocus>
 		<alttexturenofocus colordiffuse="33ffffff">white.png</alttexturenofocus>
 	</include>
