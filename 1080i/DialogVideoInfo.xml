@@ -714,6 +714,7 @@
 						<description>Play Trailer</description>
 						<include>ButtonInfoDialogsCommonValues</include>
 						<label>20410</label>
+						<visible>$EXP[isMovie]</visible>
 					</control>
 					<!--<control type="button" id="204">
 						<description>YouTube</description>
