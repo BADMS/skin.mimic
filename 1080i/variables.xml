@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
 	<variable name="OSDStatus">
+		<value condition="!String.IsEmpty(Player.SeekStepSize) + String.Contains(Player.SeekStepSize,+) + Player.Seeking">+</value>
+		<value condition="!String.IsEmpty(Player.SeekStepSize) + Player.Seeking">-</value>
+		<value condition="Player.Forwarding"></value>
+		<value condition="Player.Rewinding"></value>
+		<value condition="Player.Caching"></value>
 		<value condition="Player.Paused"></value>
 		<value></value>
 	</variable>

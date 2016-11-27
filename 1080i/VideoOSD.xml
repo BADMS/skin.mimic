@@ -46,7 +46,7 @@
 				<onright>202</onright>
 				<visible>!VideoPlayer.Content(livetv)</visible>
 				<control type="button" id="700">
-					<texturefocus colordiffuse="$VAR[ColorHighlightVar]">osd/button_bg.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[ListListColorHighlightVar]">osd/button_bg.png</texturefocus>
 					<texturenofocus colordiffuse="22ffffff">osd/button_bg.png</texturenofocus>
 					<label></label>
 					<align>center</align>
@@ -56,7 +56,7 @@
 					<onclick>ActivateWindow(videobookmarks)</onclick>
 				</control>
 				<control type="button" id="701">
-					<texturefocus colordiffuse="$VAR[ColorHighlightVar]">osd/button_bg.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[ListListColorHighlightVar]">osd/button_bg.png</texturefocus>
 					<texturenofocus colordiffuse="22ffffff">osd/button_bg.png</texturenofocus>
 					<label></label>
 					<align>center</align>
@@ -66,7 +66,7 @@
 					<onclick>ActivateWindow(osdaudiosettings)</onclick>
 				</control>
 				<control type="button" id="702">
-					<texturefocus colordiffuse="$VAR[ColorHighlightVar]">osd/button_bg.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[ListListColorHighlightVar]">osd/button_bg.png</texturefocus>
 					<texturenofocus colordiffuse="22ffffff">osd/button_bg.png</texturenofocus>
 					<label></label>
 					<align>center</align>
@@ -76,7 +76,7 @@
 					<onclick>ActivateWindow(osdvideosettings)</onclick>
 				</control>
 				<control type="button" id="600">
-					<texturefocus colordiffuse="$VAR[ColorHighlightVar]">osd/button_bg.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[ListListColorHighlightVar]">osd/button_bg.png</texturefocus>
 					<texturenofocus colordiffuse="22ffffff">osd/button_bg.png</texturenofocus>
 					<label></label>
 					<align>center</align>
@@ -86,7 +86,7 @@
 					<onclick>PlayerControl(Previous)</onclick>
 				</control>
 				<control type="button" id="601">
-					<texturefocus colordiffuse="$VAR[ColorHighlightVar]">osd/button_bg.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[ListListColorHighlightVar]">osd/button_bg.png</texturefocus>
 					<texturenofocus colordiffuse="22ffffff">osd/button_bg.png</texturenofocus>
 					<label></label>
 					<textoffsetx>32</textoffsetx>
@@ -96,9 +96,9 @@
 					<onclick>PlayerControl(Rewind)</onclick>
 				</control>
 				<control type="togglebutton" id="602">
-					<texturefocus colordiffuse="$VAR[ColorHighlightVar]">osd/button_bg.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[ListListColorHighlightVar]">osd/button_bg.png</texturefocus>
 					<texturenofocus colordiffuse="22ffffff">osd/button_bg.png</texturenofocus>
-					<alttexturefocus colordiffuse="$VAR[ColorHighlightVar]">osd/button_bg.png</alttexturefocus>
+					<alttexturefocus colordiffuse="$VAR[ListListColorHighlightVar]">osd/button_bg.png</alttexturefocus>
 					<alttexturenofocus colordiffuse="22ffffff">osd/button_bg.png</alttexturenofocus>
 					<label></label>
 					<altlabel></altlabel>
@@ -110,7 +110,7 @@
 					<onclick>PlayerControl(Play)</onclick>
 				</control>
 				<control type="button" id="603">
-					<texturefocus colordiffuse="$VAR[ColorHighlightVar]">osd/button_bg.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[ListListColorHighlightVar]">osd/button_bg.png</texturefocus>
 					<texturenofocus colordiffuse="22ffffff">osd/button_bg.png</texturenofocus>
 					<label></label>
 					<align>center</align>
@@ -120,7 +120,7 @@
 					<onclick>PlayerControl(Stop)</onclick>
 				</control>
 				<control type="button" id="604">
-					<texturefocus colordiffuse="$VAR[ColorHighlightVar]">osd/button_bg.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[ListListColorHighlightVar]">osd/button_bg.png</texturefocus>
 					<texturenofocus colordiffuse="22ffffff">osd/button_bg.png</texturenofocus>
 					<label></label>
 					<align>right</align>
@@ -131,7 +131,7 @@
 					<onclick>PlayerControl(Forward)</onclick>
 				</control>
 				<control type="button" id="605">
-					<texturefocus colordiffuse="$VAR[ColorHighlightVar]">osd/button_bg.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[ListListColorHighlightVar]">osd/button_bg.png</texturefocus>
 					<texturenofocus colordiffuse="22ffffff">osd/button_bg.png</texturenofocus>
 					<label></label>
 					<align>center</align>
@@ -141,7 +141,7 @@
 					<onclick>PlayerControl(Next)</onclick>
 				</control>
 				<control type="button" id="703">
-					<texturefocus colordiffuse="$VAR[ColorHighlightVar]">osd/button_bg.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[ListListColorHighlightVar]">osd/button_bg.png</texturefocus>
 					<texturenofocus colordiffuse="22ffffff">osd/button_bg.png</texturenofocus>
 					<label></label>
 					<align>center</align>
@@ -152,7 +152,7 @@
 					<onclick>ActivateWindow(SubtitleSearch)</onclick>
 				</control>
 				<control type="button" id="704">
-					<texturefocus colordiffuse="$VAR[ColorHighlightVar]">osd/button_bg.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[ListListColorHighlightVar]">osd/button_bg.png</texturefocus>
 					<texturenofocus colordiffuse="22ffffff">osd/button_bg.png</texturenofocus>
 					<label></label>
 					<align>center</align>
@@ -163,7 +163,7 @@
 					<visible>VideoPlayer.HasMenu</visible>
 				</control>
 				<control type="button" id="705">
-					<texturefocus colordiffuse="$VAR[ColorHighlightVar]">osd/button_bg.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[ListListColorHighlightVar]">osd/button_bg.png</texturefocus>
 					<texturenofocus colordiffuse="22ffffff">osd/button_bg.png</texturenofocus>
 					<label></label>
 					<align>center</align>
@@ -174,7 +174,7 @@
 					<visible>VideoPlayer.IsStereoscopic</visible>
 				</control>
 				<control type="button" id="706">
-					<texturefocus colordiffuse="$VAR[ColorHighlightVar]">osd/button_bg.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[ListListColorHighlightVar]">osd/button_bg.png</texturefocus>
 					<texturenofocus colordiffuse="22ffffff">osd/button_bg.png</texturenofocus>
 					<label></label>
 					<align>center</align>
@@ -201,7 +201,7 @@
 				<onright>202</onright>
 				<visible>VideoPlayer.Content(livetv)</visible>
 				<control type="button" id="800">
-					<texturefocus colordiffuse="$VAR[ColorHighlightVar]">osd/button_bg.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[ListListColorHighlightVar]">osd/button_bg.png</texturefocus>
 					<texturenofocus colordiffuse="22ffffff">osd/button_bg.png</texturenofocus>
 					<label></label>
 					<align>center</align>
@@ -211,7 +211,7 @@
 					<onclick>ActivateWindow(osdaudiosettings)</onclick>
 				</control>
 				<control type="button" id="801">
-					<texturefocus colordiffuse="$VAR[ColorHighlightVar]">osd/button_bg.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[ListListColorHighlightVar]">osd/button_bg.png</texturefocus>
 					<texturenofocus colordiffuse="22ffffff">osd/button_bg.png</texturenofocus>
 					<label></label>
 					<align>center</align>
@@ -221,7 +221,7 @@
 					<onclick>ActivateWindow(osdvideosettings)</onclick>
 				</control>
 				<control type="button" id="802">
-					<texturefocus colordiffuse="$VAR[ColorHighlightVar]">osd/button_bg.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[ListListColorHighlightVar]">osd/button_bg.png</texturefocus>
 					<texturenofocus colordiffuse="22ffffff">osd/button_bg.png</texturenofocus>
 					<label></label>
 					<align>center</align>
@@ -231,7 +231,7 @@
 					<onclick>PlayerControl(Previous)</onclick>
 				</control>
 				<control type="button" id="803">
-					<texturefocus colordiffuse="$VAR[ColorHighlightVar]">osd/button_bg.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[ListListColorHighlightVar]">osd/button_bg.png</texturefocus>
 					<texturenofocus colordiffuse="22ffffff">osd/button_bg.png</texturenofocus>
 					<label></label>
 					<align>center</align>
@@ -241,7 +241,7 @@
 					<onclick>PlayerControl(Next)</onclick>
 				</control>
 				<control type="button" id="804">
-					<texturefocus colordiffuse="$VAR[ColorHighlightVar]">osd/button_bg.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[ListListColorHighlightVar]">osd/button_bg.png</texturefocus>
 					<texturenofocus colordiffuse="22ffffff">osd/button_bg.png</texturenofocus>
 					<label></label>
 					<textoffsetx>32</textoffsetx>
@@ -253,9 +253,9 @@
 					<enable>Player.SeekEnabled</enable>
 				</control>
 				<control type="togglebutton" id="812">
-					<texturefocus colordiffuse="$VAR[ColorHighlightVar]">osd/button_bg.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[ListListColorHighlightVar]">osd/button_bg.png</texturefocus>
 					<texturenofocus colordiffuse="22ffffff">osd/button_bg.png</texturenofocus>
-					<alttexturefocus colordiffuse="$VAR[ColorHighlightVar]">osd/button_bg.png</alttexturefocus>
+					<alttexturefocus colordiffuse="$VAR[ListColorHighlightVar]">osd/button_bg.png</alttexturefocus>
 					<alttexturenofocus colordiffuse="22ffffff">osd/button_bg.png</alttexturenofocus>
 					<label></label>
 					<altlabel></altlabel>
@@ -267,7 +267,7 @@
 					<onclick>PlayerControl(Play)</onclick>
 				</control>
 				<control type="button" id="805">
-					<texturefocus colordiffuse="$VAR[ColorHighlightVar]">osd/button_bg.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[ListColorHighlightVar]">osd/button_bg.png</texturefocus>
 					<texturenofocus colordiffuse="22ffffff">osd/button_bg.png</texturenofocus>
 					<label></label>
 					<align>center</align>
@@ -277,7 +277,7 @@
 					<onclick>PlayerControl(Stop)</onclick>
 				</control>
 				<control type="button" id="806">
-					<texturefocus colordiffuse="$VAR[ColorHighlightVar]">osd/button_bg.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[ListColorHighlightVar]">osd/button_bg.png</texturefocus>
 					<texturenofocus colordiffuse="22ffffff">osd/button_bg.png</texturenofocus>
 					<label></label>
 					<align>right</align>
@@ -289,9 +289,9 @@
 					<enable>Player.SeekEnabled</enable>
 				</control>
 				<control type="togglebutton" id="10">
-					<texturefocus colordiffuse="$VAR[ColorHighlightVar]">osd/button_bg.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[ListColorHighlightVar]">osd/button_bg.png</texturefocus>
 					<texturenofocus colordiffuse="22ffffff">osd/button_bg.png</texturenofocus>
-					<alttexturefocus colordiffuse="$VAR[ColorHighlightVar]">osd/button_bg.png</alttexturefocus>
+					<alttexturefocus colordiffuse="$VAR[ListColorHighlightVar]">osd/button_bg.png</alttexturefocus>
 					<alttexturenofocus colordiffuse="22ffffff">osd/button_bg.png</alttexturenofocus>
 					<label></label>
 					<altlabel></altlabel>
@@ -305,7 +305,7 @@
 					<usealttexture>Player.Recording</usealttexture>
 				</control>
 				<control type="button" id="807">
-					<texturefocus colordiffuse="$VAR[ColorHighlightVar]">osd/button_bg.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[ListColorHighlightVar]">osd/button_bg.png</texturefocus>
 					<texturenofocus colordiffuse="22ffffff">osd/button_bg.png</texturenofocus>
 					<label></label>
 					<align>center</align>
@@ -316,7 +316,7 @@
 					<onclick>Dialog.Close(VideoOSD)</onclick>
 				</control>
 				<control type="button" id="808">
-					<texturefocus colordiffuse="$VAR[ColorHighlightVar]">osd/button_bg.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[ListColorHighlightVar]">osd/button_bg.png</texturefocus>
 					<texturenofocus colordiffuse="22ffffff">osd/button_bg.png</texturenofocus>
 					<label></label>
 					<align>center</align>
@@ -327,7 +327,7 @@
             		<onclick>ActivateWindow(tvguide,,return)</onclick>
 				</control>
 				<control type="button" id="809">
-					<texturefocus colordiffuse="$VAR[ColorHighlightVar]">osd/button_bg.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[ListColorHighlightVar]">osd/button_bg.png</texturefocus>
 					<texturenofocus colordiffuse="22ffffff">osd/button_bg.png</texturenofocus>
 					<label></label>
 					<align>center</align>
@@ -338,7 +338,7 @@
 					<visible>VideoPlayer.IsStereoscopic</visible>
 				</control>
 				<control type="button" id="810">
-					<texturefocus colordiffuse="$VAR[ColorHighlightVar]">osd/button_bg.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[ListColorHighlightVar]">osd/button_bg.png</texturefocus>
 					<texturenofocus colordiffuse="22ffffff">osd/button_bg.png</texturenofocus>
 					<label></label>
 					<align>center</align>
@@ -348,7 +348,7 @@
 					<onclick>ActivateWindow(Teletext)</onclick>
 				</control>
 				<control type="button" id="811">
-					<texturefocus colordiffuse="$VAR[ColorHighlightVar]">osd/button_bg.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[ListColorHighlightVar]">osd/button_bg.png</texturefocus>
 					<texturenofocus colordiffuse="22ffffff">osd/button_bg.png</texturenofocus>
 					<label></label>
 					<align>center</align>

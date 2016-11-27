@@ -82,8 +82,8 @@
 				</control>
 			</control>
 			<control type="grouplist">
-				<top>494</top>
-				<height>40</height>
+				<top>513</top>
+				<height>52</height>
 				<width>1920</width>
 				<align>right</align>
 				<orientation>horizontal</orientation>
@@ -92,33 +92,7 @@
 					<width>auto</width>
 					<font>IconTiny</font>
 					<align>right</align>
-					<label>$INFO[Player.Time]</label>
-				</control>
-				<control type="label">
-					<width>auto</width>
-					<font>IconMedium</font>
-					<align>right</align>
-					<label>  </label>
-				</control>
-				<control type="label">
-					<width>auto</width>
-					<font>IconTiny</font>
-					<align>right</align>
-					<label>$INFO[Player.Duration,, ]</label>
-				</control>
-			</control>
-			<control type="grouplist">
-				<top>544</top>
-				<height>40</height>
-				<width>1920</width>
-					<align>right</align>
-				<orientation>horizontal</orientation>
-				<itemgap>6</itemgap>
-				<control type="label">
-					<width>auto</width>
-					<font>IconTiny</font>
-					<align>right</align>
-					<label>$INFO[Player.TimeRemaining]</label>
+					<label>$INFO[Player.Time,,[CR]]$INFO[Player.TimeRemaining]</label>
 				</control>
 				<control type="label">
 					<width>auto</width>
