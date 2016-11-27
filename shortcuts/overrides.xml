@@ -2,7 +2,7 @@
 <overrides>
 	<!-- Menu thumbnails -->
 	<thumbnailBrowseDefault>special://skin/extras/icons/</thumbnailBrowseDefault>
-
+    <icon labelID="widgets">special://skin/extras/icons/widget.png</icon>
 	<icon labelID="live tv">special://skin/extras/icons/remote.png</icon>
     <icon labelID="radio">special://skin/extras/icons/remote.png</icon>
     <icon labelID="settings">special://skin/extras/icons/settings.png</icon>
