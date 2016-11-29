@@ -9,7 +9,7 @@
 				<top>600</top>
 				<width>FullScreenWidth</width>
 				<height>651</height>
-				<colordiffuse>$VAR[ColorBackgroundVar]</colordiffuse>
+				<colordiffuse>$VAR[ListColorHighlightVar]</colordiffuse>
 				<texture>background.png</texture>
 			</control>
 			<control type="group">
@@ -153,6 +153,7 @@
 				<viewtype label="31003">list</viewtype>
 				<scrolltime tween="quadratic" easing="out">200</scrolltime>
 				<itemlayout height="67" width="806" condition="Container.Content(movies)">
+					<include>ListTextBG</include>
 					<control type="label">
 						<left>15</left>
 						<width>90</width>
@@ -195,6 +196,7 @@
 					</control>
 				</itemlayout>
 				<focusedlayout height="67" width="806" condition="Container.Content(movies)">
+					<include>ListTextBG</include>
 					<control type="label">
 						<left>15</left>
 						<width>90</width>
@@ -237,6 +239,7 @@
 					</control>
 				</focusedlayout>
 				<itemlayout height="67" width="806" condition="Container.Content(tvshows)">
+					<include>ListTextBG</include>
 					<control type="label">
 						<left>15</left>
 						<width>90</width>
@@ -279,6 +282,7 @@
 					</control>
 				</itemlayout>
 				<focusedlayout height="67" width="806" condition="Container.Content(tvshows)">
+					<include>ListTextBG</include>
 					<control type="label">
 						<left>15</left>
 						<width>90</width>
@@ -321,6 +325,7 @@
 					</control>
 				</focusedlayout>
 				<itemlayout height="67" width="806" condition="Container.Content(seasons)">
+					<include>ListTextBG</include>
 					<control type="label">
 						<left>15</left>
 						<width>600</width>
@@ -355,6 +360,7 @@
 					</control>
 				</itemlayout>
 				<focusedlayout height="67" width="806" condition="Container.Content(seasons)">
+					<include>ListTextBG</include>
 					<control type="label">
 						<left>15</left>
 						<width>600</width>
@@ -389,6 +395,7 @@
 					</control>
 				</focusedlayout>
 				<itemlayout height="67" width="806" condition="Container.Content(episodes)">
+					<include>ListTextBG</include>
 					<control type="label">
 						<width>730</width>
 						<height>67</height>
@@ -423,6 +430,7 @@
 					</control>
 				</itemlayout>
 				<focusedlayout height="67" width="806" condition="Container.Content(episodes)">
+					<include>ListTextBG</include>
 					<control type="label">
 						<width>730</width>
 						<height>67</height>
@@ -457,6 +465,7 @@
 					</control>
 				</focusedlayout>
 				<itemlayout height="67" width="806" condition="Container.Content(addons)">
+					<include>ListTextBG</include>
 					<control type="label">
 						<left>15</left>
 						<width>775</width>
@@ -474,6 +483,7 @@
 					</control>
 				</itemlayout>
 				<focusedlayout height="67" width="806" condition="Container.Content(addons)">
+					<include>ListTextBG</include>
 					<control type="label">
 						<left>15</left>
 						<width>775</width>
@@ -524,7 +534,7 @@
 				<width>FullScreenWidth</width>
 				<height>485</height>
 				<texture>background.png</texture>
-				<colordiffuse>$VAR[ColorBackgroundVar]</colordiffuse>
+				<colordiffuse>$VAR[ListColorHighlightVar]</colordiffuse>
 			</control>
 			<control type="group">
 				<visible>!Container.Content(addons)</visible>
@@ -686,6 +696,7 @@
 				<viewtype label="31003">list</viewtype>
 				<scrolltime tween="quadratic" easing="out">200</scrolltime>
 				<itemlayout height="67" width="806" condition="Container.Content(albums)">
+					<include>ListTextBG</include>
 					<control type="label">
 						<left>15</left>
 						<width>90</width>
@@ -722,6 +733,7 @@
 					</control>
 				</itemlayout>
 				<focusedlayout height="67" width="806" condition="Container.Content(albums)">
+					<include>ListTextBG</include>
 					<control type="label">
 						<left>15</left>
 						<width>90</width>
@@ -757,6 +769,7 @@
 					</control>
 				</focusedlayout>
 				<itemlayout height="67" width="806" condition="Container.Content(songs)">
+					<include>ListTextBG</include>
 					<control type="label">
 						<left>15</left>
 						<width>60</width>
@@ -793,6 +806,7 @@
 					</control>
 				</itemlayout>
 				<focusedlayout height="67" width="806" condition="Container.Content(songs)">
+					<include>ListTextBG</include>
 					<control type="label">
 						<left>15</left>
 						<width>60</width>
@@ -828,6 +842,7 @@
 					</control>
 				</focusedlayout>
 				<itemlayout height="67" width="806" condition="![Container.Content(albums) | Container.Content(songs)]">
+					<include>ListTextBG</include>
 					<control type="label">
 						<left>15</left>
 						<width>775</width>
@@ -845,6 +860,7 @@
 					</control>
 				</itemlayout>
 				<focusedlayout height="67" width="806" condition="![Container.Content(albums) | Container.Content(songs)]">
+					<include>ListTextBG</include>
 					<control type="label">
 						<left>15</left>
 						<width>775</width>
@@ -895,7 +911,7 @@
 				<width>FullScreenWidth</width>
 				<height>485</height>
 				<texture>background.png</texture>
-				<colordiffuse>$VAR[ColorBackgroundVar]</colordiffuse>
+				<colordiffuse>$VAR[ListColorHighlightVar]</colordiffuse>
 			</control>
 			<control type="group">
 				<left>30</left>
@@ -977,6 +993,7 @@
 				<viewtype label="31003">list</viewtype>
 				<scrolltime tween="quadratic" easing="out">200</scrolltime>
 				<itemlayout height="67" width="806">
+					<include>ListTextBG</include>
 					<control type="label">
 						<left>15</left>
 						<width>775</width>
@@ -994,6 +1011,7 @@
 					</control>
 				</itemlayout>
 				<focusedlayout height="67" width="806">
+					<include>ListTextBG</include>
 					<control type="label">
 						<left>15</left>
 						<width>775</width>
