@@ -968,7 +968,7 @@
 			<width>$PARAM[DialogBackgroundWidth]</width>
 			<height>$PARAM[DialogBackgroundHeight]</height>
 			<texture border="12">dialog_context.png</texture>
-			<colordiffuse>$VAR[ColorDialogVar]</colordiffuse>
+			<colordiffuse>$VAR[ListColorHighlightVar]</colordiffuse>
 		</control>
 		<control type="label" id="$PARAM[DialogHeaderId]">
 			<description>header label</description>
