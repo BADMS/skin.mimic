@@ -533,12 +533,17 @@
 					<textoffsetx>30</textoffsetx>
 				</control>
 			</control>
+			<control type="image">
+				<top>960</top>
+				<height>120</height>
+				<width>1920</width>
+				<colordiffuse>$VAR[ColorTextVar]</colordiffuse>
+				<texture>bottom_fade_up_1920.png</texture>
+				<aspectratio align="left" aligny="top">scale</aspectratio>
+			</control>
 			<control type="group">
-				<animation effect="slide" time="0" start="0" end="20" condition="[Skin.HasSetting(Enable.IconLandscape) | Skin.HasSetting(Enable.IconLogo)] + !Container.Content(seasons)">Conditional</animation>
-				<animation effect="slide" time="0" start="0" end="-60" condition="Skin.HasSetting(Enable.IconBanner) + !Container.Content(episodes)">Conditional</animation>
-				<animation effect="slide" time="0" start="0" end="-48" condition="Container.Content(musicvideos)">Conditional</animation>
 				<left>90</left>
-				<top>910</top>
+				<top>970</top>
 				<visible>String.IsEqual(Container.SortMethod,$LOCALIZE[13409]) | Skin.HasSetting(Enable.MediaFlags)</visible>
 				<include>VisibleFadeEffect</include>
 				<control type="label">
@@ -561,9 +566,6 @@
 				</control>
 			</control>
 			<control type="group">
-				<animation effect="slide" time="0" start="0" end="-20" condition="[Skin.HasSetting(Enable.IconLandscape) | Skin.HasSetting(Enable.IconLogo)]">Conditional</animation>
-				<animation effect="slide" time="0" start="0" end="60" condition="Skin.HasSetting(Enable.IconBanner) + !Container.Content(episodes)">Conditional</animation>
-				<animation effect="slide" time="0" start="0" end="40" condition="Container.Content(musicvideos)">Conditional</animation>
 				<control type="group">
 					<left>1480</left>
 					<top>925</top>
@@ -587,7 +589,7 @@
 				</control>
 				<include condition="Skin.HasSetting(Enable.MediaFlags)" content="MediaFlags">
 					<param name="left" value="975" />
-					<param name="top" value="905" />
+					<param name="top" value="973" />
 					<param name="align" value="right" />
 				</include>
 			</control>

@@ -43,7 +43,15 @@
 	<include name="ListTextBG">
 		<control type="image">
 			<texture colordiffuse="$VAR[ListColorHighlightVar]">listselect_fo.png</texture>
-			<animation effect="fade" end="15" time="0" delay="0" condition="true">Conditional</animation>
+			<animation effect="fade" end="35" time="0" delay="0" condition="true">Conditional</animation>
+		</control>
+	</include>
+	<include name="ListTextBGBig">
+		<control type="image">
+			<left>5</left>
+			<right>5</right>
+			<texture colordiffuse="$VAR[ListColorHighlightVar]">listselect_fo.png</texture>
+			<animation effect="fade" end="35" time="0" delay="0" condition="true">Conditional</animation>
 		</control>
 	</include>
 	<!-- Media Menu -->
@@ -58,7 +66,7 @@
 			<height>1104</height>
 			<texturefocus border="12">dialog_context.png</texturefocus>
 			<texturenofocus border="12">dialog_context.png</texturenofocus>
- 			<colordiffuse>$VAR[ColorDialogVar]</colordiffuse>
+ 			<colordiffuse>$VAR[ListColorHighlightVar]</colordiffuse>
 		</control>
 		<control type="button" id="9051">
 			<include>HiddenObject</include>

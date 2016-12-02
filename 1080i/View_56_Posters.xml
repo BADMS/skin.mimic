@@ -1362,9 +1362,17 @@
 				<focusedlayout height="210" width="750">
 				</focusedlayout>
 			</control>
+		<control type="image">
+			<top>960</top>
+			<height>120</height>
+			<width>1920</width>
+			<colordiffuse>$VAR[ColorTextVar]</colordiffuse>
+			<texture>bottom_fade_up_1920.png</texture>
+			<aspectratio align="left" aligny="top">scale</aspectratio>
+		</control>
 			<control type="group">
 				<left>25</left>
-				<top>920</top>
+				<top>970</top>
 				<include>VisibleFadeEffect</include>
 				<visible>Window.IsActive(videos)</visible>
 				<control type="label">
@@ -1408,7 +1416,7 @@
 			</control>
 			<include condition="Skin.HasSetting(Enable.MediaFlags)" content="MediaFlags">
 				<param name="left" value="1030" />
-				<param name="top" value="925" />
+				<param name="top" value="973" />
 				<param name="align" value="right" />
 			</include>
 		</control>

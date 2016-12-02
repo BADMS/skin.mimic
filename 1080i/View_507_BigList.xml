@@ -39,6 +39,7 @@
                     <orientation>vertical</orientation>
                     <scrolltime tween="quadratic" easing="out">300</scrolltime>
                     <itemlayout width="1808" height="221" condition="Container.Content(episodes) | ![Skin.HasSetting(Enable.BigListThumb) | Skin.HasSetting(Enable.BigListPoster) | Container.Content(albums)]">
+						<include>ListTextBGBig</include>
 						<control type="group">
 							<left>18</left>
 							<top>13</top>
@@ -142,6 +143,7 @@
                         </control>
                     </itemlayout>
                     <focusedlayout width="1808" height="221" condition="Container.Content(episodes) | ![Skin.HasSetting(Enable.BigListThumb) | Skin.HasSetting(Enable.BigListPoster) | Container.Content(albums)]">
+						<include>ListTextBGBig</include>
 						<control type="group">
 							<left>18</left>
 							<top>13</top>
@@ -242,6 +244,7 @@
                         </control>
                     </focusedlayout>
                     <itemlayout width="1808" height="221" condition="Skin.HasSetting(Enable.BigListPoster) + !Window.IsActive(music) + !Container.Content(episodes)">
+						<include>ListTextBGBig</include>
 						<control type="group">
 							<left>18</left>
 							<top>13</top>
@@ -318,6 +321,7 @@
                         </control>
                     </itemlayout>
                     <focusedlayout width="1808" height="221" condition="Skin.HasSetting(Enable.BigListPoster) + !Window.IsActive(music) + !Container.Content(episodes)">
+						<include>ListTextBGBig</include>
 						<control type="group">
 							<left>18</left>
 							<top>13</top>
@@ -391,6 +395,7 @@
                         </control>
                     </focusedlayout>
                     <itemlayout width="1808" height="221" condition="[Container.Content(artists) + Skin.HasSetting(Enable.BigListThumb)] | Container.Content(albums)">
+						<include>ListTextBGBig</include>
 						<control type="group">
 							<left>18</left>
 							<top>13</top>
@@ -454,6 +459,7 @@
                         </control>
                     </itemlayout>
                     <focusedlayout width="1808" height="221" condition="[Container.Content(artists) + Skin.HasSetting(Enable.BigListThumb)] | Container.Content(albums)">
+						<include>ListTextBGBig</include>
 						<control type="group">
 							<left>18</left>
 							<top>13</top>

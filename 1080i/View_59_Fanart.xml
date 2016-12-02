@@ -2,29 +2,11 @@
 <includes>
 	<!-- Details -->
 	<include name="FanartDetails">
-		<control type="image">
-			<width>FullScreenWidth</width>
-			<height>370</height>
-			<texture>background.png</texture>
-			<colordiffuse>$VAR[ColorBackgroundVar]</colordiffuse>
-		</control>
 		<control type="group">
 			<visible>[Container.Content(movies) | Container.Content(tvshows)] + ![Skin.HasSetting(Enable.FanartFanart) | Skin.HasSetting(Enable.FanartLandscape) | Skin.HasSetting(Enable.FanartLogo)]</visible>
-			<control type="image">
-				<left>30</left>
-				<top>30</top>
-				<width>194</width>
-				<height>290</height>
-				<aspectratio aligny="center" align="center">scale</aspectratio>
-				<texture background="true" fallback="DefaultFallback.png">$VAR[PosterVar]</texture>
-			</control>
-			<include content="OverlayIcons">
-                <param name="OverlayLeft" value="164" />
-                <param name="OverlayTop" value="30" />
-            </include>
 			<control type="label">
 				<top>15</top>
-				<left>257</left>
+				<left>0</left>
 				<width>1233</width>
 				<height>70</height>
 				<font>font35_title</font>
@@ -34,7 +16,7 @@
 			</control>
 			<control type="label">
 				<top>77</top>
-				<left>257</left>
+				<left>0</left>
 				<width>1633</width>
 				<height>65</height>
 				<font>font28_title</font>
@@ -43,7 +25,7 @@
 			</control>
 			<control type="textbox">
 				<top>140</top>
-				<left>257</left>
+				<left>0</left>
 				<width>1633</width>
 				<height>180</height>
 				<font>font15_textbox3</font>
@@ -52,7 +34,7 @@
 				<label>$VAR[VideoPlotVar]</label>
 			</control>
 			<control type="image">
-				<left>1585</left>
+				<left>1328</left>
 				<top>25</top>
 				<width>400</width>
 				<height>45</height>
@@ -175,10 +157,41 @@
 		<control type="group">
 			<visible>Control.IsVisible(59) + !Window.IsActive(addoninformation)</visible>
 			<include>Window_OpenClose_Animation</include>
-			<control type="fixedlist" id="59">
-				<left>0</left>
+			<control type="group">
 				<top>715</top>
-				<width>FullScreenWidth</width>
+				<control type="image">
+					<width>FullScreenWidth</width>
+					<height>370</height>
+					<texture>background.png</texture>
+					<colordiffuse>$VAR[ListColorHighlightVar]</colordiffuse>
+				</control>
+				<control type="image">
+					<left>20</left>
+					<top>20</top>
+					<width>214</width>
+					<height>310</height>
+					<aspectratio align="center" aligny="center">scale</aspectratio>
+					<fadetime>2000</fadetime>
+					<texture background="true" diffuse="thumbs/colorbox_poster_mask.png" colordiffuse="$VAR[LibColorHighlightVar]">$VAR[FocusImage]</texture>
+				</control>
+				<control type="image">
+					<left>30</left>
+					<top>30</top>
+					<width>194</width>
+					<height>290</height>
+					<bordersize>10</bordersize>
+					<aspectratio aligny="center" align="center">scale</aspectratio>
+					<texture background="true" fallback="DefaultFallback.png">$VAR[PosterVar]</texture>
+				</control>
+				<include content="OverlayIcons">
+					<param name="OverlayLeft" value="164" />
+					<param name="OverlayTop" value="30" />
+				</include>
+			</control>
+			<control type="fixedlist" id="59">
+				<left>257</left>
+				<top>715</top>
+				<width>1663</width>
 				<height>370</height>
 				<onleft>59</onleft>
 				<onright>59</onright>
@@ -192,10 +205,10 @@
 				<scrolltime tween="quadratic" easing="out">300</scrolltime>
 				<visible>Container.Content(tvshows) | Container.Content(movies) | Container.Content(artists)</visible>
 				<orientation>horizontal</orientation>
-				<itemlayout width="1920" height="370">
+				<itemlayout width="1663" height="370">
 					<include>FanartDetails</include>
 				</itemlayout>
-				<focusedlayout width="1920" height="370">
+				<focusedlayout width="1663" height="370">
 					<include>FanartDetails</include>
 				</focusedlayout>
 			</control>

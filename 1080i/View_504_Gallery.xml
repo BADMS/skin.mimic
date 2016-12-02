@@ -8,23 +8,37 @@
             <visible>Control.IsVisible(504)</visible>
             <include>Animation.Common</include>
             <!--flags-->
-			<control type="label">
-				<visible>![Window.IsActive(pictures) + Skin.HasSetting(PictureInfo.Disabled)]</visible>
-				<left>383</left>
-                <top>760</top>
-				<label>$INFO[ListItem.Label]</label>
-				<width>1225</width>
-				<font>font28_title</font>
+			<control type="image">
+				<top>960</top>
+				<height>120</height>
+				<width>1920</width>
+				<colordiffuse>$VAR[ColorTextVar]</colordiffuse>
+				<texture>bottom_fade_up_1920.png</texture>
+				<aspectratio align="left" aligny="top">scale</aspectratio>
 			</control>
-			<control type="label">
+			<control type="group">
 				<left>383</left>
-				<top>940</top>
-				<width>1225</width>
-				<height>30</height>
-				<font>font13_title</font>
-				<textcolor>$VAR[ColorHighlightVar]</textcolor>
-				<label>$VAR[FloorSubLabelVar]</label>
-				<visible>![Container.Content(artists) | Window.IsActive(pictures)]</visible>
+				<top>970</top>
+				<visible>String.IsEqual(Container.SortMethod,$LOCALIZE[13409]) | Skin.HasSetting(Enable.MediaFlags)</visible>
+				<include>VisibleFadeEffect</include>
+				<control type="label">
+					<width>1280</width>
+					<height>42</height>
+					<font>font28_title</font>
+					<scroll>true</scroll>
+					<label>$INFO[ListItem.Label]</label>
+					<textoffsetx>30</textoffsetx>
+				</control>
+				<control type="label">
+					<left>0</left>
+					<top>45</top>
+					<width>1280</width>
+					<height>30</height>
+					<font>font13_title</font>
+					<textcolor>$VAR[ColorHighlightVar]</textcolor>
+					<label>$VAR[FloorSubLabelVar]</label>
+					<textoffsetx>30</textoffsetx>
+				</control>
 			</control>
 			<control type="label">
 				<left>383</left>

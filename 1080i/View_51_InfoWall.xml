@@ -270,7 +270,7 @@
 				<width>680</width>
 				<bottom>30</bottom>
 				<texture colordiffuse="$VAR[ListColorHighlightVar]">listselect_fo.png</texture>
-				<animation effect="fade" end="15" time="0" delay="0" condition="true">Conditional</animation>
+				<animation effect="fade" end="35" time="0" delay="0" condition="true">Conditional</animation>
 				<animation effect="slide" time="300" tween="sine" easing="inout" end="-55" condition="Skin.HasSetting(InfoWall.LargeIcons) + ![[Skin.HasSetting(InfoWall.Banners.Movies) + Container.Content(movies)] | [Skin.HasSetting(InfoWall.Banners.Misc) + !Container.Content(movies)]]">Conditional</animation>
 				<animation effect="slide" time="300" tween="sine" easing="inout" start="0" end="-50" condition="[[Skin.HasSetting(InfoWall.Banners.Movies) + Container.Content(movies)] | [Skin.HasSetting(InfoWall.Banners.Misc) + !Container.Content(movies)]]">Conditional</animation>
 			</control>

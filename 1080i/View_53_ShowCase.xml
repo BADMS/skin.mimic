@@ -3,7 +3,7 @@
 	<include name="View_53_ShowCase">
 		<control type="group">
 			<visible>Control.IsVisible(53)</visible>
-			<top>-40</top>
+			<top>-37</top>
 			<left>0</left>
 			<include>Animation.Common</include>
 			<control type="group">
@@ -315,10 +315,18 @@
 				<focusedlayout height="525" width="375">
 				</focusedlayout>
 			</control>
+			<control type="image">
+				<top>982</top>
+				<height>120</height>
+				<width>1920</width>
+				<colordiffuse>$VAR[ColorTextVar]</colordiffuse>
+				<texture>bottom_fade_up_1920.png</texture>
+				<aspectratio align="left" aligny="top">scale</aspectratio>
+			</control>
 			<control type="group">
 				<control type="grouplist">
 					<left>300</left>
-					<top>985</top>
+					<top>997</top>
 					<width>1320</width>
 					<height>45</height>
 					<align>center</align>
@@ -335,7 +343,7 @@
 				</control>
 				<control type="group">
 					<left>300</left>
-					<top>1030</top>
+					<top>1042</top>
 					<control type="label">
 						<width>1320</width>
 						<height>30</height>
