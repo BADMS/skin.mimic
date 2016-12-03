@@ -5,6 +5,15 @@
         <control type="group">
             <visible>Control.IsVisible(505)</visible>
     		<include>Animation.Common</include>
+			<control type="image">
+				<left>20</left>
+				<right>20</right>
+				<top>130</top>
+				<bottom>20</bottom>
+				<colordiffuse>$VAR[ListColorHighlightVar]</colordiffuse>
+				<texture>bottom_fade_up_1920.png</texture>
+				<aspectratio align="left" aligny="top">scale</aspectratio>
+			</control>
             <control type="group">
                 <visible>Integer.IsGreater(Container(505).NumItems,0)</visible>
                 <animation effect="fade" time="320" delay="300">Visible</animation>

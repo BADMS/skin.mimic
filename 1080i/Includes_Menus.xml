@@ -226,7 +226,7 @@
 				<height>80</height>
 				<top>17</top>
 				<font>font_MainMenu</font>
-				<textcolor>$VAR[ColorMenuVar]</textcolor>
+				<textcolor>$VAR[ListColorHighlightVar]</textcolor>
 				<align>center</align>
 				<label>$INFO[ListItem.Label]</label>
 			</control>
@@ -266,7 +266,7 @@
 				<height>120</height>
 				<top>-4</top>
 				<font>font_MainMenu</font>
-				<textcolor>$VAR[ColorMenuVar]</textcolor>
+				<textcolor>$VAR[ListColorHighlightVar]</textcolor>
 				<align>center</align>
 				<label>$INFO[ListItem.Label]</label>
 			</control>
@@ -310,7 +310,7 @@
 				<top>-4</top>
 				<font>font_MainMenu</font>
 				<textoffsetx>20</textoffsetx>
-				<textcolor>$VAR[ColorMenuVar]</textcolor>
+				<textcolor>$VAR[ListColorHighlightVar]</textcolor>
 				<label>$INFO[ListItem.Label]</label>
 				<visible>String.IsEmpty(ListItem.Property(isSubmenu))</visible>
 			</control>
@@ -327,7 +327,7 @@
 				<top>-1</top>
 				<font>font_SubMenu</font>
 				<textoffsetx>20</textoffsetx>
-				<textcolor>$VAR[ColorMenuVar]</textcolor>
+				<textcolor>$VAR[ListColorHighlightVar]</textcolor>
 				<label>$INFO[ListItem.Label]</label>
 				<visible>!String.IsEmpty(ListItem.Property(isSubmenu))</visible>
 			</control>
@@ -401,7 +401,7 @@
                 <top>-4</top>
                 <font>font_MainMenu</font>
                 <textoffsetx>20</textoffsetx>
-                <textcolor>$VAR[ColorMenuVar]</textcolor>
+                <textcolor>$VAR[ListColorHighlightVar]</textcolor>
                 <label>$INFO[ListItem.Label]</label>
                 <visible>String.IsEmpty(ListItem.Property(isSubmenu))</visible>
             </control>
@@ -418,7 +418,7 @@
                 <top>-1</top>
                 <font>font_SubMenu</font>
                 <textoffsetx>20</textoffsetx>
-                <textcolor>$VAR[ColorMenuVar]</textcolor>
+                <textcolor>$VAR[ListColorHighlightVar]</textcolor>
                 <label>$INFO[ListItem.Label]</label>
                 <visible>!String.IsEmpty(ListItem.Property(isSubmenu))</visible>
             </control>
@@ -497,14 +497,14 @@
 				<width>$PARAM[SubmenuItemWidth]</width>
 				<height>$PARAM[SubmenuItemHeight]</height>
 				<texture>background.png</texture>
-				<colordiffuse>$VAR[ColorBackgroundVar]</colordiffuse>
+				<colordiffuse>$VAR[ListColorHighlightVar]</colordiffuse>
 				<visible>String.IsEqual(Skin.String(HomeLayout),2) | [String.IsEqual(Skin.String(HomeLayout),3) + Skin.HasSetting(Enable.CombineMenus)]</visible>
 			</control>
 			<control type="label">
 				<width>$PARAM[SubmenuItemWidth]</width>
 				<height>$PARAM[SubmenuItemHeight]</height>
 				<font>font_SubMenu</font>
-				<textcolor>$VAR[ColorMenuVar]</textcolor>
+				<textcolor>$VAR[ListColorHighlightVar]</textcolor>
 				<textoffsetx>$PARAM[SubmenuTextOffset]</textoffsetx>
 				<selectedcolor>$VAR[ColorMenuVar]</selectedcolor>
 				<align>$PARAM[SubmenuAlign]</align>
