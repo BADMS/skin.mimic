@@ -10,7 +10,7 @@
 				<right>20</right>
 				<top>130</top>
 				<bottom>20</bottom>
-				<colordiffuse>$VAR[ListColorHighlightVar]</colordiffuse>
+				<colordiffuse>$VAR[ColorHeaderVar]</colordiffuse>
 				<texture>bottom_fade_up_1920.png</texture>
 				<aspectratio align="left" aligny="top">scale</aspectratio>
 			</control>
