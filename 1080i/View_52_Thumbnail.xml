@@ -17,7 +17,7 @@
                     <aspectratio align="center" aligny="center">scale</aspectratio>
                     <include>FocusedBackgroundFade</include>
                     <texture colordiffuse="$VAR[LibColorHighlightVar]">$VAR[FocusImage]</texture><fadetime>2000</fadetime>
-					<animation effect="fade" end="70" start="0" time="1000" condition="!String.IsEqual(Window(home).Property(cpa_daemon_set),None) + Skin.HasSetting(View.Pulse.Focus)" pulse="true" delay="0">Conditional</animation>
+					<animation effect="fade" end="70" start="0" time="1000" condition="Skin.HasSetting(View.Pulse.Focus)" pulse="true" delay="0">Conditional</animation>
                     <animation effect="slide" end="0,390" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(52).Row,0)">Conditional</animation>
                     <animation effect="slide" end="350,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(52).Column,3)">Conditional</animation>
                     <animation effect="slide" end="350,0" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(52).Column,2)">Conditional</animation>
