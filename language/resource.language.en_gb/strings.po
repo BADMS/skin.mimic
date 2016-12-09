@@ -762,7 +762,7 @@ msgid "New search"
 msgstr ""
 
 msgctxt "#31185"
-msgid "Logged in as"
+msgid "Similar items"
 msgstr ""
 
 msgctxt "#31186"
