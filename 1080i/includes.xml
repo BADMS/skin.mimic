@@ -748,6 +748,9 @@
 	<include name="Topbar">
 		<control type="group">
 			<visible>!Control.IsVisible(509)</visible>
+			<animation type="Conditional" condition="System.IdleTime(15) + Window.IsVisible(DialogVideoInfo.xml)" reversible="true">
+				<effect type="fade" start="100" end="0" time="2400" />
+			</animation>
 			<control type="image">
 				<visible>[Window.IsActive(home) + Skin.HasSetting(Enable.HomeTopbar) + !String.IsEqual(Skin.String(HomeLayout),2) + [String.IsEqual(Skin.String(HomeLayout),3) | [!String.IsEqual(Skin.String(HomeLayout),3) + Skin.HasSetting(Enable.HomeFanartOverlay)]]] | [!Window.IsActive(home)] | Window.IsActive(movieinformation) | Window.IsActive(DialogMusicInfo.xml) | Window.IsVisible(favourites) | Window.IsVisible(script-globalsearch-main.xml)</visible>
 				<width>FullScreenWidth</width>
