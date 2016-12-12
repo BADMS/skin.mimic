@@ -748,7 +748,7 @@
 	<include name="Topbar">
 		<control type="group">
 			<visible>!Control.IsVisible(509)</visible>
-			<animation type="Conditional" condition="System.IdleTime(15) + Window.IsVisible(DialogVideoInfo.xml)" reversible="true">
+			<animation type="Conditional" condition="System.IdleTime(15) + Window.IsVisible(DialogVideoInfo.xml)" reversible="false">
 				<effect type="fade" start="100" end="0" time="2400" />
 			</animation>
 			<control type="image">

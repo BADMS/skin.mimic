@@ -20,7 +20,7 @@
 				<texture background="true">$VAR[ColorboxImage]</texture>
 			</control>
 			<control type="image">
-				<animation type="Conditional" condition="System.IdleTime(15)" reversible="true">
+				<animation type="Conditional" condition="System.IdleTime(15)" reversible="false">
 					<effect type="fade" start="100" end="0" time="2400" />
 				</animation>
 				<texture>background.png</texture>
@@ -29,7 +29,7 @@
 		</control>
 		<control type="group">
 			<include>Animation.Common</include>
-			<animation type="Conditional" condition="System.IdleTime(15)" reversible="true">
+			<animation type="Conditional" condition="System.IdleTime(15)" reversible="false">
 				<effect type="fade" start="100" end="0" time="2400" />
 			</animation>
 			<left>703</left>
@@ -864,7 +864,7 @@
 		</control>
 		<control type="group">
 			<include>Animation.Common</include>
-			<animation type="Conditional" condition="System.IdleTime(15)" reversible="true">
+			<animation type="Conditional" condition="System.IdleTime(15)" reversible="false">
 				<effect type="fade" start="100" end="0" time="2400" />
 			</animation>
 			<control type="image">
