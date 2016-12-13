@@ -259,8 +259,8 @@
 					<left>5</left>
 					<top>545</top>
 					<width>1120</width>
-					<height>330</height>
-					<font>font15_textbox</font>
+					<height>316</height>
+					<font>font14</font>
 					<label>$VAR[VideoInfoPlotVar]</label>
 					<pagecontrol>60</pagecontrol>
 					<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
