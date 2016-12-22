@@ -45,6 +45,7 @@
 	</variable>
 	<variable name="ColorboxImage">
 		<value condition="String.IsEqual(Window(home).Property(cfa_daemon_set),None)">$INFO[ListItem.Art(fanart)]</value>
+		<value condition="String.IsEqual(Window(home).Property(ImageUpdating),0)">$INFO[ListItem.Art(fanart)]</value>
 		<value>$INFO[Window(home).Property(ImageFiltercfa)]</value>
 	</variable>
 	<variable name="GlobalBackgroundVar">
@@ -61,7 +62,6 @@
 		<value condition="String.IsEqual(Container(9033).ListItem.Art(thumb),6)">$INFO[Skin.String(weatherfanart.path)]$INFO[Window(Weather).Property(Current.FanartCode)]$VAR[WeatherFanartExtension]</value>
 		<value condition="!String.IsEmpty(Container(9033).ListItem.Art(thumb))">$INFO[Container(9033).ListItem.Art(thumb)]</value>
 		<value condition="!String.IsEmpty(Skin.String(CustomBackground))">$INFO[Skin.String(CustomBackground)]</value>
-		<value>$INFO[Window(home).Property(fakelabel)]</value>
 	</variable>
 	<variable name="HomeBackgroundVar">
 
