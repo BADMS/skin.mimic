@@ -11,8 +11,8 @@
 	</variable>
 	<variable name="CommunityRatingColour">
 		<value condition="IntegerGreaterThan(Window(Home).Property(SkinHelper.MetaCritic.Rating),59)">green</value>
-		<value condition="[IntegerGreaterThan(Window(Home).Property(SkinHelper.MetaCritic.Rating),39) + !IntegerGreaterThan(Window(Home).Property(SkinHelper.MetaCritic.Rating),59)]">selectedOrange</value>
-		<value condition="IntegerGreaterThan(Window(Home).Property(SkinHelper.MetaCritic.Rating),0) + !IntegerGreaterThan(Window(Home).Property(SkinHelper.MetaCritic.Rating),39)">selectedRed</value>
+		<value condition="[IntegerGreaterThan(Window(Home).Property(SkinHelper.MetaCritic.Rating),39) + !Integer.IsGreater(Window(Home).Property(SkinHelper.MetaCritic.Rating),59)]">selectedOrange</value>
+		<value condition="IntegerGreaterThan(Window(Home).Property(SkinHelper.MetaCritic.Rating),0) + !Integer.IsGreater(Window(Home).Property(SkinHelper.MetaCritic.Rating),39)">selectedRed</value>
 		<value>$VAR[ColorHighlightVar]</value>
 	</variable>
 	<variable name="IMDBIcon">
@@ -20,11 +20,11 @@
 	</variable>
 	<variable name="RottenTomatoesIcon">
 		<value condition="IntegerGreaterThan(Window(Home).Property(SkinHelper.RottenTomatoesMeter),59)"></value>
-		<value condition="!IntegerGreaterThan(Window(Home).Property(SkinHelper.RottenTomatoesMeter),59)"></value>
+		<value condition="!Integer.IsGreater(Window(Home).Property(SkinHelper.RottenTomatoesMeter),59)"></value>
 	</variable>
 	<variable name="RottenTomatoesIconColour">
 		<value condition="IntegerGreaterThan(Window(Home).Property(SkinHelper.RottenTomatoesMeter),59)">red</value>
-		<value condition="!IntegerGreaterThan(Window(Home).Property(SkinHelper.RottenTomatoesMeter),59)">green</value>
+		<value condition="!Integer.IsGreater(Window(Home).Property(SkinHelper.RottenTomatoesMeter),59)">green</value>
 	</variable>
 	<variable name="ColorUserRating">
 		<value condition="IntegerGreaterThan(ListItem.Userrating,6)">green</value>
@@ -552,6 +552,12 @@
 		<value condition="!String.IsEmpty(Skin.String(highlightcolor.name))">$INFO[Skin.String(highlightcolor.name)]</value>
 		<value>highlight</value>
 	</variable>
+	<variable name="MenuListColorHighlightVar">
+		<value condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + !String.IsEqual(Window(home).Property(cha_daemon_set),None) + !String.IsEmpty(Window(home).Property(ImageColorcha))">$INFO[Window(home).Property(ImageColorcha)]</value>
+		<value condition="!String.IsEqual(Window(home).Property(cpa_daemon_set),None) + !String.IsEmpty(Window(home).Property(ImageFiltercpa))">$INFO[Window(home).Property(ImageColorcpa)]</value>
+		<value condition="!String.IsEmpty(Skin.String(highlightcolor.name))">$INFO[Skin.String(highlightcolor.name)]</value>
+		<value>highlight</value>
+	</variable>
 	<variable name="ColorHighlightVar">
 		<value condition="!String.IsEqual(Window(home).Property(cpa_daemon_set),None) + !String.IsEmpty(Window(home).Property(ImageColorcpa)) + Skin.HasSetting(Colorbox.header)">$VAR[ColorTextVar]</value>
 		<value condition="!String.IsEmpty(Skin.String(highlightcolor.name))">$INFO[Skin.String(highlightcolor.name)]</value>
@@ -582,6 +588,7 @@
 		<value>maintext</value>
 	</variable>
 	<variable name="ColorMenuVar">
+		<value condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + !String.IsEqual(Window(home).Property(cha_daemon_set),None) + !String.IsEmpty(Window(home).Property(ImageCColorcha))">$INFO[Window(home).Property(ImageCColorcha)]</value>
 		<value condition="!String.IsEqual(Window(home).Property(cpa_daemon_set),None) + !String.IsEmpty(Window(home).Property(ImageCColorcpa))">$INFO[Window(home).Property(ImageCColorcpa)]</value>
 		<value condition="!String.IsEmpty(Skin.String(menucolor.name))">$INFO[Skin.String(menucolor.name)]</value>
 		<value>maintext</value>
@@ -820,16 +827,16 @@
 		<value>DefaultFallback.png</value>
 	</variable>
 	<variable name="VerticalWidgetArt">
-		<value condition="StringCompare(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[31100]) + !String.IsEqual(Container(9000).ListItem.Property(widgetType),episodes) + !String.IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
-		<value condition="!StringCompare(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[31313]) + !StringCompare(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[31100]) + String.IsEqual(Container(9000).ListItem.Property(widgetType),episodes) + !String.IsEmpty(ListItem.Art(tvshow.poster))">$INFO[ListItem.Art(tvshow.poster)]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[31100]) + !String.IsEqual(Container(9000).ListItem.Property(widgetType),episodes) + !String.IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
+		<value condition="!String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[31313]) + !String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[31100]) + String.IsEqual(Container(9000).ListItem.Property(widgetType),episodes) + !String.IsEmpty(ListItem.Art(tvshow.poster))">$INFO[ListItem.Art(tvshow.poster)]</value>
 		<!--<value condition="!String.IsEmpty(ListItem.Art(thumb))">$INFO[ListItem.Art(thumb)]</value>-->
 		<value>$INFO[ListItem.Icon]</value>
 	</variable>
 	<variable name="WidgetArt">
-		<value condition="StringCompare(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[20445]) + !String.IsEqual(Container(9000).ListItem.Property(widgetType),episodes) + !String.IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[20445]) + !String.IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
- 		<value condition="StringCompare(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[20021]) + String.IsEqual(Container(9000).ListItem.Property(widgetType),episodes) + !String.IsEmpty(ListItem.Art(tvshow.poster))">$INFO[ListItem.Art(tvshow.poster)]</value>
- 		<value condition="StringCompare(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[20021]) + String.IsEqual(Container(9000).ListItem.Property(widgetType),episodes) + !String.IsEmpty(ListItem.Art(tvshow.poster))">$INFO[ListItem.Art(tvshow.poster)]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[20445]) + !String.IsEqual(Container(9000).ListItem.Property(widgetType),episodes) + !String.IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[20445]) + !String.IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
+ 		<value condition="String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[20021]) + String.IsEqual(Container(9000).ListItem.Property(widgetType),episodes) + !String.IsEmpty(ListItem.Art(tvshow.poster))">$INFO[ListItem.Art(tvshow.poster)]</value>
+ 		<value condition="String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[20021]) + String.IsEqual(Container(9000).ListItem.Property(widgetType),episodes) + !String.IsEmpty(ListItem.Art(tvshow.poster))">$INFO[ListItem.Art(tvshow.poster)]</value>
  		<value>$INFO[ListItem.Icon]</value>
  	</variable>
 	<variable name="MusicInfoDescription">

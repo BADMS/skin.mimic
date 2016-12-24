@@ -706,7 +706,7 @@
         <autoscroll time="10000" delay="10000" repeat="10000">[Control.IsVisible(9003) + !ControlGroup(9003).HasFocus] + !Skin.HasSetting(Disable.WidgetAutoScroll)</autoscroll>
 
         <!-- Poster -->
-        <itemlayout height="304" width="207" condition="!StringCompare(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[31313]) + !StringCompare(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[31100])">
+        <itemlayout height="304" width="207" condition="!String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[31313]) + !String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[31100])">
             <control type="image">
                 <visible>IsEmpty(ListItem.Art(tvshow.poster))</visible>
                 <top>6</top>
@@ -734,7 +734,7 @@
                 <fadetime>300</fadetime>
             </control>
         </itemlayout>
-        <focusedlayout height="304" width="207" condition="!StringCompare(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[31313]) + !StringCompare(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[31100])">
+        <focusedlayout height="304" width="207" condition="!String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[31313]) + !String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[31100])">
             <control type="group">
                 <include>PanelFocusedItemZoom</include>
 				<control type="button">
@@ -774,7 +774,7 @@
         </focusedlayout>
 
         <!-- Square -->
-        <itemlayout height="304" width="304" condition="StringCompare(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[31313])">
+        <itemlayout height="304" width="304" condition="String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[31313])">
             <control type="group">
                 <left>14</left>
                 <control type="image">
@@ -794,7 +794,7 @@
                 </control>
             </control>
         </itemlayout>
-        <focusedlayout height="304" width="304" condition="StringCompare(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[31313])">
+        <focusedlayout height="304" width="304" condition="String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[31313])">
             <control type="group">
                 <include>PanelFocusedItemZoom</include>
                 <left>14</left>
@@ -824,7 +824,7 @@
         </focusedlayout>
 
         <!-- Landscape -->
-        <itemlayout height="203" width="310" condition="StringCompare(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[31100])">
+        <itemlayout height="203" width="310" condition="String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[31100])">
             <control type="image">
                 <top>6</top>
                 <left>6</left>
@@ -841,7 +841,7 @@
                 <texture>thumbs/diffuse.png</texture>
             </control>
         </itemlayout>
-        <focusedlayout height="203" width="310" condition="StringCompare(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[31100])">
+        <focusedlayout height="203" width="310" condition="String.IsEqual(Container(9000).ListItem.Property(widgetIcon),$LOCALIZE[31100])">
             <include>PanelFocusedItemZoom</include>
 			<control type="button">
 				<texturefocus>-</texturefocus>

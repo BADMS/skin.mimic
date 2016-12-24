@@ -868,12 +868,12 @@
 						<texturefocus colordiffuse="$VAR[CommunityRatingColour]">metacritic_box.png</texturefocus>
 						<texturenofocus colordiffuse="$VAR[CommunityRatingColour]">metacritic_box.png</texturenofocus>
 						<visible>!IsEmpty(Window(Home).Property(SkinHelper.MetaCritic.Rating))</visible>
-						<visible>!StringCompare(Window(Home).Property(SkinHelper.MetaCritic.Rating),n/a)</visible>
+						<visible>!String.IsEqual(Window(Home).Property(SkinHelper.MetaCritic.Rating),n/a)</visible>
 					</control>
 					<control type="label">
 						<width>6</width>
 						<label> </label>
-						<visible>!IsEmpty(Window(Home).Property(SkinHelper.MetaCritic.Rating)) + !StringCompare(Window(Home).Property(SkinHelper.MetaCritic.Rating),n/a) + !IsEmpty(ListItem.Rating)</visible>
+						<visible>!IsEmpty(Window(Home).Property(SkinHelper.MetaCritic.Rating)) + !String.IsEqual(Window(Home).Property(SkinHelper.MetaCritic.Rating),n/a) + !IsEmpty(ListItem.Rating)</visible>
 					</control>
 					<control type="label">
 						<aligny>center</aligny>
@@ -898,7 +898,7 @@
 					<control type="label">
 						<width>6</width>
 						<label> </label>
-						<visible>!IsEmpty(Window(Home).Property(SkinHelper.MetaCritic.Rating)) + !StringCompare(Window(Home).Property(SkinHelper.MetaCritic.Rating),n/a) + IsEmpty(ListItem.Rating)</visible>
+						<visible>!IsEmpty(Window(Home).Property(SkinHelper.MetaCritic.Rating)) + !String.IsEqual(Window(Home).Property(SkinHelper.MetaCritic.Rating),n/a) + IsEmpty(ListItem.Rating)</visible>
 					</control>
 					<control type="label">
 						<aligny>center</aligny>
@@ -909,7 +909,7 @@
 						<width>auto</width>
 						<label>$VAR[RottenTomatoesIcon]</label>
 						<visible>!IsEmpty(Window(Home).Property(SkinHelper.RottenTomatoesMeter))</visible>
-						<visible>!StringCompare(Window(Home).Property(SkinHelper.RottenTomatoesMeter),n/a)</visible>
+						<visible>!String.IsEqual(Window(Home).Property(SkinHelper.RottenTomatoesMeter),n/a)</visible>
 					</control>
 					<control type="label">
 						<aligny>center</aligny>
@@ -920,7 +920,7 @@
 						<width>auto</width>
 						<label>$INFO[Window(Home).Property(SkinHelper.RottenTomatoesMeter),,% ]</label>
 						<visible>!IsEmpty(Window(Home).Property(SkinHelper.RottenTomatoesMeter))</visible>
-						<visible>!StringCompare(Window(Home).Property(SkinHelper.RottenTomatoesMeter),n/a)</visible>
+						<visible>!String.IsEqual(Window(Home).Property(SkinHelper.RottenTomatoesMeter),n/a)</visible>
 					</control>
 					<control type="label">
 						<aligny>center</aligny>

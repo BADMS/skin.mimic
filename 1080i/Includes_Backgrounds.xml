@@ -43,7 +43,6 @@
 				<include condition="Window.IsActive(videos) | Window.IsActive(videoplaylist)">VideoFallback</include>
 				<item>
 					<onclick>noop</onclick>
-					<thumb>$INFO[Window(home).Property(fakelabel)]</thumb>
 					<visible>no</visible>
 				</item>
 			</content>

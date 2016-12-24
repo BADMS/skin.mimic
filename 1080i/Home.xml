@@ -8,7 +8,7 @@
 	<onload>ClearProperty(MediaMenu,Home)</onload>
 	<onload condition="!Skin.HasSetting(startup.init)">Skin.SetBool(startup.init)</onload>
 	<controls>
- 		<control type="multiimage">
+ 		<control type="multiimage" id="7977">
             <fadetime>300</fadetime>
             <animation effect="fade" time="200" tween="cubic">Visible</animation>
             <include>FullscreenDimensions</include>

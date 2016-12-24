@@ -13,7 +13,7 @@
             <width>384</width>
             <height>120</height>
             <animation effect="fade" start="100" end="60" time="300" condition="!Control.HasFocus(9010)">Conditional</animation>
-            <texture colordiffuse="$VAR[ListColorHighlightVar]">listselect_fo.png</texture>
+            <texture colordiffuse="$VAR[ColorMenuVar]">listselect_fo.png</texture>
             <animation effect="slide" end="384" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9010).Column,3)">Conditional</animation>
             <animation effect="slide" end="384" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9010).Column,2)">Conditional</animation>
             <animation effect="slide" end="384" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9010).Column,1)">Conditional</animation>
@@ -25,7 +25,7 @@
             <width>384</width>
             <height>70</height>
             <animation effect="fade" start="100" end="60" time="300" condition="!Control.HasFocus(9010)">Conditional</animation>
-            <texture colordiffuse="$VAR[ListColorHighlightVar]">listselect_fo.png</texture>
+            <texture colordiffuse="$VAR[ColorMenuVar]">listselect_fo.png</texture>
             <animation effect="slide" end="384" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9010).Column,3)">Conditional</animation>
             <animation effect="slide" end="384" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9010).Column,2)">Conditional</animation>
             <animation effect="slide" end="384" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9010).Column,1)">Conditional</animation>
@@ -80,7 +80,7 @@
             <width>384</width>
             <height>120</height>
             <animation effect="fade" start="100" end="60" time="300" condition="!Control.HasFocus(9000)">Conditional</animation>
-            <texture colordiffuse="$VAR[ListColorHighlightVar]">listselect_fo.png</texture>
+            <texture colordiffuse="$VAR[ColorMenuVar]">listselect_fo.png</texture>
         </control>
         <control type="image">
         	<visible>Control.HasFocus(9010) + !Skin.HasSetting(Disable.SubmenuSlide)</visible>
@@ -89,7 +89,7 @@
             <width>384</width>
             <height>120</height>
             <animation effect="fade" start="100" end="60" time="300" condition="!Control.HasFocus(9010)">Conditional</animation>
-            <texture colordiffuse="$VAR[ListColorHighlightVar]">listselect_fo.png</texture>
+            <texture colordiffuse="$VAR[ColorMenuVar]">listselect_fo.png</texture>
             <animation effect="slide" end="384" time="300" tween="cubic" easing="inout" condition="Container(9010).Position(4)">Conditional</animation>
             <animation effect="slide" end="384" time="300" tween="cubic" easing="inout" condition="Container(9010).Position(4) | Container(9010).Position(3)">Conditional</animation>
             <animation effect="slide" end="384" time="300" tween="cubic" easing="inout" condition="Container(9010).Position(4) | Container(9010).Position(3) | Container(9010).Position(2)">Conditional</animation>
@@ -101,7 +101,7 @@
             <width>384</width>
             <height>70</height>
             <animation effect="fade" start="100" end="60" time="300" condition="!Control.HasFocus(9010)">Conditional</animation>
-            <texture colordiffuse="$VAR[ListColorHighlightVar]">listselect_fo.png</texture>
+            <texture colordiffuse="$VAR[ColorMenuVar]">listselect_fo.png</texture>
             <animation effect="slide" end="384" time="300" tween="cubic" easing="inout" condition="Container(9010).Position(4)">Conditional</animation>
             <animation effect="slide" end="384" time="300" tween="cubic" easing="inout" condition="Container(9010).Position(4) | Container(9010).Position(3)">Conditional</animation>
             <animation effect="slide" end="384" time="300" tween="cubic" easing="inout" condition="Container(9010).Position(4) | Container(9010).Position(3) | Container(9010).Position(2)">Conditional</animation>
@@ -129,7 +129,7 @@
             <width>384</width>
             <height>120</height>
             <animation effect="fade" start="100" end="60" time="300" condition="!Control.HasFocus(9000)">Conditional</animation>
-            <texture colordiffuse="$VAR[ListColorHighlightVar]">listselect_fo.png</texture>
+            <texture colordiffuse="$VAR[ColorMenuVar]">listselect_fo.png</texture>
             <animation effect="slide" end="384" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9000).Column,3)">Conditional</animation>
             <animation effect="slide" end="384" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9000).Column,2)">Conditional</animation>
             <animation effect="slide" end="384" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9000).Column,1)">Conditional</animation>
@@ -159,7 +159,7 @@
                 <width>474</width>
                 <height>120</height>
                 <animation effect="fade" start="100" end="60" time="300" condition="!Control.HasFocus(9000)">Conditional</animation>
-                <texture colordiffuse="$VAR[ListColorHighlightVar]">listselect_fo.png</texture>
+                <texture colordiffuse="$VAR[ColorMenuVar]">listselect_fo.png</texture>
                 <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9000).Row,7)">Conditional</animation>
                 <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9000).Row,6)">Conditional</animation>
                 <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9000).Row,5)">Conditional</animation>
@@ -173,7 +173,7 @@
     			<visible>Control.HasFocus(9010)</visible>
                 <width>474</width>
                 <height>120</height>
-                <texture colordiffuse="$VAR[ListColorHighlightVar]">listselect_fo.png</texture>
+                <texture colordiffuse="$VAR[ColorMenuVar]">listselect_fo.png</texture>
                 <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9010).Row,7)">Conditional</animation>
                 <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9010).Row,6)">Conditional</animation>
                 <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9010).Row,5)">Conditional</animation>
@@ -226,7 +226,7 @@
 				<height>80</height>
 				<top>17</top>
 				<font>font_MainMenu</font>
-				<textcolor>$VAR[ListColorHighlightVar]</textcolor>
+				<textcolor>$VAR[ColorMenuVar]</textcolor>
 				<align>center</align>
 				<label>$INFO[ListItem.Label]</label>
 			</control>
@@ -237,8 +237,8 @@
 				<height>80</height>
 				<top>17</top>
 				<font>font_MainMenu</font>
-				<textcolor>$VAR[ColorMenuVar]</textcolor>
-				<selectedcolor>$VAR[ColorMenuVar]</selectedcolor>
+				<textcolor>$VAR[MenuListColorHighlightVar]</textcolor>
+				<selectedcolor>$VAR[MenuListColorHighlightVar]</selectedcolor>
 				<align>center</align>
 				<label>$INFO[ListItem.Label]</label>
 			</control>
@@ -266,7 +266,7 @@
 				<height>120</height>
 				<top>-4</top>
 				<font>font_MainMenu</font>
-				<textcolor>$VAR[ListColorHighlightVar]</textcolor>
+				<textcolor>$VAR[ColorMenuVar]</textcolor>
 				<align>center</align>
 				<label>$INFO[ListItem.Label]</label>
 			</control>
@@ -277,8 +277,8 @@
 				<height>120</height>
 				<top>-4</top>
 				<font>font_MainMenu</font>
-				<textcolor>$VAR[ColorMenuVar]</textcolor>
-				<selectedcolor>$VAR[ColorMenuVar]</selectedcolor>
+				<textcolor>$VAR[MenuListColorHighlightVar]</textcolor>
+				<selectedcolor>$VAR[MenuListColorHighlightVar]</selectedcolor>
 				<align>center</align>
 				<label>$INFO[ListItem.Label]</label>
 			</control>
@@ -310,7 +310,7 @@
 				<top>-4</top>
 				<font>font_MainMenu</font>
 				<textoffsetx>20</textoffsetx>
-				<textcolor>$VAR[ListColorHighlightVar]</textcolor>
+				<textcolor>$VAR[ColorMenuVar]</textcolor>
 				<label>$INFO[ListItem.Label]</label>
 				<visible>String.IsEmpty(ListItem.Property(isSubmenu))</visible>
 			</control>
@@ -327,7 +327,7 @@
 				<top>-1</top>
 				<font>font_SubMenu</font>
 				<textoffsetx>20</textoffsetx>
-				<textcolor>$VAR[ListColorHighlightVar]</textcolor>
+				<textcolor>$VAR[ColorMenuVar]</textcolor>
 				<label>$INFO[ListItem.Label]</label>
 				<visible>!String.IsEmpty(ListItem.Property(isSubmenu))</visible>
 			</control>
@@ -351,7 +351,7 @@
 				<top>-4</top>
 				<font>font_MainMenu</font>
 				<textoffsetx>20</textoffsetx>
-				<textcolor>$VAR[ColorMenuVar]</textcolor>
+				<textcolor>$VAR[MenuListColorHighlightVar]</textcolor>
 				<label>$INFO[ListItem.Label]</label>
 				<visible>String.IsEmpty(ListItem.Property(isSubmenu))</visible>
 			</control>
@@ -368,7 +368,7 @@
 				<top>-1</top>
 				<font>font_SubMenu</font>
 				<textoffsetx>20</textoffsetx>
-				<textcolor>$VAR[ColorMenuVar]</textcolor>
+				<textcolor>$VAR[MenuListColorHighlightVar]</textcolor>
 				<label>$INFO[ListItem.Label]</label>
 				<visible>!String.IsEmpty(ListItem.Property(isSubmenu))</visible>
 			</control>
@@ -401,7 +401,7 @@
                 <top>-4</top>
                 <font>font_MainMenu</font>
                 <textoffsetx>20</textoffsetx>
-                <textcolor>$VAR[ListColorHighlightVar]</textcolor>
+                <textcolor>$VAR[ColorMenuVar]</textcolor>
                 <label>$INFO[ListItem.Label]</label>
                 <visible>String.IsEmpty(ListItem.Property(isSubmenu))</visible>
             </control>
@@ -418,7 +418,7 @@
                 <top>-1</top>
                 <font>font_SubMenu</font>
                 <textoffsetx>20</textoffsetx>
-                <textcolor>$VAR[ListColorHighlightVar]</textcolor>
+                <textcolor>$VAR[ColorMenuVar]</textcolor>
                 <label>$INFO[ListItem.Label]</label>
                 <visible>!String.IsEmpty(ListItem.Property(isSubmenu))</visible>
             </control>
@@ -451,7 +451,7 @@
                 <top>-4</top>
                 <font>font_MainMenu</font>
                 <textoffsetx>20</textoffsetx>
-                <textcolor>$VAR[ColorMenuVar]</textcolor>
+                <textcolor>$VAR[MenuListColorHighlightVar]</textcolor>
                 <label>$INFO[ListItem.Label]</label>
                 <visible>String.IsEmpty(ListItem.Property(isSubmenu))</visible>
             </control>
@@ -468,7 +468,7 @@
                 <top>-1</top>
                 <font>font_SubMenu</font>
                 <textoffsetx>20</textoffsetx>
-                <textcolor>$VAR[ColorMenuVar]</textcolor>
+                <textcolor>$VAR[MenuListColorHighlightVar]</textcolor>
                 <label>$INFO[ListItem.Label]</label>
                 <visible>!String.IsEmpty(ListItem.Property(isSubmenu))</visible>
             </control>
@@ -497,16 +497,16 @@
 				<width>$PARAM[SubmenuItemWidth]</width>
 				<height>$PARAM[SubmenuItemHeight]</height>
 				<texture>background.png</texture>
-				<colordiffuse>$VAR[ListColorHighlightVar]</colordiffuse>
+				<colordiffuse>$VAR[ColorMenuVar]</colordiffuse>
 				<visible>String.IsEqual(Skin.String(HomeLayout),2) | [String.IsEqual(Skin.String(HomeLayout),3) + Skin.HasSetting(Enable.CombineMenus)]</visible>
 			</control>
 			<control type="label">
 				<width>$PARAM[SubmenuItemWidth]</width>
 				<height>$PARAM[SubmenuItemHeight]</height>
 				<font>font_SubMenu</font>
-				<textcolor>$VAR[ListColorHighlightVar]</textcolor>
+				<textcolor>$VAR[ColorMenuVar]</textcolor>
 				<textoffsetx>$PARAM[SubmenuTextOffset]</textoffsetx>
-				<selectedcolor>$VAR[ColorMenuVar]</selectedcolor>
+				<selectedcolor>$VAR[MenuListColorHighlightVar]</selectedcolor>
 				<align>$PARAM[SubmenuAlign]</align>
 				<label>$INFO[ListItem.Label]</label>
 			</control>
@@ -523,7 +523,7 @@
 				<width>$PARAM[SubmenuItemWidth]</width>
 				<height>$PARAM[SubmenuItemHeight]</height>
 				<texture>listselect_fo.png</texture>
-				<colordiffuse>$VAR[ListColorHighlightVar]</colordiffuse>
+				<colordiffuse>$VAR[ColorMenuVar]</colordiffuse>
 				<visible>ControlGroup(9001).HasFocus() + String.IsEqual(Skin.String(HomeLayout),2)</visible>
 			</control>
 			<control type="group">
@@ -532,7 +532,7 @@
 					<width>$PARAM[SubmenuItemWidth]</width>
 					<height>$PARAM[SubmenuItemHeight]</height>
 					<font>font_SubMenu</font>
-					<textcolor>$VAR[ColorMenuVar]</textcolor>
+					<textcolor>$VAR[MenuListColorHighlightVar]</textcolor>
 					<textoffsetx>$PARAM[SubmenuTextOffset]</textoffsetx>
 					<align>$PARAM[SubmenuAlign]</align>
 					<label>$INFO[ListItem.Label]</label>
@@ -544,7 +544,7 @@
 					<width>$PARAM[SubmenuItemWidth]</width>
 					<height>$PARAM[SubmenuItemHeight]</height>
 					<font>font_SubMenu</font>
-					<textcolor>$VAR[ColorMenuVar]</textcolor>
+					<textcolor>$VAR[MenuListColorHighlightVar]</textcolor>
 					<textoffsetx>$PARAM[SubmenuTextOffset]</textoffsetx>
 					<align>$PARAM[SubmenuAlign]</align>
 					<label>$INFO[ListItem.Label]</label>
@@ -665,7 +665,7 @@
             <width>$PARAM[MainMenuBackgroundWidth]</width>
             <height>120</height>
             <animation effect="fade" start="100" end="60" time="300" condition="!Control.HasFocus(9000)">Conditional</animation>
-            <texture colordiffuse="$VAR[ListColorHighlightVar]">listselect_fo.png</texture>
+            <texture colordiffuse="$VAR[ColorMenuVar]">listselect_fo.png</texture>
             <animation effect="slide" end="$PARAM[MainMenuBackgroundWidth]" time="300" tween="cubic" easing="inout" condition="Container(9000).Position(4)">Conditional</animation>
             <animation effect="slide" end="$PARAM[MainMenuBackgroundWidth]" time="300" tween="cubic" easing="inout" condition="Container(9000).Position(4) | Container(9000).Position(3)">Conditional</animation>
             <animation effect="slide" end="$PARAM[MainMenuBackgroundWidth]" time="300" tween="cubic" easing="inout" condition="Container(9000).Position(4) | Container(9000).Position(3) | Container(9000).Position(2)">Conditional</animation>

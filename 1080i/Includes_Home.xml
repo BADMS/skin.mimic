@@ -21,14 +21,14 @@
 				<width>FullScreenWidth</width>
 				<height>700</height>
 				<texture background="true">background.png</texture>
-				<colordiffuse>$VAR[ListColorHighlightVar]</colordiffuse>
+				<colordiffuse>$VAR[MenuListColorHighlightVar]</colordiffuse>
 			</control>
 			<control type="image">
 				<left>0</left>
 				<width>FullScreenWidth</width>
 				<height>120</height>
 				<texture>listselect_fo.png</texture>
-				<colordiffuse>$VAR[ListColorHighlightVar]</colordiffuse>
+				<colordiffuse>$VAR[MenuListColorHighlightVar]</colordiffuse>
 				<visible>!Skin.HasTheme(Light)</visible>
 			</control>
 			<include condition="!Skin.HasSetting(Enable.CenteredMenu)">MainMenuList</include>	

@@ -13,6 +13,7 @@
 	<onload condition="String.IsEmpty(Skin.String(focus_fx))">Skin.SetString(focus_fx,None)</onload>
 	<onload>SetProperty(cfa_daemon_set,$INFO[Skin.String(background_fx)],home)</onload>
 	<onload>SetProperty(cpa_daemon_set,$INFO[Skin.String(focus_fx)],home)</onload>
+	<onload>SetProperty(cha_daemon_set,True,home)</onload>
 	<onload>SetProperty(cpa_daemon_fallback,special://skin/extras/misc/fallback.jpg,home)</onload>
 	<onload>Skin.SetString(SkinHelper.RandomFanartDelay,3)</onload>
 	<controls>
