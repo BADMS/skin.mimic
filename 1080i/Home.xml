@@ -30,10 +30,10 @@
         </control>
         <control type="image">
 			<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
-				<effect type="fade" delay="0" start="30" end="70" time="1000" />
+				<effect type="fade" delay="0" start="00" end="70" time="1000" />
 			</animation>
 			<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
-				<effect type="fade" delay="0" start="70" end="30" time="1000" />
+				<effect type="fade" delay="0" start="70" end="00" time="1000" />
 			</animation>
 			<animation type="Conditional" condition="!Control.HasFocus(9010) + !Control.HasFocus(9000) + !Control.HasFocus(9001) + Window.IsActive(home)" reversible="false">
 				<effect type="fade" delay="0" start="70" end="0" time="1000" />
@@ -44,10 +44,10 @@
         </control>
         <control type="image">
 			<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
-				<effect type="fade" delay="0" start="30" end="70" time="1000" />
+				<effect type="fade" delay="0" start="00" end="70" time="1000" />
 			</animation>
 			<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
-				<effect type="fade" delay="0" start="70" end="30" time="1000" />
+				<effect type="fade" delay="0" start="70" end="00" time="1000" />
 			</animation>
 			<animation type="Conditional" condition="!Control.HasFocus(9010) + !Control.HasFocus(9000) + !Control.HasFocus(9001) + Window.IsActive(home)" reversible="false">
 				<effect type="fade" delay="0" start="70" end="0" time="1000" />
