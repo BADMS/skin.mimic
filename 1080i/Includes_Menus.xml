@@ -126,6 +126,28 @@
 	</include>
 	<include name="MainMenuListTop">
 		<control type="image">
+			<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+				<effect type="fade" delay="0" start="0" end="100" time="1000" />
+			</animation>
+			<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+				<effect type="fade" delay="0" start="100" end="0" time="1000" />
+			</animation>
+            <width>384</width>
+            <height>120</height>
+            <animation effect="fade" start="100" end="60" time="300" condition="!Control.HasFocus(9000)">Conditional</animation>
+            <texture colordiffuse="$VAR[OldColorMenuVar]">listselect_fo.png</texture>
+            <animation effect="slide" end="384" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9000).Column,3)">Conditional</animation>
+            <animation effect="slide" end="384" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9000).Column,2)">Conditional</animation>
+            <animation effect="slide" end="384" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9000).Column,1)">Conditional</animation>
+            <animation effect="slide" end="384" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9000).Column,0)">Conditional</animation>
+        </control>
+		<control type="image">
+			<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+				<effect type="fade" delay="0" start="0" end="100" time="1000" />
+			</animation>
+			<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+				<effect type="fade" delay="0" start="100" end="0" time="1000" />
+			</animation>
             <width>384</width>
             <height>120</height>
             <animation effect="fade" start="100" end="60" time="300" condition="!Control.HasFocus(9000)">Conditional</animation>
@@ -155,6 +177,53 @@
         <control type="group">
             <include>MainMenuSlide</include>
     		<control type="image">
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+					<effect type="fade" delay="0" start="0" end="100" time="1000" />
+				</animation>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+					<effect type="fade" delay="0" start="100" end="0" time="1000" />
+				</animation>
+    			<visible>!Control.HasFocus(9010)</visible>
+                <width>474</width>
+                <height>120</height>
+                <animation effect="fade" start="100" end="60" time="300" condition="!Control.HasFocus(9000)">Conditional</animation>
+                <texture colordiffuse="$VAR[OldColorMenuVar]">listselect_fo.png</texture>
+                <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9000).Row,7)">Conditional</animation>
+                <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9000).Row,6)">Conditional</animation>
+                <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9000).Row,5)">Conditional</animation>
+                <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9000).Row,4)">Conditional</animation>
+                <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9000).Row,3)">Conditional</animation>
+                <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9000).Row,2)">Conditional</animation>
+                <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9000).Row,1)">Conditional</animation>
+                <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9000).Row,0)">Conditional</animation>
+            </control>
+            <control type="image">
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+					<effect type="fade" delay="0" start="0" end="100" time="1000" />
+				</animation>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+					<effect type="fade" delay="0" start="100" end="0" time="1000" />
+				</animation>
+    			<visible>Control.HasFocus(9010)</visible>
+                <width>474</width>
+                <height>120</height>
+                <texture colordiffuse="$VAR[OldColorMenuVar]">listselect_fo.png</texture>
+                <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9010).Row,7)">Conditional</animation>
+                <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9010).Row,6)">Conditional</animation>
+                <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9010).Row,5)">Conditional</animation>
+                <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9010).Row,4)">Conditional</animation>
+                <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9010).Row,3)">Conditional</animation>
+                <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9010).Row,2)">Conditional</animation>
+                <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9010).Row,1)">Conditional</animation>
+                <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9010).Row,0)">Conditional</animation>
+            </control>
+    		<control type="image">
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+					<effect type="fade" delay="0" start="0" end="100" time="1000" />
+				</animation>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+					<effect type="fade" delay="0" start="100" end="0" time="1000" />
+				</animation>
     			<visible>!Control.HasFocus(9010)</visible>
                 <width>474</width>
                 <height>120</height>
@@ -170,6 +239,12 @@
                 <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9000).Row,0)">Conditional</animation>
             </control>
             <control type="image">
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+					<effect type="fade" delay="0" start="0" end="100" time="1000" />
+				</animation>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+					<effect type="fade" delay="0" start="100" end="0" time="1000" />
+				</animation>
     			<visible>Control.HasFocus(9010)</visible>
                 <width>474</width>
                 <height>120</height>
@@ -222,6 +297,27 @@
 		<orientation>Horizontal</orientation>
 		<itemlayout height="120" width="$PARAM[MainMenuItemWidth]">
 			<control type="label">
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+					<effect type="fade" delay="0" start="0" end="100" time="1000" />
+				</animation>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+					<effect type="fade" delay="0" start="100" end="0" time="1000" />
+				</animation>
+				<width>$PARAM[MainMenuItemWidth]</width>
+				<height>80</height>
+				<top>17</top>
+				<font>font_MainMenu</font>
+				<textcolor>$VAR[OldColorMenuVar]</textcolor>
+				<align>center</align>
+				<label>$INFO[ListItem.Label]</label>
+			</control>
+			<control type="label">
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+					<effect type="fade" delay="0" start="0" end="100" time="1000" />
+				</animation>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+					<effect type="fade" delay="0" start="100" end="0" time="1000" />
+				</animation>
 				<width>$PARAM[MainMenuItemWidth]</width>
 				<height>80</height>
 				<top>17</top>
@@ -233,6 +329,28 @@
 		</itemlayout>
 		<focusedlayout height="120" width="$PARAM[MainMenuItemWidth]">
 			<control type="label">
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+					<effect type="fade" delay="0" start="0" end="100" time="1000" />
+				</animation>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+					<effect type="fade" delay="0" start="100" end="0" time="1000" />
+				</animation>
+				<width>$PARAM[MainMenuItemWidth]</width>
+				<height>80</height>
+				<top>17</top>
+				<font>font_MainMenu</font>
+				<textcolor>$VAR[MenuListOldColorHighlightVar]</textcolor>
+				<selectedcolor>$VAR[MenuListOldColorHighlightVar]</selectedcolor>
+				<align>center</align>
+				<label>$INFO[ListItem.Label]</label>
+			</control>
+			<control type="label">
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+					<effect type="fade" delay="0" start="0" end="100" time="1000" />
+				</animation>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+					<effect type="fade" delay="0" start="100" end="0" time="1000" />
+				</animation>
 				<width>$PARAM[MainMenuItemWidth]</width>
 				<height>80</height>
 				<top>17</top>
@@ -262,6 +380,27 @@
 		<orientation>Horizontal</orientation>
 		<itemlayout height="120" width="384">
 			<control type="label">
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+					<effect type="fade" delay="0" start="0" end="100" time="1000" />
+				</animation>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+					<effect type="fade" delay="0" start="100" end="0" time="1000" />
+				</animation>
+				<width>384</width>
+				<height>120</height>
+				<top>-4</top>
+				<font>font_MainMenu</font>
+				<textcolor>$VAR[OldColorMenuVar]</textcolor>
+				<align>center</align>
+				<label>$INFO[ListItem.Label]</label>
+			</control>
+			<control type="label">
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+					<effect type="fade" delay="0" start="0" end="100" time="1000" />
+				</animation>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+					<effect type="fade" delay="0" start="100" end="0" time="1000" />
+				</animation>
 				<width>384</width>
 				<height>120</height>
 				<top>-4</top>
@@ -274,11 +413,33 @@
 		<focusedlayout height="120" width="384">
 			<control type="label">
 				<width>384</width>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+					<effect type="fade" delay="0" start="0" end="100" time="1000" />
+				</animation>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+					<effect type="fade" delay="0" start="100" end="0" time="1000" />
+				</animation>
 				<height>120</height>
 				<top>-4</top>
 				<font>font_MainMenu</font>
 				<textcolor>$VAR[MenuListColorHighlightVar]</textcolor>
 				<selectedcolor>$VAR[MenuListColorHighlightVar]</selectedcolor>
+				<align>center</align>
+				<label>$INFO[ListItem.Label]</label>
+			</control>
+			<control type="label">
+				<width>384</width>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+					<effect type="fade" delay="0" start="0" end="100" time="1000" />
+				</animation>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+					<effect type="fade" delay="0" start="100" end="0" time="1000" />
+				</animation>
+				<height>120</height>
+				<top>-4</top>
+				<font>font_MainMenu</font>
+				<textcolor>$VAR[MenuListOldColorHighlightVar]</textcolor>
+				<selectedcolor>$VAR[MenuListOldColorHighlightVar]</selectedcolor>
 				<align>center</align>
 				<label>$INFO[ListItem.Label]</label>
 			</control>
@@ -305,6 +466,75 @@
 		<orientation>Vertical</orientation>
 		<itemlayout height="120" width="474" condition="!Skin.HasSetting(Enable.MenuIcons)">
 			<control type="label">
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+					<effect type="fade" delay="0" start="0" end="100" time="1000" />
+				</animation>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+					<effect type="fade" delay="0" start="100" end="0" time="1000" />
+				</animation>
+				<width>474</width>
+				<height>120</height>
+				<top>-4</top>
+				<font>font_MainMenu</font>
+				<textoffsetx>20</textoffsetx>
+				<textcolor>$VAR[OldColorMenuVar]</textcolor>
+				<label>$INFO[ListItem.Label]</label>
+				<visible>String.IsEmpty(ListItem.Property(isSubmenu))</visible>
+			</control>
+			<control type="image">
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+					<effect type="fade" delay="0" start="0" end="100" time="1000" />
+				</animation>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+					<effect type="fade" delay="0" start="100" end="0" time="1000" />
+				</animation>
+				<width>474</width>
+				<height>120</height>
+				<texture>white.png</texture>
+				<colordiffuse>0affffff</colordiffuse>
+				<visible>!String.IsEmpty(ListItem.Property(isSubmenu))</visible>
+			</control>
+			<control type="label">
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+					<effect type="fade" delay="0" start="0" end="100" time="1000" />
+				</animation>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+					<effect type="fade" delay="0" start="100" end="0" time="1000" />
+				</animation>
+				<width>474</width>
+				<height>120</height>
+				<top>-1</top>
+				<font>font_SubMenu</font>
+				<textoffsetx>20</textoffsetx>
+				<textcolor>$VAR[OldColorMenuVar]</textcolor>
+				<label>$INFO[ListItem.Label]</label>
+				<visible>!String.IsEmpty(ListItem.Property(isSubmenu))</visible>
+			</control>
+			<control type="label">
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+					<effect type="fade" delay="0" start="0" end="100" time="1000" />
+				</animation>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+					<effect type="fade" delay="0" start="100" end="0" time="1000" />
+				</animation>
+				<left>430</left>
+				<width>30</width>
+				<height>110</height>
+				<label></label>
+				<font>IconTiny</font>
+				<align>right</align>
+				<textcolor>33ffffff</textcolor>
+				<visible>String.Contains(ListItem.Property(hasSubmenu),True) + Skin.HasSetting(Enable.CombineMenus)</visible>
+				<visible>!String.IsEqual(ListItem.Property("submenuVisibility"),Window(10000).Property("submenuVisibility"))</visible>
+				<animation effect="rotate" time="0" start="0" end="-90" condition="true" center="auto">Conditional</animation>
+			</control>
+			<control type="label">
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+					<effect type="fade" delay="0" start="0" end="100" time="1000" />
+				</animation>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+					<effect type="fade" delay="0" start="100" end="0" time="1000" />
+				</animation>
 				<width>474</width>
 				<height>120</height>
 				<top>-4</top>
@@ -315,6 +545,12 @@
 				<visible>String.IsEmpty(ListItem.Property(isSubmenu))</visible>
 			</control>
 			<control type="image">
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+					<effect type="fade" delay="0" start="0" end="100" time="1000" />
+				</animation>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+					<effect type="fade" delay="0" start="100" end="0" time="1000" />
+				</animation>
 				<width>474</width>
 				<height>120</height>
 				<texture>white.png</texture>
@@ -322,6 +558,12 @@
 				<visible>!String.IsEmpty(ListItem.Property(isSubmenu))</visible>
 			</control>
 			<control type="label">
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+					<effect type="fade" delay="0" start="0" end="100" time="1000" />
+				</animation>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+					<effect type="fade" delay="0" start="100" end="0" time="1000" />
+				</animation>
 				<width>474</width>
 				<height>120</height>
 				<top>-1</top>
@@ -332,6 +574,12 @@
 				<visible>!String.IsEmpty(ListItem.Property(isSubmenu))</visible>
 			</control>
 			<control type="label">
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+					<effect type="fade" delay="0" start="0" end="100" time="1000" />
+				</animation>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+					<effect type="fade" delay="0" start="100" end="0" time="1000" />
+				</animation>
 				<left>430</left>
 				<width>30</width>
 				<height>110</height>
@@ -346,6 +594,75 @@
 		</itemlayout>
 		<focusedlayout height="120" width="474" condition="!Skin.HasSetting(Enable.MenuIcons)">
 			<control type="label">
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+					<effect type="fade" delay="0" start="0" end="100" time="1000" />
+				</animation>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+					<effect type="fade" delay="0" start="100" end="0" time="1000" />
+				</animation>
+				<width>474</width>
+				<height>120</height>
+				<top>-4</top>
+				<font>font_MainMenu</font>
+				<textoffsetx>20</textoffsetx>
+				<textcolor>$VAR[MenuListOldColorHighlightVar]</textcolor>
+				<label>$INFO[ListItem.Label]</label>
+				<visible>String.IsEmpty(ListItem.Property(isSubmenu))</visible>
+			</control>
+			<control type="image">
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+					<effect type="fade" delay="0" start="0" end="100" time="1000" />
+				</animation>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+					<effect type="fade" delay="0" start="100" end="0" time="1000" />
+				</animation>
+				<width>474</width>
+				<height>120</height>
+				<texture>white.png</texture>
+				<colordiffuse>0affffff</colordiffuse>
+				<visible>!String.IsEmpty(ListItem.Property(isSubmenu))</visible>
+			</control>
+			<control type="label">
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+					<effect type="fade" delay="0" start="0" end="100" time="1000" />
+				</animation>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+					<effect type="fade" delay="0" start="100" end="0" time="1000" />
+				</animation>
+				<width>474</width>
+				<height>120</height>
+				<top>-1</top>
+				<font>font_SubMenu</font>
+				<textoffsetx>20</textoffsetx>
+				<textcolor>$VAR[MenuListOldColorHighlightVar]</textcolor>
+				<label>$INFO[ListItem.Label]</label>
+				<visible>!String.IsEmpty(ListItem.Property(isSubmenu))</visible>
+			</control>
+			<control type="label">
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+					<effect type="fade" delay="0" start="0" end="100" time="1000" />
+				</animation>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+					<effect type="fade" delay="0" start="100" end="0" time="1000" />
+				</animation>
+				<left>430</left>
+				<width>30</width>
+				<height>110</height>
+				<label></label>
+				<font>IconTiny</font>
+				<align>right</align>
+				<textcolor>33ffffff</textcolor>
+				<visible>String.Contains(ListItem.Property(hasSubmenu),True) + Skin.HasSetting(Enable.CombineMenus)</visible>
+				<visible>!String.IsEqual(ListItem.Property("submenuVisibility"),Window(10000).Property("submenuVisibility"))</visible>
+				<animation effect="rotate" time="0" start="0" end="-90" condition="true" center="auto">Conditional</animation>
+			</control>
+			<control type="label">
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+					<effect type="fade" delay="0" start="0" end="100" time="1000" />
+				</animation>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+					<effect type="fade" delay="0" start="100" end="0" time="1000" />
+				</animation>
 				<width>474</width>
 				<height>120</height>
 				<top>-4</top>
@@ -356,6 +673,12 @@
 				<visible>String.IsEmpty(ListItem.Property(isSubmenu))</visible>
 			</control>
 			<control type="image">
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+					<effect type="fade" delay="0" start="0" end="100" time="1000" />
+				</animation>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+					<effect type="fade" delay="0" start="100" end="0" time="1000" />
+				</animation>
 				<width>474</width>
 				<height>120</height>
 				<texture>white.png</texture>
@@ -363,6 +686,12 @@
 				<visible>!String.IsEmpty(ListItem.Property(isSubmenu))</visible>
 			</control>
 			<control type="label">
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+					<effect type="fade" delay="0" start="0" end="100" time="1000" />
+				</animation>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+					<effect type="fade" delay="0" start="100" end="0" time="1000" />
+				</animation>
 				<width>474</width>
 				<height>120</height>
 				<top>-1</top>
@@ -373,6 +702,12 @@
 				<visible>!String.IsEmpty(ListItem.Property(isSubmenu))</visible>
 			</control>
 			<control type="label">
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+					<effect type="fade" delay="0" start="0" end="100" time="1000" />
+				</animation>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+					<effect type="fade" delay="0" start="100" end="0" time="1000" />
+				</animation>
 				<left>430</left>
 				<width>30</width>
 				<height>110</height>
@@ -387,6 +722,12 @@
 		</focusedlayout>
         <itemlayout height="120" width="474" condition="Skin.HasSetting(Enable.MenuIcons)">
             <control type="image">
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+					<effect type="fade" delay="0" start="0" end="100" time="1000" />
+				</animation>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+					<effect type="fade" delay="0" start="100" end="0" time="1000" />
+				</animation>
                 <top>20</top>
                 <left>5</left>
                 <width>80</width>
@@ -395,6 +736,90 @@
                 <visible>String.IsEmpty(ListItem.Property(isSubmenu))</visible>
             </control>
             <control type="label">
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+					<effect type="fade" delay="0" start="0" end="100" time="1000" />
+				</animation>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+					<effect type="fade" delay="0" start="100" end="0" time="1000" />
+				</animation>
+                <left>75</left>
+                <width>399</width>
+                <height>120</height>
+                <top>-4</top>
+                <font>font_MainMenu</font>
+                <textoffsetx>20</textoffsetx>
+                <textcolor>$VAR[OldColorMenuVar]</textcolor>
+                <label>$INFO[ListItem.Label]</label>
+                <visible>String.IsEmpty(ListItem.Property(isSubmenu))</visible>
+            </control>
+            <control type="image">
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+					<effect type="fade" delay="0" start="0" end="100" time="1000" />
+				</animation>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+					<effect type="fade" delay="0" start="100" end="0" time="1000" />
+				</animation>
+                <width>474</width>
+                <height>120</height>
+                <texture>white.png</texture>
+                <colordiffuse>0affffff</colordiffuse>
+                <visible>!String.IsEmpty(ListItem.Property(isSubmenu))</visible>
+            </control>
+            <control type="label">
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+					<effect type="fade" delay="0" start="0" end="100" time="1000" />
+				</animation>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+					<effect type="fade" delay="0" start="100" end="0" time="1000" />
+				</animation>
+                <width>474</width>
+                <height>120</height>
+                <top>-1</top>
+                <font>font_SubMenu</font>
+                <textoffsetx>20</textoffsetx>
+                <textcolor>$VAR[OldColorMenuVar]</textcolor>
+                <label>$INFO[ListItem.Label]</label>
+                <visible>!String.IsEmpty(ListItem.Property(isSubmenu))</visible>
+            </control>
+            <control type="label">
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+					<effect type="fade" delay="0" start="0" end="100" time="1000" />
+				</animation>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+					<effect type="fade" delay="0" start="100" end="0" time="1000" />
+				</animation>
+                <left>430</left>
+                <width>30</width>
+                <height>110</height>
+                <label></label>
+                <font>IconTiny</font>
+                <align>right</align>
+                <textcolor>33ffffff</textcolor>
+                <visible>String.Contains(ListItem.Property(hasSubmenu),True) + Skin.HasSetting(Enable.CombineMenus)</visible>
+                <visible>!String.IsEqual(ListItem.Property("submenuVisibility"),Window(10000).Property("submenuVisibility"))</visible>
+                <animation effect="rotate" time="0" start="0" end="-90" condition="true" center="auto">Conditional</animation>
+            </control>
+            <control type="image">
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+					<effect type="fade" delay="0" start="0" end="100" time="1000" />
+				</animation>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+					<effect type="fade" delay="0" start="100" end="0" time="1000" />
+				</animation>
+                <top>20</top>
+                <left>5</left>
+                <width>80</width>
+                <height>80</height>
+                <texture>$INFO[ListItem.Icon]</texture>
+                <visible>String.IsEmpty(ListItem.Property(isSubmenu))</visible>
+            </control>
+            <control type="label">
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+					<effect type="fade" delay="0" start="0" end="100" time="1000" />
+				</animation>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+					<effect type="fade" delay="0" start="100" end="0" time="1000" />
+				</animation>
                 <left>75</left>
                 <width>399</width>
                 <height>120</height>
@@ -406,6 +831,12 @@
                 <visible>String.IsEmpty(ListItem.Property(isSubmenu))</visible>
             </control>
             <control type="image">
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+					<effect type="fade" delay="0" start="0" end="100" time="1000" />
+				</animation>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+					<effect type="fade" delay="0" start="100" end="0" time="1000" />
+				</animation>
                 <width>474</width>
                 <height>120</height>
                 <texture>white.png</texture>
@@ -413,6 +844,12 @@
                 <visible>!String.IsEmpty(ListItem.Property(isSubmenu))</visible>
             </control>
             <control type="label">
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+					<effect type="fade" delay="0" start="0" end="100" time="1000" />
+				</animation>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+					<effect type="fade" delay="0" start="100" end="0" time="1000" />
+				</animation>
                 <width>474</width>
                 <height>120</height>
                 <top>-1</top>
@@ -423,6 +860,12 @@
                 <visible>!String.IsEmpty(ListItem.Property(isSubmenu))</visible>
             </control>
             <control type="label">
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+					<effect type="fade" delay="0" start="0" end="100" time="1000" />
+				</animation>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+					<effect type="fade" delay="0" start="100" end="0" time="1000" />
+				</animation>
                 <left>430</left>
                 <width>30</width>
                 <height>110</height>
@@ -437,6 +880,12 @@
         </itemlayout>
         <focusedlayout height="120" width="474" condition="Skin.HasSetting(Enable.MenuIcons)">
             <control type="image">
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+					<effect type="fade" delay="0" start="0" end="100" time="1000" />
+				</animation>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+					<effect type="fade" delay="0" start="100" end="0" time="1000" />
+				</animation>
                 <top>20</top>
                 <left>5</left>
                 <width>80</width>
@@ -445,6 +894,90 @@
                 <visible>String.IsEmpty(ListItem.Property(isSubmenu))</visible>
             </control>
             <control type="label">
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+					<effect type="fade" delay="0" start="0" end="100" time="1000" />
+				</animation>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+					<effect type="fade" delay="0" start="100" end="0" time="1000" />
+				</animation>
+                <left>75</left>
+                <width>399</width>
+                <height>120</height>
+                <top>-4</top>
+                <font>font_MainMenu</font>
+                <textoffsetx>20</textoffsetx>
+                <textcolor>$VAR[MenuListOldColorHighlightVar]</textcolor>
+                <label>$INFO[ListItem.Label]</label>
+                <visible>String.IsEmpty(ListItem.Property(isSubmenu))</visible>
+            </control>
+            <control type="image">
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+					<effect type="fade" delay="0" start="0" end="100" time="1000" />
+				</animation>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+					<effect type="fade" delay="0" start="100" end="0" time="1000" />
+				</animation>
+                <width>474</width>
+                <height>120</height>
+                <texture>white.png</texture>
+                <colordiffuse>0affffff</colordiffuse>
+                <visible>!String.IsEmpty(ListItem.Property(isSubmenu))</visible>
+            </control>
+            <control type="label">
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+					<effect type="fade" delay="0" start="0" end="100" time="1000" />
+				</animation>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+					<effect type="fade" delay="0" start="100" end="0" time="1000" />
+				</animation>
+                <width>474</width>
+                <height>120</height>
+                <top>-1</top>
+                <font>font_SubMenu</font>
+                <textoffsetx>20</textoffsetx>
+                <textcolor>$VAR[MenuListOldColorHighlightVar]</textcolor>
+                <label>$INFO[ListItem.Label]</label>
+                <visible>!String.IsEmpty(ListItem.Property(isSubmenu))</visible>
+            </control>
+            <control type="label">
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+					<effect type="fade" delay="0" start="0" end="100" time="1000" />
+				</animation>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+					<effect type="fade" delay="0" start="100" end="0" time="1000" />
+				</animation>
+                <left>430</left>
+                <width>30</width>
+                <height>110</height>
+                <label></label>
+                <font>IconTiny</font>
+                <align>right</align>
+                <textcolor>33ffffff</textcolor>
+                <visible>String.Contains(ListItem.Property(hasSubmenu),True) + Skin.HasSetting(Enable.CombineMenus)</visible>
+                <visible>!String.IsEqual(ListItem.Property("submenuVisibility"),Window(10000).Property("submenuVisibility"))</visible>
+                <animation effect="rotate" time="0" start="0" end="-90" condition="true" center="auto">Conditional</animation>
+            </control>
+            <control type="image">
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+					<effect type="fade" delay="0" start="0" end="100" time="1000" />
+				</animation>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+					<effect type="fade" delay="0" start="100" end="0" time="1000" />
+				</animation>
+                <top>20</top>
+                <left>5</left>
+                <width>80</width>
+                <height>80</height>
+                <texture>$INFO[ListItem.Icon]</texture>
+                <visible>String.IsEmpty(ListItem.Property(isSubmenu))</visible>
+            </control>
+            <control type="label">
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+					<effect type="fade" delay="0" start="0" end="100" time="1000" />
+				</animation>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+					<effect type="fade" delay="0" start="100" end="0" time="1000" />
+				</animation>
                 <left>75</left>
                 <width>399</width>
                 <height>120</height>
@@ -456,6 +989,12 @@
                 <visible>String.IsEmpty(ListItem.Property(isSubmenu))</visible>
             </control>
             <control type="image">
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+					<effect type="fade" delay="0" start="0" end="100" time="1000" />
+				</animation>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+					<effect type="fade" delay="0" start="100" end="0" time="1000" />
+				</animation>
                 <width>474</width>
                 <height>120</height>
                 <texture>white.png</texture>
@@ -463,6 +1002,12 @@
                 <visible>!String.IsEmpty(ListItem.Property(isSubmenu))</visible>
             </control>
             <control type="label">
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+					<effect type="fade" delay="0" start="0" end="100" time="1000" />
+				</animation>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+					<effect type="fade" delay="0" start="100" end="0" time="1000" />
+				</animation>
                 <width>474</width>
                 <height>120</height>
                 <top>-1</top>
@@ -473,6 +1018,12 @@
                 <visible>!String.IsEmpty(ListItem.Property(isSubmenu))</visible>
             </control>
             <control type="label">
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+					<effect type="fade" delay="0" start="0" end="100" time="1000" />
+				</animation>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+					<effect type="fade" delay="0" start="100" end="0" time="1000" />
+				</animation>
                 <left>430</left>
                 <width>30</width>
                 <height>110</height>
@@ -494,6 +1045,41 @@
 	<include name="SubmenuListContent">
 		<itemlayout height="$PARAM[SubmenuItemHeight]" width="$PARAM[SubmenuItemWidth]">
 			<control type="image">
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+					<effect type="fade" delay="0" start="0" end="100" time="1000" />
+				</animation>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+					<effect type="fade" delay="0" start="100" end="0" time="1000" />
+				</animation>
+				<width>$PARAM[SubmenuItemWidth]</width>
+				<height>$PARAM[SubmenuItemHeight]</height>
+				<texture>background.png</texture>
+				<colordiffuse>$VAR[OldColorMenuVar]</colordiffuse>
+				<visible>String.IsEqual(Skin.String(HomeLayout),2) | [String.IsEqual(Skin.String(HomeLayout),3) + Skin.HasSetting(Enable.CombineMenus)]</visible>
+			</control>
+			<control type="label">
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+					<effect type="fade" delay="0" start="0" end="100" time="1000" />
+				</animation>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+					<effect type="fade" delay="0" start="100" end="0" time="1000" />
+				</animation>
+				<width>$PARAM[SubmenuItemWidth]</width>
+				<height>$PARAM[SubmenuItemHeight]</height>
+				<font>font_SubMenu</font>
+				<textcolor>$VAR[OldColorMenuVar]</textcolor>
+				<textoffsetx>$PARAM[SubmenuTextOffset]</textoffsetx>
+				<selectedcolor>$VAR[OldColorMenuVar]</selectedcolor>
+				<align>$PARAM[SubmenuAlign]</align>
+				<label>$INFO[ListItem.Label]</label>
+			</control>
+			<control type="image">
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+					<effect type="fade" delay="0" start="0" end="100" time="1000" />
+				</animation>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+					<effect type="fade" delay="0" start="100" end="0" time="1000" />
+				</animation>
 				<width>$PARAM[SubmenuItemWidth]</width>
 				<height>$PARAM[SubmenuItemHeight]</height>
 				<texture>background.png</texture>
@@ -501,10 +1087,16 @@
 				<visible>String.IsEqual(Skin.String(HomeLayout),2) | [String.IsEqual(Skin.String(HomeLayout),3) + Skin.HasSetting(Enable.CombineMenus)]</visible>
 			</control>
 			<control type="label">
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+					<effect type="fade" delay="0" start="0" end="100" time="1000" />
+				</animation>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+					<effect type="fade" delay="0" start="100" end="0" time="1000" />
+				</animation>
 				<width>$PARAM[SubmenuItemWidth]</width>
 				<height>$PARAM[SubmenuItemHeight]</height>
 				<font>font_SubMenu</font>
-				<textcolor>$VAR[ColorMenuVar]</textcolor>
+				<textcolor>$VAR[MenuListColorHighlightVar]</textcolor>
 				<textoffsetx>$PARAM[SubmenuTextOffset]</textoffsetx>
 				<selectedcolor>$VAR[MenuListColorHighlightVar]</selectedcolor>
 				<align>$PARAM[SubmenuAlign]</align>
@@ -513,13 +1105,88 @@
 		</itemlayout>
 		<focusedlayout height="$PARAM[SubmenuItemHeight]" width="$PARAM[SubmenuItemWidth]">
 			<control type="image">
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+					<effect type="fade" delay="0" start="0" end="100" time="1000" />
+				</animation>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+					<effect type="fade" delay="0" start="100" end="0" time="1000" />
+				</animation>
 				<width>$PARAM[SubmenuItemWidth]</width>
 				<height>$PARAM[SubmenuItemHeight]</height>
 				<texture>background.png</texture>
-				<colordiffuse>$VAR[ColorBackgroundVar]</colordiffuse>
+				<colordiffuse>$VAR[MenuListOldColorHighlightVar]</colordiffuse>
 				<visible>String.IsEqual(Skin.String(HomeLayout),2) | [String.IsEqual(Skin.String(HomeLayout),3) + Skin.HasSetting(Enable.CombineMenus)]</visible>
 			</control>
 			<control type="image">
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+					<effect type="fade" delay="0" start="0" end="100" time="1000" />
+				</animation>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+					<effect type="fade" delay="0" start="100" end="0" time="1000" />
+				</animation>
+				<width>$PARAM[SubmenuItemWidth]</width>
+				<height>$PARAM[SubmenuItemHeight]</height>
+				<texture>listselect_fo.png</texture>
+				<colordiffuse>$VAR[OldColorMenuVar]</colordiffuse>
+				<visible>ControlGroup(9001).HasFocus() + String.IsEqual(Skin.String(HomeLayout),2)</visible>
+			</control>
+			<control type="group">
+				<visible>Control.HasFocus(9010)</visible>
+				<control type="label">
+					<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+						<effect type="fade" delay="0" start="0" end="100" time="1000" />
+					</animation>
+					<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+						<effect type="fade" delay="0" start="100" end="0" time="1000" />
+					</animation>
+					<width>$PARAM[SubmenuItemWidth]</width>
+					<height>$PARAM[SubmenuItemHeight]</height>
+					<font>font_SubMenu</font>
+					<textcolor>$VAR[MenuListOldColorHighlightVar]</textcolor>
+					<textoffsetx>$PARAM[SubmenuTextOffset]</textoffsetx>
+					<align>$PARAM[SubmenuAlign]</align>
+					<label>$INFO[ListItem.Label]</label>
+				</control>
+			</control>
+			<control type="group">
+				<visible>!Control.HasFocus(9010)</visible>
+				<control type="label">
+					<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+						<effect type="fade" delay="0" start="0" end="100" time="1000" />
+					</animation>
+					<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+						<effect type="fade" delay="0" start="100" end="0" time="1000" />
+					</animation>
+					<width>$PARAM[SubmenuItemWidth]</width>
+					<height>$PARAM[SubmenuItemHeight]</height>
+					<font>font_SubMenu</font>
+					<textcolor>$VAR[MenuListOldColorHighlightVar]</textcolor>
+					<textoffsetx>$PARAM[SubmenuTextOffset]</textoffsetx>
+					<align>$PARAM[SubmenuAlign]</align>
+					<label>$INFO[ListItem.Label]</label>
+				</control>
+			</control>
+
+			<control type="image">
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+					<effect type="fade" delay="0" start="0" end="100" time="1000" />
+				</animation>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+					<effect type="fade" delay="0" start="100" end="0" time="1000" />
+				</animation>
+				<width>$PARAM[SubmenuItemWidth]</width>
+				<height>$PARAM[SubmenuItemHeight]</height>
+				<texture>background.png</texture>
+				<colordiffuse>$VAR[MenuListColorHighlightVar]</colordiffuse>
+				<visible>String.IsEqual(Skin.String(HomeLayout),2) | [String.IsEqual(Skin.String(HomeLayout),3) + Skin.HasSetting(Enable.CombineMenus)]</visible>
+			</control>
+			<control type="image">
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+					<effect type="fade" delay="0" start="0" end="100" time="1000" />
+				</animation>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+					<effect type="fade" delay="0" start="100" end="0" time="1000" />
+				</animation>
 				<width>$PARAM[SubmenuItemWidth]</width>
 				<height>$PARAM[SubmenuItemHeight]</height>
 				<texture>listselect_fo.png</texture>
@@ -529,6 +1196,12 @@
 			<control type="group">
 				<visible>Control.HasFocus(9010)</visible>
 				<control type="label">
+					<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+						<effect type="fade" delay="0" start="0" end="100" time="1000" />
+					</animation>
+					<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+						<effect type="fade" delay="0" start="100" end="0" time="1000" />
+					</animation>
 					<width>$PARAM[SubmenuItemWidth]</width>
 					<height>$PARAM[SubmenuItemHeight]</height>
 					<font>font_SubMenu</font>
@@ -541,6 +1214,12 @@
 			<control type="group">
 				<visible>!Control.HasFocus(9010)</visible>
 				<control type="label">
+					<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+						<effect type="fade" delay="0" start="0" end="100" time="1000" />
+					</animation>
+					<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+						<effect type="fade" delay="0" start="100" end="0" time="1000" />
+					</animation>
 					<width>$PARAM[SubmenuItemWidth]</width>
 					<height>$PARAM[SubmenuItemHeight]</height>
 					<font>font_SubMenu</font>
@@ -661,6 +1340,29 @@
 	</include>
 	<include name="MainMenuFocusBackground">
 		<control type="image">
+			<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+				<effect type="fade" delay="0" start="0" end="100" time="1000" />
+			</animation>
+			<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+				<effect type="fade" delay="0" start="100" end="0" time="1000" />
+			</animation>
+			<visible>!Control.HasFocus(9010) | Skin.HasSetting(Disable.SubmenuSlide)</visible>
+            <width>$PARAM[MainMenuBackgroundWidth]</width>
+            <height>120</height>
+            <animation effect="fade" start="100" end="60" time="300" condition="!Control.HasFocus(9000)">Conditional</animation>
+            <texture colordiffuse="$VAR[OldColorMenuVar]">listselect_fo.png</texture>
+            <animation effect="slide" end="$PARAM[MainMenuBackgroundWidth]" time="300" tween="cubic" easing="inout" condition="Container(9000).Position(4)">Conditional</animation>
+            <animation effect="slide" end="$PARAM[MainMenuBackgroundWidth]" time="300" tween="cubic" easing="inout" condition="Container(9000).Position(4) | Container(9000).Position(3)">Conditional</animation>
+            <animation effect="slide" end="$PARAM[MainMenuBackgroundWidth]" time="300" tween="cubic" easing="inout" condition="Container(9000).Position(4) | Container(9000).Position(3) | Container(9000).Position(2)">Conditional</animation>
+            <animation effect="slide" end="$PARAM[MainMenuBackgroundWidth]" time="300" tween="cubic" easing="inout" condition="Container(9000).Position(4) | Container(9000).Position(3) | Container(9000).Position(2) | Container(9000).Position(1)">Conditional</animation>
+        </control>
+		<control type="image">
+			<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+				<effect type="fade" delay="0" start="0" end="100" time="1000" />
+			</animation>
+			<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+				<effect type="fade" delay="0" start="100" end="0" time="1000" />
+			</animation>
 			<visible>!Control.HasFocus(9010) | Skin.HasSetting(Disable.SubmenuSlide)</visible>
             <width>$PARAM[MainMenuBackgroundWidth]</width>
             <height>120</height>

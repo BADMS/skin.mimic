@@ -29,10 +29,32 @@
             <visible>Player.HasVideo + !Skin.HasSetting(Disable.ShowBackgroundVideo)</visible>
         </control>
         <control type="image">
-            <visible>Skin.HasSetting(Enable.HomeFanartOverlay) + !String.IsEqual(Skin.String(HomeLayout),3)</visible>
+			<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+				<effect type="fade" delay="0" start="30" end="70" time="1000" />
+			</animation>
+			<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+				<effect type="fade" delay="0" start="70" end="30" time="1000" />
+			</animation>
+			<animation type="Conditional" condition="!Control.HasFocus(9010) + !Control.HasFocus(9000) + !Control.HasFocus(9001) + Window.IsActive(home)" reversible="false">
+				<effect type="fade" delay="0" start="70" end="0" time="1000" />
+			</animation>
             <include>FullscreenDimensions</include>
             <texture>background.png</texture>
-            <colordiffuse>$VAR[ColorBackgroundVar]</colordiffuse>
+            <colordiffuse>$VAR[MenuListOldColorHighlightVar]</colordiffuse>
+        </control>
+        <control type="image">
+			<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+				<effect type="fade" delay="0" start="30" end="70" time="1000" />
+			</animation>
+			<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+				<effect type="fade" delay="0" start="70" end="30" time="1000" />
+			</animation>
+			<animation type="Conditional" condition="!Control.HasFocus(9010) + !Control.HasFocus(9000) + !Control.HasFocus(9001) + Window.IsActive(home)" reversible="false">
+				<effect type="fade" delay="0" start="70" end="0" time="1000" />
+			</animation>
+            <include>FullscreenDimensions</include>
+            <texture>background.png</texture>
+            <colordiffuse>$VAR[MenuListColorHighlightVar]</colordiffuse>
         </control>
 		<include condition="Skin.HasSetting(Enable.HomeTopbar) + !String.IsEqual(Skin.String(HomeLayout),2)">Topbar</include>
 		<include condition="!String.IsEqual(Skin.String(HomeLayout),2) + !String.IsEqual(Skin.String(HomeLayout),3)">HomeDefault</include>
