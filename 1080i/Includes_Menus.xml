@@ -9,6 +9,7 @@
 			<param name="MainMenuBackgroundWidth" value="480" />
 		</include>
         <control type="image">
+        	<visible>!Skin.String(MenuHome3D,1)</visible>
         	<visible>Control.HasFocus(9010) + !Skin.HasSetting(Disable.SubmenuSlide)</visible>
             <width>384</width>
             <height>120</height>
@@ -20,6 +21,7 @@
             <animation effect="slide" end="384" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9010).Column,0)">Conditional</animation>
         </control>
         <control type="image">
+        	<visible>!Skin.String(MenuHome3D,1)</visible>
         	<visible>Control.HasFocus(9010) + Skin.HasSetting(Disable.SubmenuSlide)</visible>
             <top>120</top>
             <width>384</width>
@@ -83,6 +85,7 @@
             <texture colordiffuse="$VAR[ColorMenuVar]">listselect_fo.png</texture>
         </control>
         <control type="image">
+        	<visible>!Skin.String(MenuHome3D,1)</visible>
         	<visible>Control.HasFocus(9010) + !Skin.HasSetting(Disable.SubmenuSlide)</visible>
             <left>0</left>
             <top>0</top>
@@ -96,6 +99,7 @@
             <animation effect="slide" end="384" time="300" tween="cubic" easing="inout" condition="Container(9010).Position(4) | Container(9010).Position(3) | Container(9010).Position(2) | Container(9010).Position(1)">Conditional</animation>
         </control>
         <control type="image">
+        	<visible>!Skin.String(MenuHome3D,1)</visible>
         	<visible>Control.HasFocus(9010) + Skin.HasSetting(Disable.SubmenuSlide)</visible>
             <top>120</top>
             <width>384</width>
@@ -126,6 +130,7 @@
 	</include>
 	<include name="MainMenuListTop">
 		<control type="image">
+        	<visible>!Skin.String(MenuHome3D,1)</visible>
 			<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
 				<effect type="fade" delay="0" start="0" end="100" time="1000" />
 			</animation>
@@ -142,6 +147,7 @@
             <animation effect="slide" end="384" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9000).Column,0)">Conditional</animation>
         </control>
 		<control type="image">
+        	<visible>!Skin.String(MenuHome3D,1)</visible>
 			<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
 				<effect type="fade" delay="0" start="0" end="100" time="1000" />
 			</animation>
@@ -177,6 +183,7 @@
         <control type="group">
             <include>MainMenuSlide</include>
     		<control type="image">
+				<visible>!Skin.String(MenuHome3D,1)</visible>
 				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
 					<effect type="fade" delay="0" start="0" end="100" time="1000" />
 				</animation>
@@ -198,6 +205,7 @@
                 <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9000).Row,0)">Conditional</animation>
             </control>
             <control type="image">
+				<visible>!Skin.String(MenuHome3D,1)</visible>
 				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
 					<effect type="fade" delay="0" start="0" end="100" time="1000" />
 				</animation>
@@ -218,6 +226,7 @@
                 <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9010).Row,0)">Conditional</animation>
             </control>
     		<control type="image">
+				<visible>!Skin.String(MenuHome3D,1)</visible>
 				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
 					<effect type="fade" delay="0" start="0" end="100" time="1000" />
 				</animation>
@@ -239,6 +248,7 @@
                 <animation effect="slide" end="0,120" time="300" tween="cubic" easing="inout" condition="Integer.IsGreater(Container(9000).Row,0)">Conditional</animation>
             </control>
             <control type="image">
+				<visible>!Skin.String(MenuHome3D,1)</visible>
 				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
 					<effect type="fade" delay="0" start="0" end="100" time="1000" />
 				</animation>
@@ -295,7 +305,7 @@
 		<pagecontrol>-</pagecontrol>
 		<scrolltime tween="quadratic" easing="out">300</scrolltime>
 		<orientation>Horizontal</orientation>
-		<itemlayout height="120" width="$PARAM[MainMenuItemWidth]">
+		<itemlayout condition="!Skin.String(MenuHome3D,1)" height="120" width="$PARAM[MainMenuItemWidth]">
 			<control type="label">
 				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
 					<effect type="fade" delay="0" start="0" end="100" time="1000" />
@@ -327,7 +337,9 @@
 				<label>$INFO[ListItem.Label]</label>
 			</control>
 		</itemlayout>
-		<focusedlayout height="120" width="$PARAM[MainMenuItemWidth]">
+		<itemlayout condition="Skin.String(MenuHome3D,1)" height="120" width="$PARAM[MainMenuItemWidth]">
+		</itemlayout>
+		<focusedlayout condition="![Skin.String(MenuHome3D,1)]" height="120" width="$PARAM[MainMenuItemWidth]">
 			<control type="label">
 				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
 					<effect type="fade" delay="0" start="0" end="100" time="1000" />
@@ -360,6 +372,8 @@
 				<align>center</align>
 				<label>$INFO[ListItem.Label]</label>
 			</control>
+		</focusedlayout>
+		<focusedlayout condition="Skin.String(MenuHome3D,1)" height="120" width="$PARAM[MainMenuItemWidth]">
 		</focusedlayout>
 		<content>
 			<include>skinshortcuts-mainmenu</include>
@@ -1340,6 +1354,7 @@
 	</include>
 	<include name="MainMenuFocusBackground">
 		<control type="image">
+			<visible>!Skin.String(MenuHome3D,1)</visible>
 			<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
 				<effect type="fade" delay="0" start="0" end="100" time="1000" />
 			</animation>
@@ -1357,6 +1372,7 @@
             <animation effect="slide" end="$PARAM[MainMenuBackgroundWidth]" time="300" tween="cubic" easing="inout" condition="Container(9000).Position(4) | Container(9000).Position(3) | Container(9000).Position(2) | Container(9000).Position(1)">Conditional</animation>
         </control>
 		<control type="image">
+			<visible>!Skin.String(MenuHome3D,1)</visible>
 			<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
 				<effect type="fade" delay="0" start="0" end="100" time="1000" />
 			</animation>

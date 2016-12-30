@@ -1,5 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<variable name="ShowmenuItem-7Var">
+		<value condition="!String.IsEmpty(Container(9000).ListItem(-7).Art(poster))">$INFO[Container(9000).ListItem(-7).Art(poster)]</value>
+		<value condition="Container(9000).ListItem(-7).IsParentFolder">DefaultFallbackParent.png</value>
+		<value>$INFO[Container(9000).ListItem(-7).Thumb]</value>
+	</variable>
+	<variable name="ShowmenuItem-6Var">
+		<value condition="!String.IsEmpty(Container(9000).ListItem(-6).Art(poster))">$INFO[Container(9000).ListItem(-6).Art(poster)]</value>
+		<value condition="Container(9000).ListItem(-6).IsParentFolder">DefaultFallbackParent.png</value>
+		<value>$INFO[Container(9000).ListItem(-6).Thumb]</value>
+	</variable>
+	<variable name="ShowmenuItem-5Var">
+		<value condition="!String.IsEmpty(Container(9000).ListItem(-5).Art(poster))">$INFO[Container(9000).ListItem(-5).Art(poster)]</value>
+		<value condition="Container(9000).ListItem(-5).IsParentFolder">DefaultFallbackParent.png</value>
+		<value>$INFO[Container(9000).ListItem(-5).Thumb]</value>
+	</variable>
+	<variable name="ShowmenuItem-4Var">
+		<value condition="!String.IsEmpty(Container(9000).ListItem(-4).Art(poster))">$INFO[Container(9000).ListItem(-4).Art(poster)]</value>
+		<value condition="Container(9000).ListItem(-4).IsParentFolder">DefaultFallbackParent.png</value>
+		<value>$INFO[Container(9000).ListItem(-4).Thumb]</value>
+	</variable>
+	<variable name="ShowmenuItem-3Var">
+		<value condition="!String.IsEmpty(Container(9000).ListItem(-3).Art(poster))">$INFO[Container(9000).ListItem(-3).Art(poster)]</value>
+		<value condition="Container(9000).ListItem(-3).IsParentFolder">DefaultFallbackParent.png</value>
+		<value>$INFO[Container(9000).ListItem(-3).Thumb]</value>
+	</variable>
+	<variable name="ShowmenuItem-2Var">
+		<value condition="!String.IsEmpty(Container(9000).ListItem(-2).Art(poster))">$INFO[Container(9000).ListItem(-2).Art(poster)]</value>
+		<value condition="Container(9000).ListItem(-2).IsParentFolder">DefaultFallbackParent.png</value>
+		<value>$INFO[Container(9000).ListItem(-2).Thumb]</value>
+	</variable>
+	<variable name="ShowmenuItem-1Var">
+		<value condition="!String.IsEmpty(Container(9000).ListItem(-1).Art(poster))">$INFO[Container(9000).ListItem(-1).Art(poster)]</value>
+		<value condition="Container(9000).ListItem(-1).IsParentFolder">DefaultFallbackParent.png</value>
+		<value>$INFO[Container(9000).ListItem(-1).Thumb]</value>
+	</variable>
+	<variable name="ShowmenuItem0Var">
+		<value condition="!String.IsEmpty(Container(9000).ListItem.Art(poster))">$INFO[Container(9000).ListItem.Art(poster)]</value>
+		<value condition="Container(9000).ListItem.IsParentFolder">DefaultFallbackParent.png</value>
+		<value>$INFO[Container(9000).ListItem.Art(thumb)]</value>
+	</variable>
+	<variable name="ShowmenuItem1Var">
+		<value condition="!String.IsEmpty(Container(9000).ListItem(1).Art(poster))">$INFO[Container(9000).ListItem(1).Art(poster)]</value>
+		<value condition="Container(9000).ListItem(1).IsParentFolder">DefaultFallbackParent.png</value>
+		<value>$INFO[Container(9000).ListItem(1).Thumb]</value>
+	</variable>
+	<variable name="ShowmenuItem2Var">
+		<value condition="!String.IsEmpty(Container(9000).ListItem(2).Art(poster))">$INFO[Container(9000).ListItem(2).Art(poster)]</value>
+		<value condition="Container(9000).ListItem(2).IsParentFolder">DefaultFallbackParent.png</value>
+		<value>$INFO[Container(9000).ListItem(2).Thumb]</value>
+	</variable>
+	<variable name="ShowmenuItem3Var">
+		<value condition="!String.IsEmpty(Container(9000).ListItem(3).Art(poster))">$INFO[Container(9000).ListItem(3).Art(poster)]</value>
+		<value condition="Container(9000).ListItem(3).IsParentFolder">DefaultFallbackParent.png</value>
+		<value>$INFO[Container(9000).ListItem(3).Thumb]</value>
+	</variable>
+	<variable name="ShowmenuItem4Var">
+		<value condition="!String.IsEmpty(Container(9000).ListItem(4).Art(poster))">$INFO[Container(9000).ListItem(4).Art(poster)]</value>
+		<value condition="Container(9000).ListItem(4).IsParentFolder">DefaultFallbackParent.png</value>
+		<value>$INFO[Container(9000).ListItem(4).Thumb]</value>
+	</variable>
+	<variable name="ShowmenuItem5Var">
+		<value condition="!String.IsEmpty(Container(9000).ListItem(5).Art(poster))">$INFO[Container(9000).ListItem(5).Art(poster)]</value>
+		<value condition="Container(9000).ListItem(5).IsParentFolder">DefaultFallbackParent.png</value>
+		<value>$INFO[Container(9000).ListItem(5).Thumb]</value>
+	</variable>
+	<variable name="ShowmenuItem6Var">
+		<value condition="!String.IsEmpty(Container(9000).ListItem(6).Art(poster))">$INFO[Container(9000).ListItem(6).Art(poster)]</value>
+		<value condition="Container(9000).ListItem(6).IsParentFolder">DefaultFallbackParent.png</value>
+		<value>$INFO[Container(9000).ListItem(6).Thumb]</value>
+	</variable>
+	<variable name="ShowmenuItem7Var">
+		<value condition="!String.IsEmpty(Container(9000).ListItem(7).Art(poster))">$INFO[Container(9000).ListItem(7).Art(poster)]</value>
+		<value condition="Container(9000).ListItem(7).IsParentFolder">DefaultFallbackParent.png</value>
+		<value>$INFO[Container(9000).ListItem(7).Thumb]</value>
+	</variable>
+	<variable name="ShowmenuItem8Var">
+		<value condition="!String.IsEmpty(Container(9000).ListItem(8).Art(poster))">$INFO[Container(9000).ListItem(8).Art(poster)]</value>
+		<value condition="Container(9000).ListItem(8).IsParentFolder">DefaultFallbackParent.png</value>
+		<value>$INFO[Container(9000).ListItem(8).Thumb]</value>
+	</variable>
+	<variable name="ShowmenuItem9Var">
+		<value condition="!String.IsEmpty(Container(9000).ListItem(9).Art(poster))">$INFO[Container(9000).ListItem(9).Art(poster)]</value>
+		<value condition="Container(9000).ListItem(9).IsParentFolder">DefaultFallbackParent.png</value>
+		<value>$INFO[Container(9000).ListItem(9).Thumb]</value>
+	</variable>	
 	<variable name="OSDStatus">
 		<value condition="!String.IsEmpty(Player.SeekStepSize) + !String.Contains(Player.SeekStepSize,-) + Player.Seeking"></value>
 		<value condition="!String.IsEmpty(Player.SeekStepSize) + Player.Seeking"></value>

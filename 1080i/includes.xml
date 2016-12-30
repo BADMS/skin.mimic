@@ -40,6 +40,427 @@
 	<expression name="isArtist">String.IsEqual(ListItem.DBTYPE,artist)</expression>
 	<expression name="isAlbum">String.IsEqual(ListItem.DBTYPE,album)</expression>
 	<expression name="isSong">String.IsEqual(ListItem.DBTYPE,song)</expression>
+	<include name="MenuHome3D">
+		<control type="wraplist" id="9000">
+			<left>-69</left>
+			<top>540</top>
+			<width>2058</width>
+			<height>525</height>
+			<onleft>53</onleft>
+			<onright>53</onright>
+			<onup>SetFocus(9050)</onup>
+			<ondown>60</ondown>
+			<viewtype label="31077">bigwrap</viewtype>
+			<pagecontrol>60</pagecontrol>
+			<scrolltime tween="quadratic">300</scrolltime>
+			<orientation>horizontal</orientation>
+			<preloaditems>2</preloaditems>
+			<itemlayout height="525" width="260" />
+			<focusedlayout height="525" width="375"/>
+		</control>
+		<!--<control type="label"><left>42</left><bottom>0</bottom><width>200</width><height>70</height><label>$INFO[Container(9000).ListItem(1).Label]</label><font>font12</font><align>center</align><aligny>top</aligny></control>-->
+		<control type="group">
+			<width>2058</width>
+			<camera x="960" y="810" />
+			<control type="group" id="6001">
+				<left>55</left>
+				<top>700</top>
+				<visible>Container(9000).OnNext</visible>
+				<animation effect="slide" end="-135,0" time="200" reversible="false">Hidden</animation>
+				<control type="group">
+					<left>15</left>
+					<visible>Container(9000).OnNext</visible>
+					<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+					<animation effect="rotatey" center="-135" start="-55" end="-55" time="0" condition="true">Conditional</animation>
+					<include>MenuShowCaseItem-7</include>
+				</control>
+				<control type="group">
+					<left>150</left>
+					<animation effect="rotatey" center="0" start="-55" end="-55" time="0" condition="true">Conditional</animation>
+					<include>MenuShowCaseItem-6</include>
+				</control>
+				<control type="group">
+					<left>285</left>
+					<animation effect="rotatey" center="135" start="-55" end="-55" time="0" condition="true">Conditional</animation>
+					<include>MenuShowCaseItem-5</include>
+				</control>
+				<control type="group">
+					<left>420</left>
+					<animation effect="rotatey" center="270" start="-55" end="-55" time="0" condition="true">Conditional</animation>
+					<include>MenuShowCaseItem-4</include>
+				</control>
+				<control type="group">
+					<left>555</left>
+					<animation effect="rotatey" center="405" start="-55" end="-55" time="0" condition="true">Conditional</animation>
+					<include>MenuShowCaseItem-3</include>
+				</control>
+				<control type="group">
+					<left>690</left>
+					<animation effect="rotatey" center="540" start="-55" end="-55" time="0" condition="true">Conditional</animation>
+					<include>MenuShowCaseItem-2</include>
+				</control>
+				<control type="group">
+					<left>1635</left>
+					<visible>!Container(9000).OnNext</visible>
+					<animation effect="fade" end="100" time="200" reversible="false">Visible</animation>
+					<animation effect="rotatey" center="2100" start="55" end="55" time="0" condition="true">Conditional</animation>
+					<include>MenuShowCaseItem6</include>
+				</control>
+				<control type="group">
+					<left>1500</left>
+					<animation effect="rotatey" center="1965" start="55" end="55" time="0" condition="true">Conditional</animation>
+					<include>MenuShowCaseItem5</include>
+				</control>
+				<control type="group">
+					<left>1365</left>
+					<animation effect="rotatey" center="1830" start="55" end="55" time="0" condition="true">Conditional</animation>
+					<include>MenuShowCaseItem4</include>
+				</control>
+				<control type="group">
+					<left>1230</left>
+					<animation effect="rotatey" center="1695" start="55" end="55" time="0" condition="true">Conditional</animation>
+					<include>MenuShowCaseItem3</include>
+				</control>
+				<control type="group">
+					<left>1095</left>
+					<animation effect="rotatey" center="1560" start="55" end="55" time="0" condition="true">Conditional</animation>
+					<include>MenuShowCaseItem2</include>
+				</control>
+				<control type="group">
+					<left>960</left>
+					<animation effect="rotatey" center="1425" start="55" end="55" time="0" condition="true">Conditional</animation>
+					<include>MenuShowCaseItem1</include>
+				</control>
+				<control type="group">
+					<visible>Container(9000).OnNext</visible>
+					<animation effect="slide" end="75,0" time="200" reversible="false">Hidden</animation>
+					<control type="group">
+						<left>825</left>
+						<visible>Container(9000).OnNext</visible>
+						<animation effect="rotatey" center="1290" end="-55" time="200" reversible="false" tween="quadratic" easing="in">Hidden</animation>
+						<animation effect="rotatey" center="1290" start="55" end="55" time="0" condition="true">Conditional</animation>
+						<include>MenuShowCaseItem0</include>
+					</control>
+					<control type="group">
+						<left>758</left>
+						<visible>Container(9000).OnNext</visible>
+						<animation effect="rotatey" center="608" end="-55" time="200" reversible="false" tween="quadratic">Hidden</animation>
+						<control type="image">
+							<texture background="true" fallback="DefaultFallback.png" colordiffuse="$VAR[ColorMenuVar]">$VAR[ShowmenuItem-1Var]</texture>
+							<include>MenuShowcaseThumb</include>
+						</control><control type="label"><left>42</left><bottom>0</bottom><width>200</width><height>70</height><label>$INFO[Container(9000).ListItem(-1).Label]</label><font>font14</font><align>center</align><aligny>top</aligny></control>
+					</control>
+				</control>
+			</control>
+			<control type="group" id="6002">
+				<left>55</left>
+				<top>700</top>
+				<visible>Container(9000).OnPrevious</visible>
+				<animation effect="slide" end="135,0" time="200" reversible="false">Hidden</animation>
+				<control type="group">
+					<left>1500</left>
+					<visible>Container(9000).OnPrevious</visible>
+					<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+					<animation effect="rotatey" center="1965" start="55" end="55" time="0" condition="true">Conditional</animation>
+					<include>MenuShowCaseItem7</include>
+				</control>
+				<control type="group">
+					<left>1365</left>
+					<animation effect="rotatey" center="1830" start="55" end="55" time="0" condition="true">Conditional</animation>
+					<include>MenuShowCaseItem6</include>
+				</control>
+				<control type="group">
+					<left>1230</left>
+					<animation effect="rotatey" center="1695" start="55" end="55" time="0" condition="true">Conditional</animation>
+					<include>MenuShowCaseItem5</include>
+				</control>
+				<control type="group">
+					<left>1095</left>
+					<animation effect="rotatey" center="1560" start="55" end="55" time="0" condition="true">Conditional</animation>
+					<include>MenuShowCaseItem4</include>
+				</control>
+				<control type="group">
+					<left>960</left>
+					<animation effect="rotatey" center="1425" start="55" end="55" time="0" condition="true">Conditional</animation>
+					<include>MenuShowCaseItem3</include>
+				</control>
+				<control type="group">
+					<left>825</left>
+					<animation effect="rotatey" center="1290" start="55" end="55" time="0" condition="true">Conditional</animation>
+					<include>MenuShowCaseItem2</include>
+				</control>
+				<control type="group">
+					<left>-120</left>
+					<visible>!Container(9000).OnPrevious</visible>
+					<animation effect="fade" end="100" time="200" reversible="false">Visible</animation>
+					<animation effect="rotatey" center="-270" start="-55" end="-55" time="0" condition="true">Conditional</animation>
+					<include>MenuShowCaseItem-6</include>
+				</control>
+				<control type="group">
+					<left>15</left>
+					<animation effect="rotatey" center="-135" start="-55" end="-55" time="0" condition="true">Conditional</animation>
+					<include>MenuShowCaseItem-5</include>
+				</control>
+				<control type="group">
+					<left>150</left>
+					<animation effect="rotatey" center="0" start="-55" end="-55" time="0" condition="true">Conditional</animation>
+					<include>MenuShowCaseItem-4</include>
+				</control>
+				<control type="group">
+					<left>285</left>
+					<animation effect="rotatey" center="135" start="-55" end="-55" time="0" condition="true">Conditional</animation>
+					<include>MenuShowCaseItem-3</include>
+				</control>
+				<control type="group">
+					<left>420</left>
+					<animation effect="rotatey" center="270" start="-55" end="-55" time="0" condition="true">Conditional</animation>
+					<include>MenuShowCaseItem-2</include>
+				</control>
+				<control type="group">
+					<left>555</left>
+					<animation effect="rotatey" center="405" start="-55" end="-55" time="0" condition="true">Conditional</animation>
+					<include>MenuShowCaseItem-1</include>
+				</control>
+				<control type="group">
+					<visible>Container(9000).OnPrevious</visible>
+					<animation effect="slide" end="-75,0" time="200" reversible="false">Hidden</animation>
+					<control type="group">
+						<left>690</left>
+						<visible>Container(9000).OnPrevious</visible>
+						<animation effect="rotatey" center="540" end="55" time="200" reversible="false" tween="quadratic" easing="in">Hidden</animation>
+						<animation effect="rotatey" center="540" start="-55" end="-55" time="0" condition="true">Conditional</animation>
+						<include>MenuShowCaseItem0</include>
+					</control>
+					<control type="group">
+						<left>758</left>
+						<visible>Container(9000).OnPrevious</visible>
+						<animation effect="rotatey" center="1223" end="55" time="200" reversible="false" tween="quadratic">Hidden</animation>
+						<control type="image">
+							<texture background="true" fallback="DefaultFallback.png" colordiffuse="$VAR[ColorMenuVar]">$VAR[ShowmenuItem1Var]</texture>
+							<include>MenuShowcaseThumb</include>
+						</control><control type="label"><left>42</left><bottom>0</bottom><width>200</width><height>70</height><label>$INFO[Container(9000).ListItem(1).Label]</label><font>font14</font><align>center</align><aligny>top</aligny></control>
+					</control>
+				</control>
+			</control>
+			<control type="group" id="6000">
+				<left>55</left>
+				<top>700</top>
+				<visible>!Control.IsVisible(6001) + !Control.IsVisible(6002)</visible>
+				<control type="group">
+					<left>15</left>
+					<animation effect="rotatey" center="-135" start="-55" end="-55" time="0" condition="true">Conditional</animation>
+					<include>MenuShowCaseItem-6</include>
+				</control>
+				<control type="group">
+					<left>150</left>
+					<animation effect="rotatey" center="0" start="-55" end="-55" time="0" condition="true">Conditional</animation>
+					<include>MenuShowCaseItem-5</include>
+				</control>
+				<control type="group">
+					<left>285</left>
+					<animation effect="rotatey" center="135" start="-55" end="-55" time="0" condition="true">Conditional</animation>
+					<include>MenuShowCaseItem-4</include>
+				</control>
+				<control type="group">
+					<left>420</left>
+					<animation effect="rotatey" center="270" start="-55" end="-55" time="0" condition="true">Conditional</animation>
+					<include>MenuShowCaseItem-3</include>
+				</control>
+				<control type="group">
+					<left>555</left>
+					<animation effect="rotatey" center="405" start="-55" end="-55" time="0" condition="true">Conditional</animation>
+					<include>MenuShowCaseItem-2</include>
+				</control>
+				<control type="group">
+					<left>690</left>
+					<animation effect="rotatey" center="540" start="-55" end="-55" time="0" condition="true">Conditional</animation>
+					<include>MenuShowCaseItem-1</include>
+				</control>
+				<control type="group">
+					<left>1500</left>
+					<animation effect="rotatey" center="1965" start="55" end="55" time="0" condition="true">Conditional</animation>
+					<include>MenuShowCaseItem6</include>
+				</control>
+				<control type="group">
+					<left>1365</left>
+					<animation effect="rotatey" center="1830" start="55" end="55" time="0" condition="true">Conditional</animation>
+					<include>MenuShowCaseItem5</include>
+				</control>
+				<control type="group">
+					<left>1230</left>
+					<animation effect="rotatey" center="1695" start="55" end="55" time="0" condition="true">Conditional</animation>
+					<include>MenuShowCaseItem4</include>
+				</control>
+				<control type="group">
+					<left>1095</left>
+					<animation effect="rotatey" center="1560" start="55" end="55" time="0" condition="true">Conditional</animation>
+					<include>MenuShowCaseItem3</include>
+				</control>
+				<control type="group">
+					<left>960</left>
+					<animation effect="rotatey" center="1425" start="55" end="55" time="0" condition="true">Conditional</animation>
+					<include>MenuShowCaseItem2</include>
+				</control>
+				<control type="group">
+					<left>825</left>
+					<animation effect="rotatey" center="1290" start="55" end="55" time="0" condition="true">Conditional</animation>
+					<include>MenuShowCaseItem1</include>
+				</control>
+				<control type="group">
+					<left>758</left>
+					<control type="group">
+						<animation effect="zoom" center="150,150" start="100" end="125" time="2000" condition="true" reversible="false">Conditional</animation>
+						<include>MenuShowCaseItem0</include>
+					</control>
+				</control>
+			</control>
+		</control>
+	</include>
+	<include name="MenuShowCaseItem-7">
+		<control type="group">
+			<control type="image">
+				<texture background="true" fallback="DefaultFallback.png" colordiffuse="$VAR[ColorMenuVar]">$VAR[ShowmenuItem-7Var]</texture>
+				<!-- menu label -->
+				<include>MenuShowcaseThumb</include>
+			</control><control type="label"><left>42</left><bottom>0</bottom><width>200</width><height>70</height><label>$INFO[Container(9000).ListItem(-7).Label]</label><font>font14</font><align>center</align><aligny>top</aligny></control>
+		</control>
+	</include>
+	<include name="MenuShowCaseItem-6">
+		<control type="group">
+			<control type="image">
+				<texture background="true" fallback="DefaultFallback.png" colordiffuse="$VAR[ColorMenuVar]">$VAR[ShowmenuItem-6Var]</texture>
+				<!-- menu label -->
+				<include>MenuShowcaseThumb</include>
+			</control><control type="label"><left>42</left><bottom>0</bottom><width>200</width><height>70</height><label>$INFO[Container(9000).ListItem(-6).Label]</label><font>font14</font><align>center</align><aligny>top</aligny></control>
+		</control>
+	</include>
+	<include name="MenuShowCaseItem-5">
+		<control type="group">
+			<control type="image">
+				<texture background="true" fallback="DefaultFallback.png" colordiffuse="$VAR[ColorMenuVar]">$VAR[ShowmenuItem-5Var]</texture>
+				<!-- menu label -->
+				<include>MenuShowcaseThumb</include>
+			</control><control type="label"><left>42</left><bottom>0</bottom><width>200</width><height>70</height><label>$INFO[Container(9000).ListItem(-5).Label]</label><font>font14</font><align>center</align><aligny>top</aligny></control>
+		</control>
+	</include>
+	<include name="MenuShowCaseItem-4">
+		<control type="group">
+			<control type="image">
+				<texture background="true" fallback="DefaultFallback.png" colordiffuse="$VAR[ColorMenuVar]">$VAR[ShowmenuItem-4Var]</texture>
+				<!-- menu label -->
+				<include>MenuShowcaseThumb</include>
+			</control><control type="label"><left>42</left><bottom>0</bottom><width>200</width><height>70</height><label>$INFO[Container(9000).ListItem(-4).Label]</label><font>font14</font><align>center</align><aligny>top</aligny></control>
+		</control>
+	</include>
+	<include name="MenuShowCaseItem-3">
+		<control type="group">
+			<control type="image">
+				<texture background="true" fallback="DefaultFallback.png" colordiffuse="$VAR[ColorMenuVar]">$VAR[ShowmenuItem-3Var]</texture>
+				<!-- menu label -->
+				<include>MenuShowcaseThumb</include>
+			</control><control type="label"><left>42</left><bottom>0</bottom><width>200</width><height>70</height><label>$INFO[Container(9000).ListItem(-3).Label]</label><font>font14</font><align>center</align><aligny>top</aligny></control>
+		</control>
+	</include>
+	<include name="MenuShowCaseItem-2">
+		<control type="group">
+			<control type="image">
+				<texture background="true" fallback="DefaultFallback.png" colordiffuse="$VAR[ColorMenuVar]">$VAR[ShowmenuItem-2Var]</texture>
+				<!-- menu label -->
+				<include>MenuShowcaseThumb</include>
+			</control><control type="label"><left>42</left><bottom>0</bottom><width>200</width><height>70</height><label>$INFO[Container(9000).ListItem(-2).Label]</label><font>font14</font><align>center</align><aligny>top</aligny></control>
+		</control>
+	</include>
+	<include name="MenuShowCaseItem-1">
+		<control type="group">
+			<control type="image">
+				<texture background="true" fallback="DefaultFallback.png" colordiffuse="$VAR[ColorMenuVar]">$VAR[ShowmenuItem-1Var]</texture>
+				<!-- menu label -->
+				<include>MenuShowcaseThumb</include>
+			</control><control type="label"><left>42</left><bottom>0</bottom><width>200</width><height>70</height><label>$INFO[Container(9000).ListItem(-1).Label]</label><font>font14</font><align>center</align><aligny>top</aligny></control>
+		</control>
+	</include>
+	<include name="MenuShowCaseItem0">
+		<control type="group">
+			<control type="image">
+				<texture background="true" fallback="DefaultFallback.png" colordiffuse="$VAR[ColorMenuVar]">$VAR[ShowmenuItem0Var]</texture>
+				<!-- menu label -->
+				<include>MenuShowcaseThumb</include>
+			</control><control type="label"><left>42</left><bottom>0</bottom><width>200</width><height>70</height><label>$INFO[Container(9000).ListItem(0).Label]</label><font>font14</font><align>center</align><aligny>top</aligny></control>
+		</control>
+	</include>
+	<include name="MenuShowCaseItem1">
+		<control type="group">
+			<control type="image">
+				<texture background="true" fallback="DefaultFallback.png" colordiffuse="$VAR[ColorMenuVar]">$VAR[ShowmenuItem1Var]</texture>
+				<!-- menu label -->
+				<include>MenuShowcaseThumb</include>
+			</control><control type="label"><left>42</left><bottom>0</bottom><width>200</width><height>70</height><label>$INFO[Container(9000).ListItem(1).Label]</label><font>font14</font><align>center</align><aligny>top</aligny></control>
+		</control>
+	</include>
+	<include name="MenuShowCaseItem2">
+		<control type="group">
+			<control type="image">
+				<texture background="true" fallback="DefaultFallback.png" colordiffuse="$VAR[ColorMenuVar]">$VAR[ShowmenuItem2Var]</texture>
+				<!-- menu label -->
+				<include>MenuShowcaseThumb</include>
+			</control><control type="label"><left>42</left><bottom>0</bottom><width>200</width><height>70</height><label>$INFO[Container(9000).ListItem(2).Label]</label><font>font14</font><align>center</align><aligny>top</aligny></control>
+		</control>
+	</include>
+	<include name="MenuShowCaseItem3">
+		<control type="group">
+			<control type="image">
+				<texture background="true" fallback="DefaultFallback.png" colordiffuse="$VAR[ColorMenuVar]">$VAR[ShowmenuItem3Var]</texture>
+				<!-- menu label -->
+				<include>MenuShowcaseThumb</include>
+			</control><control type="label"><left>42</left><bottom>0</bottom><width>200</width><height>70</height><label>$INFO[Container(9000).ListItem(3).Label]</label><font>font14</font><align>center</align><aligny>top</aligny></control>
+		</control>
+	</include>
+	<include name="MenuShowCaseItem4">
+		<control type="group">
+			<control type="image">
+				<texture background="true" fallback="DefaultFallback.png" colordiffuse="$VAR[ColorMenuVar]">$VAR[ShowmenuItem4Var]</texture>
+				<!-- menu label -->
+				<include>MenuShowcaseThumb</include>
+			</control><control type="label"><left>42</left><bottom>0</bottom><width>200</width><height>70</height><label>$INFO[Container(9000).ListItem(4).Label]</label><font>font14</font><align>center</align><aligny>top</aligny></control>
+		</control>
+	</include>
+	<include name="MenuShowCaseItem5">
+		<control type="group">
+			<control type="image">
+				<texture background="true" fallback="DefaultFallback.png" colordiffuse="$VAR[ColorMenuVar]">$VAR[ShowmenuItem5Var]</texture>
+				<!-- menu label -->
+				<include>MenuShowcaseThumb</include>
+			</control><control type="label"><left>42</left><bottom>0</bottom><width>200</width><height>70</height><label>$INFO[Container(9000).ListItem(5).Label]</label><font>font14</font><align>center</align><aligny>top</aligny></control>
+		</control>
+	</include>
+	<include name="MenuShowCaseItem6">
+		<control type="group">
+			<control type="image">
+				<texture background="true" fallback="DefaultFallback.png" colordiffuse="$VAR[ColorMenuVar]">$VAR[ShowmenuItem6Var]</texture>
+				<!-- menu label -->
+				<include>MenuShowcaseThumb</include>
+			</control><control type="label"><left>42</left><bottom>0</bottom><width>200</width><height>70</height><label>$INFO[Container(9000).ListItem(6).Label]</label><font>font14</font><align>center</align><aligny>top</aligny></control>
+		</control>
+	</include>
+	<include name="MenuShowCaseItem7">
+		<control type="group">
+			<control type="image">
+				<texture background="true" fallback="DefaultFallback.png" colordiffuse="$VAR[ColorMenuVar]">$VAR[ShowmenuItem7Var]</texture>
+				<!-- menu label -->
+				<include>MenuShowcaseThumb</include>
+			</control><control type="label"><left>42</left><bottom>0</bottom><width>200</width><height>70</height><label>$INFO[Container(9000).ListItem(7).Label]</label><font>font14</font><align>center</align><aligny>top</aligny></control>
+		</control>
+	</include>
+	<include name="MenuShowcaseThumb">
+		<left>50</left>
+		<top>0</top>
+		<width>200</width>
+		<height>200</height>
+		<align>center</align>
+		<aspectratio scalediffuse="false">keep</aspectratio>
+		<fadetime>0</fadetime>
+		<bordersize>20</bordersize>
+	</include>
 	<include name="ListTextBG">
 		<control type="image">
 			<texture colordiffuse="$VAR[ListColorHighlightVar]">listselect_fo.png</texture>
