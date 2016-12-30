@@ -60,7 +60,7 @@
 		</control>
 		<!--<control type="label"><left>42</left><bottom>0</bottom><width>200</width><height>70</height><label>$INFO[Container(9000).ListItem(1).Label]</label><font>font12</font><align>center</align><aligny>top</aligny></control>-->
 		<control type="group">
-			<width>2058</width>
+			<width>1920</width>
 			<camera x="960" y="810" />
 			<control type="group" id="6001">
 				<left>55</left>
@@ -309,7 +309,7 @@
 				<control type="group">
 					<left>758</left>
 					<control type="group">
-						<animation effect="zoom" center="150,150" start="100" end="125" time="2000" condition="true" reversible="false">Conditional</animation>
+						<animation effect="zoom" center="150,150" start="100" end="125" time="2000" condition="true" reversible="true">Conditional</animation>
 						<include>MenuShowCaseItem0</include>
 					</control>
 				</control>

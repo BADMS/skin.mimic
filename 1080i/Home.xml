@@ -75,6 +75,7 @@
 			<left>-135</left>
 			<top>220</top>
             <include>MenuHome3D</include>
+			<visible>false</visible>
         </control>
 	</controls>
 </window>

@@ -16,7 +16,7 @@
 	<onload>SetProperty(cha_daemon_set,True,home)</onload>
 	<onload>SetProperty(cpa_daemon_fallback,special://skin/extras/misc/fallback.jpg,home)</onload>
 	<onload>Skin.SetString(SkinHelper.RandomFanartDelay,3)</onload>
-	<onload>Skin.SetString(MenuHome3D,1)</onload>
+	<onload>Skin.SetString(MenuHome3D,0)</onload>
 	<controls>
 		<control type="button" id="10">
 			<description>trigger</description>
