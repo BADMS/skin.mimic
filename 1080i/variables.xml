@@ -868,13 +868,13 @@
         <value>$INFO[ListItem.Icon]</value>
     </variable>
     <variable name="TopbarFadeLabel1">
-    	<value condition="[![[Player.Playing | Player.HasAudio | Player.HasVideo] + IsEmpty(Window(10025).Property(PlayingBackgroundMedia))] | Window.IsActive(tvchannels)] + !String.IsEmpty(Weather.Plugin)">$INFO[System.Time]$INFO[Weather.Temperature,[LIGHT] ,[/LIGHT]]</value>
+    	<value condition="[![[Player.Playing | Player.HasAudio | Player.HasVideo] + IsEmpty(Window(10025).Property(PlayingBackgroundMedia))] | Window.IsActive(tvchannels)] + !String.IsEmpty(Weather.Plugin)">$INFO[Weather.Temperature]$INFO[System.Date,[LIGHT] ,[/LIGHT]]</value>
     	<value condition="![[Player.Playing | Player.HasAudio | Player.HasVideo | !String.IsEmpty(Weather.Plugin)] + IsEmpty(Window(10025).Property(PlayingBackgroundMedia))] | Window.IsActive(tvchannels)">$INFO[System.Time]</value>
     	<value condition="VideoPlayer.Content(episodes)">$INFO[VideoPlayer.Season]$INFO[VideoPlayer.Episode,X,. ]$INFO[Player.Title,[LIGHT],[/LIGHT]]</value>
     	<value>$INFO[Player.Title,[LIGHT],[/LIGHT]]</value>
     </variable>
     <variable name="TopbarFadeLabel2">
-    	<value condition="![[Player.Playing | Player.HasAudio | Player.HasVideo] + IsEmpty(Window(10025).Property(PlayingBackgroundMedia))] | Window.IsActive(tvchannels)">$INFO[System.Date]</value>
+    	<value condition="![[Player.Playing | Player.HasAudio | Player.HasVideo] + IsEmpty(Window(10025).Property(PlayingBackgroundMedia))] | Window.IsActive(tvchannels)">$INFO[System.Time]</value>
     	<value condition="VideoPlayer.Content(livetv)">$INFO[VideoPlayer.ChannelNumber,,: ]$INFO[VideoPlayer.ChannelName]</value>
     	<value condition="VideoPlayer.Content(episodes)">$INFO[VideoPlayer.Premiered,, ]$INFO[VideoPlayer.TvShowTitle]</value>
     	<value condition="VideoPlayer.Content(movies)">$INFO[VideoPlayer.Year,, ]$INFO[VideoPlayer.Genre]</value>
@@ -907,6 +907,7 @@
 	<variable name="WidgetNameLabelVar">
 		<value condition="!String.IsEqual(Container(9000).ListItem.Property(widgetName),weather)">$INFO[Container(9000).ListItem.Property(widgetName)]</value>
 		<value condition="String.IsEqual(Container(9000).ListItem.Property(widgetName),weather) + !Weather.IsFetched">$LOCALIZE[31909]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Property(widgetName),weather)">$INFO[Window(weather).Property(Location)]</value>
 	</variable>
 	<variable name="WidgetLimit">
 		<value condition="Skin.HasSetting(Enable.WidgetLimit)">20</value>
