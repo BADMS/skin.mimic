@@ -21,6 +21,7 @@
 					<effect type="fade" delay="0" start="100" end="0" time="1000" />
 				</animation>
 				<animation effect="slide" time="300" delay="0" start="0" end="0,-653" tween="cubic" reversible="true" condition="!String.IsEmpty(Container(9000).ListItem.Property(widgetName)) + Skin.HasSetting(Enable.PersistentWidgets)">Conditional</animation>
+				<animation effect="slide" time="300" delay="0" start="0" end="0,-333" tween="cubic" reversible="true" condition="String.IsEmpty(Container(9000).ListItem.Property(widgetName)) + Skin.HasSetting(Enable.PersistentWidgets) + Control.HasFocus(9010)">Conditional</animation>
 				<animation effect="slide" time="300" delay="0" start="0" end="0,320" tween="cubic" reversible="true" condition="String.IsEqual(Container(9000).ListItem.Property(widgetName),weather) + !Weather.IsFetched + !String.IsEmpty(Container(9000).ListItem.Property(widgetName)) + Skin.HasSetting(Enable.PersistentWidgets)">Conditional</animation>
 				<width>FullScreenWidth</width>
 				<height>700</height>
@@ -35,6 +36,7 @@
 					<effect type="fade" delay="0" start="100" end="0" time="1000" />
 				</animation>
 				<animation effect="slide" time="300" delay="0" start="0" end="0,-653" tween="cubic" reversible="true" condition="!String.IsEmpty(Container(9000).ListItem.Property(widgetName)) + Skin.HasSetting(Enable.PersistentWidgets)">Conditional</animation>
+				<animation effect="slide" time="300" delay="0" start="0" end="0,-333" tween="cubic" reversible="true" condition="String.IsEmpty(Container(9000).ListItem.Property(widgetName)) + Skin.HasSetting(Enable.PersistentWidgets) + Control.HasFocus(9010)">Conditional</animation>
 				<animation effect="slide" time="300" delay="0" start="0" end="0,320" tween="cubic" reversible="true" condition="String.IsEqual(Container(9000).ListItem.Property(widgetName),weather) + !Weather.IsFetched + !String.IsEmpty(Container(9000).ListItem.Property(widgetName)) + Skin.HasSetting(Enable.PersistentWidgets)">Conditional</animation>
 				<width>FullScreenWidth</width>
 				<height>700</height>

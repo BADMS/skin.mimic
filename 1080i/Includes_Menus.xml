@@ -46,6 +46,7 @@
 		</content>
 	</include>
 	<include name="SubMenuListDefault">
+		<animation effect="slide" time="300" delay="0" start="0" end="0,320" tween="cubic" reversible="true" condition="String.IsEmpty(Container(9000).ListItem.Property(widgetName)) + Skin.HasSetting(Enable.PersistentWidgets) + Control.HasFocus(9010)">Conditional</animation>
 		<animation effect="fade" start="100" end="50" time="300" condition="!ControlGroup(9001).HasFocus()">conditional</animation>
 		<include>VisibleFadeEffect</include>
 		<left>0</left>
