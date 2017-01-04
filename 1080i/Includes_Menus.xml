@@ -16,6 +16,7 @@
             <animation effect="fade" end="0" start="100" time="0" condition="!Control.HasFocus(9010) + [!Skin.HasSetting(Disable.SubmenuSlide) | system.getbool(lookandfeel.enablerssfeeds)]" reversible="false">Conditional</animation>
             <animation effect="slide" time="0" start="0,0" end="0,95" condition="Skin.HasSetting(Disable.SubmenuSlide)">Conditional</animation>
 			<control type="wraplist" id="9010">
+				<animation effect="slide" time="300" delay="0" start="0" end="0,320" tween="cubic" reversible="true" condition="String.IsEmpty(Container(9000).ListItem.Property(widgetName)) + Skin.HasSetting(Enable.PersistentWidgets) + Control.HasFocus(9010)">Conditional</animation>
 				<include content="SubMenuListDefault">
 					<param name="SubmenuTop" value="-773" />
 					<param name="SubMenuContainerWidth" value="1920" />
@@ -46,7 +47,6 @@
 		</content>
 	</include>
 	<include name="SubMenuListDefault">
-		<animation effect="slide" time="300" delay="0" start="0" end="0,320" tween="cubic" reversible="true" condition="String.IsEmpty(Container(9000).ListItem.Property(widgetName)) + Skin.HasSetting(Enable.PersistentWidgets) + Control.HasFocus(9010)">Conditional</animation>
 		<animation effect="fade" start="100" end="50" time="300" condition="!ControlGroup(9001).HasFocus()">conditional</animation>
 		<include>VisibleFadeEffect</include>
 		<left>0</left>

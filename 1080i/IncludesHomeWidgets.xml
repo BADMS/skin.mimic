@@ -180,11 +180,32 @@
 		<control type="group">
 			<include>dialogeffect</include>
 			<visible>!Skin.HasSetting(Enable.HomeTopbar)</visible>
-			<animation effect="slide" time="0" start="0,0" end="0,120" condition="String.IsEqual(Skin.String(HomeLayout),2)">Conditional</animation>
+			<animation effect="slide" time="300" delay="0" start="0" end="0,-120" tween="cubic" reversible="true" condition="String.IsEmpty(Container(9000).ListItem.Property(widgetName)) + Skin.HasSetting(Enable.PersistentWidgets) + Control.HasFocus(9010)">Conditional</animation>
+			<animation effect="slide" time="300" delay="0" start="0" end="0,-120" tween="cubic" reversible="true" condition="!String.IsEmpty(Container(9000).ListItem.Property(widgetName)) + Skin.HasSetting(Enable.PersistentWidgets) + Control.HasFocus(9010)">Conditional</animation>
+			<animation effect="slide" time="300" delay="300" start="0" end="0,-320" tween="cubic" reversible="true" condition="!String.IsEmpty(Container(9000).ListItem.Property(widgetName)) + Skin.HasSetting(Enable.PersistentWidgets)">Conditional</animation>
 			<animation effect="slide" time="300" tween="sine" easing="inout" start="0,0" end="0,140" condition="Window.IsActive(extendedprogressdialog)">Conditional</animation>
 			<left>0</left>
-			<top>0</top>
+			<top>767</top>
 			<control type="image">
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+					<effect type="fade" delay="0" start="0" end="100" time="1000" />
+				</animation>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+					<effect type="fade" delay="0" start="100" end="0" time="1000" />
+				</animation>
+				<description>background image</description>
+				<width>1920</width>
+				<height>100</height>
+				<texture border="12">background.png</texture>
+				<colordiffuse>$VAR[MenuListOldColorHighlightVar]</colordiffuse>
+			</control>
+			<control type="image">
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
+					<effect type="fade" delay="0" start="0" end="100" time="1000" />
+				</animation>
+				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
+					<effect type="fade" delay="0" start="100" end="0" time="1000" />
+				</animation>
 				<description>background image</description>
 				<width>1920</width>
 				<height>100</height>
@@ -210,22 +231,24 @@
 				<control type="label" id="1702">
 					<width>auto</width>
 					<height>100</height>
-					<label>$INFO[System.Time,[B],[/B]]</label>
+					<label>$INFO[System.Date,[B],[/B]]</label>
 					<font>font28_title</font>
+					<textcolor>$VAR[ColorMenuVar]</textcolor>
 				</control>
 				<control type="label" id="1701">
 					<width>auto</width>
 					<height>100</height>
-					<label>$INFO[Weather.Temperature, ]</label>
+					<label>$INFO[System.Time, ]</label>
 					<font>font28_title</font>
-					<visible>Weather.IsFetched + !String.IsEmpty(Weather.Plugin) + !String.Contains(Weather.Temperature,$LOCALIZE[503])</visible>
+					<textcolor>$VAR[ColorMenuVar]</textcolor>
 				</control>
 				<control type="label">
 					<width>auto</width>
 					<height>100</height>
-					<label>$INFO[System.Date, [LIGHT],[/LIGHT]]</label>
+					<label>$INFO[Weather.Temperature, [LIGHT],[/LIGHT]]</label>
 					<font>font28_title</font>
-					<textcolor>$VAR[ColorHighlightVar]</textcolor>
+					<textcolor>$VAR[ColorMenuVar]</textcolor>
+					<visible>Weather.IsFetched + !String.IsEmpty(Weather.Plugin) + !String.Contains(Weather.Temperature,$LOCALIZE[503])</visible>
 				</control>
 			</control>
 		</control>
