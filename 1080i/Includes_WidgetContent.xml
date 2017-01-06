@@ -384,18 +384,6 @@
     <include name="WidgetBusyAnimation">
         <control type="image" id="12345">
             <visible>Control.IsVisible($PARAM[id]) + Container($PARAM[id]).IsUpdating</visible>
-            <animation effect="slide" time="0" start="0,0" end="-901,-680" condition="Skin.HasSetting(Enable.HomeTopbar) + !String.IsEqual(Skin.String(HomeLayout),3) + !String.IsEqual(Skin.String(HomeLayout),2)">Conditional</animation>
-            <animation effect="slide" time="0" start="0,0" end="-901,-915" condition="Skin.HasSetting(Enable.HomeTopbar) + String.IsEqual(Skin.String(HomeLayout),3) + !String.IsEqual(Skin.String(HomeLayout),2)">Conditional</animation>
-            <animation effect="slide" time="0" start="0,0" end="0,190" condition="String.IsEqual(Skin.String(HomeLayout),2)">Conditional</animation>
-            <animation effect="slide" time="0" start="0,0" end="241,-382" condition="String.IsEqual(Skin.String(HomeLayout),3) + !Skin.HasSetting(Enable.HomeTopbar)">Conditional</animation>
-            <description>Busy animation</description>
-            <top>710</top>
-            <left>930</left>
-            <width>60</width>
-            <height>60</height>
-            <texture colordiffuse="$VAR[ColorTextVar]" fallback="special://skin/extras/spinners/Sun.png">$INFO[Skin.String(busyloader)]</texture>
-            <aspectratio>keep</aspectratio>
-            <animation effect="rotate" start="360" end="0" center="auto" time="3000" loop="true" condition="true">conditional</animation>
         </control>
     </include>
     <include name="VerticalWidgetThumbnail">
@@ -425,7 +413,7 @@
                 <top>10</top>
                 <right>10</right>
                 <bottom>10</bottom>
-                <texture colordiffuse="33ffffff">background.png</texture>
+                <texture colordiffuse="$VAR[ColorMenuVar]">background.png</texture>
             </control>
             <control type="label">
                 <left>20</left>
@@ -464,7 +452,7 @@
                 <top>10</top>
                 <right>10</right>
                 <bottom>10</bottom>
-                <texture colordiffuse="33ffffff">background.png</texture>
+                <texture colordiffuse="$VAR[ColorMenuVar]">background.png</texture>
             </control>
             <control type="label">
                 <left>20</left>
@@ -521,7 +509,7 @@
                 <top>10</top>
                 <right>10</right>
                 <bottom>10</bottom>
-                <texture colordiffuse="33ffffff">background.png</texture>
+                <texture colordiffuse="$VAR[ColorMenuVar]">background.png</texture>
             </control>
             <control type="label">
                 <left>20</left>
@@ -580,7 +568,7 @@
                 <top>10</top>
                 <right>10</right>
                 <bottom>10</bottom>
-                <texture colordiffuse="33ffffff">background.png</texture>
+                <texture colordiffuse="$VAR[ColorMenuVar]">background.png</texture>
             </control>
             <control type="label">
                 <left>20</left>

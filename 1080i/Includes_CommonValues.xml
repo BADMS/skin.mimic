@@ -59,7 +59,7 @@
 		<font>font15</font>
 		<selectedcolor>$VAR[ListColorHighlightVar]</selectedcolor>
 		<texturenofocus colordiffuse="white11">white.png</texturenofocus>
-		<alttexturenofocus colordiffuse="33ffffff">white.png</alttexturenofocus>
+		<alttexturenofocus colordiffuse="$VAR[ColorMenuVar]">white.png</alttexturenofocus>
 	</include>
 	<include name="Objects_DoubleKeyOff">
 		<left>-123</left>
@@ -286,7 +286,7 @@
             <top>10</top>
             <right>10</right>
             <bottom>10</bottom>
-            <texture colordiffuse="33ffffff">background.png</texture>
+            <texture colordiffuse="$VAR[ColorMenuVar]">background.png</texture>
         </control>
         <control type="label">
             <left>20</left>

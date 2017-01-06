@@ -3,8 +3,11 @@
 	<include name="HomeDefaultWidgets">
 		<control type="group" id="9003">
 			<include>VisibleFadeEffect</include>
+			<animation effect="fade" time="300" delay="0" start="100" end="0" tween="cubic" reversible="true" condition="String.IsEmpty(Container(9000).ListItem.Property(widgetName)) + Skin.HasSetting(Enable.PersistentWidgets) + Control.HasFocus(9010)">Conditional</animation>
+			<animation effect="fade" time="300" delay="0" start="100" end="0" tween="cubic" reversible="true" condition="!String.IsEmpty(Container(9000).ListItem.Property(widgetName)) + Skin.HasSetting(Enable.PersistentWidgets) + Control.HasFocus(9010)">Conditional</animation>
 			<control type="group">
 				<visible>!String.IsEmpty(Container(9000).ListItem.Property(widget)) + ![Window.IsVisible(favourites) | Window.IsVisible(script-globalsearch-main.xml) | Window.IsVisible(script-lazytv-main.xml) | Window.IsVisible(script-lazytv-BigScreenList.xml)]</visible>
+				<animation effect="slide" time="300" delay="300" start="0" end="0,320" tween="cubic" reversible="true" condition="[Control.IsVisible(12345) + !String.IsEqual(Container(9000).ListItem.Property(widget),weather) + !String.IsEmpty(Container(9000).ListItem.Property(widgetName)) + Skin.HasSetting(Enable.PersistentWidgets)]">Conditional</animation>
 				<animation effect="fade" start="0" end="100" delay="200" time="300" easing="out" condition="[ControlGroup(9003).IsVisible + Skin.HasSetting(Enable.PersistentWidgets)] | [ControlGroup(9003).HasFocus + !Skin.HasSetting(Enable.PersistentWidgets)]">Conditional</animation>
 				<animation effect="fade" start="100" end="0" time="300" reversible="false" condition="[!ControlGroup(9003).HasFocus + !Skin.HasSetting(Enable.PersistentWidgets)] | [Control.HasFocus(9000) + !Skin.HasSetting(Enable.PersistentWidgets)]">Conditional</animation>
 				<animation effect="fade" tween="cubic" time="600" delay="500" start="0" end="100" reversible="false">WindowOpen</animation>
@@ -39,7 +42,7 @@
 							<animation effect="fade" time="300" tween="cubic" condition="[ControlGroup(9003).IsVisible + Skin.HasSetting(Enable.PersistentWidgets)] | [ControlGroup(9003).HasFocus + !Skin.HasSetting(Enable.PersistentWidgets)]" start="0" end="100">Visible</animation>
 							<animation effect="fade" time="0" condition="[ControlGroup(9003).IsVisible + Skin.HasSetting(Enable.PersistentWidgets)] | [ControlGroup(9003).HasFocus + !Skin.HasSetting(Enable.PersistentWidgets)]" start="100" end="0">Hidden</animation>
 							<animation effect="slide" time="200" tween="sine" easing="inout" end="0,700" start="0">WindowClose</animation>
-						<animation effect="slide" time="300" delay="0" start="0" end="0,320" tween="cubic" reversible="true" condition="String.IsEqual(Container(9000).ListItem.Property(widgetName),weather) + !Weather.IsFetched + !String.IsEmpty(Container(9000).ListItem.Property(widgetName)) + Skin.HasSetting(Enable.PersistentWidgets)">Conditional</animation>
+							<animation effect="slide" time="300" delay="0" start="0" end="0,320" tween="cubic" reversible="true" condition="String.IsEqual(Container(9000).ListItem.Property(widgetName),weather) + !Weather.IsFetched + !String.IsEmpty(Container(9000).ListItem.Property(widgetName)) + Skin.HasSetting(Enable.PersistentWidgets)">Conditional</animation>
 							<height>50</height>
 							<font>font16_title</font>
 							<align>right</align>
@@ -179,77 +182,13 @@
 	<include name="WeatherHomeWidget">
 		<control type="group">
 			<include>dialogeffect</include>
-			<visible>!Skin.HasSetting(Enable.HomeTopbar)</visible>
-			<animation effect="slide" time="300" delay="0" start="0" end="0,-120" tween="cubic" reversible="true" condition="String.IsEmpty(Container(9000).ListItem.Property(widgetName)) + Skin.HasSetting(Enable.PersistentWidgets) + Control.HasFocus(9010)">Conditional</animation>
-			<animation effect="slide" time="300" delay="0" start="0" end="0,-120" tween="cubic" reversible="true" condition="!String.IsEmpty(Container(9000).ListItem.Property(widgetName)) + Skin.HasSetting(Enable.PersistentWidgets) + Control.HasFocus(9010)">Conditional</animation>
-			<animation effect="slide" time="300" delay="300" start="0" end="0,-320" tween="cubic" reversible="true" condition="Weather.IsFetched + !String.IsEmpty(Container(9000).ListItem.Property(widgetName)) + Skin.HasSetting(Enable.PersistentWidgets)">Conditional</animation>
+			<animation effect="slide" time="300" delay="300" start="0" end="0,-320" tween="cubic" reversible="true" condition="[String.IsEqual(Container(9000).ListItem.Property(widget),weather) + Weather.IsFetched] | [!Control.IsVisible(12345) + !String.IsEqual(Container(9000).ListItem.Property(widget),weather) + !String.IsEmpty(Container(9000).ListItem.Property(widgetName)) + Skin.HasSetting(Enable.PersistentWidgets)]">Conditional</animation>
+			<animation effect="slide" time="300" delay="0" start="0" end="0,-320" tween="cubic" reversible="true" condition="Control.Hasfocus(9010) + String.IsEmpty(Container(9000).ListItem.Property(widgetName))">Conditional</animation>
 			<animation effect="slide" time="300" tween="sine" easing="inout" start="0,0" end="0,140" condition="Window.IsActive(extendedprogressdialog)">Conditional</animation>
 			<left>0</left>
-			<top>767</top>
-			<control type="image">
-				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
-					<effect type="fade" delay="0" start="0" end="100" time="1000" />
-				</animation>
-				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
-					<effect type="fade" delay="0" start="100" end="0" time="1000" />
-				</animation>
-				<description>background image</description>
-				<width>1920</width>
-				<height>100</height>
-				<texture border="12">background.png</texture>
-				<colordiffuse>$VAR[MenuListOldColorHighlightVar]</colordiffuse>
-			</control>
-			<control type="image">
-				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
-					<effect type="fade" delay="0" start="0" end="100" time="1000" />
-				</animation>
-				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
-					<effect type="fade" delay="0" start="100" end="0" time="1000" />
-				</animation>
-				<description>background image</description>
-				<width>1920</width>
-				<height>100</height>
-				<texture border="12">background.png</texture>
-				<colordiffuse>$VAR[MenuListColorHighlightVar]</colordiffuse>
-			</control>
-			<control type="image">
-				<description>avatar</description>
-				<left>1820</left>
-				<top>10</top>
-				<width>80</width>
-				<height>80</height>
-				<aspectratio align="center" aligny="center">scale</aspectratio>
-				<texture fallback="DefaultAddonNone.png">$VAR[WeatherIconVar]$INFO[Window(weather).Property(Current.FanartCode),,.png]</texture>
-			</control>
-			<control type="grouplist">
-				<top>0</top>
-				<left>0</left>
-				<width>1810</width>
-				<height>100</height>
-				<align>right</align>
-				<orientation>Horizontal</orientation>
-				<control type="label" id="1702">
-					<width>auto</width>
-					<height>100</height>
-					<label>$INFO[System.Date,[B],[/B]]</label>
-					<font>font28_title</font>
-					<textcolor>$VAR[ColorMenuVar]</textcolor>
-				</control>
-				<control type="label" id="1701">
-					<width>auto</width>
-					<height>100</height>
-					<label>$INFO[System.Time, ]</label>
-					<font>font28_title</font>
-					<textcolor>$VAR[ColorMenuVar]</textcolor>
-				</control>
-				<control type="label">
-					<width>auto</width>
-					<height>100</height>
-					<label>$INFO[Weather.Temperature, [LIGHT],[/LIGHT]]</label>
-					<font>font28_title</font>
-					<textcolor>$VAR[ColorMenuVar]</textcolor>
-					<visible>Weather.IsFetched + !String.IsEmpty(Weather.Plugin) + !String.Contains(Weather.Temperature,$LOCALIZE[503])</visible>
-				</control>
+			<top>747</top>
+			<control type="group">
+				<include>Topbar</include>
 			</control>
 		</control>
 	</include>

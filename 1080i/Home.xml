@@ -62,7 +62,6 @@
             <colordiffuse>$VAR[MenuListColorHighlightVar]</colordiffuse>
         </control>
 		<control type="group">
-			<include condition="Skin.HasSetting(Enable.HomeTopbar)">Topbar</include>
 			<include>HomeDefault</include>
         </control>
 		<control type="group">

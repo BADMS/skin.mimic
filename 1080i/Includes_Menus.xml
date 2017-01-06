@@ -17,10 +17,11 @@
             <animation effect="slide" time="0" start="0,0" end="0,95" condition="Skin.HasSetting(Disable.SubmenuSlide)">Conditional</animation>
 			<control type="wraplist" id="9010">
 				<animation effect="slide" time="300" delay="0" start="0" end="0,320" tween="cubic" reversible="true" condition="String.IsEmpty(Container(9000).ListItem.Property(widgetName)) + Skin.HasSetting(Enable.PersistentWidgets) + Control.HasFocus(9010)">Conditional</animation>
+				<animation effect="slide" time="300" delay="0" start="0" end="0,-320" tween="cubic" reversible="true" condition="Control.Hasfocus(9010) + String.IsEmpty(Container(9000).ListItem.Property(widgetName))">Conditional</animation>
 				<include content="SubMenuListDefault">
-					<param name="SubmenuTop" value="-773" />
+					<param name="SubmenuTop" value="-658" />
 					<param name="SubMenuContainerWidth" value="1920" />
-					<param name="SubmenuItemHeight" value="120" />
+					<param name="SubmenuItemHeight" value="384" />
 					<param name="Orientation" value="Horizontal" />
 					<param name="Focusposition" value="2" />
 				</include>
@@ -61,9 +62,10 @@
 		<movement>1</movement>
 		<orientation>$PARAM[Orientation]</orientation>
 		<include content="SubmenuListContent">
-			<param name="SubmenuItemHeight" value="120" />
+			<param name="SubmenuItemHeight" value="384" />
 			<param name="SubmenuItemWidth" value="384" />
-			<param name="SubmenuAlign" value="center" />
+			<param name="SubmenuAlignY" value="top" />
+			<param name="SubmenuAlignX" value="center" />
 			<param name="SubmenuTextOffset" value="0" />
 		</include>
 	</include>
@@ -79,10 +81,11 @@
 				</animation>
 				<width>$PARAM[SubmenuItemWidth]</width>
 				<height>$PARAM[SubmenuItemHeight]</height>
+				<bordersize>20</bordersize>
 				<texture>background.png</texture>
 				<colordiffuse>$VAR[MenuListOldColorHighlightVar]</colordiffuse>
 			</control>
-			<control type="label">
+			<control type="image">
 				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
 					<effect type="fade" delay="0" start="0" end="100" time="1000" />
 				</animation>
@@ -91,12 +94,9 @@
 				</animation>
 				<width>$PARAM[SubmenuItemWidth]</width>
 				<height>$PARAM[SubmenuItemHeight]</height>
-				<font>font_SubMenu</font>
-				<textcolor>$VAR[OldColorMenuVar]</textcolor>
-				<textoffsetx>$PARAM[SubmenuTextOffset]</textoffsetx>
-				<selectedcolor>$VAR[OldColorMenuVar]</selectedcolor>
-				<align>$PARAM[SubmenuAlign]</align>
-				<label>$INFO[ListItem.Label]</label>
+				<bordersize>20</bordersize>
+				<texture>$INFO[ListItem.Icon]</texture>
+				<colordiffuse>$VAR[MenuListOldColorHighlightVar]</colordiffuse>
 			</control>
 			<control type="image">
 				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
@@ -107,10 +107,11 @@
 				</animation>
 				<width>$PARAM[SubmenuItemWidth]</width>
 				<height>$PARAM[SubmenuItemHeight]</height>
+				<bordersize>20</bordersize>
 				<texture>background.png</texture>
 				<colordiffuse>$VAR[MenuListColorHighlightVar]</colordiffuse>
 			</control>
-			<control type="label">
+			<control type="image">
 				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
 					<effect type="fade" delay="0" start="0" end="100" time="1000" />
 				</animation>
@@ -119,12 +120,9 @@
 				</animation>
 				<width>$PARAM[SubmenuItemWidth]</width>
 				<height>$PARAM[SubmenuItemHeight]</height>
-				<font>font_SubMenu</font>
-				<textcolor>$VAR[MenuListColorHighlightVar]</textcolor>
-				<textoffsetx>$PARAM[SubmenuTextOffset]</textoffsetx>
-				<selectedcolor>$VAR[MenuListColorHighlightVar]</selectedcolor>
-				<align>$PARAM[SubmenuAlign]</align>
-				<label>$INFO[ListItem.Label]</label>
+				<bordersize>20</bordersize>
+				<texture>$INFO[ListItem.Icon]</texture>
+				<colordiffuse>$VAR[MenuListColorHighlightVar]</colordiffuse>
 			</control>
 		</itemlayout>
 		<focusedlayout height="$PARAM[SubmenuItemHeight]" width="$PARAM[SubmenuItemWidth]">
@@ -137,8 +135,9 @@
 				</animation>
 				<width>$PARAM[SubmenuItemWidth]</width>
 				<height>$PARAM[SubmenuItemHeight]</height>
+				<bordersize>20</bordersize>
 				<texture>background.png</texture>
-				<colordiffuse>$VAR[MenuListOldColorHighlightVar]</colordiffuse>
+				<colordiffuse>$VAR[OldColorMenuVar]</colordiffuse>
 			</control>
 			<control type="image">
 				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
@@ -149,45 +148,9 @@
 				</animation>
 				<width>$PARAM[SubmenuItemWidth]</width>
 				<height>$PARAM[SubmenuItemHeight]</height>
-				<texture>listselect_fo.png</texture>
+				<bordersize>20</bordersize>
+				<texture>$INFO[ListItem.Icon]</texture>
 				<colordiffuse>$VAR[OldColorMenuVar]</colordiffuse>
-				<visible>ControlGroup(9001).HasFocus()</visible>
-			</control>
-			<control type="group">
-				<visible>Control.HasFocus(9010)</visible>
-				<control type="label">
-					<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
-						<effect type="fade" delay="0" start="0" end="100" time="1000" />
-					</animation>
-					<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
-						<effect type="fade" delay="0" start="100" end="0" time="1000" />
-					</animation>
-					<width>$PARAM[SubmenuItemWidth]</width>
-					<height>$PARAM[SubmenuItemHeight]</height>
-					<font>font_SubMenu</font>
-					<textcolor>$VAR[MenuListOldColorHighlightVar]</textcolor>
-					<textoffsetx>$PARAM[SubmenuTextOffset]</textoffsetx>
-					<align>$PARAM[SubmenuAlign]</align>
-					<label>$INFO[ListItem.Label]</label>
-				</control>
-			</control>
-			<control type="group">
-				<visible>!Control.HasFocus(9010)</visible>
-				<control type="label">
-					<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
-						<effect type="fade" delay="0" start="0" end="100" time="1000" />
-					</animation>
-					<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
-						<effect type="fade" delay="0" start="100" end="0" time="1000" />
-					</animation>
-					<width>$PARAM[SubmenuItemWidth]</width>
-					<height>$PARAM[SubmenuItemHeight]</height>
-					<font>font_SubMenu</font>
-					<textcolor>$VAR[MenuListOldColorHighlightVar]</textcolor>
-					<textoffsetx>$PARAM[SubmenuTextOffset]</textoffsetx>
-					<align>$PARAM[SubmenuAlign]</align>
-					<label>$INFO[ListItem.Label]</label>
-				</control>
 			</control>
 
 			<control type="image">
@@ -199,8 +162,9 @@
 				</animation>
 				<width>$PARAM[SubmenuItemWidth]</width>
 				<height>$PARAM[SubmenuItemHeight]</height>
+				<bordersize>20</bordersize>
 				<texture>background.png</texture>
-				<colordiffuse>$VAR[MenuListColorHighlightVar]</colordiffuse>
+				<colordiffuse>$VAR[ColorMenuVar]</colordiffuse>
 			</control>
 			<control type="image">
 				<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
@@ -211,45 +175,9 @@
 				</animation>
 				<width>$PARAM[SubmenuItemWidth]</width>
 				<height>$PARAM[SubmenuItemHeight]</height>
-				<texture>listselect_fo.png</texture>
+				<bordersize>20</bordersize>
+				<texture>$INFO[ListItem.Icon]</texture>
 				<colordiffuse>$VAR[ColorMenuVar]</colordiffuse>
-				<visible>ControlGroup(9001).HasFocus()</visible>
-			</control>
-			<control type="group">
-				<visible>Control.HasFocus(9010)</visible>
-				<control type="label">
-					<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
-						<effect type="fade" delay="0" start="0" end="100" time="1000" />
-					</animation>
-					<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
-						<effect type="fade" delay="0" start="100" end="0" time="1000" />
-					</animation>
-					<width>$PARAM[SubmenuItemWidth]</width>
-					<height>$PARAM[SubmenuItemHeight]</height>
-					<font>font_SubMenu</font>
-					<textcolor>$VAR[MenuListColorHighlightVar]</textcolor>
-					<textoffsetx>$PARAM[SubmenuTextOffset]</textoffsetx>
-					<align>$PARAM[SubmenuAlign]</align>
-					<label>$INFO[ListItem.Label]</label>
-				</control>
-			</control>
-			<control type="group">
-				<visible>!Control.HasFocus(9010)</visible>
-				<control type="label">
-					<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),1)" reversible="false">
-						<effect type="fade" delay="0" start="0" end="100" time="1000" />
-					</animation>
-					<animation type="Conditional" condition="[Control.HasFocus(9010) | Control.HasFocus(9000) | Control.HasFocus(9001)] + Window.IsActive(home) + Integer.IsEqual(Window(Home).Property(ImageUpdating),0)" reversible="false">
-						<effect type="fade" delay="0" start="100" end="0" time="1000" />
-					</animation>
-					<width>$PARAM[SubmenuItemWidth]</width>
-					<height>$PARAM[SubmenuItemHeight]</height>
-					<font>font_SubMenu</font>
-					<textcolor>$VAR[MenuListColorHighlightVar]</textcolor>
-					<textoffsetx>$PARAM[SubmenuTextOffset]</textoffsetx>
-					<align>$PARAM[SubmenuAlign]</align>
-					<label>$INFO[ListItem.Label]</label>
-				</control>
 			</control>
 		</focusedlayout>
 		<content>

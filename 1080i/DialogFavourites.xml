@@ -60,7 +60,7 @@
 	                        <top>10</top>
 	                        <right>10</right>
 	                        <bottom>10</bottom>
-	                        <texture colordiffuse="33ffffff">background.png</texture>
+	                        <texture colordiffuse="$VAR[ColorMenuVar]">background.png</texture>
 	                    </control>
 	                    <control type="label">
 	                        <left>20</left>
@@ -99,7 +99,7 @@
 	                        <top>10</top>
 	                        <right>10</right>
 	                        <bottom>10</bottom>
-	                        <texture colordiffuse="33ffffff">background.png</texture>
+	                        <texture colordiffuse="$VAR[ColorMenuVar]">background.png</texture>
 	                    </control>
 	                    <control type="label">
 	                        <left>20</left>

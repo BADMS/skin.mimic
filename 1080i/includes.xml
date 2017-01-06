@@ -41,23 +41,6 @@
 	<expression name="isAlbum">String.IsEqual(ListItem.DBTYPE,album)</expression>
 	<expression name="isSong">String.IsEqual(ListItem.DBTYPE,song)</expression>
 	<include name="MenuHome3D">
-		<control type="wraplist" id="9000">
-			<left>-69</left>
-			<top>540</top>
-			<width>2058</width>
-			<height>525</height>
-			<onleft>9000</onleft>
-			<onright>9000</onright>
-			<onup>60</onup>
-			<ondown>SetFocus(9050)</ondown>
-			<viewtype label="31077">bigwrap</viewtype>
-			<pagecontrol>60</pagecontrol>
-			<scrolltime tween="quadratic">300</scrolltime>
-			<orientation>horizontal</orientation>
-			<preloaditems>2</preloaditems>
-			<itemlayout height="525" width="260" />
-			<focusedlayout height="525" width="375"/>
-		</control>
 		<!---->
 		<control type="group">
 			<width>1920</width>
@@ -466,6 +449,7 @@
 	</include>
 	<include name="ListTextBG">
 		<control type="image">
+			<left>60</left>
 			<texture colordiffuse="$VAR[ListColorHighlightVar]">listselect_fo.png</texture>
 			<animation effect="fade" end="35" time="0" delay="0" condition="true">Conditional</animation>
 		</control>
@@ -1184,18 +1168,20 @@
 			</control>
 			<control type="group">
 				<control type="image">
+					<visible>Skin.HasSetting(Enable.HomeTopbar)</visible>
 					<top>19</top>
 					<left>19</left>
 					<width>80</width>
 					<height>80</height>
-					<texture colordiffuse="33ffffff">background.png</texture>
+					<texture colordiffuse="$VAR[ColorMenuVar]">background.png</texture>
 				</control>
 				<control type="image">
+					<visible>Skin.HasSetting(Enable.HomeTopbar)</visible>
 					<top>19</top>
 					<left>19</left>
 					<width>80</width>
 					<height>80</height>
-					<texture colordiffuse="$VAR[ColorTextVar]">$VAR[HeaderIcon]</texture>
+					<texture colordiffuse="$VAR[MenuListColorHighlightVar]">$VAR[HeaderIcon]</texture>
 					<visible>String.Contains(ListItem.Path,plugin://) | [!Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes) + !Container.Content(episode)]</visible>
 					<visible>String.Contains(ListItem.Path,plugin://) | [![Window.IsActive(movieinformation) + [[Skin.HasSetting(Overlay.Resumable) + ListItem.IsResumable] | [String.IsEqual(ListItem.Overlay,OverlayUnwatched.png) + Skin.HasSetting(Overlay.Unwatched)] | [String.IsEqual(ListItem.Overlay,OverlayWatched.png) + Skin.HasSetting(Overlay.Watched)]]]]</visible>
 					<visible>!String.Contains(ListItem.Path,plugin://) | [![Container.Scrolling + [String.IsEqual(Container.SortMethod,$LOCALIZE[369]) | String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | [Container.Content(artists) + String.IsEqual(Container.SortMethod,$LOCALIZE[557])]]]]</visible>
@@ -1209,7 +1195,7 @@
 					<control type="image">
 						<width>64</width>
 						<height>64</height>
-						<texture colordiffuse="$VAR[ColorHighlightVar]">$VAR[OverlayBGVar]</texture>
+						<texture colordiffuse="$VAR[MenuListColorHighlightVar]">$VAR[OverlayBGVar]</texture>
 						<aspectratio align="center" aligny="top">keep</aspectratio>
 					</control>
 					<control type="image">
@@ -1234,7 +1220,7 @@
 					<control type="image">
 						<width>92</width>
 						<height>92</height>
-						<texture colordiffuse="$VAR[ColorHighlightVar]">$VAR[OverlayVarPercent]</texture>
+						<texture colordiffuse="$VAR[MenuListColorHighlightVar]">$VAR[OverlayVarPercent]</texture>
 						<aspectratio align="center" aligny="top">keep</aspectratio>
 					</control>
 				</control>
@@ -1251,7 +1237,7 @@
 					<animation effect="fade" start="0" end="100" time="150">VisibleChange</animation>
 				</control>
 				<control type="image">
-					<visible>Window.IsVisible(DialogBusy.xml)</visible>
+					<visible>Window.IsVisible(DialogBusy.xml) | Control.IsVisible(12345)</visible>
 					<description>Busy animation</description>
 					<top>32</top>
 					<left>32</left>
@@ -1268,7 +1254,7 @@
 					<height>45</height>
 					<font>font28_title</font>
 					<textoffsetx>15</textoffsetx>
-					<label>$VAR[BreadcrumbsVar,[B],[/B] ]$VAR[HeaderSubLabel]</label>
+					<label>$VAR[BreadcrumbsVar,[B],[/B] ]$VAR[HeaderSubLabel]$VAR[HeaderSubMenuLabel, [LIGHT],[/LIGHT]]</label>
 					<label2>$VAR[TopbarFadeLabel2,[B],[/B]]$VAR[TopbarFadeLabel1, ]</label2>
 					<onclick>noop</onclick>
 					<texturefocus>blank.png</texturefocus>
