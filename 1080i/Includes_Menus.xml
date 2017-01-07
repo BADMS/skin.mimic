@@ -19,11 +19,12 @@
 				<animation effect="slide" time="300" delay="0" start="0" end="0,320" tween="cubic" reversible="true" condition="String.IsEmpty(Container(9000).ListItem.Property(widgetName)) + Skin.HasSetting(Enable.PersistentWidgets) + Control.HasFocus(9010)">Conditional</animation>
 				<animation effect="slide" time="300" delay="0" start="0" end="0,-320" tween="cubic" reversible="true" condition="Control.Hasfocus(9010) + String.IsEmpty(Container(9000).ListItem.Property(widgetName))">Conditional</animation>
 				<include content="SubMenuListDefault">
-					<param name="SubmenuTop" value="-658" />
-					<param name="SubMenuContainerWidth" value="1920" />
+					<param name="SubmenuLeft" value="-124" />
+					<param name="SubmenuTop" value="-592" />
+					<param name="SubMenuContainerWidth" value="2540" />
 					<param name="SubmenuItemHeight" value="384" />
 					<param name="Orientation" value="Horizontal" />
-					<param name="Focusposition" value="2" />
+					<param name="Focusposition" value="3" />
 				</include>
 			</control>
 		</control>
@@ -50,7 +51,7 @@
 	<include name="SubMenuListDefault">
 		<animation effect="fade" start="100" end="50" time="300" condition="!ControlGroup(9001).HasFocus()">conditional</animation>
 		<include>VisibleFadeEffect</include>
-		<left>0</left>
+		<left>$PARAM[SubmenuLeft]</left>
 		<top>$PARAM[SubmenuTop]</top>
 		<width>$PARAM[SubMenuContainerWidth]</width>
 		<height>$PARAM[SubmenuItemHeight]</height>
@@ -62,8 +63,8 @@
 		<movement>1</movement>
 		<orientation>$PARAM[Orientation]</orientation>
 		<include content="SubmenuListContent">
-			<param name="SubmenuItemHeight" value="384" />
-			<param name="SubmenuItemWidth" value="384" />
+			<param name="SubmenuItemHeight" value="310" />
+			<param name="SubmenuItemWidth" value="310" />
 			<param name="SubmenuAlignY" value="top" />
 			<param name="SubmenuAlignX" value="center" />
 			<param name="SubmenuTextOffset" value="0" />
@@ -81,7 +82,7 @@
 				</animation>
 				<width>$PARAM[SubmenuItemWidth]</width>
 				<height>$PARAM[SubmenuItemHeight]</height>
-				<bordersize>20</bordersize>
+				<bordersize>6</bordersize>
 				<texture>background.png</texture>
 				<colordiffuse>$VAR[MenuListOldColorHighlightVar]</colordiffuse>
 			</control>
@@ -94,7 +95,7 @@
 				</animation>
 				<width>$PARAM[SubmenuItemWidth]</width>
 				<height>$PARAM[SubmenuItemHeight]</height>
-				<bordersize>20</bordersize>
+				<bordersize>6</bordersize>
 				<texture>$INFO[ListItem.Icon]</texture>
 				<colordiffuse>$VAR[MenuListOldColorHighlightVar]</colordiffuse>
 			</control>
@@ -107,7 +108,7 @@
 				</animation>
 				<width>$PARAM[SubmenuItemWidth]</width>
 				<height>$PARAM[SubmenuItemHeight]</height>
-				<bordersize>20</bordersize>
+				<bordersize>6</bordersize>
 				<texture>background.png</texture>
 				<colordiffuse>$VAR[MenuListColorHighlightVar]</colordiffuse>
 			</control>
@@ -120,7 +121,7 @@
 				</animation>
 				<width>$PARAM[SubmenuItemWidth]</width>
 				<height>$PARAM[SubmenuItemHeight]</height>
-				<bordersize>20</bordersize>
+				<bordersize>6</bordersize>
 				<texture>$INFO[ListItem.Icon]</texture>
 				<colordiffuse>$VAR[MenuListColorHighlightVar]</colordiffuse>
 			</control>
@@ -135,7 +136,7 @@
 				</animation>
 				<width>$PARAM[SubmenuItemWidth]</width>
 				<height>$PARAM[SubmenuItemHeight]</height>
-				<bordersize>20</bordersize>
+				<bordersize>6</bordersize>
 				<texture>background.png</texture>
 				<colordiffuse>$VAR[OldColorMenuVar]</colordiffuse>
 			</control>
@@ -148,7 +149,7 @@
 				</animation>
 				<width>$PARAM[SubmenuItemWidth]</width>
 				<height>$PARAM[SubmenuItemHeight]</height>
-				<bordersize>20</bordersize>
+				<bordersize>6</bordersize>
 				<texture>$INFO[ListItem.Icon]</texture>
 				<colordiffuse>$VAR[OldColorMenuVar]</colordiffuse>
 			</control>
@@ -162,7 +163,7 @@
 				</animation>
 				<width>$PARAM[SubmenuItemWidth]</width>
 				<height>$PARAM[SubmenuItemHeight]</height>
-				<bordersize>20</bordersize>
+				<bordersize>6</bordersize>
 				<texture>background.png</texture>
 				<colordiffuse>$VAR[ColorMenuVar]</colordiffuse>
 			</control>
@@ -175,7 +176,7 @@
 				</animation>
 				<width>$PARAM[SubmenuItemWidth]</width>
 				<height>$PARAM[SubmenuItemHeight]</height>
-				<bordersize>20</bordersize>
+				<bordersize>6</bordersize>
 				<texture>$INFO[ListItem.Icon]</texture>
 				<colordiffuse>$VAR[ColorMenuVar]</colordiffuse>
 			</control>

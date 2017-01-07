@@ -723,6 +723,10 @@
 		<value condition="System.HasAddon(script.image.resource.select) + !String.IsEmpty(Skin.String(weathericons.path))">$INFO[Skin.String(weathericons.path)]</value>
 		<value>resource://resource.images.weathericons.default/</value>
 	</variable>
+	<variable name="WeatherThumbVar">
+		<value condition="System.HasAddon(script.image.resource.select) + !String.IsEmpty(Skin.String(weatherfanart.path))">$INFO[Skin.String(weatherfanart.path)]$INFO[Window.Property(Current.FanartCode)]$VAR[WeatherFanartExtension]</value>
+		<value>resource://resource.images.weatherfanart.default/</value>
+	</variable>
 	<variable name="WidgetIconLabel">
 		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetIcon))">$INFO[Container(211).ListItem.Property(widgetIcon)]</value>
 		<value>$LOCALIZE[31016]</value>
@@ -787,6 +791,11 @@
         <value condition="Window.IsVisible(DialogMusicInfo.xml)">DefaultAddonInfoProvider.png</value>
         <value condition="Window.IsActive(home)">DefaultIconHome.png</value>
         <value>DefaultArtist.png</value>
+    </variable>
+    <variable name="HomeHeaderSubline">
+		<value condition="Window.IsActive(home) + Skin.HasSetting(Enable.HomeTopbar) + String.StartsWith(System.CurrentControlID, 8011)">$INFO[Skin.String(WidgetLine),[LIGHT],[/LIGHT]]</value>
+    	<value condition="Window.IsActive(movieinformation) + !String.IsEmpty(ListItem.Tagline)">$INFO[ListItem.Tagline]</value>
+    	<value>$INFO[Window(Home).Property(SkinHelper.RottenTomatoesConsensus),[I]","[/I] ]$VAR[LabelNextAiredDetails]</value>
     </variable>
     <variable name="HeaderSubTagline">
     	<value condition="Window.IsActive(movieinformation) + !String.IsEmpty(ListItem.Tagline)">$INFO[ListItem.Tagline]</value>

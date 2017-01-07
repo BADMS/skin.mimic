@@ -33,42 +33,6 @@
 						<param name="WeatherOnRight" value="8000" />
 					</include>
 				</control>
-				<control type="group">
-					<control type="group">
-						<right>0</right>
-						<top>555</top>
-						<width>1885</width>
-						<control type="label">
-							<animation effect="fade" time="300" tween="cubic" condition="[ControlGroup(9003).IsVisible + Skin.HasSetting(Enable.PersistentWidgets)] | [ControlGroup(9003).HasFocus + !Skin.HasSetting(Enable.PersistentWidgets)]" start="0" end="100">Visible</animation>
-							<animation effect="fade" time="0" condition="[ControlGroup(9003).IsVisible + Skin.HasSetting(Enable.PersistentWidgets)] | [ControlGroup(9003).HasFocus + !Skin.HasSetting(Enable.PersistentWidgets)]" start="100" end="0">Hidden</animation>
-							<animation effect="slide" time="200" tween="sine" easing="inout" end="0,700" start="0">WindowClose</animation>
-							<animation effect="slide" time="300" delay="0" start="0" end="0,320" tween="cubic" reversible="true" condition="String.IsEqual(Container(9000).ListItem.Property(widgetName),weather) + !Weather.IsFetched + !String.IsEmpty(Container(9000).ListItem.Property(widgetName)) + Skin.HasSetting(Enable.PersistentWidgets)">Conditional</animation>
-							<height>50</height>
-							<font>font16_title</font>
-							<align>right</align>
-							<textcolor>$VAR[ColorMenuVar]</textcolor>
-							<label>$VAR[WidgetNameLabelVar]</label>
-						</control>
-					</control>
-					<control type="group">
-						<visible>Control.HasFocus(8011$SKINSHORTCUTS[id]) + String.IsEqual(Container(9000).ListItem.Property(widget),weather)</visible>
-						<animation effect="fade" time="300" tween="cubic" condition="[Control.IsVisible(8011$SKINSHORTCUTS[id]) + Skin.HasSetting(Enable.PersistentWidgets)] | [Control.HasFocus(8011$SKINSHORTCUTS[id]) + !Skin.HasSetting(Enable.PersistentWidgets)]" start="0" end="100">Visible</animation>
-						<animation effect="fade" time="0" condition="[Control.IsVisible(8011$SKINSHORTCUTS[id]) + Skin.HasSetting(Enable.PersistentWidgets)] | [Control.HasFocus(8011$SKINSHORTCUTS[id]) + !Skin.HasSetting(Enable.PersistentWidgets)]" start="100" end="0">Hidden</animation>
-						<animation effect="slide" time="200" tween="sine" easing="inout" end="0,700" start="0">WindowClose</animation>
-						<control type="group">
-							<top>555</top>
-							<left>35</left>
-							<width>960</width>
-							<control type="label">
-								<height>50</height>
-								<font>font16_title</font>
-								<align>left</align>
-								<textcolor>$VAR[ColorMenuVar]</textcolor>
-								<label>$VAR[widgetLine1$SKINSHORTCUTS[id],[B],[/B] ]$VAR[widgetLine2$SKINSHORTCUTS[id]]</label>
-							</control>
-						</control>
-					</control>
-				</control>              
 			</control>
 		</control>
 	</include>
@@ -186,7 +150,7 @@
 			<animation effect="slide" time="300" delay="0" start="0" end="0,-320" tween="cubic" reversible="true" condition="Control.Hasfocus(9010) + String.IsEmpty(Container(9000).ListItem.Property(widgetName))">Conditional</animation>
 			<animation effect="slide" time="300" tween="sine" easing="inout" start="0,0" end="0,140" condition="Window.IsActive(extendedprogressdialog)">Conditional</animation>
 			<left>0</left>
-			<top>747</top>
+			<top>797</top>
 			<control type="group">
 				<include>Topbar</include>
 			</control>
