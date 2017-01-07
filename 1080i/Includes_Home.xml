@@ -22,7 +22,7 @@
 				</animation>
 				<animation effect="slide" time="300" delay="0" start="0" end="0,-723" tween="cubic" reversible="true" condition="Control.Hasfocus(9010) | !String.IsEmpty(Container(9000).ListItem.Property(widgetName))">Conditional</animation>
 				<animation effect="slide" time="300" delay="0" start="0" end="0,-403" tween="cubic" reversible="true" condition="!Control.Hasfocus(9010) + String.IsEmpty(Container(9000).ListItem.Property(widgetName))">Conditional</animation>
-				<animation effect="slide" time="300" delay="0" start="0" end="0,270" tween="cubic" reversible="true" condition="String.IsEqual(Container(9000).ListItem.Property(widgetName),weather) + !Weather.IsFetched + !String.IsEmpty(Container(9000).ListItem.Property(widgetName))">Conditional</animation>
+				<animation effect="slide" time="300" delay="0" start="0" end="0,320" tween="cubic" reversible="true" condition="String.IsEqual(Container(9000).ListItem.Property(widgetName),weather) + !Weather.IsFetched + !String.IsEmpty(Container(9000).ListItem.Property(widgetName))">Conditional</animation>
 				<width>FullScreenWidth</width>
 				<height>1080</height>
 				<texture background="true">background.png</texture>
@@ -38,7 +38,7 @@
 				</animation>
 				<animation effect="slide" time="300" delay="0" start="0" end="0,-723" tween="cubic" reversible="true" condition="Control.Hasfocus(9010) | !String.IsEmpty(Container(9000).ListItem.Property(widgetName))">Conditional</animation>
 				<animation effect="slide" time="300" delay="0" start="0" end="0,-403" tween="cubic" reversible="true" condition="!Control.Hasfocus(9010) + String.IsEmpty(Container(9000).ListItem.Property(widgetName))">Conditional</animation>
-				<animation effect="slide" time="300" delay="0" start="0" end="0,270" tween="cubic" reversible="true" condition="String.IsEqual(Container(9000).ListItem.Property(widgetName),weather) + !Weather.IsFetched + !String.IsEmpty(Container(9000).ListItem.Property(widgetName))">Conditional</animation>
+				<animation effect="slide" time="300" delay="0" start="0" end="0,320" tween="cubic" reversible="true" condition="String.IsEqual(Container(9000).ListItem.Property(widgetName),weather) + !Weather.IsFetched + !String.IsEmpty(Container(9000).ListItem.Property(widgetName))">Conditional</animation>
 				<width>FullScreenWidth</width>
 				<height>1080</height>
 				<texture background="true">background.png</texture>

@@ -1260,8 +1260,6 @@
 					<texturefocus>blank.png</texturefocus>
 				</control>
 				<control type="label">
-					<visible>!String.StartsWith(System.CurrentControlID, 9010)</visible>
-					<visible>Window.IsActive(home)</visible>
 					<top>59</top>
 					<left>117</left>
 					<width min="1228" max="1678">auto</width>
@@ -1270,8 +1268,10 @@
 					<font>topbar</font>
 					<scroll>true</scroll>
 					<scrollspeed>150</scrollspeed>
-					<textcolor>$VAR[ColorTopbarVar]</textcolor>
+					<textcolor>$VAR[ColorMenuVar]</textcolor>
 					<label>$VAR[WidgetNameLabelVar,[B],[/B] ]$VAR[HomeHeaderSubline]</label>
+					<visible>!String.StartsWith(System.CurrentControlID, 9010)</visible>
+					<visible>Window.IsActive(home)</visible>
 				</control>
 				<control type="grouplist">
 					<left>120</left>
