@@ -1,90 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-	<variable name="ShowmenuItem-7Var">
-		<value condition="!String.IsEmpty(Container(9000).ListItem(-7).Art(poster))">$INFO[Container(9000).ListItem(-7).Art(poster)]</value>
-		<value condition="Container(9000).ListItem(-7).IsParentFolder">DefaultFallbackParent.png</value>
-		<value>$INFO[Container(9000).ListItem(-7).Thumb]</value>
-	</variable>
-	<variable name="ShowmenuItem-6Var">
-		<value condition="!String.IsEmpty(Container(9000).ListItem(-6).Art(poster))">$INFO[Container(9000).ListItem(-6).Art(poster)]</value>
-		<value condition="Container(9000).ListItem(-6).IsParentFolder">DefaultFallbackParent.png</value>
-		<value>$INFO[Container(9000).ListItem(-6).Thumb]</value>
-	</variable>
-	<variable name="ShowmenuItem-5Var">
-		<value condition="!String.IsEmpty(Container(9000).ListItem(-5).Art(poster))">$INFO[Container(9000).ListItem(-5).Art(poster)]</value>
-		<value condition="Container(9000).ListItem(-5).IsParentFolder">DefaultFallbackParent.png</value>
-		<value>$INFO[Container(9000).ListItem(-5).Thumb]</value>
-	</variable>
-	<variable name="ShowmenuItem-4Var">
-		<value condition="!String.IsEmpty(Container(9000).ListItem(-4).Art(poster))">$INFO[Container(9000).ListItem(-4).Art(poster)]</value>
-		<value condition="Container(9000).ListItem(-4).IsParentFolder">DefaultFallbackParent.png</value>
-		<value>$INFO[Container(9000).ListItem(-4).Thumb]</value>
-	</variable>
-	<variable name="ShowmenuItem-3Var">
-		<value condition="!String.IsEmpty(Container(9000).ListItem(-3).Art(poster))">$INFO[Container(9000).ListItem(-3).Art(poster)]</value>
-		<value condition="Container(9000).ListItem(-3).IsParentFolder">DefaultFallbackParent.png</value>
-		<value>$INFO[Container(9000).ListItem(-3).Thumb]</value>
-	</variable>
-	<variable name="ShowmenuItem-2Var">
-		<value condition="!String.IsEmpty(Container(9000).ListItem(-2).Art(poster))">$INFO[Container(9000).ListItem(-2).Art(poster)]</value>
-		<value condition="Container(9000).ListItem(-2).IsParentFolder">DefaultFallbackParent.png</value>
-		<value>$INFO[Container(9000).ListItem(-2).Thumb]</value>
-	</variable>
-	<variable name="ShowmenuItem-1Var">
-		<value condition="!String.IsEmpty(Container(9000).ListItem(-1).Art(poster))">$INFO[Container(9000).ListItem(-1).Art(poster)]</value>
-		<value condition="Container(9000).ListItem(-1).IsParentFolder">DefaultFallbackParent.png</value>
-		<value>$INFO[Container(9000).ListItem(-1).Thumb]</value>
-	</variable>
-	<variable name="ShowmenuItem0Var">
-		<value condition="!String.IsEmpty(Container(9000).ListItem.Art(poster))">$INFO[Container(9000).ListItem.Art(poster)]</value>
-		<value condition="Container(9000).ListItem.IsParentFolder">DefaultFallbackParent.png</value>
-		<value>$INFO[Container(9000).ListItem.Art(thumb)]</value>
-	</variable>
-	<variable name="ShowmenuItem1Var">
-		<value condition="!String.IsEmpty(Container(9000).ListItem(1).Art(poster))">$INFO[Container(9000).ListItem(1).Art(poster)]</value>
-		<value condition="Container(9000).ListItem(1).IsParentFolder">DefaultFallbackParent.png</value>
-		<value>$INFO[Container(9000).ListItem(1).Thumb]</value>
-	</variable>
-	<variable name="ShowmenuItem2Var">
-		<value condition="!String.IsEmpty(Container(9000).ListItem(2).Art(poster))">$INFO[Container(9000).ListItem(2).Art(poster)]</value>
-		<value condition="Container(9000).ListItem(2).IsParentFolder">DefaultFallbackParent.png</value>
-		<value>$INFO[Container(9000).ListItem(2).Thumb]</value>
-	</variable>
-	<variable name="ShowmenuItem3Var">
-		<value condition="!String.IsEmpty(Container(9000).ListItem(3).Art(poster))">$INFO[Container(9000).ListItem(3).Art(poster)]</value>
-		<value condition="Container(9000).ListItem(3).IsParentFolder">DefaultFallbackParent.png</value>
-		<value>$INFO[Container(9000).ListItem(3).Thumb]</value>
-	</variable>
-	<variable name="ShowmenuItem4Var">
-		<value condition="!String.IsEmpty(Container(9000).ListItem(4).Art(poster))">$INFO[Container(9000).ListItem(4).Art(poster)]</value>
-		<value condition="Container(9000).ListItem(4).IsParentFolder">DefaultFallbackParent.png</value>
-		<value>$INFO[Container(9000).ListItem(4).Thumb]</value>
-	</variable>
-	<variable name="ShowmenuItem5Var">
-		<value condition="!String.IsEmpty(Container(9000).ListItem(5).Art(poster))">$INFO[Container(9000).ListItem(5).Art(poster)]</value>
-		<value condition="Container(9000).ListItem(5).IsParentFolder">DefaultFallbackParent.png</value>
-		<value>$INFO[Container(9000).ListItem(5).Thumb]</value>
-	</variable>
-	<variable name="ShowmenuItem6Var">
-		<value condition="!String.IsEmpty(Container(9000).ListItem(6).Art(poster))">$INFO[Container(9000).ListItem(6).Art(poster)]</value>
-		<value condition="Container(9000).ListItem(6).IsParentFolder">DefaultFallbackParent.png</value>
-		<value>$INFO[Container(9000).ListItem(6).Thumb]</value>
-	</variable>
-	<variable name="ShowmenuItem7Var">
-		<value condition="!String.IsEmpty(Container(9000).ListItem(7).Art(poster))">$INFO[Container(9000).ListItem(7).Art(poster)]</value>
-		<value condition="Container(9000).ListItem(7).IsParentFolder">DefaultFallbackParent.png</value>
-		<value>$INFO[Container(9000).ListItem(7).Thumb]</value>
-	</variable>
-	<variable name="ShowmenuItem8Var">
-		<value condition="!String.IsEmpty(Container(9000).ListItem(8).Art(poster))">$INFO[Container(9000).ListItem(8).Art(poster)]</value>
-		<value condition="Container(9000).ListItem(8).IsParentFolder">DefaultFallbackParent.png</value>
-		<value>$INFO[Container(9000).ListItem(8).Thumb]</value>
-	</variable>
-	<variable name="ShowmenuItem9Var">
-		<value condition="!String.IsEmpty(Container(9000).ListItem(9).Art(poster))">$INFO[Container(9000).ListItem(9).Art(poster)]</value>
-		<value condition="Container(9000).ListItem(9).IsParentFolder">DefaultFallbackParent.png</value>
-		<value>$INFO[Container(9000).ListItem(9).Thumb]</value>
-	</variable>	
 	<variable name="OSDStatus">
 		<value condition="!String.IsEmpty(Player.SeekStepSize) + !String.Contains(Player.SeekStepSize,-) + Player.Seeking"></value>
 		<value condition="!String.IsEmpty(Player.SeekStepSize) + Player.Seeking"></value>
@@ -202,7 +117,6 @@
 		<value condition="String.IsEqual(ListItem.Overlay,OverlayWatched.png) + Skin.HasSetting(Overlay.Watched)">$INFO[ListItem.Overlay,overlays/list/]</value>
 	</variable>
 	<variable name="BreadcrumbsVar">
-		<value condition="Window.IsActive(home) + !Skin.HasSetting(Enable.HomeTopbar)"></value>
 		<value condition="Window.IsActive(script-script.extendedinfo-DialogInfo.xml)">$INFO[Window.Property(label)]</value>
  		<value condition="Window.IsActive(script-script.extendedinfo-DialogVideoInfo.xml)">$INFO[Window.Property(title)]</value>
 		<value condition="Window.IsActive(movieinformation) + String.IsEqual(ListItem.DBTYPE,episode)">$INFO[ListItem.Season,,x]$INFO[ListItem.Episode,,. ]$INFO[ListItem.Title]</value>
@@ -723,10 +637,6 @@
 		<value condition="System.HasAddon(script.image.resource.select) + !String.IsEmpty(Skin.String(weathericons.path))">$INFO[Skin.String(weathericons.path)]</value>
 		<value>resource://resource.images.weathericons.default/</value>
 	</variable>
-	<variable name="WeatherThumbVar">
-		<value condition="System.HasAddon(script.image.resource.select) + !String.IsEmpty(Skin.String(weatherfanart.path))">$INFO[Skin.String(weatherfanart.path)]$INFO[Window.Property(Current.FanartCode)]$VAR[WeatherFanartExtension]</value>
-		<value>resource://resource.images.weatherfanart.default/</value>
-	</variable>
 	<variable name="WidgetIconLabel">
 		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetIcon))">$INFO[Container(211).ListItem.Property(widgetIcon)]</value>
 		<value>$LOCALIZE[31016]</value>
@@ -792,20 +702,11 @@
         <value condition="Window.IsActive(home)">DefaultIconHome.png</value>
         <value>DefaultArtist.png</value>
     </variable>
-    <variable name="HomeHeaderSubline">
-		<value condition="Window.IsActive(home) + Skin.HasSetting(Enable.HomeTopbar) + String.StartsWith(System.CurrentControlID, 8011)">$INFO[Skin.String(WidgetLine),[LIGHT],[/LIGHT]]</value>
-    	<value condition="Window.IsActive(movieinformation) + !String.IsEmpty(ListItem.Tagline)">$INFO[ListItem.Tagline]</value>
-    	<value>$INFO[Window(Home).Property(SkinHelper.RottenTomatoesConsensus),[I]","[/I] ]$VAR[LabelNextAiredDetails]</value>
-    </variable>
     <variable name="HeaderSubTagline">
     	<value condition="Window.IsActive(movieinformation) + !String.IsEmpty(ListItem.Tagline)">$INFO[ListItem.Tagline]</value>
     	<value>$INFO[Window(Home).Property(SkinHelper.RottenTomatoesConsensus),[I]","[/I] ]$VAR[LabelNextAiredDetails]</value>
     </variable>
-    <variable name="HeaderSubMenuLabel">
-		<value condition="Window.IsActive(home) + Control.Hasfocus(9010)">$INFO[Container(9010).ListItem.Label]</value>
-    </variable>
     <variable name="HeaderSubLabel">
-		<value condition="Window.IsActive(home) + !Skin.HasSetting(Enable.HomeTopbar)"></value>
     	<value condition="Window.IsActive(script-script.extendedinfo-DialogInfo.xml)">$INFO[Window.Property(AlsoKnownAs)]</value>
      	<value condition="Window.IsActive(script-script.extendedinfo-DialogVideoInfo.xml) + !String.IsEmpty(Window.Property(tagline))">$INFO[Window.Property(tagline)]</value>
      	<value condition="Window.IsActive(script-script.extendedinfo-DialogVideoInfo.xml) + String.IsEmpty(Window.Property(tagline))">$INFO[Window.Property(originaltitle)]</value>
@@ -921,7 +822,6 @@
 	<variable name="WidgetNameLabelVar">
 		<value condition="!String.IsEqual(Container(9000).ListItem.Property(widgetName),weather)">$INFO[Container(9000).ListItem.Property(widgetName)]</value>
 		<value condition="String.IsEqual(Container(9000).ListItem.Property(widgetName),weather) + !Weather.IsFetched">$LOCALIZE[31909]</value>
-		<value condition="String.IsEqual(Container(9000).ListItem.Property(widgetName),weather)">$INFO[Window(weather).Property(Location)]</value>
 	</variable>
 	<variable name="WidgetLimit">
 		<value condition="Skin.HasSetting(Enable.WidgetLimit)">20</value>

@@ -13,10 +13,9 @@
 	                <visible>Integer.IsGreater(Container(50).NumItems,0) + ![[Skin.HasSetting(Enable.SlimList.Movies) + [Container.Content(movies) | Container.Content(movie)]] | [Skin.HasSetting(Enable.SlimList.Misc) + ![Container.Content(movies) | Container.Content(movie)]]]</visible>
 	                <visible>Integer.IsGreater(Container(50).NumItems,0) + ![[Skin.HasSetting(Enable.WideList.Movies) + [Container.Content(movies) | Container.Content(movie)]] | [Skin.HasSetting(Enable.WideList.Misc) + ![Container.Content(movies) | Container.Content(movie)]]]</visible>
 	                <control type="image">
-						<left>27</left>
-	                    <top>205</top>
-	                    <width>1123</width>
-	                    <height>100</height>
+	                    <top>195</top>
+	                    <width>1150</width>
+	                    <height>120</height>
 	                    <visible>Control.HasFocus(50)</visible>
 	                    <animation effect="fade" time="320" delay="200">Visible</animation>
 	                    <animation effect="fade" time="50">Hidden</animation>
@@ -33,10 +32,9 @@
 	                <visible>Integer.IsGreater(Container(50).NumItems,0) + ![[Skin.HasSetting(Enable.SlimList.Movies) + [Container.Content(movies) | Container.Content(movie)]] | [Skin.HasSetting(Enable.SlimList.Misc) + ![Container.Content(movies) | Container.Content(movie)]]]</visible>
 	                <visible>Integer.IsGreater(Container(50).NumItems,0) + [[Skin.HasSetting(Enable.WideList.Movies) + [Container.Content(movies) | Container.Content(movie)]] | [Skin.HasSetting(Enable.WideList.Misc) + ![Container.Content(movies) | Container.Content(movie)]]]</visible>
 	                <control type="image">
-						<left>27</left>
-	                    <top>205</top>
-	                    <width>1713</width>
-	                    <height>100</height>
+	                    <top>195</top>
+	                    <width>1740</width>
+	                    <height>120</height>
 	                    <visible>Control.HasFocus(50)</visible>
 	                    <animation effect="fade" time="320" delay="200">Visible</animation>
 	                    <animation effect="fade" time="50">Hidden</animation>

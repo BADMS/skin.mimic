@@ -56,7 +56,7 @@
 				<height>80</height>
 				<aspectratio>keep</aspectratio>
 				<texture>addons/tmdb.png</texture>
-				<colordiffuse>$VAR[ColorMenuVar]</colordiffuse>
+				<colordiffuse>33ffffff</colordiffuse>
 			</control>
 		</control>
 		<control type="group">

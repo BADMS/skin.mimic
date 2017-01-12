@@ -141,7 +141,7 @@
 		                    <top>10</top>
 		                    <right>10</right>
 		                    <bottom>10</bottom>
-		                    <texture colordiffuse="$VAR[ColorMenuVar]">background.png</texture>
+		                    <texture colordiffuse="33ffffff">background.png</texture>
 		                </control>
 		                <control type="image">
 		                    <top>20</top>
@@ -270,7 +270,7 @@
 				                <top>10</top>
 				                <right>10</right>
 				                <bottom>10</bottom>
-				                <texture colordiffuse="$VAR[ColorMenuVar]">background.png</texture>
+				                <texture colordiffuse="33ffffff">background.png</texture>
 				            </control>
 				            <control type="label">
 				                <left>20</left>
@@ -330,7 +330,7 @@
 				                <top>10</top>
 				                <right>10</right>
 				                <bottom>10</bottom>
-				                <texture colordiffuse="$VAR[ColorMenuVar]">background.png</texture>
+				                <texture colordiffuse="33ffffff">background.png</texture>
 				            </control>
 				            <control type="label">
 				                <left>20</left>
@@ -487,7 +487,7 @@
 				                <top>10</top>
 				                <right>10</right>
 				                <bottom>10</bottom>
-				                <texture colordiffuse="$VAR[ColorMenuVar]">background.png</texture>
+				                <texture colordiffuse="33ffffff">background.png</texture>
 				            </control>
 				            <control type="label">
 				                <left>20</left>
@@ -564,7 +564,7 @@
 				                <top>10</top>
 				                <right>10</right>
 				                <bottom>10</bottom>
-				                <texture colordiffuse="$VAR[ColorMenuVar]">background.png</texture>
+				                <texture colordiffuse="33ffffff">background.png</texture>
 				            </control>
 				            <control type="label">
 				                <left>20</left>
@@ -784,7 +784,7 @@
 				                <top>10</top>
 				                <right>10</right>
 				                <bottom>10</bottom>
-				                <texture colordiffuse="$VAR[ColorMenuVar]">background.png</texture>
+				                <texture colordiffuse="33ffffff">background.png</texture>
 				            </control>
 				            <control type="label">
 				                <left>20</left>
@@ -833,7 +833,7 @@
 				                <top>10</top>
 				                <right>10</right>
 				                <bottom>10</bottom>
-				                <texture colordiffuse="$VAR[ColorMenuVar]">background.png</texture>
+				                <texture colordiffuse="33ffffff">background.png</texture>
 				            </control>
 				            <control type="label">
 				                <left>20</left>
@@ -947,7 +947,7 @@
 				                <top>10</top>
 				                <right>10</right>
 				                <bottom>10</bottom>
-				                <texture colordiffuse="$VAR[ColorMenuVar]">background.png</texture>
+				                <texture colordiffuse="33ffffff">background.png</texture>
 				            </control>
 				            <control type="label">
 				                <left>20</left>
@@ -1036,7 +1036,7 @@
 				                <top>10</top>
 				                <right>10</right>
 				                <bottom>10</bottom>
-				                <texture colordiffuse="$VAR[ColorMenuVar]">background.png</texture>
+				                <texture colordiffuse="33ffffff">background.png</texture>
 				            </control>
 				            <control type="label">
 				                <left>20</left>
@@ -1190,7 +1190,7 @@
 				                <top>10</top>
 				                <right>10</right>
 				                <bottom>10</bottom>
-				                <texture colordiffuse="$VAR[ColorMenuVar]">background.png</texture>
+				                <texture colordiffuse="33ffffff">background.png</texture>
 				            </control>
 				            <control type="label">
 				                <left>20</left>
@@ -1267,7 +1267,7 @@
 				                <top>10</top>
 				                <right>10</right>
 				                <bottom>10</bottom>
-				                <texture colordiffuse="$VAR[ColorMenuVar]">background.png</texture>
+				                <texture colordiffuse="33ffffff">background.png</texture>
 				            </control>
 				            <control type="label">
 				                <left>20</left>
@@ -1917,7 +1917,7 @@
 				<width>500</width>
 				<height>50</height>
 				<aspectratio align="right" aligny="center">keep</aspectratio>
-				<texture colordiffuse="$VAR[ColorMenuVar]">$INFO[Window.Property(WeatherProviderLogo)]</texture>
+				<texture colordiffuse="33ffffff">$INFO[Window.Property(WeatherProviderLogo)]</texture>
 			</control>
 		</control>
 		<control type="scrollbar" id="60">
@@ -1951,7 +1951,7 @@
 	                    <top>10</top>
 	                    <right>10</right>
 	                    <bottom>10</bottom>
-	                    <texture colordiffuse="$VAR[ColorMenuVar]">background.png</texture>
+	                    <texture colordiffuse="33ffffff">background.png</texture>
 	                </control>
 	                <control type="image">
 	                    <top>20</top>
@@ -2081,7 +2081,7 @@
 			                <top>10</top>
 			                <right>10</right>
 			                <bottom>10</bottom>
-			                <texture colordiffuse="$VAR[ColorMenuVar]">background.png</texture>
+			                <texture colordiffuse="33ffffff">background.png</texture>
 			            </control>
 			            <control type="label">
 			                <left>20</left>
@@ -2141,7 +2141,7 @@
 			                <top>10</top>
 			                <right>10</right>
 			                <bottom>10</bottom>
-			                <texture colordiffuse="$VAR[ColorMenuVar]">background.png</texture>
+			                <texture colordiffuse="33ffffff">background.png</texture>
 			            </control>
 			            <control type="label">
 			                <left>20</left>
@@ -2261,7 +2261,7 @@
 					<width>500</width>
 					<height>50</height>
 					<aspectratio align="right" aligny="center">keep</aspectratio>
-					<texture colordiffuse="$VAR[ColorMenuVar]">$INFO[Window.Property(WeatherProviderLogo)]</texture>
+					<texture colordiffuse="33ffffff">$INFO[Window.Property(WeatherProviderLogo)]</texture>
 				</control>
 				<control type="button" id="9000">
 					<include>HiddenObject</include>

@@ -866,7 +866,7 @@
 						<description>Extras</description>
 						<include>ButtonInfoDialogsCommonValues</include>
 						<label>22082</label>
-						<onclick>RunScript(script.colorbox)</onclick>
+						<onclick>RunScript(script.mimic.extras)</onclick>
 						<enable>!Skin.HasSetting(KioskMode.Enabled)</enable>
 					</control>
 				</control>

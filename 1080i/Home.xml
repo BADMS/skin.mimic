@@ -7,11 +7,6 @@
 	<onunload condition="String.IsEqual(Skin.String(HomeLayout),3)">RunScript(script.skinshortcuts,type=hidesubmenu&amp;mainmenuID=9000)</onunload>
 	<onload>ClearProperty(MediaMenu,Home)</onload>
 	<onload condition="!Skin.HasSetting(startup.init)">Skin.SetBool(startup.init)</onload>
-	<onload condition="System.HasAddon(script.randomart)">RunScript(script.randomart,info=randomart_color,prefix=$INFO[System.Time(hh:mm:ss)])</onload>
-	<onload condition="System.HasAddon(script.randomart)">RunScript(script.randomart,info=randomart_gray,prefix=$INFO[System.Time(hh:mm:ss)])</onload>
-	<onload condition="System.HasAddon(script.randomart)">RunScript(script.randomart,info=randomart_eqn,prefix=$INFO[System.Time(hh:mm:ss)])</onload>
-	<onload condition="System.HasAddon(script.randomart)">RunScript(script.randomart,info=randomart_eqn)</onload>
-	<onload>Skin.SetString(MenuHome3D,1)</onload>
 	<controls>
  		<control type="multiimage" id="7977">
             <fadetime>300</fadetime>
@@ -61,17 +56,9 @@
             <texture>background.png</texture>
             <colordiffuse>$VAR[MenuListColorHighlightVar]</colordiffuse>
         </control>
-		<control type="group">
-			<include>HomeDefault</include>
-        </control>
-		<control type="group">
-			<animation effect="slide" tween="cubic" time="600" start="0,700" end="0,0" reversible="false">WindowOpen</animation>
-			<animation effect="slide" tween="cubic" time="300" start="0,0" end="0,700" reversible="false">WindowClose</animation>
-			<animation effect="slide" tween="cubic" time="600" start="0,700" end="0,0" reversible="false">Visible</animation>
-			<animation effect="slide" tween="cubic" time="300" start="0,0" end="0,700" reversible="false">Hidden</animation>
-			<left>41</left>
-			<top>195</top>
-            <include>MenuHome3D</include>
-        </control>
+		<include condition="Skin.HasSetting(Enable.HomeTopbar) + !String.IsEqual(Skin.String(HomeLayout),2)">Topbar</include>
+		<include condition="!String.IsEqual(Skin.String(HomeLayout),2) + !String.IsEqual(Skin.String(HomeLayout),3)">HomeDefault</include>
+		<include condition="String.IsEqual(Skin.String(HomeLayout),2)">HomeTopMenu</include>
+		<include condition="String.IsEqual(Skin.String(HomeLayout),3)">HomeVerticalMenu</include>
 	</controls>
 </window>
